@@ -11,12 +11,12 @@ using System.IO;
 using System.Reflection;
 using System.Web;
 using FF6_Editor;
-using RomFileIO;
 
-namespace RomData
+
+namespace FF6_Editor
 {
     public class RomData
     {
-
+        public const int CHARDATA = 0x3301F4;
     }
 }

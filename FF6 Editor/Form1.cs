@@ -10,16 +10,17 @@ using System.Windows.Forms;
 using System.IO;
 using System.Reflection;
 using System.Web;
-using RomFileIO;
-using RomData;
 
 namespace FF6_Editor
 {
     public partial class Form1 : Form
     {
-        byte[] gameArray;
-        int levelCheck = 0;
-        int actorCheck = 0;
+        RomFileIO rom = new RomFileIO();
+        public string FName;
+        private int statSum = 0;
+        public int Fileoffset { get; private set; }
+        int ActorCheck;
+        int LevelCheck;
 
         public Form1()
         {
@@ -29,666 +30,341 @@ namespace FF6_Editor
         private void Form1_Load(object sender, EventArgs e)
         {
             //Disable File Saving until a file actually exists, to reduce potential problems.
-            if (gameArray == null)
+            if (!rom.IsOpen())
             {
-                saveROMToolStripMenuItem.Enabled = false;
-                saveROMToolStripMenuItem.Available = false;
+                saveAsToolStripMenuItem.Enabled = false;
+                saveROMToolStripMenuItem1.Enabled = false;
             }
         }
 
-        private void loadROMToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LoadROMToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            OpenFileDialog ofd = new OpenFileDialog();                                      //Setting the dialog up
+            ofd.Filter = "Super Famicom ROM|*.sfc";                                         //File type filter
+            ofd.Title = "Load ROM";                                                         //Title for dialog
+            ofd.CheckFileExists = true;
+            ofd.CheckPathExists = true;
+            ofd.Multiselect = false;
+            if (ofd.ShowDialog() != DialogResult.OK)
             {
-                OpenFileDialog ofd = new OpenFileDialog();                                      //Setting the dialog up
-
-                ofd.Filter = "SNES ROM file|FF6MTEST_editor_test.sfc";                          //File type filter
-                ofd.Title = "Load ROM";                                                         //Title for dialog
-                ofd.CheckFileExists = true;
-                ofd.CheckPathExists = true;
-                RomFileIO.LoadRom(ofd.FileName);
-
+                MessageBox.Show("Could not open " + ofd.FileName);
+                return;
             }
-            
-            if (gameArray != null)
+            FName = Path.GetFullPath(ofd.FileName);
+            rom.Open(ofd.FileName);
+            if (rom.IsOpen())
             {
-                cmbActors.SelectedIndex = 0;
-
-                if (numLevel.Value == 0)
-                {
-                    levelCheck = 0;
-                    lblLevel0.Text = "0";
-                    lblLevel1.Text = "1";
-                    lblLevel2.Text = "2";
-                    lblLevel3.Text = "3";
-                    lblLevel4.Text = "4";
-                    lblLevel5.Text = "5";
-                    lblLevel6.Text = "6";
-                    lblLevel7.Text = "7";
-                    lblLevel8.Text = "8";
-                    lblLevel9.Text = "9";
-                }
-
-                else if (numLevel.Value == 10)
-                {
-                    levelCheck = 10;
-                    lblLevel0.Text = "10";
-                    lblLevel1.Text = "11";
-                    lblLevel2.Text = "12";
-                    lblLevel3.Text = "13";
-                    lblLevel4.Text = "14";
-                    lblLevel5.Text = "15";
-                    lblLevel6.Text = "16";
-                    lblLevel7.Text = "17";
-                    lblLevel8.Text = "18";
-                    lblLevel9.Text = "19";
-                }
-
-                else if (numLevel.Value == 20)
-                {
-                    levelCheck = 20;
-                    lblLevel0.Text = "20";
-                    lblLevel1.Text = "21";
-                    lblLevel2.Text = "22";
-                    lblLevel3.Text = "23";
-                    lblLevel4.Text = "24";
-                    lblLevel5.Text = "25";
-                    lblLevel6.Text = "26";
-                    lblLevel7.Text = "27";
-                    lblLevel8.Text = "28";
-                    lblLevel9.Text = "29";
-                }
-
-                else if (numLevel.Value == 30)
-                {
-                    levelCheck = 30;
-                    lblLevel0.Text = "30";
-                    lblLevel1.Text = "31";
-                    lblLevel2.Text = "32";
-                    lblLevel3.Text = "33";
-                    lblLevel4.Text = "34";
-                    lblLevel5.Text = "35";
-                    lblLevel6.Text = "36";
-                    lblLevel7.Text = "37";
-                    lblLevel8.Text = "38";
-                    lblLevel9.Text = "39";
-                }
-
-                else if (numLevel.Value == 40)
-                {
-                    levelCheck = 40;
-                    lblLevel0.Text = "40";
-                    lblLevel1.Text = "41";
-                    lblLevel2.Text = "42";
-                    lblLevel3.Text = "43";
-                    lblLevel4.Text = "44";
-                    lblLevel5.Text = "45";
-                    lblLevel6.Text = "46";
-                    lblLevel7.Text = "47";
-                    lblLevel8.Text = "48";
-                    lblLevel9.Text = "49";
-                }
-
-                else if (numLevel.Value == 50)
-                {
-                    levelCheck = 50;
-                    lblLevel0.Text = "50";
-                    lblLevel1.Text = "51";
-                    lblLevel2.Text = "52";
-                    lblLevel3.Text = "53";
-                    lblLevel4.Text = "54";
-                    lblLevel5.Text = "55";
-                    lblLevel6.Text = "56";
-                    lblLevel7.Text = "57";
-                    lblLevel8.Text = "58";
-                    lblLevel9.Text = "59";
-                }
-
-                else if (numLevel.Value == 60)
-                {
-                    levelCheck = 60;
-                    lblLevel0.Text = "60";
-                    lblLevel1.Text = "61";
-                    lblLevel2.Text = "62";
-                    lblLevel3.Text = "63";
-                    lblLevel4.Text = "64";
-                    lblLevel5.Text = "65";
-                    lblLevel6.Text = "66";
-                    lblLevel7.Text = "67";
-                    lblLevel8.Text = "68";
-                    lblLevel9.Text = "69";
-                }
-
-                else if (numLevel.Value == 70)
-                {
-                    levelCheck = 70;
-                    lblLevel0.Text = "70";
-                    lblLevel1.Text = "71";
-                    lblLevel2.Text = "72";
-                    lblLevel3.Text = "73";
-                    lblLevel4.Text = "74";
-                    lblLevel5.Text = "75";
-                    lblLevel6.Text = "76";
-                    lblLevel7.Text = "77";
-                    lblLevel8.Text = "78";
-                    lblLevel9.Text = "79";
-                }
-
-                else if (numLevel.Value == 80)
-                {
-                    levelCheck = 80;
-                    lblLevel0.Text = "80";
-                    lblLevel1.Text = "81";
-                    lblLevel2.Text = "82";
-                    lblLevel3.Text = "83";
-                    lblLevel4.Text = "84";
-                    lblLevel5.Text = "85";
-                    lblLevel6.Text = "86";
-                    lblLevel7.Text = "87";
-                    lblLevel8.Text = "88";
-                    lblLevel9.Text = "89";
-                }
-
-                else if (numLevel.Value == 90)
-                {
-                    levelCheck = 90;
-                    lblLevel0.Text = "90";
-                    lblLevel1.Text = "91";
-                    lblLevel2.Text = "92";
-                    lblLevel3.Text = "93";
-                    lblLevel4.Text = "94";
-                    lblLevel5.Text = "95";
-                    lblLevel6.Text = "96";
-                    lblLevel7.Text = "97";
-                    lblLevel8.Text = "98";
-                    lblLevel9.Text = "99";
-                }
-                txtStrLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck].ToString();
-                txtStrLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 1].ToString();
-                txtStrLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 2].ToString();
-                txtStrLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 3].ToString();
-                txtStrLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 4].ToString();
-                txtStrLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 5].ToString();
-                txtStrLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 6].ToString();
-                txtStrLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 7].ToString();
-                txtStrLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 8].ToString();
-                txtStrLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 9].ToString();
-                txtAgiLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15)].ToString();
-                txtAgiLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 1].ToString();
-                txtAgiLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 2].ToString();
-                txtAgiLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 3].ToString();
-                txtAgiLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 4].ToString();
-                txtAgiLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 5].ToString();
-                txtAgiLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 6].ToString();
-                txtAgiLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 7].ToString();
-                txtAgiLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 8].ToString();
-                txtAgiLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 9].ToString();
-                txtStaLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15)].ToString();
-                txtStaLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 1].ToString();
-                txtStaLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 2].ToString();
-                txtStaLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 3].ToString();
-                txtStaLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 4].ToString();
-                txtStaLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 5].ToString();
-                txtStaLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 6].ToString();
-                txtStaLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 7].ToString();
-                txtStaLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 8].ToString();
-                txtStaLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 9].ToString();
-                txtMagLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15)].ToString();
-                txtMagLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 1].ToString();
-                txtMagLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 2].ToString();
-                txtMagLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 3].ToString();
-                txtMagLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 4].ToString();
-                txtMagLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 5].ToString();
-                txtMagLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 6].ToString();
-                txtMagLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 7].ToString();
-                txtMagLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 8].ToString();
-                txtMagLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 9].ToString();
+                saveAsToolStripMenuItem.Enabled = true;
+                saveROMToolStripMenuItem1.Enabled = true;
             }
+
+            UpdateActorsElements();
+            cmbActors.SelectedIndex = 0;
         }
 
 
-        private void saveROMToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveROMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (gameArray != null)
             {
                 //Open SaveFileDialog for file saving.
                 SaveFileDialog sfd = new SaveFileDialog();
-                sfd.Filter = "SNES ROM file|*.smc;*.swc;*.sfc";
+                sfd.Filter = "SNES ROM file|*.sfc";
                 sfd.Title = "Save ROM";
-
-                if (sfd.ShowDialog() == DialogResult.OK)
+                if (sfd.ShowDialog() != DialogResult.OK)
                 {
-                    try
-                    {
-                        //Save the file to disk
-                        //Checks to make sure a file actually has been loaded.
-                        if (gameArray != null)
-                        {
-                            File.WriteAllBytes(sfd.FileName, gameArray);
-                        }
-                        else
-                        {
-                            MessageBox.Show("No ROM is loaded.", "No ROM", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
-                    }
-                    catch (Exception innerException)
-                    {
-                        ApplicationException ae = new ApplicationException("Exception", innerException);
-                    }
-
+                    MessageBox.Show("Could not save " + sfd.FileName);
+                }
+                //Save the file to disk
+                //Checks to make sure a file actually has been loaded.
+                if (rom.IsOpen())
+                {
+                    rom.SaveAs(sfd.FileName);
+                }
+                else
+                {
+                    MessageBox.Show("No ROM is loaded.", "No ROM", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saveROMToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            rom.SaveAs(FName);
+        }
+
+        private void SaveActorsElements()
+        {
+            rom.Write8(byte.Parse(txtStrLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheck);
+            rom.Write8(byte.Parse(txtStrLv1.Text));
+            rom.Write8(byte.Parse(txtStrLv2.Text));
+            rom.Write8(byte.Parse(txtStrLv3.Text));
+            rom.Write8(byte.Parse(txtStrLv4.Text));
+            rom.Write8(byte.Parse(txtStrLv5.Text));
+            rom.Write8(byte.Parse(txtStrLv6.Text));
+            rom.Write8(byte.Parse(txtStrLv7.Text));
+            rom.Write8(byte.Parse(txtStrLv8.Text));
+            rom.Write8(byte.Parse(txtStrLv9.Text));
+            rom.Write8(byte.Parse(txtAgiLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheck + (100 * 15));
+            rom.Write8(byte.Parse(txtAgiLv1.Text));
+            rom.Write8(byte.Parse(txtAgiLv2.Text));
+            rom.Write8(byte.Parse(txtAgiLv3.Text));
+            rom.Write8(byte.Parse(txtAgiLv4.Text));
+            rom.Write8(byte.Parse(txtAgiLv5.Text));
+            rom.Write8(byte.Parse(txtAgiLv6.Text));
+            rom.Write8(byte.Parse(txtAgiLv7.Text));
+            rom.Write8(byte.Parse(txtAgiLv8.Text));
+            rom.Write8(byte.Parse(txtAgiLv9.Text));
+            rom.Write8(byte.Parse(txtStaLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheck + (200 * 15));
+            rom.Write8(byte.Parse(txtStaLv1.Text));
+            rom.Write8(byte.Parse(txtStaLv2.Text));
+            rom.Write8(byte.Parse(txtStaLv3.Text));
+            rom.Write8(byte.Parse(txtStaLv4.Text));
+            rom.Write8(byte.Parse(txtStaLv5.Text));
+            rom.Write8(byte.Parse(txtStaLv6.Text));
+            rom.Write8(byte.Parse(txtStaLv7.Text));
+            rom.Write8(byte.Parse(txtStaLv8.Text));
+            rom.Write8(byte.Parse(txtStaLv9.Text));
+            rom.Write8(byte.Parse(txtMagLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheck + (300 * 15));
+            rom.Write8(byte.Parse(txtMagLv1.Text));
+            rom.Write8(byte.Parse(txtMagLv2.Text));
+            rom.Write8(byte.Parse(txtMagLv3.Text));
+            rom.Write8(byte.Parse(txtMagLv4.Text));
+            rom.Write8(byte.Parse(txtMagLv5.Text));
+            rom.Write8(byte.Parse(txtMagLv6.Text));
+            rom.Write8(byte.Parse(txtMagLv7.Text));
+            rom.Write8(byte.Parse(txtMagLv8.Text));
+            rom.Write8(byte.Parse(txtMagLv9.Text));
+            rom.Write8(byte.Parse(txtHPLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheck + (400 * 15));
+            rom.Write8(byte.Parse(txtHPLv1.Text));
+            rom.Write8(byte.Parse(txtHPLv2.Text));
+            rom.Write8(byte.Parse(txtHPLv3.Text));
+            rom.Write8(byte.Parse(txtHPLv4.Text));
+            rom.Write8(byte.Parse(txtHPLv5.Text));
+            rom.Write8(byte.Parse(txtHPLv6.Text));
+            rom.Write8(byte.Parse(txtHPLv7.Text));
+            rom.Write8(byte.Parse(txtHPLv8.Text));
+            rom.Write8(byte.Parse(txtHPLv9.Text));
+            rom.Write8(byte.Parse(txtMPLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheck + (500 * 15));
+            rom.Write8(byte.Parse(txtMPLv1.Text));
+            rom.Write8(byte.Parse(txtMPLv2.Text));
+            rom.Write8(byte.Parse(txtMPLv3.Text));
+            rom.Write8(byte.Parse(txtMPLv4.Text));
+            rom.Write8(byte.Parse(txtMPLv5.Text));
+            rom.Write8(byte.Parse(txtMPLv6.Text));
+            rom.Write8(byte.Parse(txtMPLv7.Text));
+            rom.Write8(byte.Parse(txtMPLv8.Text));
+            rom.Write8(byte.Parse(txtMPLv9.Text));
+
+            UpdateActorsElements();
+        }
+
+        private void UpdateActorsElements()
+        {
+            if (!rom.IsOpen())
+                return;
+
+            // Update level labels
+
+            LevelCheck = (int)numLevel.Value;
+            for (int i = 0; i <= 9; i++)
+            {
+                string controlName = "lblLevel" + i.ToString();
+                Label textControl = (Label)this.Controls.Find(controlName, true).FirstOrDefault();
+                int level = LevelCheck + i;
+                textControl.Text = level.ToString();
+            }
+
+            // Update the stats here
+            ActorCheck = cmbActors.SelectedIndex * 100;
+
+            txtStrLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheck).ToString();
+            txtStrLv1.Text = rom.Read8().ToString();
+            txtStrLv2.Text = rom.Read8().ToString();
+            txtStrLv3.Text = rom.Read8().ToString();
+            txtStrLv4.Text = rom.Read8().ToString();
+            txtStrLv5.Text = rom.Read8().ToString();
+            txtStrLv6.Text = rom.Read8().ToString();
+            txtStrLv7.Text = rom.Read8().ToString();
+            txtStrLv8.Text = rom.Read8().ToString();
+            txtStrLv9.Text = rom.Read8().ToString();
+            txtAgiLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheck + (100 * 15)).ToString();
+            txtAgiLv1.Text = rom.Read8().ToString();
+            txtAgiLv2.Text = rom.Read8().ToString();
+            txtAgiLv3.Text = rom.Read8().ToString();
+            txtAgiLv4.Text = rom.Read8().ToString();
+            txtAgiLv5.Text = rom.Read8().ToString();
+            txtAgiLv6.Text = rom.Read8().ToString();
+            txtAgiLv7.Text = rom.Read8().ToString();
+            txtAgiLv8.Text = rom.Read8().ToString();
+            txtAgiLv9.Text = rom.Read8().ToString();
+            txtStaLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheck + (200 * 15)).ToString();
+            txtStaLv1.Text = rom.Read8().ToString();
+            txtStaLv2.Text = rom.Read8().ToString();
+            txtStaLv3.Text = rom.Read8().ToString();
+            txtStaLv4.Text = rom.Read8().ToString();
+            txtStaLv5.Text = rom.Read8().ToString();
+            txtStaLv6.Text = rom.Read8().ToString();
+            txtStaLv7.Text = rom.Read8().ToString();
+            txtStaLv8.Text = rom.Read8().ToString();
+            txtStaLv9.Text = rom.Read8().ToString();
+            txtMagLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheck + (300 * 15)).ToString();
+            txtMagLv1.Text = rom.Read8().ToString();
+            txtMagLv2.Text = rom.Read8().ToString();
+            txtMagLv3.Text = rom.Read8().ToString();
+            txtMagLv4.Text = rom.Read8().ToString();
+            txtMagLv5.Text = rom.Read8().ToString();
+            txtMagLv6.Text = rom.Read8().ToString();
+            txtMagLv7.Text = rom.Read8().ToString();
+            txtMagLv8.Text = rom.Read8().ToString();
+            txtMagLv9.Text = rom.Read8().ToString();
+            txtHPLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheck + (400 * 15)).ToString();
+            txtHPLv1.Text = rom.Read8().ToString();
+            txtHPLv2.Text = rom.Read8().ToString();
+            txtHPLv3.Text = rom.Read8().ToString();
+            txtHPLv4.Text = rom.Read8().ToString();
+            txtHPLv5.Text = rom.Read8().ToString();
+            txtHPLv6.Text = rom.Read8().ToString();
+            txtHPLv7.Text = rom.Read8().ToString();
+            txtHPLv8.Text = rom.Read8().ToString();
+            txtHPLv9.Text = rom.Read8().ToString();
+            txtMPLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheck + (500 * 15)).ToString();
+            txtMPLv1.Text = rom.Read8().ToString();
+            txtMPLv2.Text = rom.Read8().ToString();
+            txtMPLv3.Text = rom.Read8().ToString();
+            txtMPLv4.Text = rom.Read8().ToString();
+            txtMPLv5.Text = rom.Read8().ToString();
+            txtMPLv6.Text = rom.Read8().ToString();
+            txtMPLv7.Text = rom.Read8().ToString();
+            txtMPLv8.Text = rom.Read8().ToString();
+            txtMPLv9.Text = rom.Read8().ToString();
+            txtStrLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 10).ToString();
+            txtStrLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 20).ToString();
+            txtStrLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 30).ToString();
+            txtStrLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 40).ToString();
+            txtStrLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 50).ToString();
+            txtStrLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 60).ToString();
+            txtStrLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 70).ToString();
+            txtStrLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 80).ToString();
+            txtStrLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 90).ToString();
+            txtStrLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 100).ToString();
+            txtAgiLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 10).ToString();
+            txtAgiLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 20).ToString();
+            txtAgiLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 30).ToString();
+            txtAgiLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 40).ToString();
+            txtAgiLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 50).ToString();
+            txtAgiLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 60).ToString();
+            txtAgiLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 70).ToString();
+            txtAgiLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 80).ToString();
+            txtAgiLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 90).ToString();
+            txtAgiLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 100).ToString();
+            txtStaLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 10).ToString();
+            txtStaLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 20).ToString();
+            txtStaLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 30).ToString();
+            txtStaLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 40).ToString();
+            txtStaLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 50).ToString();
+            txtStaLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 60).ToString();
+            txtStaLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 70).ToString();
+            txtStaLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 80).ToString();
+            txtStaLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 90).ToString();
+            txtStaLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 100).ToString();
+            txtMagLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 10).ToString();
+            txtMagLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 20).ToString();
+            txtMagLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 30).ToString();
+            txtMagLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 40).ToString();
+            txtMagLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 50).ToString();
+            txtMagLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 60).ToString();
+            txtMagLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 70).ToString();
+            txtMagLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 80).ToString();
+            txtMagLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 90).ToString();
+            txtMagLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 100).ToString();
+            txtHPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 10).ToString();
+            txtHPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 20).ToString();
+            txtHPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 30).ToString();
+            txtHPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 40).ToString();
+            txtHPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 50).ToString();
+            txtHPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 60).ToString();
+            txtHPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 70).ToString();
+            txtHPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 80).ToString();
+            txtHPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 90).ToString();
+            txtHPLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 100).ToString();
+            txtMPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 10).ToString();
+            txtMPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 20).ToString();
+            txtMPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 30).ToString();
+            txtMPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 40).ToString();
+            txtMPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 50).ToString();
+            txtMPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 60).ToString();
+            txtMPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 70).ToString();
+            txtMPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 80).ToString();
+            txtMPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 90).ToString();
+            txtMPLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 100).ToString();
+
+
+
+        }
+
+        private int SumOfStatValues(int FileOffset, int calcValue)
+        {
+            statSum = 0;
+            for (int i = 0; i < calcValue; i++)
+            {
+                statSum += rom.Read8(FileOffset + i);
+            }
+            return statSum;
+        }
+
+        /*private bool txtKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                return true;
+            }
+        }
+
+        private bool txtStrLv0_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                return true;
+            }
+        }*/
+
+        private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Removes gameArray data and closes editor.
-            gameArray = null;
+            rom.Close();
             Application.Exit();
         }
 
-        private void tabActorsTerra_Click(object sender, EventArgs e)
+        private void TabActorsTerra_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lblPlus_Click(object sender, EventArgs e)
+        private void NumLevel_ValueChanged_1(object sender, EventArgs e)
+        {
+            UpdateActorsElements();
+        }
+
+        private void CmbActors_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateActorsElements();
+        }
+
+        private void tabActors_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void numLevel_ValueChanged_1(object sender, EventArgs e)
+        private void btnActorsOkay_Click(object sender, EventArgs e)
         {
-            if (gameArray != null)
-            {
-
-                if (numLevel.Value == 0)
-                {
-                    levelCheck = 0;
-                    lblLevel0.Text = "0";
-                    lblLevel1.Text = "1";
-                    lblLevel2.Text = "2";
-                    lblLevel3.Text = "3";
-                    lblLevel4.Text = "4";
-                    lblLevel5.Text = "5";
-                    lblLevel6.Text = "6";
-                    lblLevel7.Text = "7";
-                    lblLevel8.Text = "8";
-                    lblLevel9.Text = "9";
-                }
-
-                else if (numLevel.Value == 10)
-                {
-                    levelCheck = 10;
-                    lblLevel0.Text = "10";
-                    lblLevel1.Text = "11";
-                    lblLevel2.Text = "12";
-                    lblLevel3.Text = "13";
-                    lblLevel4.Text = "14";
-                    lblLevel5.Text = "15";
-                    lblLevel6.Text = "16";
-                    lblLevel7.Text = "17";
-                    lblLevel8.Text = "18";
-                    lblLevel9.Text = "19";
-                }
-
-                else if (numLevel.Value == 20)
-                {
-                    levelCheck = 20;
-                    lblLevel0.Text = "20";
-                    lblLevel1.Text = "21";
-                    lblLevel2.Text = "22";
-                    lblLevel3.Text = "23";
-                    lblLevel4.Text = "24";
-                    lblLevel5.Text = "25";
-                    lblLevel6.Text = "26";
-                    lblLevel7.Text = "27";
-                    lblLevel8.Text = "28";
-                    lblLevel9.Text = "29";
-                }
-
-                else if (numLevel.Value == 30)
-                {
-                    levelCheck = 30;
-                    lblLevel0.Text = "30";
-                    lblLevel1.Text = "31";
-                    lblLevel2.Text = "32";
-                    lblLevel3.Text = "33";
-                    lblLevel4.Text = "34";
-                    lblLevel5.Text = "35";
-                    lblLevel6.Text = "36";
-                    lblLevel7.Text = "37";
-                    lblLevel8.Text = "38";
-                    lblLevel9.Text = "39";
-                }
-
-                else if (numLevel.Value == 40)
-                {
-                    levelCheck = 40;
-                    lblLevel0.Text = "40";
-                    lblLevel1.Text = "41";
-                    lblLevel2.Text = "42";
-                    lblLevel3.Text = "43";
-                    lblLevel4.Text = "44";
-                    lblLevel5.Text = "45";
-                    lblLevel6.Text = "46";
-                    lblLevel7.Text = "47";
-                    lblLevel8.Text = "48";
-                    lblLevel9.Text = "49";
-                }
-
-                else if (numLevel.Value == 50)
-                {
-                    levelCheck = 50;
-                    lblLevel0.Text = "50";
-                    lblLevel1.Text = "51";
-                    lblLevel2.Text = "52";
-                    lblLevel3.Text = "53";
-                    lblLevel4.Text = "54";
-                    lblLevel5.Text = "55";
-                    lblLevel6.Text = "56";
-                    lblLevel7.Text = "57";
-                    lblLevel8.Text = "58";
-                    lblLevel9.Text = "59";
-                }
-
-                else if (numLevel.Value == 60)
-                {
-                    levelCheck = 60;
-                    lblLevel0.Text = "60";
-                    lblLevel1.Text = "61";
-                    lblLevel2.Text = "62";
-                    lblLevel3.Text = "63";
-                    lblLevel4.Text = "64";
-                    lblLevel5.Text = "65";
-                    lblLevel6.Text = "66";
-                    lblLevel7.Text = "67";
-                    lblLevel8.Text = "68";
-                    lblLevel9.Text = "69";
-                }
-
-                else if (numLevel.Value == 70)
-                {
-                    levelCheck = 70;
-                    lblLevel0.Text = "70";
-                    lblLevel1.Text = "71";
-                    lblLevel2.Text = "72";
-                    lblLevel3.Text = "73";
-                    lblLevel4.Text = "74";
-                    lblLevel5.Text = "75";
-                    lblLevel6.Text = "76";
-                    lblLevel7.Text = "77";
-                    lblLevel8.Text = "78";
-                    lblLevel9.Text = "79";
-                }
-
-                else if (numLevel.Value == 80)
-                {
-                    levelCheck = 80;
-                    lblLevel0.Text = "80";
-                    lblLevel1.Text = "81";
-                    lblLevel2.Text = "82";
-                    lblLevel3.Text = "83";
-                    lblLevel4.Text = "84";
-                    lblLevel5.Text = "85";
-                    lblLevel6.Text = "86";
-                    lblLevel7.Text = "87";
-                    lblLevel8.Text = "88";
-                    lblLevel9.Text = "89";
-                }
-
-                else if (numLevel.Value == 90)
-                {
-                    levelCheck = 90;
-                    lblLevel0.Text = "90";
-                    lblLevel1.Text = "91";
-                    lblLevel2.Text = "92";
-                    lblLevel3.Text = "93";
-                    lblLevel4.Text = "94";
-                    lblLevel5.Text = "95";
-                    lblLevel6.Text = "96";
-                    lblLevel7.Text = "97";
-                    lblLevel8.Text = "98";
-                    lblLevel9.Text = "99";
-                }
-
-                txtStrLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck].ToString();
-                txtStrLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 1].ToString();
-                txtStrLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 2].ToString();
-                txtStrLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 3].ToString();
-                txtStrLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 4].ToString();
-                txtStrLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 5].ToString();
-                txtStrLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 6].ToString();
-                txtStrLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 7].ToString();
-                txtStrLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 8].ToString();
-                txtStrLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 9].ToString();
-                txtAgiLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15)].ToString();
-                txtAgiLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 1].ToString();
-                txtAgiLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 2].ToString();
-                txtAgiLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 3].ToString();
-                txtAgiLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 4].ToString();
-                txtAgiLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 5].ToString();
-                txtAgiLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 6].ToString();
-                txtAgiLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 7].ToString();
-                txtAgiLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 8].ToString();
-                txtAgiLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 9].ToString();
-                txtStaLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15)].ToString();
-                txtStaLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 1].ToString();
-                txtStaLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 2].ToString();
-                txtStaLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 3].ToString();
-                txtStaLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 4].ToString();
-                txtStaLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 5].ToString();
-                txtStaLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 6].ToString();
-                txtStaLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 7].ToString();
-                txtStaLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 8].ToString();
-                txtStaLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 9].ToString();
-                txtMagLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15)].ToString();
-                txtMagLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 1].ToString();
-                txtMagLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 2].ToString();
-                txtMagLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 3].ToString();
-                txtMagLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 4].ToString();
-                txtMagLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 5].ToString();
-                txtMagLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 6].ToString();
-                txtMagLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 7].ToString();
-                txtMagLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 8].ToString();
-                txtMagLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 9].ToString();
-            }
+            //Saves values to the MemoryStream
+            SaveActorsElements();
         }
 
-        private void cmbActors_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnActorsCancel_Click(object sender, EventArgs e)
         {
-            actorCheck = cmbActors.SelectedIndex*100;
-                            if (numLevel.Value == 0)
-                {
-                    levelCheck = 0;
-                    lblLevel0.Text = "0";
-                    lblLevel1.Text = "1";
-                    lblLevel2.Text = "2";
-                    lblLevel3.Text = "3";
-                    lblLevel4.Text = "4";
-                    lblLevel5.Text = "5";
-                    lblLevel6.Text = "6";
-                    lblLevel7.Text = "7";
-                    lblLevel8.Text = "8";
-                    lblLevel9.Text = "9";
-                }
-
-                else if (numLevel.Value == 10)
-                {
-                    levelCheck = 10;
-                    lblLevel0.Text = "10";
-                    lblLevel1.Text = "11";
-                    lblLevel2.Text = "12";
-                    lblLevel3.Text = "13";
-                    lblLevel4.Text = "14";
-                    lblLevel5.Text = "15";
-                    lblLevel6.Text = "16";
-                    lblLevel7.Text = "17";
-                    lblLevel8.Text = "18";
-                    lblLevel9.Text = "19";
-                }
-
-                else if (numLevel.Value == 20)
-                {
-                    levelCheck = 20;
-                    lblLevel0.Text = "20";
-                    lblLevel1.Text = "21";
-                    lblLevel2.Text = "22";
-                    lblLevel3.Text = "23";
-                    lblLevel4.Text = "24";
-                    lblLevel5.Text = "25";
-                    lblLevel6.Text = "26";
-                    lblLevel7.Text = "27";
-                    lblLevel8.Text = "28";
-                    lblLevel9.Text = "29";
-                }
-
-                else if (numLevel.Value == 30)
-                {
-                    levelCheck = 30;
-                    lblLevel0.Text = "30";
-                    lblLevel1.Text = "31";
-                    lblLevel2.Text = "32";
-                    lblLevel3.Text = "33";
-                    lblLevel4.Text = "34";
-                    lblLevel5.Text = "35";
-                    lblLevel6.Text = "36";
-                    lblLevel7.Text = "37";
-                    lblLevel8.Text = "38";
-                    lblLevel9.Text = "39";
-                }
-
-                else if (numLevel.Value == 40)
-                {
-                    levelCheck = 40;
-                    lblLevel0.Text = "40";
-                    lblLevel1.Text = "41";
-                    lblLevel2.Text = "42";
-                    lblLevel3.Text = "43";
-                    lblLevel4.Text = "44";
-                    lblLevel5.Text = "45";
-                    lblLevel6.Text = "46";
-                    lblLevel7.Text = "47";
-                    lblLevel8.Text = "48";
-                    lblLevel9.Text = "49";
-                }
-
-                else if (numLevel.Value == 50)
-                {
-                    levelCheck = 50;
-                    lblLevel0.Text = "50";
-                    lblLevel1.Text = "51";
-                    lblLevel2.Text = "52";
-                    lblLevel3.Text = "53";
-                    lblLevel4.Text = "54";
-                    lblLevel5.Text = "55";
-                    lblLevel6.Text = "56";
-                    lblLevel7.Text = "57";
-                    lblLevel8.Text = "58";
-                    lblLevel9.Text = "59";
-                }
-
-                else if (numLevel.Value == 60)
-                {
-                    levelCheck = 60;
-                    lblLevel0.Text = "60";
-                    lblLevel1.Text = "61";
-                    lblLevel2.Text = "62";
-                    lblLevel3.Text = "63";
-                    lblLevel4.Text = "64";
-                    lblLevel5.Text = "65";
-                    lblLevel6.Text = "66";
-                    lblLevel7.Text = "67";
-                    lblLevel8.Text = "68";
-                    lblLevel9.Text = "69";
-                }
-
-                else if (numLevel.Value == 70)
-                {
-                    levelCheck = 70;
-                    lblLevel0.Text = "70";
-                    lblLevel1.Text = "71";
-                    lblLevel2.Text = "72";
-                    lblLevel3.Text = "73";
-                    lblLevel4.Text = "74";
-                    lblLevel5.Text = "75";
-                    lblLevel6.Text = "76";
-                    lblLevel7.Text = "77";
-                    lblLevel8.Text = "78";
-                    lblLevel9.Text = "79";
-                }
-
-                else if (numLevel.Value == 80)
-                {
-                    levelCheck = 80;
-                    lblLevel0.Text = "80";
-                    lblLevel1.Text = "81";
-                    lblLevel2.Text = "82";
-                    lblLevel3.Text = "83";
-                    lblLevel4.Text = "84";
-                    lblLevel5.Text = "85";
-                    lblLevel6.Text = "86";
-                    lblLevel7.Text = "87";
-                    lblLevel8.Text = "88";
-                    lblLevel9.Text = "89";
-                }
-
-                else if (numLevel.Value == 90)
-                {
-                    levelCheck = 90;
-                    lblLevel0.Text = "90";
-                    lblLevel1.Text = "91";
-                    lblLevel2.Text = "92";
-                    lblLevel3.Text = "93";
-                    lblLevel4.Text = "94";
-                    lblLevel5.Text = "95";
-                    lblLevel6.Text = "96";
-                    lblLevel7.Text = "97";
-                    lblLevel8.Text = "98";
-                    lblLevel9.Text = "99";
-                }
-
-                txtStrLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck].ToString();
-                txtStrLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 1].ToString();
-                txtStrLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 2].ToString();
-                txtStrLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 3].ToString();
-                txtStrLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 4].ToString();
-                txtStrLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 5].ToString();
-                txtStrLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 6].ToString();
-                txtStrLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 7].ToString();
-                txtStrLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 8].ToString();
-                txtStrLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + 9].ToString();
-                txtAgiLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15)].ToString();
-                txtAgiLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 1].ToString();
-                txtAgiLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 2].ToString();
-                txtAgiLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 3].ToString();
-                txtAgiLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 4].ToString();
-                txtAgiLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 5].ToString();
-                txtAgiLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 6].ToString();
-                txtAgiLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 7].ToString();
-                txtAgiLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 8].ToString();
-                txtAgiLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (100 * 15) + 9].ToString();
-                txtStaLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15)].ToString();
-                txtStaLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 1].ToString();
-                txtStaLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 2].ToString();
-                txtStaLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 3].ToString();
-                txtStaLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 4].ToString();
-                txtStaLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 5].ToString();
-                txtStaLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 6].ToString();
-                txtStaLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 7].ToString();
-                txtStaLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 8].ToString();
-                txtStaLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (200 * 15) + 9].ToString();
-                txtMagLv0.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15)].ToString();
-                txtMagLv1.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 1].ToString();
-                txtMagLv2.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 2].ToString();
-                txtMagLv3.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 3].ToString();
-                txtMagLv4.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 4].ToString();
-                txtMagLv5.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 5].ToString();
-                txtMagLv6.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 6].ToString();
-                txtMagLv7.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 7].ToString();
-                txtMagLv8.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 8].ToString();
-                txtMagLv9.Text = gameArray[0x3301f4 + levelCheck + actorCheck + (300 * 15) + 9].ToString();
-            
-
+            //Resets elements
+            UpdateActorsElements();
         }
     }
 }
