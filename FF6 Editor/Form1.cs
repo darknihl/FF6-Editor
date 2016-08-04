@@ -237,69 +237,71 @@ namespace FF6_Editor
             txtMPLv7.Text = rom.Read8().ToString();
             txtMPLv8.Text = rom.Read8().ToString();
             txtMPLv9.Text = rom.Read8().ToString();
-            txtStrLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 10).ToString();
-            txtStrLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 20).ToString();
-            txtStrLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 30).ToString();
-            txtStrLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 40).ToString();
-            txtStrLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 50).ToString();
-            txtStrLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 60).ToString();
-            txtStrLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 70).ToString();
-            txtStrLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 80).ToString();
-            txtStrLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 90).ToString();
+
+            //Show added stat values here, in increments of ten.
+            txtStrLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 11).ToString();
+            txtStrLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 21).ToString();
+            txtStrLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 31).ToString();
+            txtStrLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 41).ToString();
+            txtStrLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 51).ToString();
+            txtStrLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 61).ToString();
+            txtStrLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 71).ToString();
+            txtStrLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 81).ToString();
+            txtStrLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 91).ToString();
             txtStrLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck, 100).ToString();
-            txtAgiLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 10).ToString();
-            txtAgiLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 20).ToString();
-            txtAgiLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 30).ToString();
-            txtAgiLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 40).ToString();
-            txtAgiLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 50).ToString();
-            txtAgiLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 60).ToString();
-            txtAgiLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 70).ToString();
-            txtAgiLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 80).ToString();
-            txtAgiLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 90).ToString();
+            txtAgiLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 11).ToString();
+            txtAgiLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 21).ToString();
+            txtAgiLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 31).ToString();
+            txtAgiLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 41).ToString();
+            txtAgiLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 51).ToString();
+            txtAgiLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 61).ToString();
+            txtAgiLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 71).ToString();
+            txtAgiLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 81).ToString();
+            txtAgiLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 91).ToString();
             txtAgiLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (100 * 15), 100).ToString();
-            txtStaLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 10).ToString();
-            txtStaLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 20).ToString();
-            txtStaLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 30).ToString();
-            txtStaLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 40).ToString();
-            txtStaLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 50).ToString();
-            txtStaLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 60).ToString();
-            txtStaLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 70).ToString();
-            txtStaLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 80).ToString();
-            txtStaLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 90).ToString();
+            txtStaLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 11).ToString();
+            txtStaLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 21).ToString();
+            txtStaLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 31).ToString();
+            txtStaLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 41).ToString();
+            txtStaLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 51).ToString();
+            txtStaLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 61).ToString();
+            txtStaLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 71).ToString();
+            txtStaLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 81).ToString();
+            txtStaLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 91).ToString();
             txtStaLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (200 * 15), 100).ToString();
-            txtMagLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 10).ToString();
-            txtMagLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 20).ToString();
-            txtMagLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 30).ToString();
-            txtMagLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 40).ToString();
-            txtMagLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 50).ToString();
-            txtMagLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 60).ToString();
-            txtMagLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 70).ToString();
-            txtMagLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 80).ToString();
-            txtMagLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 90).ToString();
+            txtMagLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 11).ToString();
+            txtMagLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 21).ToString();
+            txtMagLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 31).ToString();
+            txtMagLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 41).ToString();
+            txtMagLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 51).ToString();
+            txtMagLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 61).ToString();
+            txtMagLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 71).ToString();
+            txtMagLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 81).ToString();
+            txtMagLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 91).ToString();
             txtMagLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (300 * 15), 100).ToString();
-            txtHPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 10).ToString();
-            txtHPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 20).ToString();
-            txtHPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 30).ToString();
-            txtHPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 40).ToString();
-            txtHPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 50).ToString();
-            txtHPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 60).ToString();
-            txtHPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 70).ToString();
-            txtHPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 80).ToString();
-            txtHPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 90).ToString();
+            txtHPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 11).ToString();
+            txtHPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 21).ToString();
+            txtHPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 31).ToString();
+            txtHPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 41).ToString();
+            txtHPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 51).ToString();
+            txtHPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 61).ToString();
+            txtHPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 71).ToString();
+            txtHPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 81).ToString();
+            txtHPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 91).ToString();
             txtHPLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (400 * 15), 100).ToString();
-            txtMPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 10).ToString();
-            txtMPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 20).ToString();
-            txtMPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 30).ToString();
-            txtMPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 40).ToString();
-            txtMPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 50).ToString();
-            txtMPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 60).ToString();
-            txtMPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 70).ToString();
-            txtMPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 80).ToString();
-            txtMPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 90).ToString();
+            txtMPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 11).ToString();
+            txtMPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 21).ToString();
+            txtMPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 31).ToString();
+            txtMPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 41).ToString();
+            txtMPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 51).ToString();
+            txtMPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 61).ToString();
+            txtMPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 71).ToString();
+            txtMPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 81).ToString();
+            txtMPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 91).ToString();
             txtMPLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheck + (500 * 15), 100).ToString();
 
-
-
+            //Display Natural Magic
+            cmbNatMag1.Text = rom.Read8(RomData.NATURALMAGICDATA).ToString();
         }
 
         private int SumOfStatValues(int FileOffset, int calcValue)
@@ -335,11 +337,6 @@ namespace FF6_Editor
             Application.Exit();
         }
 
-        private void TabActorsTerra_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void NumLevel_ValueChanged_1(object sender, EventArgs e)
         {
             UpdateActorsElements();
@@ -348,11 +345,6 @@ namespace FF6_Editor
         private void CmbActors_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateActorsElements();
-        }
-
-        private void tabActors_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnActorsOkay_Click(object sender, EventArgs e)
@@ -364,6 +356,16 @@ namespace FF6_Editor
         private void btnActorsCancel_Click(object sender, EventArgs e)
         {
             //Resets elements
+            UpdateActorsElements();
+        }
+
+        private void numNatMag1_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateActorsElements();
+        }
+
+        private void cmbNatMag1_SelectedIndexChanged(object sender, EventArgs e)
+        {
             UpdateActorsElements();
         }
     }

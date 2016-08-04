@@ -38,6 +38,9 @@
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabActors = new System.Windows.Forms.TabPage();
+            this.numNatMag1 = new System.Windows.Forms.NumericUpDown();
+            this.cmbNatMag1 = new System.Windows.Forms.ComboBox();
+            this.lblNaturalMagic = new System.Windows.Forms.Label();
             this.lblLevelTotal = new System.Windows.Forms.Label();
             this.lblLevel = new System.Windows.Forms.Label();
             this.lblMP2 = new System.Windows.Forms.Label();
@@ -47,15 +50,15 @@
             this.lblAgility2 = new System.Windows.Forms.Label();
             this.lblStrength2 = new System.Windows.Forms.Label();
             this.lblSum99 = new System.Windows.Forms.Label();
-            this.lblSum89 = new System.Windows.Forms.Label();
-            this.lblSum79 = new System.Windows.Forms.Label();
-            this.lblSum69 = new System.Windows.Forms.Label();
-            this.lblSum59 = new System.Windows.Forms.Label();
-            this.lblSum49 = new System.Windows.Forms.Label();
-            this.lblSum39 = new System.Windows.Forms.Label();
-            this.lblSum29 = new System.Windows.Forms.Label();
-            this.lblSum19 = new System.Windows.Forms.Label();
-            this.lblSum9 = new System.Windows.Forms.Label();
+            this.lblSum90 = new System.Windows.Forms.Label();
+            this.lblSum80 = new System.Windows.Forms.Label();
+            this.lblSum70 = new System.Windows.Forms.Label();
+            this.lblSum60 = new System.Windows.Forms.Label();
+            this.lblSum50 = new System.Windows.Forms.Label();
+            this.lblSum40 = new System.Windows.Forms.Label();
+            this.lblSum30 = new System.Windows.Forms.Label();
+            this.lblSum20 = new System.Windows.Forms.Label();
+            this.lblSum10 = new System.Windows.Forms.Label();
             this.txtMPLv7_Add = new System.Windows.Forms.TextBox();
             this.txtMPLv6_Add = new System.Windows.Forms.TextBox();
             this.txtMPLv9_Add = new System.Windows.Forms.TextBox();
@@ -201,6 +204,7 @@
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabActors.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numNatMag1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -276,6 +280,9 @@
             // 
             // tabActors
             // 
+            this.tabActors.Controls.Add(this.numNatMag1);
+            this.tabActors.Controls.Add(this.cmbNatMag1);
+            this.tabActors.Controls.Add(this.lblNaturalMagic);
             this.tabActors.Controls.Add(this.lblLevelTotal);
             this.tabActors.Controls.Add(this.lblLevel);
             this.tabActors.Controls.Add(this.lblMP2);
@@ -285,15 +292,15 @@
             this.tabActors.Controls.Add(this.lblAgility2);
             this.tabActors.Controls.Add(this.lblStrength2);
             this.tabActors.Controls.Add(this.lblSum99);
-            this.tabActors.Controls.Add(this.lblSum89);
-            this.tabActors.Controls.Add(this.lblSum79);
-            this.tabActors.Controls.Add(this.lblSum69);
-            this.tabActors.Controls.Add(this.lblSum59);
-            this.tabActors.Controls.Add(this.lblSum49);
-            this.tabActors.Controls.Add(this.lblSum39);
-            this.tabActors.Controls.Add(this.lblSum29);
-            this.tabActors.Controls.Add(this.lblSum19);
-            this.tabActors.Controls.Add(this.lblSum9);
+            this.tabActors.Controls.Add(this.lblSum90);
+            this.tabActors.Controls.Add(this.lblSum80);
+            this.tabActors.Controls.Add(this.lblSum70);
+            this.tabActors.Controls.Add(this.lblSum60);
+            this.tabActors.Controls.Add(this.lblSum50);
+            this.tabActors.Controls.Add(this.lblSum40);
+            this.tabActors.Controls.Add(this.lblSum30);
+            this.tabActors.Controls.Add(this.lblSum20);
+            this.tabActors.Controls.Add(this.lblSum10);
             this.tabActors.Controls.Add(this.txtMPLv7_Add);
             this.tabActors.Controls.Add(this.txtMPLv6_Add);
             this.tabActors.Controls.Add(this.txtMPLv9_Add);
@@ -441,7 +448,107 @@
             this.tabActors.TabIndex = 0;
             this.tabActors.Text = "Actors";
             this.tabActors.UseVisualStyleBackColor = true;
-            this.tabActors.Click += new System.EventHandler(this.tabActors_Click);
+            // 
+            // numNatMag1
+            // 
+            this.numNatMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numNatMag1.Location = new System.Drawing.Point(669, 69);
+            this.numNatMag1.Maximum = new decimal(new int[] {
+            99,
+            0,
+            0,
+            0});
+            this.numNatMag1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numNatMag1.Name = "numNatMag1";
+            this.numNatMag1.Size = new System.Drawing.Size(41, 27);
+            this.numNatMag1.TabIndex = 220;
+            this.numNatMag1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numNatMag1.ValueChanged += new System.EventHandler(this.numNatMag1_ValueChanged);
+            // 
+            // cmbNatMag1
+            // 
+            this.cmbNatMag1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbNatMag1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag1.FormattingEnabled = true;
+            this.cmbNatMag1.Items.AddRange(new object[] {
+            "Fire",
+            "Blizzard",
+            "Thunder",
+            "Poison",
+            "Drain",
+            "Fira",
+            "Blizzara",
+            "Thundara",
+            "Bio",
+            "Firaga",
+            "Blizzaga",
+            "Thundaga",
+            "Break",
+            "Death",
+            "Holy",
+            "Flare",
+            "Gravity",
+            "Graviga",
+            "Banish",
+            "Meteor",
+            "Ultima",
+            "Quake",
+            "Tornado",
+            "Meltdown",
+            "Libra",
+            "Slow",
+            "Rasp",
+            "Silence",
+            "Protect",
+            "Sleep",
+            "Confuse",
+            "Haste",
+            "Stop",
+            "Berserk",
+            "Float",
+            "Imp",
+            "Reflect",
+            "Shell",
+            "Vanish",
+            "Hastega",
+            "Slowga",
+            "Aspir",
+            "Teleport",
+            "Guard",
+            "Dispel",
+            "Cure",
+            "Cura",
+            "Curaga",
+            "Raise",
+            "Arise",
+            "Curasa",
+            "Esuna",
+            "Regen",
+            "Regenga",
+            "Nothing"});
+            this.cmbNatMag1.Location = new System.Drawing.Point(716, 73);
+            this.cmbNatMag1.Name = "cmbNatMag1";
+            this.cmbNatMag1.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag1.TabIndex = 219;
+            this.cmbNatMag1.SelectedIndexChanged += new System.EventHandler(this.cmbNatMag1_SelectedIndexChanged);
+            // 
+            // lblNaturalMagic
+            // 
+            this.lblNaturalMagic.AutoSize = true;
+            this.lblNaturalMagic.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNaturalMagic.Location = new System.Drawing.Point(676, 4);
+            this.lblNaturalMagic.Name = "lblNaturalMagic";
+            this.lblNaturalMagic.Size = new System.Drawing.Size(105, 19);
+            this.lblNaturalMagic.TabIndex = 218;
+            this.lblNaturalMagic.Text = "Natural Magic";
             // 
             // lblLevelTotal
             // 
@@ -533,95 +640,95 @@
             this.lblSum99.TabIndex = 209;
             this.lblSum99.Text = "99";
             // 
-            // lblSum89
+            // lblSum90
             // 
-            this.lblSum89.AutoSize = true;
-            this.lblSum89.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum89.Location = new System.Drawing.Point(450, 290);
-            this.lblSum89.Name = "lblSum89";
-            this.lblSum89.Size = new System.Drawing.Size(27, 19);
-            this.lblSum89.TabIndex = 208;
-            this.lblSum89.Text = "89";
+            this.lblSum90.AutoSize = true;
+            this.lblSum90.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum90.Location = new System.Drawing.Point(450, 290);
+            this.lblSum90.Name = "lblSum90";
+            this.lblSum90.Size = new System.Drawing.Size(27, 19);
+            this.lblSum90.TabIndex = 208;
+            this.lblSum90.Text = "90";
             // 
-            // lblSum79
+            // lblSum80
             // 
-            this.lblSum79.AutoSize = true;
-            this.lblSum79.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum79.Location = new System.Drawing.Point(404, 290);
-            this.lblSum79.Name = "lblSum79";
-            this.lblSum79.Size = new System.Drawing.Size(27, 19);
-            this.lblSum79.TabIndex = 207;
-            this.lblSum79.Text = "79";
+            this.lblSum80.AutoSize = true;
+            this.lblSum80.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum80.Location = new System.Drawing.Point(404, 290);
+            this.lblSum80.Name = "lblSum80";
+            this.lblSum80.Size = new System.Drawing.Size(27, 19);
+            this.lblSum80.TabIndex = 207;
+            this.lblSum80.Text = "80";
             // 
-            // lblSum69
+            // lblSum70
             // 
-            this.lblSum69.AutoSize = true;
-            this.lblSum69.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum69.Location = new System.Drawing.Point(359, 290);
-            this.lblSum69.Name = "lblSum69";
-            this.lblSum69.Size = new System.Drawing.Size(27, 19);
-            this.lblSum69.TabIndex = 206;
-            this.lblSum69.Text = "69";
+            this.lblSum70.AutoSize = true;
+            this.lblSum70.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum70.Location = new System.Drawing.Point(359, 290);
+            this.lblSum70.Name = "lblSum70";
+            this.lblSum70.Size = new System.Drawing.Size(27, 19);
+            this.lblSum70.TabIndex = 206;
+            this.lblSum70.Text = "70";
             // 
-            // lblSum59
+            // lblSum60
             // 
-            this.lblSum59.AutoSize = true;
-            this.lblSum59.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum59.Location = new System.Drawing.Point(312, 290);
-            this.lblSum59.Name = "lblSum59";
-            this.lblSum59.Size = new System.Drawing.Size(27, 19);
-            this.lblSum59.TabIndex = 205;
-            this.lblSum59.Text = "59";
+            this.lblSum60.AutoSize = true;
+            this.lblSum60.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum60.Location = new System.Drawing.Point(312, 290);
+            this.lblSum60.Name = "lblSum60";
+            this.lblSum60.Size = new System.Drawing.Size(27, 19);
+            this.lblSum60.TabIndex = 205;
+            this.lblSum60.Text = "60";
             // 
-            // lblSum49
+            // lblSum50
             // 
-            this.lblSum49.AutoSize = true;
-            this.lblSum49.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum49.Location = new System.Drawing.Point(266, 290);
-            this.lblSum49.Name = "lblSum49";
-            this.lblSum49.Size = new System.Drawing.Size(27, 19);
-            this.lblSum49.TabIndex = 204;
-            this.lblSum49.Text = "49";
+            this.lblSum50.AutoSize = true;
+            this.lblSum50.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum50.Location = new System.Drawing.Point(266, 290);
+            this.lblSum50.Name = "lblSum50";
+            this.lblSum50.Size = new System.Drawing.Size(27, 19);
+            this.lblSum50.TabIndex = 204;
+            this.lblSum50.Text = "50";
             // 
-            // lblSum39
+            // lblSum40
             // 
-            this.lblSum39.AutoSize = true;
-            this.lblSum39.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum39.Location = new System.Drawing.Point(221, 290);
-            this.lblSum39.Name = "lblSum39";
-            this.lblSum39.Size = new System.Drawing.Size(27, 19);
-            this.lblSum39.TabIndex = 203;
-            this.lblSum39.Text = "39";
+            this.lblSum40.AutoSize = true;
+            this.lblSum40.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum40.Location = new System.Drawing.Point(221, 290);
+            this.lblSum40.Name = "lblSum40";
+            this.lblSum40.Size = new System.Drawing.Size(27, 19);
+            this.lblSum40.TabIndex = 203;
+            this.lblSum40.Text = "40";
             // 
-            // lblSum29
+            // lblSum30
             // 
-            this.lblSum29.AutoSize = true;
-            this.lblSum29.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum29.Location = new System.Drawing.Point(174, 290);
-            this.lblSum29.Name = "lblSum29";
-            this.lblSum29.Size = new System.Drawing.Size(27, 19);
-            this.lblSum29.TabIndex = 202;
-            this.lblSum29.Text = "29";
+            this.lblSum30.AutoSize = true;
+            this.lblSum30.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum30.Location = new System.Drawing.Point(174, 290);
+            this.lblSum30.Name = "lblSum30";
+            this.lblSum30.Size = new System.Drawing.Size(27, 19);
+            this.lblSum30.TabIndex = 202;
+            this.lblSum30.Text = "30";
             // 
-            // lblSum19
+            // lblSum20
             // 
-            this.lblSum19.AutoSize = true;
-            this.lblSum19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum19.Location = new System.Drawing.Point(128, 290);
-            this.lblSum19.Name = "lblSum19";
-            this.lblSum19.Size = new System.Drawing.Size(27, 19);
-            this.lblSum19.TabIndex = 201;
-            this.lblSum19.Text = "19";
+            this.lblSum20.AutoSize = true;
+            this.lblSum20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum20.Location = new System.Drawing.Point(128, 290);
+            this.lblSum20.Name = "lblSum20";
+            this.lblSum20.Size = new System.Drawing.Size(27, 19);
+            this.lblSum20.TabIndex = 201;
+            this.lblSum20.Text = "20";
             // 
-            // lblSum9
+            // lblSum10
             // 
-            this.lblSum9.AutoSize = true;
-            this.lblSum9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSum9.Location = new System.Drawing.Point(82, 290);
-            this.lblSum9.Name = "lblSum9";
-            this.lblSum9.Size = new System.Drawing.Size(18, 19);
-            this.lblSum9.TabIndex = 200;
-            this.lblSum9.Text = "9";
+            this.lblSum10.AutoSize = true;
+            this.lblSum10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSum10.Location = new System.Drawing.Point(82, 290);
+            this.lblSum10.Name = "lblSum10";
+            this.lblSum10.Size = new System.Drawing.Size(27, 19);
+            this.lblSum10.TabIndex = 200;
+            this.lblSum10.Text = "10";
             // 
             // txtMPLv7_Add
             // 
@@ -2089,6 +2196,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabActors.ResumeLayout(false);
             this.tabActors.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numNatMag1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -2248,15 +2356,15 @@
         private System.Windows.Forms.TextBox txtAgiLv1_Add;
         private System.Windows.Forms.TextBox txtStrLv1_Add;
         private System.Windows.Forms.Label lblSum99;
-        private System.Windows.Forms.Label lblSum89;
-        private System.Windows.Forms.Label lblSum79;
-        private System.Windows.Forms.Label lblSum69;
-        private System.Windows.Forms.Label lblSum59;
-        private System.Windows.Forms.Label lblSum49;
-        private System.Windows.Forms.Label lblSum39;
-        private System.Windows.Forms.Label lblSum29;
-        private System.Windows.Forms.Label lblSum19;
-        private System.Windows.Forms.Label lblSum9;
+        private System.Windows.Forms.Label lblSum90;
+        private System.Windows.Forms.Label lblSum80;
+        private System.Windows.Forms.Label lblSum70;
+        private System.Windows.Forms.Label lblSum60;
+        private System.Windows.Forms.Label lblSum50;
+        private System.Windows.Forms.Label lblSum40;
+        private System.Windows.Forms.Label lblSum30;
+        private System.Windows.Forms.Label lblSum20;
+        private System.Windows.Forms.Label lblSum10;
         private System.Windows.Forms.Label lblMP2;
         private System.Windows.Forms.Label lblHP2;
         private System.Windows.Forms.Label lblMagic2;
@@ -2266,6 +2374,9 @@
         private System.Windows.Forms.Label lblLevelTotal;
         private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.ToolStripMenuItem saveROMToolStripMenuItem1;
+        private System.Windows.Forms.Label lblNaturalMagic;
+        private System.Windows.Forms.ComboBox cmbNatMag1;
+        private System.Windows.Forms.NumericUpDown numNatMag1;
     }
 }
 

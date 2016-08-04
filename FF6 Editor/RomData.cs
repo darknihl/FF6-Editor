@@ -18,5 +18,6 @@ namespace FF6_Editor
     public class RomData
     {
         public const int CHARDATA = 0x3301F4;
+        public const int NATURALMAGICDATA = 0x03FE60;
     }
 }
