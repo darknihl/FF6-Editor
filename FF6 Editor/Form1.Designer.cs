@@ -552,6 +552,7 @@
             // 
             this.cmbNatMag1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag1.FormattingEnabled = true;
             this.cmbNatMag1.Items.AddRange(new object[] {
             "Fire",
@@ -810,9 +811,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag1.Location = new System.Drawing.Point(619, 79);
+            this.cmbNatMag1.Location = new System.Drawing.Point(619, 75);
             this.cmbNatMag1.Name = "cmbNatMag1";
-            this.cmbNatMag1.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag1.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag1.TabIndex = 219;
             this.cmbNatMag1.SelectedIndexChanged += new System.EventHandler(this.cmbNatMag1_SelectedIndexChanged);
             // 
@@ -1871,6 +1872,7 @@
             // 
             this.cmbActors.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbActors.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbActors.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbActors.FormattingEnabled = true;
             this.cmbActors.Items.AddRange(new object[] {
             "Terra",
@@ -1890,7 +1892,7 @@
             "Banon"});
             this.cmbActors.Location = new System.Drawing.Point(6, 6);
             this.cmbActors.Name = "cmbActors";
-            this.cmbActors.Size = new System.Drawing.Size(80, 21);
+            this.cmbActors.Size = new System.Drawing.Size(80, 27);
             this.cmbActors.TabIndex = 0;
             this.cmbActors.SelectedIndexChanged += new System.EventHandler(this.CmbActors_SelectedIndexChanged);
             // 
@@ -2481,6 +2483,7 @@
             // 
             this.cmbNatMag2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag2.FormattingEnabled = true;
             this.cmbNatMag2.Items.AddRange(new object[] {
             "Fire",
@@ -2739,9 +2742,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag2.Location = new System.Drawing.Point(619, 112);
+            this.cmbNatMag2.Location = new System.Drawing.Point(619, 108);
             this.cmbNatMag2.Name = "cmbNatMag2";
-            this.cmbNatMag2.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag2.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag2.TabIndex = 221;
             // 
             // numNatMag3
@@ -2771,6 +2774,7 @@
             // 
             this.cmbNatMag3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag3.FormattingEnabled = true;
             this.cmbNatMag3.Items.AddRange(new object[] {
             "Fire",
@@ -3029,9 +3033,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag3.Location = new System.Drawing.Point(619, 145);
+            this.cmbNatMag3.Location = new System.Drawing.Point(619, 141);
             this.cmbNatMag3.Name = "cmbNatMag3";
-            this.cmbNatMag3.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag3.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag3.TabIndex = 223;
             // 
             // numNatMag4
@@ -3061,6 +3065,7 @@
             // 
             this.cmbNatMag4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag4.FormattingEnabled = true;
             this.cmbNatMag4.Items.AddRange(new object[] {
             "Fire",
@@ -3319,9 +3324,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag4.Location = new System.Drawing.Point(619, 178);
+            this.cmbNatMag4.Location = new System.Drawing.Point(619, 174);
             this.cmbNatMag4.Name = "cmbNatMag4";
-            this.cmbNatMag4.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag4.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag4.TabIndex = 225;
             // 
             // numNatMag8
@@ -3351,6 +3356,7 @@
             // 
             this.cmbNatMag8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag8.FormattingEnabled = true;
             this.cmbNatMag8.Items.AddRange(new object[] {
             "Fire",
@@ -3609,9 +3615,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag8.Location = new System.Drawing.Point(619, 310);
+            this.cmbNatMag8.Location = new System.Drawing.Point(619, 306);
             this.cmbNatMag8.Name = "cmbNatMag8";
-            this.cmbNatMag8.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag8.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag8.TabIndex = 233;
             // 
             // numNatMag7
@@ -3641,6 +3647,7 @@
             // 
             this.cmbNatMag7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag7.FormattingEnabled = true;
             this.cmbNatMag7.Items.AddRange(new object[] {
             "Fire",
@@ -3899,9 +3906,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag7.Location = new System.Drawing.Point(619, 277);
+            this.cmbNatMag7.Location = new System.Drawing.Point(619, 273);
             this.cmbNatMag7.Name = "cmbNatMag7";
-            this.cmbNatMag7.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag7.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag7.TabIndex = 231;
             // 
             // numNatMag6
@@ -3931,6 +3938,7 @@
             // 
             this.cmbNatMag6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag6.FormattingEnabled = true;
             this.cmbNatMag6.Items.AddRange(new object[] {
             "Fire",
@@ -4189,9 +4197,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag6.Location = new System.Drawing.Point(619, 244);
+            this.cmbNatMag6.Location = new System.Drawing.Point(619, 240);
             this.cmbNatMag6.Name = "cmbNatMag6";
-            this.cmbNatMag6.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag6.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag6.TabIndex = 229;
             // 
             // numNatMag5
@@ -4221,6 +4229,7 @@
             // 
             this.cmbNatMag5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag5.FormattingEnabled = true;
             this.cmbNatMag5.Items.AddRange(new object[] {
             "Fire",
@@ -4479,9 +4488,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag5.Location = new System.Drawing.Point(619, 211);
+            this.cmbNatMag5.Location = new System.Drawing.Point(619, 207);
             this.cmbNatMag5.Name = "cmbNatMag5";
-            this.cmbNatMag5.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag5.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag5.TabIndex = 227;
             // 
             // numNatMag16
@@ -4511,6 +4520,7 @@
             // 
             this.cmbNatMag16.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag16.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag16.FormattingEnabled = true;
             this.cmbNatMag16.Items.AddRange(new object[] {
             "Fire",
@@ -4769,9 +4779,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag16.Location = new System.Drawing.Point(793, 310);
+            this.cmbNatMag16.Location = new System.Drawing.Point(793, 306);
             this.cmbNatMag16.Name = "cmbNatMag16";
-            this.cmbNatMag16.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag16.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag16.TabIndex = 249;
             // 
             // numNatMag15
@@ -4801,6 +4811,7 @@
             // 
             this.cmbNatMag15.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag15.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag15.FormattingEnabled = true;
             this.cmbNatMag15.Items.AddRange(new object[] {
             "Fire",
@@ -5059,9 +5070,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag15.Location = new System.Drawing.Point(793, 277);
+            this.cmbNatMag15.Location = new System.Drawing.Point(793, 273);
             this.cmbNatMag15.Name = "cmbNatMag15";
-            this.cmbNatMag15.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag15.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag15.TabIndex = 247;
             // 
             // numNatMag14
@@ -5091,6 +5102,7 @@
             // 
             this.cmbNatMag14.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag14.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag14.FormattingEnabled = true;
             this.cmbNatMag14.Items.AddRange(new object[] {
             "Fire",
@@ -5349,9 +5361,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag14.Location = new System.Drawing.Point(793, 244);
+            this.cmbNatMag14.Location = new System.Drawing.Point(793, 240);
             this.cmbNatMag14.Name = "cmbNatMag14";
-            this.cmbNatMag14.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag14.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag14.TabIndex = 245;
             // 
             // numNatMag13
@@ -5381,6 +5393,7 @@
             // 
             this.cmbNatMag13.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag13.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag13.FormattingEnabled = true;
             this.cmbNatMag13.Items.AddRange(new object[] {
             "Fire",
@@ -5639,9 +5652,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag13.Location = new System.Drawing.Point(793, 211);
+            this.cmbNatMag13.Location = new System.Drawing.Point(793, 207);
             this.cmbNatMag13.Name = "cmbNatMag13";
-            this.cmbNatMag13.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag13.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag13.TabIndex = 243;
             // 
             // numNatMag12
@@ -5671,6 +5684,7 @@
             // 
             this.cmbNatMag12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag12.FormattingEnabled = true;
             this.cmbNatMag12.Items.AddRange(new object[] {
             "Fire",
@@ -5929,9 +5943,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag12.Location = new System.Drawing.Point(793, 178);
+            this.cmbNatMag12.Location = new System.Drawing.Point(793, 174);
             this.cmbNatMag12.Name = "cmbNatMag12";
-            this.cmbNatMag12.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag12.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag12.TabIndex = 241;
             // 
             // numNatMag11
@@ -5961,6 +5975,7 @@
             // 
             this.cmbNatMag11.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag11.FormattingEnabled = true;
             this.cmbNatMag11.Items.AddRange(new object[] {
             "Fire",
@@ -6219,9 +6234,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag11.Location = new System.Drawing.Point(793, 145);
+            this.cmbNatMag11.Location = new System.Drawing.Point(793, 141);
             this.cmbNatMag11.Name = "cmbNatMag11";
-            this.cmbNatMag11.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag11.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag11.TabIndex = 239;
             // 
             // numNatMag10
@@ -6251,6 +6266,7 @@
             // 
             this.cmbNatMag10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag10.FormattingEnabled = true;
             this.cmbNatMag10.Items.AddRange(new object[] {
             "Fire",
@@ -6509,9 +6525,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag10.Location = new System.Drawing.Point(793, 112);
+            this.cmbNatMag10.Location = new System.Drawing.Point(793, 108);
             this.cmbNatMag10.Name = "cmbNatMag10";
-            this.cmbNatMag10.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag10.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag10.TabIndex = 237;
             // 
             // numNatMag9
@@ -6541,6 +6557,7 @@
             // 
             this.cmbNatMag9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag9.FormattingEnabled = true;
             this.cmbNatMag9.Items.AddRange(new object[] {
             "Fire",
@@ -6799,9 +6816,9 @@
             "INVALID",
             "INVALID",
             "Nothing"});
-            this.cmbNatMag9.Location = new System.Drawing.Point(793, 79);
+            this.cmbNatMag9.Location = new System.Drawing.Point(793, 75);
             this.cmbNatMag9.Name = "cmbNatMag9";
-            this.cmbNatMag9.Size = new System.Drawing.Size(121, 21);
+            this.cmbNatMag9.Size = new System.Drawing.Size(121, 27);
             this.cmbNatMag9.TabIndex = 235;
             // 
             // Form1
