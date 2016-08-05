@@ -22,6 +22,8 @@ namespace FF6_Editor
         int ActorCheckStats;
         int ActorCheckNaturalMagic;
         int LevelCheck;
+        int EsperLevelCheck;
+        int EsperCheckMagic;
 
         public Form1()
         {
@@ -61,6 +63,7 @@ namespace FF6_Editor
 
             UpdateActorsElements();
             cmbActors.SelectedIndex = 0;
+            cmbEspers.SelectedIndex = 0;
         }
 
 
@@ -97,7 +100,7 @@ namespace FF6_Editor
         {
             //Save Stats to MemoryStream
             //DOES NOT SAVE TO FILE
-            rom.Write8(byte.Parse(txtStrLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheckStats);
+            rom.Write8(byte.Parse(txtStrLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats);
             rom.Write8(byte.Parse(txtStrLv1.Text));
             rom.Write8(byte.Parse(txtStrLv2.Text));
             rom.Write8(byte.Parse(txtStrLv3.Text));
@@ -107,7 +110,7 @@ namespace FF6_Editor
             rom.Write8(byte.Parse(txtStrLv7.Text));
             rom.Write8(byte.Parse(txtStrLv8.Text));
             rom.Write8(byte.Parse(txtStrLv9.Text));
-            rom.Write8(byte.Parse(txtAgiLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheckStats + (100 * 15));
+            rom.Write8(byte.Parse(txtAgiLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (100 * 15));
             rom.Write8(byte.Parse(txtAgiLv1.Text));
             rom.Write8(byte.Parse(txtAgiLv2.Text));
             rom.Write8(byte.Parse(txtAgiLv3.Text));
@@ -117,7 +120,7 @@ namespace FF6_Editor
             rom.Write8(byte.Parse(txtAgiLv7.Text));
             rom.Write8(byte.Parse(txtAgiLv8.Text));
             rom.Write8(byte.Parse(txtAgiLv9.Text));
-            rom.Write8(byte.Parse(txtStaLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheckStats + (200 * 15));
+            rom.Write8(byte.Parse(txtStaLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (200 * 15));
             rom.Write8(byte.Parse(txtStaLv1.Text));
             rom.Write8(byte.Parse(txtStaLv2.Text));
             rom.Write8(byte.Parse(txtStaLv3.Text));
@@ -127,7 +130,7 @@ namespace FF6_Editor
             rom.Write8(byte.Parse(txtStaLv7.Text));
             rom.Write8(byte.Parse(txtStaLv8.Text));
             rom.Write8(byte.Parse(txtStaLv9.Text));
-            rom.Write8(byte.Parse(txtMagLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheckStats + (300 * 15));
+            rom.Write8(byte.Parse(txtMagLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (300 * 15));
             rom.Write8(byte.Parse(txtMagLv1.Text));
             rom.Write8(byte.Parse(txtMagLv2.Text));
             rom.Write8(byte.Parse(txtMagLv3.Text));
@@ -137,7 +140,7 @@ namespace FF6_Editor
             rom.Write8(byte.Parse(txtMagLv7.Text));
             rom.Write8(byte.Parse(txtMagLv8.Text));
             rom.Write8(byte.Parse(txtMagLv9.Text));
-            rom.Write8(byte.Parse(txtHPLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheckStats + (400 * 15));
+            rom.Write8(byte.Parse(txtHPLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (400 * 15));
             rom.Write8(byte.Parse(txtHPLv1.Text));
             rom.Write8(byte.Parse(txtHPLv2.Text));
             rom.Write8(byte.Parse(txtHPLv3.Text));
@@ -147,7 +150,7 @@ namespace FF6_Editor
             rom.Write8(byte.Parse(txtHPLv7.Text));
             rom.Write8(byte.Parse(txtHPLv8.Text));
             rom.Write8(byte.Parse(txtHPLv9.Text));
-            rom.Write8(byte.Parse(txtMPLv0.Text),RomData.CHARDATA + LevelCheck + ActorCheckStats + (500 * 15));
+            rom.Write8(byte.Parse(txtMPLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (500 * 15));
             rom.Write8(byte.Parse(txtMPLv1.Text));
             rom.Write8(byte.Parse(txtMPLv2.Text));
             rom.Write8(byte.Parse(txtMPLv3.Text));
@@ -161,7 +164,7 @@ namespace FF6_Editor
             //Save Natural Magic to Memory Stream
             if (cmbActors.SelectedIndex < 11)
             {
-                rom.Write8(Convert.ToByte(cmbNatMag1.SelectedIndex), RomData.NATURALMAGICDATA + ActorCheckNaturalMagic);
+                rom.Write8(Convert.ToByte(cmbNatMag1.SelectedIndex), RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic);
                 rom.Write8(Convert.ToByte(numNatMag1.Text));
                 rom.Write8(Convert.ToByte(cmbNatMag2.SelectedIndex));
                 rom.Write8(Convert.ToByte(numNatMag2.Text));
@@ -198,6 +201,106 @@ namespace FF6_Editor
             UpdateActorsElements();
         }
 
+        private void SaveEsperElements()
+        {
+            //Write the esper magic struct to the MemoryStream.
+            EsperCheckMagic = cmbEspers.SelectedIndex * 11;
+            rom.Write8(Convert.ToByte(cmbEsperMagic1.SelectedIndex),RomData.ESPER_MAGIC_DATA + EsperCheckMagic);
+            rom.Write8(Convert.ToByte(cmbEsperMagic2.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic3.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic4.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic5.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic6.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic7.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic8.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic9.SelectedIndex));
+            rom.Write8(Convert.ToByte(cmbEsperMagic10.SelectedIndex));
+
+            //Write the esper bonus struct to the MemoryStream.
+            EsperLevelCheck = cmbEspers.SelectedIndex * 80;
+            rom.Write8(Convert.ToByte(txtEsperStr1.Text), RomData.ESPER_BONUS_DATA + EsperLevelCheck);
+            rom.Write8(Convert.ToByte(txtEsperStr2.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr3.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr4.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr5.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr6.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr7.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr8.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr9.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr10.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr11.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr12.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr13.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr14.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr15.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr16.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr17.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr18.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr19.Text));
+            rom.Write8(Convert.ToByte(txtEsperStr20.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi1.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi2.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi3.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi4.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi5.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi6.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi7.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi8.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi9.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi10.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi11.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi12.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi13.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi14.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi15.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi16.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi17.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi18.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi19.Text));
+            rom.Write8(Convert.ToByte(txtEsperAgi20.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit1.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit2.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit3.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit4.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit5.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit6.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit7.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit8.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit9.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit10.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit11.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit12.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit13.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit14.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit15.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit16.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit17.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit18.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit19.Text));
+            rom.Write8(Convert.ToByte(txtEsperVit20.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag1.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag2.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag3.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag4.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag5.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag6.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag7.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag8.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag9.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag10.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag11.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag12.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag13.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag14.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag15.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag16.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag17.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag18.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag19.Text));
+            rom.Write8(Convert.ToByte(txtEsperMag20.Text));
+
+        }
+
         private void UpdateActorsElements()
         {
             if (!rom.IsOpen())
@@ -217,7 +320,7 @@ namespace FF6_Editor
             // Update the stats here
             ActorCheckStats = cmbActors.SelectedIndex * 100;
 
-            txtStrLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheckStats).ToString();
+            txtStrLv0.Text = rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats).ToString();
             txtStrLv1.Text = rom.Read8().ToString();
             txtStrLv2.Text = rom.Read8().ToString();
             txtStrLv3.Text = rom.Read8().ToString();
@@ -227,7 +330,7 @@ namespace FF6_Editor
             txtStrLv7.Text = rom.Read8().ToString();
             txtStrLv8.Text = rom.Read8().ToString();
             txtStrLv9.Text = rom.Read8().ToString();
-            txtAgiLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheckStats + (100 * 15)).ToString();
+            txtAgiLv0.Text = rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (100 * 15)).ToString();
             txtAgiLv1.Text = rom.Read8().ToString();
             txtAgiLv2.Text = rom.Read8().ToString();
             txtAgiLv3.Text = rom.Read8().ToString();
@@ -237,7 +340,7 @@ namespace FF6_Editor
             txtAgiLv7.Text = rom.Read8().ToString();
             txtAgiLv8.Text = rom.Read8().ToString();
             txtAgiLv9.Text = rom.Read8().ToString();
-            txtStaLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheckStats + (200 * 15)).ToString();
+            txtStaLv0.Text = rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (200 * 15)).ToString();
             txtStaLv1.Text = rom.Read8().ToString();
             txtStaLv2.Text = rom.Read8().ToString();
             txtStaLv3.Text = rom.Read8().ToString();
@@ -247,7 +350,7 @@ namespace FF6_Editor
             txtStaLv7.Text = rom.Read8().ToString();
             txtStaLv8.Text = rom.Read8().ToString();
             txtStaLv9.Text = rom.Read8().ToString();
-            txtMagLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheckStats + (300 * 15)).ToString();
+            txtMagLv0.Text = rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (300 * 15)).ToString();
             txtMagLv1.Text = rom.Read8().ToString();
             txtMagLv2.Text = rom.Read8().ToString();
             txtMagLv3.Text = rom.Read8().ToString();
@@ -257,7 +360,7 @@ namespace FF6_Editor
             txtMagLv7.Text = rom.Read8().ToString();
             txtMagLv8.Text = rom.Read8().ToString();
             txtMagLv9.Text = rom.Read8().ToString();
-            txtHPLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheckStats + (400 * 15)).ToString();
+            txtHPLv0.Text = rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (400 * 15)).ToString();
             txtHPLv1.Text = rom.Read8().ToString();
             txtHPLv2.Text = rom.Read8().ToString();
             txtHPLv3.Text = rom.Read8().ToString();
@@ -267,7 +370,7 @@ namespace FF6_Editor
             txtHPLv7.Text = rom.Read8().ToString();
             txtHPLv8.Text = rom.Read8().ToString();
             txtHPLv9.Text = rom.Read8().ToString();
-            txtMPLv0.Text = rom.Read8(RomData.CHARDATA + LevelCheck + ActorCheckStats + (500 * 15)).ToString();
+            txtMPLv0.Text = rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (500 * 15)).ToString();
             txtMPLv1.Text = rom.Read8().ToString();
             txtMPLv2.Text = rom.Read8().ToString();
             txtMPLv3.Text = rom.Read8().ToString();
@@ -279,106 +382,205 @@ namespace FF6_Editor
             txtMPLv9.Text = rom.Read8().ToString();
 
             //Show added stat values here, in increments of ten.
-            txtStrLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 11).ToString();
-            txtStrLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 21).ToString();
-            txtStrLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 31).ToString();
-            txtStrLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 41).ToString();
-            txtStrLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 51).ToString();
-            txtStrLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 61).ToString();
-            txtStrLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 71).ToString();
-            txtStrLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 81).ToString();
-            txtStrLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 91).ToString();
-            txtStrLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats, 100).ToString();
-            txtAgiLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 11).ToString();
-            txtAgiLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 21).ToString();
-            txtAgiLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 31).ToString();
-            txtAgiLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 41).ToString();
-            txtAgiLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 51).ToString();
-            txtAgiLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 61).ToString();
-            txtAgiLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 71).ToString();
-            txtAgiLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 81).ToString();
-            txtAgiLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 91).ToString();
-            txtAgiLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (100 * 15), 100).ToString();
-            txtStaLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 11).ToString();
-            txtStaLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 21).ToString();
-            txtStaLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 31).ToString();
-            txtStaLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 41).ToString();
-            txtStaLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 51).ToString();
-            txtStaLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 61).ToString();
-            txtStaLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 71).ToString();
-            txtStaLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 81).ToString();
-            txtStaLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 91).ToString();
-            txtStaLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (200 * 15), 100).ToString();
-            txtMagLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 11).ToString();
-            txtMagLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 21).ToString();
-            txtMagLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 31).ToString();
-            txtMagLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 41).ToString();
-            txtMagLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 51).ToString();
-            txtMagLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 61).ToString();
-            txtMagLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 71).ToString();
-            txtMagLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 81).ToString();
-            txtMagLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 91).ToString();
-            txtMagLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (300 * 15), 100).ToString();
-            txtHPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 11).ToString();
-            txtHPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 21).ToString();
-            txtHPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 31).ToString();
-            txtHPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 41).ToString();
-            txtHPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 51).ToString();
-            txtHPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 61).ToString();
-            txtHPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 71).ToString();
-            txtHPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 81).ToString();
-            txtHPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 91).ToString();
-            txtHPLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (400 * 15), 100).ToString();
-            txtMPLv0_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 11).ToString();
-            txtMPLv1_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 21).ToString();
-            txtMPLv2_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 31).ToString();
-            txtMPLv3_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 41).ToString();
-            txtMPLv4_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 51).ToString();
-            txtMPLv5_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 61).ToString();
-            txtMPLv6_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 71).ToString();
-            txtMPLv7_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 81).ToString();
-            txtMPLv8_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 91).ToString();
-            txtMPLv9_Add.Text = SumOfStatValues(RomData.CHARDATA + ActorCheckStats + (500 * 15), 100).ToString();
+            txtStrLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 11).ToString();
+            txtStrLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 21).ToString();
+            txtStrLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 31).ToString();
+            txtStrLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 41).ToString();
+            txtStrLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 51).ToString();
+            txtStrLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 61).ToString();
+            txtStrLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 71).ToString();
+            txtStrLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 81).ToString();
+            txtStrLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 91).ToString();
+            txtStrLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 100).ToString();
+            txtAgiLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 11).ToString();
+            txtAgiLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 21).ToString();
+            txtAgiLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 31).ToString();
+            txtAgiLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 41).ToString();
+            txtAgiLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 51).ToString();
+            txtAgiLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 61).ToString();
+            txtAgiLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 71).ToString();
+            txtAgiLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 81).ToString();
+            txtAgiLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 91).ToString();
+            txtAgiLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 100).ToString();
+            txtStaLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 11).ToString();
+            txtStaLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 21).ToString();
+            txtStaLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 31).ToString();
+            txtStaLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 41).ToString();
+            txtStaLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 51).ToString();
+            txtStaLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 61).ToString();
+            txtStaLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 71).ToString();
+            txtStaLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 81).ToString();
+            txtStaLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 91).ToString();
+            txtStaLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 100).ToString();
+            txtMagLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 11).ToString();
+            txtMagLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 21).ToString();
+            txtMagLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 31).ToString();
+            txtMagLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 41).ToString();
+            txtMagLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 51).ToString();
+            txtMagLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 61).ToString();
+            txtMagLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 71).ToString();
+            txtMagLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 81).ToString();
+            txtMagLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 91).ToString();
+            txtMagLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 100).ToString();
+            txtHPLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 11).ToString();
+            txtHPLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 21).ToString();
+            txtHPLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 31).ToString();
+            txtHPLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 41).ToString();
+            txtHPLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 51).ToString();
+            txtHPLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 61).ToString();
+            txtHPLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 71).ToString();
+            txtHPLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 81).ToString();
+            txtHPLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 91).ToString();
+            txtHPLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 100).ToString();
+            txtMPLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 11).ToString();
+            txtMPLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 21).ToString();
+            txtMPLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 31).ToString();
+            txtMPLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 41).ToString();
+            txtMPLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 51).ToString();
+            txtMPLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 61).ToString();
+            txtMPLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 71).ToString();
+            txtMPLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 81).ToString();
+            txtMPLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 91).ToString();
+            txtMPLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 100).ToString();
 
 
             //Display Natural Magic
-            {
-                ActorCheckNaturalMagic = cmbActors.SelectedIndex * 32;
-                cmbNatMag1.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic);
-                cmbNatMag2.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 2);
-                cmbNatMag3.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 4);
-                cmbNatMag4.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 6);
-                cmbNatMag5.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 8);
-                cmbNatMag6.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 10);
-                cmbNatMag7.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 12);
-                cmbNatMag8.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 14);
-                cmbNatMag9.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 16);
-                cmbNatMag10.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 18);
-                cmbNatMag11.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 20);
-                cmbNatMag12.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 22);
-                cmbNatMag13.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 24);
-                cmbNatMag14.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 26);
-                cmbNatMag15.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 28);
-                cmbNatMag16.SelectedIndex = rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 30);
+            ActorCheckNaturalMagic = cmbActors.SelectedIndex * 32;
+            cmbNatMag1.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic);
+            cmbNatMag2.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 2);
+            cmbNatMag3.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 4);
+            cmbNatMag4.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 6);
+            cmbNatMag5.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 8);
+            cmbNatMag6.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 10);
+            cmbNatMag7.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 12);
+            cmbNatMag8.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 14);
+            cmbNatMag9.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 16);
+            cmbNatMag10.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 18);
+            cmbNatMag11.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 20);
+            cmbNatMag12.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 22);
+            cmbNatMag13.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 24);
+            cmbNatMag14.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 26);
+            cmbNatMag15.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 28);
+            cmbNatMag16.SelectedIndex = rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 30);
 
-                //Display Natural Magic Levels
-                numNatMag1.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 1));
-                numNatMag2.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 3));
-                numNatMag3.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 5));
-                numNatMag4.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 7));
-                numNatMag5.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 9));
-                numNatMag6.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 11));
-                numNatMag7.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 13));
-                numNatMag8.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 15));
-                numNatMag9.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 17));
-                numNatMag10.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 19));
-                numNatMag11.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 21));
-                numNatMag12.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 23));
-                numNatMag13.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 25));
-                numNatMag14.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 27));
-                numNatMag15.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 29));
-                numNatMag16.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURALMAGICDATA + ActorCheckNaturalMagic + 31));
-            }
+            //Display Natural Magic Levels
+            numNatMag1.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 1));
+            numNatMag2.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 3));
+            numNatMag3.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 5));
+            numNatMag4.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 7));
+            numNatMag5.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 9));
+            numNatMag6.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 11));
+            numNatMag7.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 13));
+            numNatMag8.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 15));
+            numNatMag9.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 17));
+            numNatMag10.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 19));
+            numNatMag11.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 21));
+            numNatMag12.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 23));
+            numNatMag13.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 25));
+            numNatMag14.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 27));
+            numNatMag15.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 29));
+            numNatMag16.Value = CheckNatMagicLevelRange(rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 31));
+        }
+
+        private void UpdateEsperElements()
+        {
+            // Read magic list for each esper.
+            EsperCheckMagic = cmbEspers.SelectedIndex * 11;
+            cmbEsperMagic1.SelectedIndex = rom.Read8(RomData.ESPER_MAGIC_DATA + EsperCheckMagic);
+            cmbEsperMagic2.SelectedIndex = rom.Read8();
+            cmbEsperMagic3.SelectedIndex = rom.Read8();
+            cmbEsperMagic4.SelectedIndex = rom.Read8();
+            cmbEsperMagic5.SelectedIndex = rom.Read8();
+            cmbEsperMagic6.SelectedIndex = rom.Read8();
+            cmbEsperMagic7.SelectedIndex = rom.Read8();
+            cmbEsperMagic8.SelectedIndex = rom.Read8();
+            cmbEsperMagic9.SelectedIndex = rom.Read8();
+            cmbEsperMagic10.SelectedIndex = rom.Read8();
+
+            // Read Esper Level Bonuses.
+
+            EsperLevelCheck = cmbEspers.SelectedIndex * 80;
+            txtEsperStr1.Text = rom.Read8(RomData.ESPER_BONUS_DATA + EsperLevelCheck).ToString();
+            txtEsperStr2.Text = rom.Read8().ToString();
+            txtEsperStr3.Text = rom.Read8().ToString();
+            txtEsperStr4.Text = rom.Read8().ToString();
+            txtEsperStr5.Text = rom.Read8().ToString();
+            txtEsperStr6.Text = rom.Read8().ToString();
+            txtEsperStr7.Text = rom.Read8().ToString();
+            txtEsperStr8.Text = rom.Read8().ToString();
+            txtEsperStr9.Text = rom.Read8().ToString();
+            txtEsperStr10.Text = rom.Read8().ToString();
+            txtEsperStr11.Text = rom.Read8().ToString();
+            txtEsperStr12.Text = rom.Read8().ToString();
+            txtEsperStr13.Text = rom.Read8().ToString();
+            txtEsperStr14.Text = rom.Read8().ToString();
+            txtEsperStr15.Text = rom.Read8().ToString();
+            txtEsperStr16.Text = rom.Read8().ToString();
+            txtEsperStr17.Text = rom.Read8().ToString();
+            txtEsperStr18.Text = rom.Read8().ToString();
+            txtEsperStr19.Text = rom.Read8().ToString();
+            txtEsperStr20.Text = rom.Read8().ToString();
+            txtEsperAgi1.Text = rom.Read8().ToString();
+            txtEsperAgi2.Text = rom.Read8().ToString();
+            txtEsperAgi3.Text = rom.Read8().ToString();
+            txtEsperAgi4.Text = rom.Read8().ToString();
+            txtEsperAgi5.Text = rom.Read8().ToString();
+            txtEsperAgi6.Text = rom.Read8().ToString();
+            txtEsperAgi7.Text = rom.Read8().ToString();
+            txtEsperAgi8.Text = rom.Read8().ToString();
+            txtEsperAgi9.Text = rom.Read8().ToString();
+            txtEsperAgi10.Text = rom.Read8().ToString();
+            txtEsperAgi11.Text = rom.Read8().ToString();
+            txtEsperAgi12.Text = rom.Read8().ToString();
+            txtEsperAgi13.Text = rom.Read8().ToString();
+            txtEsperAgi14.Text = rom.Read8().ToString();
+            txtEsperAgi15.Text = rom.Read8().ToString();
+            txtEsperAgi16.Text = rom.Read8().ToString();
+            txtEsperAgi17.Text = rom.Read8().ToString();
+            txtEsperAgi18.Text = rom.Read8().ToString();
+            txtEsperAgi19.Text = rom.Read8().ToString();
+            txtEsperAgi20.Text = rom.Read8().ToString();
+            txtEsperVit1.Text = rom.Read8().ToString();
+            txtEsperVit2.Text = rom.Read8().ToString();
+            txtEsperVit3.Text = rom.Read8().ToString();
+            txtEsperVit4.Text = rom.Read8().ToString();
+            txtEsperVit5.Text = rom.Read8().ToString();
+            txtEsperVit6.Text = rom.Read8().ToString();
+            txtEsperVit7.Text = rom.Read8().ToString();
+            txtEsperVit8.Text = rom.Read8().ToString();
+            txtEsperVit9.Text = rom.Read8().ToString();
+            txtEsperVit10.Text = rom.Read8().ToString();
+            txtEsperVit11.Text = rom.Read8().ToString();
+            txtEsperVit12.Text = rom.Read8().ToString();
+            txtEsperVit13.Text = rom.Read8().ToString();
+            txtEsperVit14.Text = rom.Read8().ToString();
+            txtEsperVit15.Text = rom.Read8().ToString();
+            txtEsperVit16.Text = rom.Read8().ToString();
+            txtEsperVit17.Text = rom.Read8().ToString();
+            txtEsperVit18.Text = rom.Read8().ToString();
+            txtEsperVit19.Text = rom.Read8().ToString();
+            txtEsperVit20.Text = rom.Read8().ToString();
+            txtEsperMag1.Text = rom.Read8().ToString();
+            txtEsperMag2.Text = rom.Read8().ToString();
+            txtEsperMag3.Text = rom.Read8().ToString();
+            txtEsperMag4.Text = rom.Read8().ToString();
+            txtEsperMag5.Text = rom.Read8().ToString();
+            txtEsperMag6.Text = rom.Read8().ToString();
+            txtEsperMag7.Text = rom.Read8().ToString();
+            txtEsperMag8.Text = rom.Read8().ToString();
+            txtEsperMag9.Text = rom.Read8().ToString();
+            txtEsperMag10.Text = rom.Read8().ToString();
+            txtEsperMag11.Text = rom.Read8().ToString();
+            txtEsperMag12.Text = rom.Read8().ToString();
+            txtEsperMag13.Text = rom.Read8().ToString();
+            txtEsperMag14.Text = rom.Read8().ToString();
+            txtEsperMag15.Text = rom.Read8().ToString();
+            txtEsperMag16.Text = rom.Read8().ToString();
+            txtEsperMag17.Text = rom.Read8().ToString();
+            txtEsperMag18.Text = rom.Read8().ToString();
+            txtEsperMag19.Text = rom.Read8().ToString();
+            txtEsperMag20.Text = rom.Read8().ToString();
+
         }
 
         private int SumOfStatValues(int FileOffset, int CalcValue)
@@ -444,6 +646,78 @@ namespace FF6_Editor
 
         private void CmbActors_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbActors.SelectedIndex > 11)
+            {
+                numNatMag1.Visible = false;
+                cmbNatMag1.Visible = false;
+                numNatMag2.Visible = false;
+                cmbNatMag2.Visible = false;
+                numNatMag3.Visible = false;
+                cmbNatMag3.Visible = false;
+                numNatMag4.Visible = false;
+                cmbNatMag4.Visible = false;
+                numNatMag5.Visible = false;
+                cmbNatMag5.Visible = false;
+                numNatMag6.Visible = false;
+                cmbNatMag6.Visible = false;
+                numNatMag7.Visible = false;
+                cmbNatMag7.Visible = false;
+                numNatMag8.Visible = false;
+                cmbNatMag8.Visible = false;
+                numNatMag9.Visible = false;
+                cmbNatMag9.Visible = false;
+                numNatMag10.Visible = false;
+                cmbNatMag10.Visible = false;
+                numNatMag11.Visible = false;
+                cmbNatMag11.Visible = false;
+                numNatMag12.Visible = false;
+                cmbNatMag12.Visible = false;
+                numNatMag13.Visible = false;
+                cmbNatMag13.Visible = false;
+                numNatMag14.Visible = false;
+                cmbNatMag14.Visible = false;
+                numNatMag15.Visible = false;
+                cmbNatMag15.Visible = false;
+                numNatMag16.Visible = false;
+                cmbNatMag16.Visible = false;
+                lblNaturalMagic.Visible = false;
+            }
+            else
+            {
+                numNatMag1.Visible = true;
+                cmbNatMag1.Visible = true;
+                numNatMag2.Visible = true;
+                cmbNatMag2.Visible = true;
+                numNatMag3.Visible = true;
+                cmbNatMag3.Visible = true;
+                numNatMag4.Visible = true;
+                cmbNatMag4.Visible = true;
+                numNatMag5.Visible = true;
+                cmbNatMag5.Visible = true;
+                numNatMag6.Visible = true;
+                cmbNatMag6.Visible = true;
+                numNatMag7.Visible = true;
+                cmbNatMag7.Visible = true;
+                numNatMag8.Visible = true;
+                cmbNatMag8.Visible = true;
+                numNatMag9.Visible = true;
+                cmbNatMag9.Visible = true;
+                numNatMag10.Visible = true;
+                cmbNatMag10.Visible = true;
+                numNatMag11.Visible = true;
+                cmbNatMag11.Visible = true;
+                numNatMag12.Visible = true;
+                cmbNatMag12.Visible = true;
+                numNatMag13.Visible = true;
+                cmbNatMag13.Visible = true;
+                numNatMag14.Visible = true;
+                cmbNatMag14.Visible = true;
+                numNatMag15.Visible = true;
+                cmbNatMag15.Visible = true;
+                numNatMag16.Visible = true;
+                cmbNatMag16.Visible = true;
+                lblNaturalMagic.Visible = true;
+            }
             UpdateActorsElements();
         }
 
@@ -461,12 +735,33 @@ namespace FF6_Editor
 
         private void numNatMag1_ValueChanged(object sender, EventArgs e)
         {
-            //UpdateActorsElements();
+            if (numNatMag1.Value < 1 | numNatMag1.Value > 99)
+            {
+                numNatMag1.Value = 255;
+            }
         }
 
         private void cmbNatMag1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //UpdateActorsElements();
+            if (cmbNatMag1.SelectedIndex > 53)
+            {
+                cmbNatMag1.SelectedIndex = 255;
+            }
+        }
+
+        private void cmbEspers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateEsperElements();
+        }
+
+        private void btnEspersOkay_Click(object sender, EventArgs e)
+        {
+            SaveEsperElements();
+        }
+
+        private void btnEspersCancel_Click(object sender, EventArgs e)
+        {
+            UpdateEsperElements();
         }
     }
 }
