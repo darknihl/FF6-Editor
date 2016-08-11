@@ -230,6 +230,112 @@
             this.btnActorsCancel = new System.Windows.Forms.Button();
             this.btnActorsOkay = new System.Windows.Forms.Button();
             this.tabEspers = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblEsperLevel20 = new System.Windows.Forms.Label();
+            this.lblEsperLevel19 = new System.Windows.Forms.Label();
+            this.lblEsperLevel18 = new System.Windows.Forms.Label();
+            this.lblEsperLevel17 = new System.Windows.Forms.Label();
+            this.lblEsperLevel16 = new System.Windows.Forms.Label();
+            this.lblEsperLevel15 = new System.Windows.Forms.Label();
+            this.lblEsperLevel14 = new System.Windows.Forms.Label();
+            this.lblEsperLevel13 = new System.Windows.Forms.Label();
+            this.lblEsperLevel12 = new System.Windows.Forms.Label();
+            this.lblEsperLevel11 = new System.Windows.Forms.Label();
+            this.lblEsperLevel10 = new System.Windows.Forms.Label();
+            this.lblEsperLevel9 = new System.Windows.Forms.Label();
+            this.lblEsperLevel8 = new System.Windows.Forms.Label();
+            this.lblEsperLevel7 = new System.Windows.Forms.Label();
+            this.lblEsperLevel6 = new System.Windows.Forms.Label();
+            this.lblEsperLevel5 = new System.Windows.Forms.Label();
+            this.lblEsperLevel4 = new System.Windows.Forms.Label();
+            this.lblEsperLevel3 = new System.Windows.Forms.Label();
+            this.lblEsperLevel2 = new System.Windows.Forms.Label();
+            this.lblEsperLevel1 = new System.Windows.Forms.Label();
+            this.lblEsperLevel = new System.Windows.Forms.Label();
+            this.txtEsperMag20 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag19 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag18 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag17 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag16 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag15 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag14 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag13 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag12 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag11 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag10 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag9 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag8 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag7 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag6 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag5 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag4 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag3 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag2 = new System.Windows.Forms.TextBox();
+            this.txtEsperMag1 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit20 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit19 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit18 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit17 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit16 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit15 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit14 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit13 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit12 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit11 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit10 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit9 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit8 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit7 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit6 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit5 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit4 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit3 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit2 = new System.Windows.Forms.TextBox();
+            this.txtEsperVit1 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi20 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi19 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi18 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi17 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi16 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi15 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi14 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi13 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi12 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi11 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi10 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi9 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi8 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi7 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi6 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi5 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi4 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi3 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi2 = new System.Windows.Forms.TextBox();
+            this.txtEsperAgi1 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr20 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr19 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr18 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr17 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr16 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr15 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr14 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr13 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr12 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr11 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr10 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr9 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr8 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr7 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr6 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr5 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr4 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr3 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr2 = new System.Windows.Forms.TextBox();
+            this.txtEsperStr1 = new System.Windows.Forms.TextBox();
+            this.lblEsperMag1 = new System.Windows.Forms.Label();
+            this.lblEsperVit1 = new System.Windows.Forms.Label();
+            this.lblEsperAgi1 = new System.Windows.Forms.Label();
+            this.lblEsperStr1 = new System.Windows.Forms.Label();
             this.btnEspersCancel = new System.Windows.Forms.Button();
             this.btnEspersOkay = new System.Windows.Forms.Button();
             this.nmbEsperMagic10 = new System.Windows.Forms.NumericUpDown();
@@ -254,112 +360,213 @@
             this.cmbEsperMagic1 = new System.Windows.Forms.ComboBox();
             this.cmbEspers = new System.Windows.Forms.ComboBox();
             this.tabEnemies = new System.Windows.Forms.TabPage();
-            this.lblEsperStr1 = new System.Windows.Forms.Label();
-            this.lblEsperAgi1 = new System.Windows.Forms.Label();
-            this.lblEsperVit1 = new System.Windows.Forms.Label();
-            this.lblEsperMag1 = new System.Windows.Forms.Label();
-            this.txtEsperStr1 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr2 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr3 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr4 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr5 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr6 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr7 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr8 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr9 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr10 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr20 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr19 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr18 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr17 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr16 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr15 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr14 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr13 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr12 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr11 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi20 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi19 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi18 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi17 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi16 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi15 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi14 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi13 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi12 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi11 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi10 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi9 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi8 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi7 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi6 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi5 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi4 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi3 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi2 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi1 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit20 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit19 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit18 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit17 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit16 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit15 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit14 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit13 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit12 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit11 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit10 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit9 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit8 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit7 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit6 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit5 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit4 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit3 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit2 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit1 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag20 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag19 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag18 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag17 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag16 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag15 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag14 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag13 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag12 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag11 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag10 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag9 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag8 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag7 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag6 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag5 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag4 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag3 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag2 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag1 = new System.Windows.Forms.TextBox();
-            this.lblEsperLevel = new System.Windows.Forms.Label();
-            this.lblEsperLevel1 = new System.Windows.Forms.Label();
-            this.lblEsperLevel2 = new System.Windows.Forms.Label();
-            this.lblEsperLevel3 = new System.Windows.Forms.Label();
-            this.lblEsperLevel4 = new System.Windows.Forms.Label();
-            this.lblEsperLevel5 = new System.Windows.Forms.Label();
-            this.lblEsperLevel6 = new System.Windows.Forms.Label();
-            this.lblEsperLevel7 = new System.Windows.Forms.Label();
-            this.lblEsperLevel8 = new System.Windows.Forms.Label();
-            this.lblEsperLevel9 = new System.Windows.Forms.Label();
-            this.lblEsperLevel10 = new System.Windows.Forms.Label();
-            this.lblEsperLevel11 = new System.Windows.Forms.Label();
-            this.lblEsperLevel12 = new System.Windows.Forms.Label();
-            this.lblEsperLevel13 = new System.Windows.Forms.Label();
-            this.lblEsperLevel14 = new System.Windows.Forms.Label();
-            this.lblEsperLevel15 = new System.Windows.Forms.Label();
-            this.lblEsperLevel16 = new System.Windows.Forms.Label();
-            this.lblEsperLevel17 = new System.Windows.Forms.Label();
-            this.lblEsperLevel18 = new System.Windows.Forms.Label();
-            this.lblEsperLevel19 = new System.Windows.Forms.Label();
-            this.lblEsperLevel20 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.numMonsterIndex = new System.Windows.Forms.NumericUpDown();
+            this.lblNormalAttack = new System.Windows.Forms.Label();
+            this.cmbNormalAttack = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblBlock = new System.Windows.Forms.Label();
+            this.lblStartWith = new System.Windows.Forms.Label();
+            this.chkBlockReflect = new System.Windows.Forms.CheckBox();
+            this.chkBlockSleep = new System.Windows.Forms.CheckBox();
+            this.chkBlockDance = new System.Windows.Forms.CheckBox();
+            this.chkBlockProtect = new System.Windows.Forms.CheckBox();
+            this.chkBlockDeath = new System.Windows.Forms.CheckBox();
+            this.chkBlockShell = new System.Windows.Forms.CheckBox();
+            this.chkBlockDoomed = new System.Windows.Forms.CheckBox();
+            this.chkBlockStop = new System.Windows.Forms.CheckBox();
+            this.chkBlockSap = new System.Windows.Forms.CheckBox();
+            this.chkBlockHaste = new System.Windows.Forms.CheckBox();
+            this.chkBlockSlow = new System.Windows.Forms.CheckBox();
+            this.chkBlockConfuse = new System.Windows.Forms.CheckBox();
+            this.chkBlockRegen = new System.Windows.Forms.CheckBox();
+            this.chkBlockDarkness = new System.Windows.Forms.CheckBox();
+            this.chkBlockBerserk = new System.Windows.Forms.CheckBox();
+            this.chkBlockPetrify = new System.Windows.Forms.CheckBox();
+            this.chkBlockSilence = new System.Windows.Forms.CheckBox();
+            this.chkBlockBlink = new System.Windows.Forms.CheckBox();
+            this.chkBlockImp = new System.Windows.Forms.CheckBox();
+            this.chkBlockCritical = new System.Windows.Forms.CheckBox();
+            this.chkBlockClear = new System.Windows.Forms.CheckBox();
+            this.chkBlockMagitek = new System.Windows.Forms.CheckBox();
+            this.chkBlockPoison = new System.Windows.Forms.CheckBox();
+            this.chkBlockZombie = new System.Windows.Forms.CheckBox();
+            this.lblReflect = new System.Windows.Forms.Label();
+            this.lblProtect = new System.Windows.Forms.Label();
+            this.lblShell = new System.Windows.Forms.Label();
+            this.lblStop = new System.Windows.Forms.Label();
+            this.lblHaste = new System.Windows.Forms.Label();
+            this.lblSlow = new System.Windows.Forms.Label();
+            this.lblRegen = new System.Windows.Forms.Label();
+            this.lblFloat = new System.Windows.Forms.Label();
+            this.lblSleep = new System.Windows.Forms.Label();
+            this.lblSap = new System.Windows.Forms.Label();
+            this.chkStartReflect = new System.Windows.Forms.CheckBox();
+            this.chkStartSleep = new System.Windows.Forms.CheckBox();
+            this.chkStartFloat = new System.Windows.Forms.CheckBox();
+            this.chkStartProtect = new System.Windows.Forms.CheckBox();
+            this.chkStartDeath = new System.Windows.Forms.CheckBox();
+            this.chkStartShell = new System.Windows.Forms.CheckBox();
+            this.chkStartDoomed = new System.Windows.Forms.CheckBox();
+            this.chkStartStop = new System.Windows.Forms.CheckBox();
+            this.chkStartSap = new System.Windows.Forms.CheckBox();
+            this.chkStartHaste = new System.Windows.Forms.CheckBox();
+            this.lblConfuse = new System.Windows.Forms.Label();
+            this.chkStartSlow = new System.Windows.Forms.CheckBox();
+            this.chkStartConfuse = new System.Windows.Forms.CheckBox();
+            this.chkStartRegen = new System.Windows.Forms.CheckBox();
+            this.chkStartDarkness = new System.Windows.Forms.CheckBox();
+            this.chkStartBerserk = new System.Windows.Forms.CheckBox();
+            this.chkStartPetrify = new System.Windows.Forms.CheckBox();
+            this.chkStartSilence = new System.Windows.Forms.CheckBox();
+            this.lblBerserk = new System.Windows.Forms.Label();
+            this.chkStartBlink = new System.Windows.Forms.CheckBox();
+            this.chkStartImp = new System.Windows.Forms.CheckBox();
+            this.chkStartCritical = new System.Windows.Forms.CheckBox();
+            this.lblSilence = new System.Windows.Forms.Label();
+            this.chkStartClear = new System.Windows.Forms.CheckBox();
+            this.lblBlink = new System.Windows.Forms.Label();
+            this.chkStartMagitek = new System.Windows.Forms.CheckBox();
+            this.lblCritical = new System.Windows.Forms.Label();
+            this.chkStartPoison = new System.Windows.Forms.CheckBox();
+            this.lblDoomed = new System.Windows.Forms.Label();
+            this.chkStartZombie = new System.Windows.Forms.CheckBox();
+            this.lblDeath = new System.Windows.Forms.Label();
+            this.lblPetrify = new System.Windows.Forms.Label();
+            this.lblImp = new System.Windows.Forms.Label();
+            this.lblClear = new System.Windows.Forms.Label();
+            this.lblMagitek = new System.Windows.Forms.Label();
+            this.lblPsn = new System.Windows.Forms.Label();
+            this.lblZombie = new System.Windows.Forms.Label();
+            this.lblDarkness = new System.Windows.Forms.Label();
+            this.grpSpecialStatus = new System.Windows.Forms.GroupBox();
+            this.lblRemovableFloat = new System.Windows.Forms.Label();
+            this.lblUnknown7 = new System.Windows.Forms.Label();
+            this.lblUnknown6 = new System.Windows.Forms.Label();
+            this.lblUnknown5 = new System.Windows.Forms.Label();
+            this.lblUnknown4 = new System.Windows.Forms.Label();
+            this.lblReraise = new System.Windows.Forms.Label();
+            this.lblRunic = new System.Windows.Forms.Label();
+            this.lblTrueKnight = new System.Windows.Forms.Label();
+            this.lblNoControl = new System.Windows.Forms.Label();
+            this.lblSpecialEvent = new System.Windows.Forms.Label();
+            this.chkRemovableFloat = new System.Windows.Forms.CheckBox();
+            this.chkNoControl = new System.Windows.Forms.CheckBox();
+            this.chkTrueKnight = new System.Windows.Forms.CheckBox();
+            this.chkUnknown7 = new System.Windows.Forms.CheckBox();
+            this.chkUndead = new System.Windows.Forms.CheckBox();
+            this.chkUnknown6 = new System.Windows.Forms.CheckBox();
+            this.chkHarderToRun = new System.Windows.Forms.CheckBox();
+            this.chkUnknown5 = new System.Windows.Forms.CheckBox();
+            this.chkSpecialEvent = new System.Windows.Forms.CheckBox();
+            this.chkUnkown4 = new System.Windows.Forms.CheckBox();
+            this.lblNoSketch = new System.Windows.Forms.Label();
+            this.chkReraise = new System.Windows.Forms.CheckBox();
+            this.chkNoSketch = new System.Windows.Forms.CheckBox();
+            this.chkRunic = new System.Windows.Forms.CheckBox();
+            this.chkMPDeath = new System.Windows.Forms.CheckBox();
+            this.chkNoScan = new System.Windows.Forms.CheckBox();
+            this.chkCritImp = new System.Windows.Forms.CheckBox();
+            this.chkNoRun = new System.Windows.Forms.CheckBox();
+            this.lblNoScan = new System.Windows.Forms.Label();
+            this.chkBlockSuplex = new System.Windows.Forms.CheckBox();
+            this.chkUnknown3 = new System.Windows.Forms.CheckBox();
+            this.chkAttackFirst = new System.Windows.Forms.CheckBox();
+            this.lblNoRun = new System.Windows.Forms.Label();
+            this.chkHumanoid = new System.Windows.Forms.CheckBox();
+            this.lblBlockSuplex = new System.Windows.Forms.Label();
+            this.chkUnknown2 = new System.Windows.Forms.CheckBox();
+            this.lblAttackFirst = new System.Windows.Forms.Label();
+            this.chkNoName = new System.Windows.Forms.CheckBox();
+            this.lblHarderToRun = new System.Windows.Forms.Label();
+            this.chkPierceReflect = new System.Windows.Forms.CheckBox();
+            this.lblUndead = new System.Windows.Forms.Label();
+            this.lblCritImp = new System.Windows.Forms.Label();
+            this.lblUnknown3 = new System.Windows.Forms.Label();
+            this.lblHumanoid = new System.Windows.Forms.Label();
+            this.lblUnknown2 = new System.Windows.Forms.Label();
+            this.lblNoName = new System.Windows.Forms.Label();
+            this.lblPierceReflect = new System.Windows.Forms.Label();
+            this.lblMPDeath = new System.Windows.Forms.Label();
+            this.grpMonsterElements = new System.Windows.Forms.GroupBox();
+            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.checkBox19 = new System.Windows.Forms.CheckBox();
+            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.checkBox22 = new System.Windows.Forms.CheckBox();
+            this.checkBox23 = new System.Windows.Forms.CheckBox();
+            this.checkBox24 = new System.Windows.Forms.CheckBox();
+            this.checkBox9 = new System.Windows.Forms.CheckBox();
+            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.chkWaterAbs = new System.Windows.Forms.CheckBox();
+            this.chkFireAbs = new System.Windows.Forms.CheckBox();
+            this.lblWeak = new System.Windows.Forms.Label();
+            this.chkEarthAbs = new System.Windows.Forms.CheckBox();
+            this.lblHalf = new System.Windows.Forms.Label();
+            this.lblNull = new System.Windows.Forms.Label();
+            this.chkHolyAbs = new System.Windows.Forms.CheckBox();
+            this.lblAbsorb = new System.Windows.Forms.Label();
+            this.lblWater = new System.Windows.Forms.Label();
+            this.chkWindAbs = new System.Windows.Forms.CheckBox();
+            this.lblFire = new System.Windows.Forms.Label();
+            this.lblIce = new System.Windows.Forms.Label();
+            this.chkPoisonAbs = new System.Windows.Forms.CheckBox();
+            this.lblThunder = new System.Windows.Forms.Label();
+            this.lblEarth = new System.Windows.Forms.Label();
+            this.chkThunderAbs = new System.Windows.Forms.CheckBox();
+            this.lblPoison = new System.Windows.Forms.Label();
+            this.lblWind = new System.Windows.Forms.Label();
+            this.chkIceAbs = new System.Windows.Forms.CheckBox();
+            this.lblHoly = new System.Windows.Forms.Label();
+            this.numMonsterEXP = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterGil = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterMP = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterHP = new System.Windows.Forms.NumericUpDown();
+            this.btnMonstersCancel = new System.Windows.Forms.Button();
+            this.btnMonstersOkay = new System.Windows.Forms.Button();
+            this.lblMonsterGil = new System.Windows.Forms.Label();
+            this.lblMonsterEXP = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbDifficulty = new System.Windows.Forms.ComboBox();
+            this.lblMonsterAccuracy = new System.Windows.Forms.Label();
+            this.lblMonsterVitality = new System.Windows.Forms.Label();
+            this.numMonsterAttack = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterDefense = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterMagEva = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterEvasion = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterVitality = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterMagic = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterAccuracy = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterAgility = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterMagDef = new System.Windows.Forms.NumericUpDown();
+            this.numMonsterStrength = new System.Windows.Forms.NumericUpDown();
+            this.lblMonsterAgility = new System.Windows.Forms.Label();
+            this.lblMonsterEvasion = new System.Windows.Forms.Label();
+            this.lblMonsterDefense = new System.Windows.Forms.Label();
+            this.lblMonsterMagic = new System.Windows.Forms.Label();
+            this.lblMonsterAttack = new System.Windows.Forms.Label();
+            this.lblMonsterMagEva = new System.Windows.Forms.Label();
+            this.lblMonsterMagDef = new System.Windows.Forms.Label();
+            this.lblMonsterStrength = new System.Windows.Forms.Label();
+            this.lblMonsterMP = new System.Windows.Forms.Label();
+            this.lblMonsterHP = new System.Windows.Forms.Label();
+            this.numMonsterLevel = new System.Windows.Forms.NumericUpDown();
+            this.lblMonsterLevel = new System.Windows.Forms.Label();
+            this.cmbMonsters = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabActors.SuspendLayout();
@@ -391,6 +598,27 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic1)).BeginInit();
+            this.tabEnemies.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterIndex)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.grpSpecialStatus.SuspendLayout();
+            this.grpMonsterElements.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterEXP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterGil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterHP)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterAttack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterDefense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagEva)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterEvasion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterVitality)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterAccuracy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterAgility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagDef)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterLevel)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -407,7 +635,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1050, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1445, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -460,7 +688,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1026, 591);
+            this.tabControl1.Size = new System.Drawing.Size(1421, 544);
             this.tabControl1.TabIndex = 2;
             // 
             // tabActors
@@ -659,7 +887,7 @@
             this.tabActors.Location = new System.Drawing.Point(4, 22);
             this.tabActors.Name = "tabActors";
             this.tabActors.Padding = new System.Windows.Forms.Padding(3);
-            this.tabActors.Size = new System.Drawing.Size(1018, 565);
+            this.tabActors.Size = new System.Drawing.Size(1413, 518);
             this.tabActors.TabIndex = 0;
             this.tabActors.Text = "Actors";
             this.tabActors.UseVisualStyleBackColor = true;
@@ -6924,7 +7152,7 @@
             // btnActorsCancel
             // 
             this.btnActorsCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnActorsCancel.Location = new System.Drawing.Point(937, 536);
+            this.btnActorsCancel.Location = new System.Drawing.Point(1332, 489);
             this.btnActorsCancel.Name = "btnActorsCancel";
             this.btnActorsCancel.Size = new System.Drawing.Size(75, 23);
             this.btnActorsCancel.TabIndex = 95;
@@ -6934,7 +7162,7 @@
             // 
             // btnActorsOkay
             // 
-            this.btnActorsOkay.Location = new System.Drawing.Point(856, 536);
+            this.btnActorsOkay.Location = new System.Drawing.Point(1251, 489);
             this.btnActorsOkay.Name = "btnActorsOkay";
             this.btnActorsOkay.Size = new System.Drawing.Size(75, 23);
             this.btnActorsOkay.TabIndex = 94;
@@ -7076,15 +7304,916 @@
             this.tabEspers.Location = new System.Drawing.Point(4, 22);
             this.tabEspers.Name = "tabEspers";
             this.tabEspers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEspers.Size = new System.Drawing.Size(1018, 565);
+            this.tabEspers.Size = new System.Drawing.Size(1413, 518);
             this.tabEspers.TabIndex = 1;
             this.tabEspers.Text = "Espers";
             this.tabEspers.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(218, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(620, 13);
+            this.label3.TabIndex = 171;
+            this.label3.Text = "*Note: Esper levels are representative of characters in multiples of 5, exclusive" +
+    ". i.e. 0-4 are Level 1, 5-9 are Level 2, et cetera.";
+            // 
+            // lblEsperLevel20
+            // 
+            this.lblEsperLevel20.AutoSize = true;
+            this.lblEsperLevel20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel20.Location = new System.Drawing.Point(968, 59);
+            this.lblEsperLevel20.Name = "lblEsperLevel20";
+            this.lblEsperLevel20.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel20.TabIndex = 170;
+            this.lblEsperLevel20.Text = "20";
+            // 
+            // lblEsperLevel19
+            // 
+            this.lblEsperLevel19.AutoSize = true;
+            this.lblEsperLevel19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel19.Location = new System.Drawing.Point(933, 59);
+            this.lblEsperLevel19.Name = "lblEsperLevel19";
+            this.lblEsperLevel19.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel19.TabIndex = 169;
+            this.lblEsperLevel19.Text = "19";
+            // 
+            // lblEsperLevel18
+            // 
+            this.lblEsperLevel18.AutoSize = true;
+            this.lblEsperLevel18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel18.Location = new System.Drawing.Point(896, 59);
+            this.lblEsperLevel18.Name = "lblEsperLevel18";
+            this.lblEsperLevel18.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel18.TabIndex = 168;
+            this.lblEsperLevel18.Text = "18";
+            // 
+            // lblEsperLevel17
+            // 
+            this.lblEsperLevel17.AutoSize = true;
+            this.lblEsperLevel17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel17.Location = new System.Drawing.Point(860, 59);
+            this.lblEsperLevel17.Name = "lblEsperLevel17";
+            this.lblEsperLevel17.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel17.TabIndex = 167;
+            this.lblEsperLevel17.Text = "17";
+            // 
+            // lblEsperLevel16
+            // 
+            this.lblEsperLevel16.AutoSize = true;
+            this.lblEsperLevel16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel16.Location = new System.Drawing.Point(824, 59);
+            this.lblEsperLevel16.Name = "lblEsperLevel16";
+            this.lblEsperLevel16.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel16.TabIndex = 166;
+            this.lblEsperLevel16.Text = "16";
+            // 
+            // lblEsperLevel15
+            // 
+            this.lblEsperLevel15.AutoSize = true;
+            this.lblEsperLevel15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel15.Location = new System.Drawing.Point(788, 59);
+            this.lblEsperLevel15.Name = "lblEsperLevel15";
+            this.lblEsperLevel15.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel15.TabIndex = 165;
+            this.lblEsperLevel15.Text = "15";
+            // 
+            // lblEsperLevel14
+            // 
+            this.lblEsperLevel14.AutoSize = true;
+            this.lblEsperLevel14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel14.Location = new System.Drawing.Point(752, 59);
+            this.lblEsperLevel14.Name = "lblEsperLevel14";
+            this.lblEsperLevel14.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel14.TabIndex = 164;
+            this.lblEsperLevel14.Text = "14";
+            // 
+            // lblEsperLevel13
+            // 
+            this.lblEsperLevel13.AutoSize = true;
+            this.lblEsperLevel13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel13.Location = new System.Drawing.Point(716, 59);
+            this.lblEsperLevel13.Name = "lblEsperLevel13";
+            this.lblEsperLevel13.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel13.TabIndex = 163;
+            this.lblEsperLevel13.Text = "13";
+            // 
+            // lblEsperLevel12
+            // 
+            this.lblEsperLevel12.AutoSize = true;
+            this.lblEsperLevel12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel12.Location = new System.Drawing.Point(680, 59);
+            this.lblEsperLevel12.Name = "lblEsperLevel12";
+            this.lblEsperLevel12.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel12.TabIndex = 162;
+            this.lblEsperLevel12.Text = "12";
+            // 
+            // lblEsperLevel11
+            // 
+            this.lblEsperLevel11.AutoSize = true;
+            this.lblEsperLevel11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel11.Location = new System.Drawing.Point(644, 59);
+            this.lblEsperLevel11.Name = "lblEsperLevel11";
+            this.lblEsperLevel11.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel11.TabIndex = 161;
+            this.lblEsperLevel11.Text = "11";
+            // 
+            // lblEsperLevel10
+            // 
+            this.lblEsperLevel10.AutoSize = true;
+            this.lblEsperLevel10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel10.Location = new System.Drawing.Point(608, 59);
+            this.lblEsperLevel10.Name = "lblEsperLevel10";
+            this.lblEsperLevel10.Size = new System.Drawing.Size(27, 19);
+            this.lblEsperLevel10.TabIndex = 160;
+            this.lblEsperLevel10.Text = "10";
+            // 
+            // lblEsperLevel9
+            // 
+            this.lblEsperLevel9.AutoSize = true;
+            this.lblEsperLevel9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel9.Location = new System.Drawing.Point(572, 59);
+            this.lblEsperLevel9.Name = "lblEsperLevel9";
+            this.lblEsperLevel9.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel9.TabIndex = 159;
+            this.lblEsperLevel9.Text = "9";
+            // 
+            // lblEsperLevel8
+            // 
+            this.lblEsperLevel8.AutoSize = true;
+            this.lblEsperLevel8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel8.Location = new System.Drawing.Point(536, 59);
+            this.lblEsperLevel8.Name = "lblEsperLevel8";
+            this.lblEsperLevel8.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel8.TabIndex = 158;
+            this.lblEsperLevel8.Text = "8";
+            // 
+            // lblEsperLevel7
+            // 
+            this.lblEsperLevel7.AutoSize = true;
+            this.lblEsperLevel7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel7.Location = new System.Drawing.Point(500, 59);
+            this.lblEsperLevel7.Name = "lblEsperLevel7";
+            this.lblEsperLevel7.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel7.TabIndex = 157;
+            this.lblEsperLevel7.Text = "7";
+            // 
+            // lblEsperLevel6
+            // 
+            this.lblEsperLevel6.AutoSize = true;
+            this.lblEsperLevel6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel6.Location = new System.Drawing.Point(464, 59);
+            this.lblEsperLevel6.Name = "lblEsperLevel6";
+            this.lblEsperLevel6.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel6.TabIndex = 156;
+            this.lblEsperLevel6.Text = "6";
+            // 
+            // lblEsperLevel5
+            // 
+            this.lblEsperLevel5.AutoSize = true;
+            this.lblEsperLevel5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel5.Location = new System.Drawing.Point(428, 59);
+            this.lblEsperLevel5.Name = "lblEsperLevel5";
+            this.lblEsperLevel5.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel5.TabIndex = 155;
+            this.lblEsperLevel5.Text = "5";
+            // 
+            // lblEsperLevel4
+            // 
+            this.lblEsperLevel4.AutoSize = true;
+            this.lblEsperLevel4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel4.Location = new System.Drawing.Point(392, 59);
+            this.lblEsperLevel4.Name = "lblEsperLevel4";
+            this.lblEsperLevel4.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel4.TabIndex = 154;
+            this.lblEsperLevel4.Text = "4";
+            // 
+            // lblEsperLevel3
+            // 
+            this.lblEsperLevel3.AutoSize = true;
+            this.lblEsperLevel3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel3.Location = new System.Drawing.Point(356, 59);
+            this.lblEsperLevel3.Name = "lblEsperLevel3";
+            this.lblEsperLevel3.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel3.TabIndex = 153;
+            this.lblEsperLevel3.Text = "3";
+            // 
+            // lblEsperLevel2
+            // 
+            this.lblEsperLevel2.AutoSize = true;
+            this.lblEsperLevel2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel2.Location = new System.Drawing.Point(320, 59);
+            this.lblEsperLevel2.Name = "lblEsperLevel2";
+            this.lblEsperLevel2.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel2.TabIndex = 152;
+            this.lblEsperLevel2.Text = "2";
+            // 
+            // lblEsperLevel1
+            // 
+            this.lblEsperLevel1.AutoSize = true;
+            this.lblEsperLevel1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel1.Location = new System.Drawing.Point(284, 59);
+            this.lblEsperLevel1.Name = "lblEsperLevel1";
+            this.lblEsperLevel1.Size = new System.Drawing.Size(18, 19);
+            this.lblEsperLevel1.TabIndex = 151;
+            this.lblEsperLevel1.Text = "1";
+            // 
+            // lblEsperLevel
+            // 
+            this.lblEsperLevel.AutoSize = true;
+            this.lblEsperLevel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperLevel.Location = new System.Drawing.Point(217, 9);
+            this.lblEsperLevel.Name = "lblEsperLevel";
+            this.lblEsperLevel.Size = new System.Drawing.Size(149, 19);
+            this.lblEsperLevel.TabIndex = 150;
+            this.lblEsperLevel.Text = "Esper \"Level\" Bonus";
+            // 
+            // txtEsperMag20
+            // 
+            this.txtEsperMag20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag20.Location = new System.Drawing.Point(972, 282);
+            this.txtEsperMag20.Name = "txtEsperMag20";
+            this.txtEsperMag20.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag20.TabIndex = 149;
+            // 
+            // txtEsperMag19
+            // 
+            this.txtEsperMag19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag19.Location = new System.Drawing.Point(936, 282);
+            this.txtEsperMag19.Name = "txtEsperMag19";
+            this.txtEsperMag19.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag19.TabIndex = 148;
+            // 
+            // txtEsperMag18
+            // 
+            this.txtEsperMag18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag18.Location = new System.Drawing.Point(900, 282);
+            this.txtEsperMag18.Name = "txtEsperMag18";
+            this.txtEsperMag18.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag18.TabIndex = 147;
+            // 
+            // txtEsperMag17
+            // 
+            this.txtEsperMag17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag17.Location = new System.Drawing.Point(864, 282);
+            this.txtEsperMag17.Name = "txtEsperMag17";
+            this.txtEsperMag17.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag17.TabIndex = 146;
+            // 
+            // txtEsperMag16
+            // 
+            this.txtEsperMag16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag16.Location = new System.Drawing.Point(828, 282);
+            this.txtEsperMag16.Name = "txtEsperMag16";
+            this.txtEsperMag16.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag16.TabIndex = 145;
+            // 
+            // txtEsperMag15
+            // 
+            this.txtEsperMag15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag15.Location = new System.Drawing.Point(792, 282);
+            this.txtEsperMag15.Name = "txtEsperMag15";
+            this.txtEsperMag15.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag15.TabIndex = 144;
+            // 
+            // txtEsperMag14
+            // 
+            this.txtEsperMag14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag14.Location = new System.Drawing.Point(756, 282);
+            this.txtEsperMag14.Name = "txtEsperMag14";
+            this.txtEsperMag14.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag14.TabIndex = 143;
+            // 
+            // txtEsperMag13
+            // 
+            this.txtEsperMag13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag13.Location = new System.Drawing.Point(720, 282);
+            this.txtEsperMag13.Name = "txtEsperMag13";
+            this.txtEsperMag13.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag13.TabIndex = 142;
+            // 
+            // txtEsperMag12
+            // 
+            this.txtEsperMag12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag12.Location = new System.Drawing.Point(684, 282);
+            this.txtEsperMag12.Name = "txtEsperMag12";
+            this.txtEsperMag12.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag12.TabIndex = 141;
+            // 
+            // txtEsperMag11
+            // 
+            this.txtEsperMag11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag11.Location = new System.Drawing.Point(648, 282);
+            this.txtEsperMag11.Name = "txtEsperMag11";
+            this.txtEsperMag11.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag11.TabIndex = 140;
+            // 
+            // txtEsperMag10
+            // 
+            this.txtEsperMag10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag10.Location = new System.Drawing.Point(612, 281);
+            this.txtEsperMag10.Name = "txtEsperMag10";
+            this.txtEsperMag10.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag10.TabIndex = 139;
+            // 
+            // txtEsperMag9
+            // 
+            this.txtEsperMag9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag9.Location = new System.Drawing.Point(576, 281);
+            this.txtEsperMag9.Name = "txtEsperMag9";
+            this.txtEsperMag9.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag9.TabIndex = 138;
+            // 
+            // txtEsperMag8
+            // 
+            this.txtEsperMag8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag8.Location = new System.Drawing.Point(540, 281);
+            this.txtEsperMag8.Name = "txtEsperMag8";
+            this.txtEsperMag8.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag8.TabIndex = 137;
+            // 
+            // txtEsperMag7
+            // 
+            this.txtEsperMag7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag7.Location = new System.Drawing.Point(504, 281);
+            this.txtEsperMag7.Name = "txtEsperMag7";
+            this.txtEsperMag7.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag7.TabIndex = 136;
+            // 
+            // txtEsperMag6
+            // 
+            this.txtEsperMag6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag6.Location = new System.Drawing.Point(468, 281);
+            this.txtEsperMag6.Name = "txtEsperMag6";
+            this.txtEsperMag6.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag6.TabIndex = 135;
+            // 
+            // txtEsperMag5
+            // 
+            this.txtEsperMag5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag5.Location = new System.Drawing.Point(432, 281);
+            this.txtEsperMag5.Name = "txtEsperMag5";
+            this.txtEsperMag5.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag5.TabIndex = 134;
+            // 
+            // txtEsperMag4
+            // 
+            this.txtEsperMag4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag4.Location = new System.Drawing.Point(396, 281);
+            this.txtEsperMag4.Name = "txtEsperMag4";
+            this.txtEsperMag4.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag4.TabIndex = 133;
+            // 
+            // txtEsperMag3
+            // 
+            this.txtEsperMag3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag3.Location = new System.Drawing.Point(360, 281);
+            this.txtEsperMag3.Name = "txtEsperMag3";
+            this.txtEsperMag3.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag3.TabIndex = 132;
+            // 
+            // txtEsperMag2
+            // 
+            this.txtEsperMag2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag2.Location = new System.Drawing.Point(324, 281);
+            this.txtEsperMag2.Name = "txtEsperMag2";
+            this.txtEsperMag2.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag2.TabIndex = 131;
+            // 
+            // txtEsperMag1
+            // 
+            this.txtEsperMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperMag1.Location = new System.Drawing.Point(288, 281);
+            this.txtEsperMag1.Name = "txtEsperMag1";
+            this.txtEsperMag1.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperMag1.TabIndex = 130;
+            // 
+            // txtEsperVit20
+            // 
+            this.txtEsperVit20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit20.Location = new System.Drawing.Point(972, 215);
+            this.txtEsperVit20.Name = "txtEsperVit20";
+            this.txtEsperVit20.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit20.TabIndex = 129;
+            // 
+            // txtEsperVit19
+            // 
+            this.txtEsperVit19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit19.Location = new System.Drawing.Point(936, 215);
+            this.txtEsperVit19.Name = "txtEsperVit19";
+            this.txtEsperVit19.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit19.TabIndex = 128;
+            // 
+            // txtEsperVit18
+            // 
+            this.txtEsperVit18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit18.Location = new System.Drawing.Point(900, 215);
+            this.txtEsperVit18.Name = "txtEsperVit18";
+            this.txtEsperVit18.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit18.TabIndex = 127;
+            // 
+            // txtEsperVit17
+            // 
+            this.txtEsperVit17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit17.Location = new System.Drawing.Point(864, 215);
+            this.txtEsperVit17.Name = "txtEsperVit17";
+            this.txtEsperVit17.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit17.TabIndex = 126;
+            // 
+            // txtEsperVit16
+            // 
+            this.txtEsperVit16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit16.Location = new System.Drawing.Point(828, 215);
+            this.txtEsperVit16.Name = "txtEsperVit16";
+            this.txtEsperVit16.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit16.TabIndex = 125;
+            // 
+            // txtEsperVit15
+            // 
+            this.txtEsperVit15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit15.Location = new System.Drawing.Point(792, 215);
+            this.txtEsperVit15.Name = "txtEsperVit15";
+            this.txtEsperVit15.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit15.TabIndex = 124;
+            // 
+            // txtEsperVit14
+            // 
+            this.txtEsperVit14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit14.Location = new System.Drawing.Point(756, 215);
+            this.txtEsperVit14.Name = "txtEsperVit14";
+            this.txtEsperVit14.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit14.TabIndex = 123;
+            // 
+            // txtEsperVit13
+            // 
+            this.txtEsperVit13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit13.Location = new System.Drawing.Point(720, 215);
+            this.txtEsperVit13.Name = "txtEsperVit13";
+            this.txtEsperVit13.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit13.TabIndex = 122;
+            // 
+            // txtEsperVit12
+            // 
+            this.txtEsperVit12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit12.Location = new System.Drawing.Point(684, 215);
+            this.txtEsperVit12.Name = "txtEsperVit12";
+            this.txtEsperVit12.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit12.TabIndex = 121;
+            // 
+            // txtEsperVit11
+            // 
+            this.txtEsperVit11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit11.Location = new System.Drawing.Point(648, 215);
+            this.txtEsperVit11.Name = "txtEsperVit11";
+            this.txtEsperVit11.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit11.TabIndex = 120;
+            // 
+            // txtEsperVit10
+            // 
+            this.txtEsperVit10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit10.Location = new System.Drawing.Point(612, 215);
+            this.txtEsperVit10.Name = "txtEsperVit10";
+            this.txtEsperVit10.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit10.TabIndex = 119;
+            // 
+            // txtEsperVit9
+            // 
+            this.txtEsperVit9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit9.Location = new System.Drawing.Point(576, 215);
+            this.txtEsperVit9.Name = "txtEsperVit9";
+            this.txtEsperVit9.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit9.TabIndex = 118;
+            // 
+            // txtEsperVit8
+            // 
+            this.txtEsperVit8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit8.Location = new System.Drawing.Point(540, 215);
+            this.txtEsperVit8.Name = "txtEsperVit8";
+            this.txtEsperVit8.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit8.TabIndex = 117;
+            // 
+            // txtEsperVit7
+            // 
+            this.txtEsperVit7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit7.Location = new System.Drawing.Point(504, 215);
+            this.txtEsperVit7.Name = "txtEsperVit7";
+            this.txtEsperVit7.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit7.TabIndex = 116;
+            // 
+            // txtEsperVit6
+            // 
+            this.txtEsperVit6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit6.Location = new System.Drawing.Point(468, 215);
+            this.txtEsperVit6.Name = "txtEsperVit6";
+            this.txtEsperVit6.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit6.TabIndex = 115;
+            // 
+            // txtEsperVit5
+            // 
+            this.txtEsperVit5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit5.Location = new System.Drawing.Point(432, 215);
+            this.txtEsperVit5.Name = "txtEsperVit5";
+            this.txtEsperVit5.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit5.TabIndex = 114;
+            // 
+            // txtEsperVit4
+            // 
+            this.txtEsperVit4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit4.Location = new System.Drawing.Point(396, 215);
+            this.txtEsperVit4.Name = "txtEsperVit4";
+            this.txtEsperVit4.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit4.TabIndex = 113;
+            // 
+            // txtEsperVit3
+            // 
+            this.txtEsperVit3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit3.Location = new System.Drawing.Point(360, 215);
+            this.txtEsperVit3.Name = "txtEsperVit3";
+            this.txtEsperVit3.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit3.TabIndex = 112;
+            // 
+            // txtEsperVit2
+            // 
+            this.txtEsperVit2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit2.Location = new System.Drawing.Point(324, 215);
+            this.txtEsperVit2.Name = "txtEsperVit2";
+            this.txtEsperVit2.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit2.TabIndex = 111;
+            // 
+            // txtEsperVit1
+            // 
+            this.txtEsperVit1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperVit1.Location = new System.Drawing.Point(288, 215);
+            this.txtEsperVit1.Name = "txtEsperVit1";
+            this.txtEsperVit1.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperVit1.TabIndex = 110;
+            // 
+            // txtEsperAgi20
+            // 
+            this.txtEsperAgi20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi20.Location = new System.Drawing.Point(972, 149);
+            this.txtEsperAgi20.Name = "txtEsperAgi20";
+            this.txtEsperAgi20.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi20.TabIndex = 109;
+            // 
+            // txtEsperAgi19
+            // 
+            this.txtEsperAgi19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi19.Location = new System.Drawing.Point(936, 149);
+            this.txtEsperAgi19.Name = "txtEsperAgi19";
+            this.txtEsperAgi19.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi19.TabIndex = 108;
+            // 
+            // txtEsperAgi18
+            // 
+            this.txtEsperAgi18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi18.Location = new System.Drawing.Point(900, 149);
+            this.txtEsperAgi18.Name = "txtEsperAgi18";
+            this.txtEsperAgi18.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi18.TabIndex = 107;
+            // 
+            // txtEsperAgi17
+            // 
+            this.txtEsperAgi17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi17.Location = new System.Drawing.Point(864, 149);
+            this.txtEsperAgi17.Name = "txtEsperAgi17";
+            this.txtEsperAgi17.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi17.TabIndex = 106;
+            // 
+            // txtEsperAgi16
+            // 
+            this.txtEsperAgi16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi16.Location = new System.Drawing.Point(828, 149);
+            this.txtEsperAgi16.Name = "txtEsperAgi16";
+            this.txtEsperAgi16.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi16.TabIndex = 105;
+            // 
+            // txtEsperAgi15
+            // 
+            this.txtEsperAgi15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi15.Location = new System.Drawing.Point(792, 149);
+            this.txtEsperAgi15.Name = "txtEsperAgi15";
+            this.txtEsperAgi15.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi15.TabIndex = 104;
+            // 
+            // txtEsperAgi14
+            // 
+            this.txtEsperAgi14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi14.Location = new System.Drawing.Point(756, 149);
+            this.txtEsperAgi14.Name = "txtEsperAgi14";
+            this.txtEsperAgi14.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi14.TabIndex = 103;
+            // 
+            // txtEsperAgi13
+            // 
+            this.txtEsperAgi13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi13.Location = new System.Drawing.Point(720, 149);
+            this.txtEsperAgi13.Name = "txtEsperAgi13";
+            this.txtEsperAgi13.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi13.TabIndex = 102;
+            // 
+            // txtEsperAgi12
+            // 
+            this.txtEsperAgi12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi12.Location = new System.Drawing.Point(684, 149);
+            this.txtEsperAgi12.Name = "txtEsperAgi12";
+            this.txtEsperAgi12.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi12.TabIndex = 101;
+            // 
+            // txtEsperAgi11
+            // 
+            this.txtEsperAgi11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi11.Location = new System.Drawing.Point(648, 149);
+            this.txtEsperAgi11.Name = "txtEsperAgi11";
+            this.txtEsperAgi11.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi11.TabIndex = 100;
+            // 
+            // txtEsperAgi10
+            // 
+            this.txtEsperAgi10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi10.Location = new System.Drawing.Point(612, 149);
+            this.txtEsperAgi10.Name = "txtEsperAgi10";
+            this.txtEsperAgi10.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi10.TabIndex = 99;
+            // 
+            // txtEsperAgi9
+            // 
+            this.txtEsperAgi9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi9.Location = new System.Drawing.Point(576, 149);
+            this.txtEsperAgi9.Name = "txtEsperAgi9";
+            this.txtEsperAgi9.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi9.TabIndex = 98;
+            // 
+            // txtEsperAgi8
+            // 
+            this.txtEsperAgi8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi8.Location = new System.Drawing.Point(540, 149);
+            this.txtEsperAgi8.Name = "txtEsperAgi8";
+            this.txtEsperAgi8.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi8.TabIndex = 97;
+            // 
+            // txtEsperAgi7
+            // 
+            this.txtEsperAgi7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi7.Location = new System.Drawing.Point(504, 149);
+            this.txtEsperAgi7.Name = "txtEsperAgi7";
+            this.txtEsperAgi7.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi7.TabIndex = 96;
+            // 
+            // txtEsperAgi6
+            // 
+            this.txtEsperAgi6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi6.Location = new System.Drawing.Point(468, 149);
+            this.txtEsperAgi6.Name = "txtEsperAgi6";
+            this.txtEsperAgi6.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi6.TabIndex = 95;
+            // 
+            // txtEsperAgi5
+            // 
+            this.txtEsperAgi5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi5.Location = new System.Drawing.Point(432, 149);
+            this.txtEsperAgi5.Name = "txtEsperAgi5";
+            this.txtEsperAgi5.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi5.TabIndex = 94;
+            // 
+            // txtEsperAgi4
+            // 
+            this.txtEsperAgi4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi4.Location = new System.Drawing.Point(396, 149);
+            this.txtEsperAgi4.Name = "txtEsperAgi4";
+            this.txtEsperAgi4.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi4.TabIndex = 93;
+            // 
+            // txtEsperAgi3
+            // 
+            this.txtEsperAgi3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi3.Location = new System.Drawing.Point(360, 149);
+            this.txtEsperAgi3.Name = "txtEsperAgi3";
+            this.txtEsperAgi3.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi3.TabIndex = 92;
+            // 
+            // txtEsperAgi2
+            // 
+            this.txtEsperAgi2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi2.Location = new System.Drawing.Point(324, 149);
+            this.txtEsperAgi2.Name = "txtEsperAgi2";
+            this.txtEsperAgi2.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi2.TabIndex = 91;
+            // 
+            // txtEsperAgi1
+            // 
+            this.txtEsperAgi1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperAgi1.Location = new System.Drawing.Point(288, 149);
+            this.txtEsperAgi1.Name = "txtEsperAgi1";
+            this.txtEsperAgi1.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperAgi1.TabIndex = 90;
+            // 
+            // txtEsperStr20
+            // 
+            this.txtEsperStr20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr20.Location = new System.Drawing.Point(972, 83);
+            this.txtEsperStr20.Name = "txtEsperStr20";
+            this.txtEsperStr20.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr20.TabIndex = 89;
+            // 
+            // txtEsperStr19
+            // 
+            this.txtEsperStr19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr19.Location = new System.Drawing.Point(936, 83);
+            this.txtEsperStr19.Name = "txtEsperStr19";
+            this.txtEsperStr19.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr19.TabIndex = 88;
+            // 
+            // txtEsperStr18
+            // 
+            this.txtEsperStr18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr18.Location = new System.Drawing.Point(900, 83);
+            this.txtEsperStr18.Name = "txtEsperStr18";
+            this.txtEsperStr18.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr18.TabIndex = 87;
+            // 
+            // txtEsperStr17
+            // 
+            this.txtEsperStr17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr17.Location = new System.Drawing.Point(864, 83);
+            this.txtEsperStr17.Name = "txtEsperStr17";
+            this.txtEsperStr17.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr17.TabIndex = 86;
+            // 
+            // txtEsperStr16
+            // 
+            this.txtEsperStr16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr16.Location = new System.Drawing.Point(828, 83);
+            this.txtEsperStr16.Name = "txtEsperStr16";
+            this.txtEsperStr16.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr16.TabIndex = 85;
+            // 
+            // txtEsperStr15
+            // 
+            this.txtEsperStr15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr15.Location = new System.Drawing.Point(792, 83);
+            this.txtEsperStr15.Name = "txtEsperStr15";
+            this.txtEsperStr15.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr15.TabIndex = 84;
+            // 
+            // txtEsperStr14
+            // 
+            this.txtEsperStr14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr14.Location = new System.Drawing.Point(756, 83);
+            this.txtEsperStr14.Name = "txtEsperStr14";
+            this.txtEsperStr14.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr14.TabIndex = 83;
+            // 
+            // txtEsperStr13
+            // 
+            this.txtEsperStr13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr13.Location = new System.Drawing.Point(720, 83);
+            this.txtEsperStr13.Name = "txtEsperStr13";
+            this.txtEsperStr13.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr13.TabIndex = 82;
+            // 
+            // txtEsperStr12
+            // 
+            this.txtEsperStr12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr12.Location = new System.Drawing.Point(684, 83);
+            this.txtEsperStr12.Name = "txtEsperStr12";
+            this.txtEsperStr12.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr12.TabIndex = 81;
+            // 
+            // txtEsperStr11
+            // 
+            this.txtEsperStr11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr11.Location = new System.Drawing.Point(648, 83);
+            this.txtEsperStr11.Name = "txtEsperStr11";
+            this.txtEsperStr11.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr11.TabIndex = 80;
+            // 
+            // txtEsperStr10
+            // 
+            this.txtEsperStr10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr10.Location = new System.Drawing.Point(612, 83);
+            this.txtEsperStr10.Name = "txtEsperStr10";
+            this.txtEsperStr10.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr10.TabIndex = 79;
+            // 
+            // txtEsperStr9
+            // 
+            this.txtEsperStr9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr9.Location = new System.Drawing.Point(576, 83);
+            this.txtEsperStr9.Name = "txtEsperStr9";
+            this.txtEsperStr9.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr9.TabIndex = 78;
+            // 
+            // txtEsperStr8
+            // 
+            this.txtEsperStr8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr8.Location = new System.Drawing.Point(540, 83);
+            this.txtEsperStr8.Name = "txtEsperStr8";
+            this.txtEsperStr8.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr8.TabIndex = 77;
+            // 
+            // txtEsperStr7
+            // 
+            this.txtEsperStr7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr7.Location = new System.Drawing.Point(504, 83);
+            this.txtEsperStr7.Name = "txtEsperStr7";
+            this.txtEsperStr7.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr7.TabIndex = 76;
+            // 
+            // txtEsperStr6
+            // 
+            this.txtEsperStr6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr6.Location = new System.Drawing.Point(468, 83);
+            this.txtEsperStr6.Name = "txtEsperStr6";
+            this.txtEsperStr6.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr6.TabIndex = 75;
+            // 
+            // txtEsperStr5
+            // 
+            this.txtEsperStr5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr5.Location = new System.Drawing.Point(432, 83);
+            this.txtEsperStr5.Name = "txtEsperStr5";
+            this.txtEsperStr5.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr5.TabIndex = 74;
+            // 
+            // txtEsperStr4
+            // 
+            this.txtEsperStr4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr4.Location = new System.Drawing.Point(396, 83);
+            this.txtEsperStr4.Name = "txtEsperStr4";
+            this.txtEsperStr4.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr4.TabIndex = 73;
+            // 
+            // txtEsperStr3
+            // 
+            this.txtEsperStr3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr3.Location = new System.Drawing.Point(360, 83);
+            this.txtEsperStr3.Name = "txtEsperStr3";
+            this.txtEsperStr3.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr3.TabIndex = 72;
+            // 
+            // txtEsperStr2
+            // 
+            this.txtEsperStr2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr2.Location = new System.Drawing.Point(324, 83);
+            this.txtEsperStr2.Name = "txtEsperStr2";
+            this.txtEsperStr2.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr2.TabIndex = 71;
+            // 
+            // txtEsperStr1
+            // 
+            this.txtEsperStr1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEsperStr1.Location = new System.Drawing.Point(288, 83);
+            this.txtEsperStr1.Name = "txtEsperStr1";
+            this.txtEsperStr1.Size = new System.Drawing.Size(30, 27);
+            this.txtEsperStr1.TabIndex = 70;
+            // 
+            // lblEsperMag1
+            // 
+            this.lblEsperMag1.AutoSize = true;
+            this.lblEsperMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperMag1.Location = new System.Drawing.Point(233, 284);
+            this.lblEsperMag1.Name = "lblEsperMag1";
+            this.lblEsperMag1.Size = new System.Drawing.Size(49, 19);
+            this.lblEsperMag1.TabIndex = 69;
+            this.lblEsperMag1.Text = "Magic";
+            // 
+            // lblEsperVit1
+            // 
+            this.lblEsperVit1.AutoSize = true;
+            this.lblEsperVit1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperVit1.Location = new System.Drawing.Point(225, 218);
+            this.lblEsperVit1.Name = "lblEsperVit1";
+            this.lblEsperVit1.Size = new System.Drawing.Size(57, 19);
+            this.lblEsperVit1.TabIndex = 68;
+            this.lblEsperVit1.Text = "Vitality";
+            // 
+            // lblEsperAgi1
+            // 
+            this.lblEsperAgi1.AutoSize = true;
+            this.lblEsperAgi1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperAgi1.Location = new System.Drawing.Point(228, 152);
+            this.lblEsperAgi1.Name = "lblEsperAgi1";
+            this.lblEsperAgi1.Size = new System.Drawing.Size(54, 19);
+            this.lblEsperAgi1.TabIndex = 67;
+            this.lblEsperAgi1.Text = "Agility";
+            // 
+            // lblEsperStr1
+            // 
+            this.lblEsperStr1.AutoSize = true;
+            this.lblEsperStr1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsperStr1.Location = new System.Drawing.Point(213, 86);
+            this.lblEsperStr1.Name = "lblEsperStr1";
+            this.lblEsperStr1.Size = new System.Drawing.Size(69, 19);
+            this.lblEsperStr1.TabIndex = 66;
+            this.lblEsperStr1.Text = "Strength";
+            // 
             // btnEspersCancel
             // 
             this.btnEspersCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnEspersCancel.Location = new System.Drawing.Point(937, 536);
+            this.btnEspersCancel.Location = new System.Drawing.Point(1332, 489);
             this.btnEspersCancel.Name = "btnEspersCancel";
             this.btnEspersCancel.Size = new System.Drawing.Size(75, 23);
             this.btnEspersCancel.TabIndex = 65;
@@ -7094,7 +8223,7 @@
             // 
             // btnEspersOkay
             // 
-            this.btnEspersOkay.Location = new System.Drawing.Point(856, 536);
+            this.btnEspersOkay.Location = new System.Drawing.Point(1251, 489);
             this.btnEspersOkay.Name = "btnEspersOkay";
             this.btnEspersOkay.Size = new System.Drawing.Size(75, 23);
             this.btnEspersOkay.TabIndex = 64;
@@ -9894,920 +11023,2943 @@
             // 
             // tabEnemies
             // 
+            this.tabEnemies.Controls.Add(this.numMonsterIndex);
+            this.tabEnemies.Controls.Add(this.lblNormalAttack);
+            this.tabEnemies.Controls.Add(this.cmbNormalAttack);
+            this.tabEnemies.Controls.Add(this.groupBox1);
+            this.tabEnemies.Controls.Add(this.grpSpecialStatus);
+            this.tabEnemies.Controls.Add(this.grpMonsterElements);
+            this.tabEnemies.Controls.Add(this.numMonsterEXP);
+            this.tabEnemies.Controls.Add(this.numMonsterGil);
+            this.tabEnemies.Controls.Add(this.numMonsterMP);
+            this.tabEnemies.Controls.Add(this.numMonsterHP);
+            this.tabEnemies.Controls.Add(this.btnMonstersCancel);
+            this.tabEnemies.Controls.Add(this.btnMonstersOkay);
+            this.tabEnemies.Controls.Add(this.lblMonsterGil);
+            this.tabEnemies.Controls.Add(this.lblMonsterEXP);
+            this.tabEnemies.Controls.Add(this.pictureBox1);
+            this.tabEnemies.Controls.Add(this.cmbDifficulty);
+            this.tabEnemies.Controls.Add(this.lblMonsterAccuracy);
+            this.tabEnemies.Controls.Add(this.lblMonsterVitality);
+            this.tabEnemies.Controls.Add(this.numMonsterAttack);
+            this.tabEnemies.Controls.Add(this.numMonsterDefense);
+            this.tabEnemies.Controls.Add(this.numMonsterMagEva);
+            this.tabEnemies.Controls.Add(this.numMonsterEvasion);
+            this.tabEnemies.Controls.Add(this.numMonsterVitality);
+            this.tabEnemies.Controls.Add(this.numMonsterMagic);
+            this.tabEnemies.Controls.Add(this.numMonsterAccuracy);
+            this.tabEnemies.Controls.Add(this.numMonsterAgility);
+            this.tabEnemies.Controls.Add(this.numMonsterMagDef);
+            this.tabEnemies.Controls.Add(this.numMonsterStrength);
+            this.tabEnemies.Controls.Add(this.lblMonsterAgility);
+            this.tabEnemies.Controls.Add(this.lblMonsterEvasion);
+            this.tabEnemies.Controls.Add(this.lblMonsterDefense);
+            this.tabEnemies.Controls.Add(this.lblMonsterMagic);
+            this.tabEnemies.Controls.Add(this.lblMonsterAttack);
+            this.tabEnemies.Controls.Add(this.lblMonsterMagEva);
+            this.tabEnemies.Controls.Add(this.lblMonsterMagDef);
+            this.tabEnemies.Controls.Add(this.lblMonsterStrength);
+            this.tabEnemies.Controls.Add(this.lblMonsterMP);
+            this.tabEnemies.Controls.Add(this.lblMonsterHP);
+            this.tabEnemies.Controls.Add(this.numMonsterLevel);
+            this.tabEnemies.Controls.Add(this.lblMonsterLevel);
+            this.tabEnemies.Controls.Add(this.cmbMonsters);
             this.tabEnemies.Location = new System.Drawing.Point(4, 22);
             this.tabEnemies.Name = "tabEnemies";
             this.tabEnemies.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEnemies.Size = new System.Drawing.Size(927, 565);
+            this.tabEnemies.Size = new System.Drawing.Size(1413, 518);
             this.tabEnemies.TabIndex = 2;
             this.tabEnemies.Text = "Enemies";
             this.tabEnemies.UseVisualStyleBackColor = true;
             // 
-            // lblEsperStr1
-            // 
-            this.lblEsperStr1.AutoSize = true;
-            this.lblEsperStr1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperStr1.Location = new System.Drawing.Point(213, 86);
-            this.lblEsperStr1.Name = "lblEsperStr1";
-            this.lblEsperStr1.Size = new System.Drawing.Size(69, 19);
-            this.lblEsperStr1.TabIndex = 66;
-            this.lblEsperStr1.Text = "Strength";
-            // 
-            // lblEsperAgi1
-            // 
-            this.lblEsperAgi1.AutoSize = true;
-            this.lblEsperAgi1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperAgi1.Location = new System.Drawing.Point(228, 152);
-            this.lblEsperAgi1.Name = "lblEsperAgi1";
-            this.lblEsperAgi1.Size = new System.Drawing.Size(54, 19);
-            this.lblEsperAgi1.TabIndex = 67;
-            this.lblEsperAgi1.Text = "Agility";
-            // 
-            // lblEsperVit1
-            // 
-            this.lblEsperVit1.AutoSize = true;
-            this.lblEsperVit1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperVit1.Location = new System.Drawing.Point(225, 218);
-            this.lblEsperVit1.Name = "lblEsperVit1";
-            this.lblEsperVit1.Size = new System.Drawing.Size(57, 19);
-            this.lblEsperVit1.TabIndex = 68;
-            this.lblEsperVit1.Text = "Vitality";
-            // 
-            // lblEsperMag1
-            // 
-            this.lblEsperMag1.AutoSize = true;
-            this.lblEsperMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperMag1.Location = new System.Drawing.Point(233, 284);
-            this.lblEsperMag1.Name = "lblEsperMag1";
-            this.lblEsperMag1.Size = new System.Drawing.Size(49, 19);
-            this.lblEsperMag1.TabIndex = 69;
-            this.lblEsperMag1.Text = "Magic";
-            // 
-            // txtEsperStr1
-            // 
-            this.txtEsperStr1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr1.Location = new System.Drawing.Point(288, 83);
-            this.txtEsperStr1.Name = "txtEsperStr1";
-            this.txtEsperStr1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr1.TabIndex = 70;
-            // 
-            // txtEsperStr2
-            // 
-            this.txtEsperStr2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr2.Location = new System.Drawing.Point(324, 83);
-            this.txtEsperStr2.Name = "txtEsperStr2";
-            this.txtEsperStr2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr2.TabIndex = 71;
-            // 
-            // txtEsperStr3
-            // 
-            this.txtEsperStr3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr3.Location = new System.Drawing.Point(360, 83);
-            this.txtEsperStr3.Name = "txtEsperStr3";
-            this.txtEsperStr3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr3.TabIndex = 72;
-            // 
-            // txtEsperStr4
-            // 
-            this.txtEsperStr4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr4.Location = new System.Drawing.Point(396, 83);
-            this.txtEsperStr4.Name = "txtEsperStr4";
-            this.txtEsperStr4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr4.TabIndex = 73;
-            // 
-            // txtEsperStr5
-            // 
-            this.txtEsperStr5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr5.Location = new System.Drawing.Point(432, 83);
-            this.txtEsperStr5.Name = "txtEsperStr5";
-            this.txtEsperStr5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr5.TabIndex = 74;
-            // 
-            // txtEsperStr6
-            // 
-            this.txtEsperStr6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr6.Location = new System.Drawing.Point(468, 83);
-            this.txtEsperStr6.Name = "txtEsperStr6";
-            this.txtEsperStr6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr6.TabIndex = 75;
-            // 
-            // txtEsperStr7
-            // 
-            this.txtEsperStr7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr7.Location = new System.Drawing.Point(504, 83);
-            this.txtEsperStr7.Name = "txtEsperStr7";
-            this.txtEsperStr7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr7.TabIndex = 76;
-            // 
-            // txtEsperStr8
-            // 
-            this.txtEsperStr8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr8.Location = new System.Drawing.Point(540, 83);
-            this.txtEsperStr8.Name = "txtEsperStr8";
-            this.txtEsperStr8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr8.TabIndex = 77;
-            // 
-            // txtEsperStr9
-            // 
-            this.txtEsperStr9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr9.Location = new System.Drawing.Point(576, 83);
-            this.txtEsperStr9.Name = "txtEsperStr9";
-            this.txtEsperStr9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr9.TabIndex = 78;
-            // 
-            // txtEsperStr10
-            // 
-            this.txtEsperStr10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr10.Location = new System.Drawing.Point(612, 83);
-            this.txtEsperStr10.Name = "txtEsperStr10";
-            this.txtEsperStr10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr10.TabIndex = 79;
-            // 
-            // txtEsperStr20
-            // 
-            this.txtEsperStr20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr20.Location = new System.Drawing.Point(972, 83);
-            this.txtEsperStr20.Name = "txtEsperStr20";
-            this.txtEsperStr20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr20.TabIndex = 89;
-            // 
-            // txtEsperStr19
-            // 
-            this.txtEsperStr19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr19.Location = new System.Drawing.Point(936, 83);
-            this.txtEsperStr19.Name = "txtEsperStr19";
-            this.txtEsperStr19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr19.TabIndex = 88;
-            // 
-            // txtEsperStr18
-            // 
-            this.txtEsperStr18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr18.Location = new System.Drawing.Point(900, 83);
-            this.txtEsperStr18.Name = "txtEsperStr18";
-            this.txtEsperStr18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr18.TabIndex = 87;
-            // 
-            // txtEsperStr17
-            // 
-            this.txtEsperStr17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr17.Location = new System.Drawing.Point(864, 83);
-            this.txtEsperStr17.Name = "txtEsperStr17";
-            this.txtEsperStr17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr17.TabIndex = 86;
-            // 
-            // txtEsperStr16
-            // 
-            this.txtEsperStr16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr16.Location = new System.Drawing.Point(828, 83);
-            this.txtEsperStr16.Name = "txtEsperStr16";
-            this.txtEsperStr16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr16.TabIndex = 85;
-            // 
-            // txtEsperStr15
-            // 
-            this.txtEsperStr15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr15.Location = new System.Drawing.Point(792, 83);
-            this.txtEsperStr15.Name = "txtEsperStr15";
-            this.txtEsperStr15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr15.TabIndex = 84;
-            // 
-            // txtEsperStr14
-            // 
-            this.txtEsperStr14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr14.Location = new System.Drawing.Point(756, 83);
-            this.txtEsperStr14.Name = "txtEsperStr14";
-            this.txtEsperStr14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr14.TabIndex = 83;
-            // 
-            // txtEsperStr13
-            // 
-            this.txtEsperStr13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr13.Location = new System.Drawing.Point(720, 83);
-            this.txtEsperStr13.Name = "txtEsperStr13";
-            this.txtEsperStr13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr13.TabIndex = 82;
-            // 
-            // txtEsperStr12
-            // 
-            this.txtEsperStr12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr12.Location = new System.Drawing.Point(684, 83);
-            this.txtEsperStr12.Name = "txtEsperStr12";
-            this.txtEsperStr12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr12.TabIndex = 81;
-            // 
-            // txtEsperStr11
-            // 
-            this.txtEsperStr11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr11.Location = new System.Drawing.Point(648, 83);
-            this.txtEsperStr11.Name = "txtEsperStr11";
-            this.txtEsperStr11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr11.TabIndex = 80;
-            // 
-            // txtEsperAgi20
-            // 
-            this.txtEsperAgi20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi20.Location = new System.Drawing.Point(972, 149);
-            this.txtEsperAgi20.Name = "txtEsperAgi20";
-            this.txtEsperAgi20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi20.TabIndex = 109;
-            // 
-            // txtEsperAgi19
-            // 
-            this.txtEsperAgi19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi19.Location = new System.Drawing.Point(936, 149);
-            this.txtEsperAgi19.Name = "txtEsperAgi19";
-            this.txtEsperAgi19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi19.TabIndex = 108;
-            // 
-            // txtEsperAgi18
-            // 
-            this.txtEsperAgi18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi18.Location = new System.Drawing.Point(900, 149);
-            this.txtEsperAgi18.Name = "txtEsperAgi18";
-            this.txtEsperAgi18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi18.TabIndex = 107;
-            // 
-            // txtEsperAgi17
-            // 
-            this.txtEsperAgi17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi17.Location = new System.Drawing.Point(864, 149);
-            this.txtEsperAgi17.Name = "txtEsperAgi17";
-            this.txtEsperAgi17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi17.TabIndex = 106;
-            // 
-            // txtEsperAgi16
-            // 
-            this.txtEsperAgi16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi16.Location = new System.Drawing.Point(828, 149);
-            this.txtEsperAgi16.Name = "txtEsperAgi16";
-            this.txtEsperAgi16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi16.TabIndex = 105;
-            // 
-            // txtEsperAgi15
-            // 
-            this.txtEsperAgi15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi15.Location = new System.Drawing.Point(792, 149);
-            this.txtEsperAgi15.Name = "txtEsperAgi15";
-            this.txtEsperAgi15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi15.TabIndex = 104;
-            // 
-            // txtEsperAgi14
-            // 
-            this.txtEsperAgi14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi14.Location = new System.Drawing.Point(756, 149);
-            this.txtEsperAgi14.Name = "txtEsperAgi14";
-            this.txtEsperAgi14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi14.TabIndex = 103;
-            // 
-            // txtEsperAgi13
-            // 
-            this.txtEsperAgi13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi13.Location = new System.Drawing.Point(720, 149);
-            this.txtEsperAgi13.Name = "txtEsperAgi13";
-            this.txtEsperAgi13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi13.TabIndex = 102;
-            // 
-            // txtEsperAgi12
-            // 
-            this.txtEsperAgi12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi12.Location = new System.Drawing.Point(684, 149);
-            this.txtEsperAgi12.Name = "txtEsperAgi12";
-            this.txtEsperAgi12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi12.TabIndex = 101;
-            // 
-            // txtEsperAgi11
-            // 
-            this.txtEsperAgi11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi11.Location = new System.Drawing.Point(648, 149);
-            this.txtEsperAgi11.Name = "txtEsperAgi11";
-            this.txtEsperAgi11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi11.TabIndex = 100;
-            // 
-            // txtEsperAgi10
-            // 
-            this.txtEsperAgi10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi10.Location = new System.Drawing.Point(612, 149);
-            this.txtEsperAgi10.Name = "txtEsperAgi10";
-            this.txtEsperAgi10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi10.TabIndex = 99;
-            // 
-            // txtEsperAgi9
-            // 
-            this.txtEsperAgi9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi9.Location = new System.Drawing.Point(576, 149);
-            this.txtEsperAgi9.Name = "txtEsperAgi9";
-            this.txtEsperAgi9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi9.TabIndex = 98;
-            // 
-            // txtEsperAgi8
-            // 
-            this.txtEsperAgi8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi8.Location = new System.Drawing.Point(540, 149);
-            this.txtEsperAgi8.Name = "txtEsperAgi8";
-            this.txtEsperAgi8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi8.TabIndex = 97;
-            // 
-            // txtEsperAgi7
-            // 
-            this.txtEsperAgi7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi7.Location = new System.Drawing.Point(504, 149);
-            this.txtEsperAgi7.Name = "txtEsperAgi7";
-            this.txtEsperAgi7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi7.TabIndex = 96;
-            // 
-            // txtEsperAgi6
-            // 
-            this.txtEsperAgi6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi6.Location = new System.Drawing.Point(468, 149);
-            this.txtEsperAgi6.Name = "txtEsperAgi6";
-            this.txtEsperAgi6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi6.TabIndex = 95;
-            // 
-            // txtEsperAgi5
-            // 
-            this.txtEsperAgi5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi5.Location = new System.Drawing.Point(432, 149);
-            this.txtEsperAgi5.Name = "txtEsperAgi5";
-            this.txtEsperAgi5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi5.TabIndex = 94;
-            // 
-            // txtEsperAgi4
-            // 
-            this.txtEsperAgi4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi4.Location = new System.Drawing.Point(396, 149);
-            this.txtEsperAgi4.Name = "txtEsperAgi4";
-            this.txtEsperAgi4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi4.TabIndex = 93;
-            // 
-            // txtEsperAgi3
-            // 
-            this.txtEsperAgi3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi3.Location = new System.Drawing.Point(360, 149);
-            this.txtEsperAgi3.Name = "txtEsperAgi3";
-            this.txtEsperAgi3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi3.TabIndex = 92;
-            // 
-            // txtEsperAgi2
-            // 
-            this.txtEsperAgi2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi2.Location = new System.Drawing.Point(324, 149);
-            this.txtEsperAgi2.Name = "txtEsperAgi2";
-            this.txtEsperAgi2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi2.TabIndex = 91;
-            // 
-            // txtEsperAgi1
-            // 
-            this.txtEsperAgi1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi1.Location = new System.Drawing.Point(288, 149);
-            this.txtEsperAgi1.Name = "txtEsperAgi1";
-            this.txtEsperAgi1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi1.TabIndex = 90;
-            // 
-            // txtEsperVit20
-            // 
-            this.txtEsperVit20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit20.Location = new System.Drawing.Point(972, 215);
-            this.txtEsperVit20.Name = "txtEsperVit20";
-            this.txtEsperVit20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit20.TabIndex = 129;
-            // 
-            // txtEsperVit19
-            // 
-            this.txtEsperVit19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit19.Location = new System.Drawing.Point(936, 215);
-            this.txtEsperVit19.Name = "txtEsperVit19";
-            this.txtEsperVit19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit19.TabIndex = 128;
-            // 
-            // txtEsperVit18
-            // 
-            this.txtEsperVit18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit18.Location = new System.Drawing.Point(900, 215);
-            this.txtEsperVit18.Name = "txtEsperVit18";
-            this.txtEsperVit18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit18.TabIndex = 127;
-            // 
-            // txtEsperVit17
-            // 
-            this.txtEsperVit17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit17.Location = new System.Drawing.Point(864, 215);
-            this.txtEsperVit17.Name = "txtEsperVit17";
-            this.txtEsperVit17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit17.TabIndex = 126;
-            // 
-            // txtEsperVit16
-            // 
-            this.txtEsperVit16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit16.Location = new System.Drawing.Point(828, 215);
-            this.txtEsperVit16.Name = "txtEsperVit16";
-            this.txtEsperVit16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit16.TabIndex = 125;
-            // 
-            // txtEsperVit15
-            // 
-            this.txtEsperVit15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit15.Location = new System.Drawing.Point(792, 215);
-            this.txtEsperVit15.Name = "txtEsperVit15";
-            this.txtEsperVit15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit15.TabIndex = 124;
-            // 
-            // txtEsperVit14
-            // 
-            this.txtEsperVit14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit14.Location = new System.Drawing.Point(756, 215);
-            this.txtEsperVit14.Name = "txtEsperVit14";
-            this.txtEsperVit14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit14.TabIndex = 123;
-            // 
-            // txtEsperVit13
-            // 
-            this.txtEsperVit13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit13.Location = new System.Drawing.Point(720, 215);
-            this.txtEsperVit13.Name = "txtEsperVit13";
-            this.txtEsperVit13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit13.TabIndex = 122;
-            // 
-            // txtEsperVit12
-            // 
-            this.txtEsperVit12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit12.Location = new System.Drawing.Point(684, 215);
-            this.txtEsperVit12.Name = "txtEsperVit12";
-            this.txtEsperVit12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit12.TabIndex = 121;
-            // 
-            // txtEsperVit11
-            // 
-            this.txtEsperVit11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit11.Location = new System.Drawing.Point(648, 215);
-            this.txtEsperVit11.Name = "txtEsperVit11";
-            this.txtEsperVit11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit11.TabIndex = 120;
-            // 
-            // txtEsperVit10
-            // 
-            this.txtEsperVit10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit10.Location = new System.Drawing.Point(612, 215);
-            this.txtEsperVit10.Name = "txtEsperVit10";
-            this.txtEsperVit10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit10.TabIndex = 119;
-            // 
-            // txtEsperVit9
-            // 
-            this.txtEsperVit9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit9.Location = new System.Drawing.Point(576, 215);
-            this.txtEsperVit9.Name = "txtEsperVit9";
-            this.txtEsperVit9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit9.TabIndex = 118;
-            // 
-            // txtEsperVit8
-            // 
-            this.txtEsperVit8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit8.Location = new System.Drawing.Point(540, 215);
-            this.txtEsperVit8.Name = "txtEsperVit8";
-            this.txtEsperVit8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit8.TabIndex = 117;
-            // 
-            // txtEsperVit7
-            // 
-            this.txtEsperVit7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit7.Location = new System.Drawing.Point(504, 215);
-            this.txtEsperVit7.Name = "txtEsperVit7";
-            this.txtEsperVit7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit7.TabIndex = 116;
-            // 
-            // txtEsperVit6
-            // 
-            this.txtEsperVit6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit6.Location = new System.Drawing.Point(468, 215);
-            this.txtEsperVit6.Name = "txtEsperVit6";
-            this.txtEsperVit6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit6.TabIndex = 115;
-            // 
-            // txtEsperVit5
-            // 
-            this.txtEsperVit5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit5.Location = new System.Drawing.Point(432, 215);
-            this.txtEsperVit5.Name = "txtEsperVit5";
-            this.txtEsperVit5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit5.TabIndex = 114;
-            // 
-            // txtEsperVit4
-            // 
-            this.txtEsperVit4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit4.Location = new System.Drawing.Point(396, 215);
-            this.txtEsperVit4.Name = "txtEsperVit4";
-            this.txtEsperVit4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit4.TabIndex = 113;
-            // 
-            // txtEsperVit3
-            // 
-            this.txtEsperVit3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit3.Location = new System.Drawing.Point(360, 215);
-            this.txtEsperVit3.Name = "txtEsperVit3";
-            this.txtEsperVit3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit3.TabIndex = 112;
-            // 
-            // txtEsperVit2
-            // 
-            this.txtEsperVit2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit2.Location = new System.Drawing.Point(324, 215);
-            this.txtEsperVit2.Name = "txtEsperVit2";
-            this.txtEsperVit2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit2.TabIndex = 111;
-            // 
-            // txtEsperVit1
-            // 
-            this.txtEsperVit1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit1.Location = new System.Drawing.Point(288, 215);
-            this.txtEsperVit1.Name = "txtEsperVit1";
-            this.txtEsperVit1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit1.TabIndex = 110;
-            // 
-            // txtEsperMag20
-            // 
-            this.txtEsperMag20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag20.Location = new System.Drawing.Point(972, 282);
-            this.txtEsperMag20.Name = "txtEsperMag20";
-            this.txtEsperMag20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag20.TabIndex = 149;
-            // 
-            // txtEsperMag19
-            // 
-            this.txtEsperMag19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag19.Location = new System.Drawing.Point(936, 282);
-            this.txtEsperMag19.Name = "txtEsperMag19";
-            this.txtEsperMag19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag19.TabIndex = 148;
-            // 
-            // txtEsperMag18
-            // 
-            this.txtEsperMag18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag18.Location = new System.Drawing.Point(900, 282);
-            this.txtEsperMag18.Name = "txtEsperMag18";
-            this.txtEsperMag18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag18.TabIndex = 147;
-            // 
-            // txtEsperMag17
-            // 
-            this.txtEsperMag17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag17.Location = new System.Drawing.Point(864, 282);
-            this.txtEsperMag17.Name = "txtEsperMag17";
-            this.txtEsperMag17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag17.TabIndex = 146;
-            // 
-            // txtEsperMag16
-            // 
-            this.txtEsperMag16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag16.Location = new System.Drawing.Point(828, 282);
-            this.txtEsperMag16.Name = "txtEsperMag16";
-            this.txtEsperMag16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag16.TabIndex = 145;
-            // 
-            // txtEsperMag15
-            // 
-            this.txtEsperMag15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag15.Location = new System.Drawing.Point(792, 282);
-            this.txtEsperMag15.Name = "txtEsperMag15";
-            this.txtEsperMag15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag15.TabIndex = 144;
-            // 
-            // txtEsperMag14
-            // 
-            this.txtEsperMag14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag14.Location = new System.Drawing.Point(756, 282);
-            this.txtEsperMag14.Name = "txtEsperMag14";
-            this.txtEsperMag14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag14.TabIndex = 143;
-            // 
-            // txtEsperMag13
-            // 
-            this.txtEsperMag13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag13.Location = new System.Drawing.Point(720, 282);
-            this.txtEsperMag13.Name = "txtEsperMag13";
-            this.txtEsperMag13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag13.TabIndex = 142;
-            // 
-            // txtEsperMag12
-            // 
-            this.txtEsperMag12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag12.Location = new System.Drawing.Point(684, 282);
-            this.txtEsperMag12.Name = "txtEsperMag12";
-            this.txtEsperMag12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag12.TabIndex = 141;
-            // 
-            // txtEsperMag11
-            // 
-            this.txtEsperMag11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag11.Location = new System.Drawing.Point(648, 282);
-            this.txtEsperMag11.Name = "txtEsperMag11";
-            this.txtEsperMag11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag11.TabIndex = 140;
-            // 
-            // txtEsperMag10
-            // 
-            this.txtEsperMag10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag10.Location = new System.Drawing.Point(612, 281);
-            this.txtEsperMag10.Name = "txtEsperMag10";
-            this.txtEsperMag10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag10.TabIndex = 139;
-            // 
-            // txtEsperMag9
-            // 
-            this.txtEsperMag9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag9.Location = new System.Drawing.Point(576, 281);
-            this.txtEsperMag9.Name = "txtEsperMag9";
-            this.txtEsperMag9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag9.TabIndex = 138;
-            // 
-            // txtEsperMag8
-            // 
-            this.txtEsperMag8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag8.Location = new System.Drawing.Point(540, 281);
-            this.txtEsperMag8.Name = "txtEsperMag8";
-            this.txtEsperMag8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag8.TabIndex = 137;
-            // 
-            // txtEsperMag7
-            // 
-            this.txtEsperMag7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag7.Location = new System.Drawing.Point(504, 281);
-            this.txtEsperMag7.Name = "txtEsperMag7";
-            this.txtEsperMag7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag7.TabIndex = 136;
-            // 
-            // txtEsperMag6
-            // 
-            this.txtEsperMag6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag6.Location = new System.Drawing.Point(468, 281);
-            this.txtEsperMag6.Name = "txtEsperMag6";
-            this.txtEsperMag6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag6.TabIndex = 135;
-            // 
-            // txtEsperMag5
-            // 
-            this.txtEsperMag5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag5.Location = new System.Drawing.Point(432, 281);
-            this.txtEsperMag5.Name = "txtEsperMag5";
-            this.txtEsperMag5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag5.TabIndex = 134;
-            // 
-            // txtEsperMag4
-            // 
-            this.txtEsperMag4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag4.Location = new System.Drawing.Point(396, 281);
-            this.txtEsperMag4.Name = "txtEsperMag4";
-            this.txtEsperMag4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag4.TabIndex = 133;
-            // 
-            // txtEsperMag3
-            // 
-            this.txtEsperMag3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag3.Location = new System.Drawing.Point(360, 281);
-            this.txtEsperMag3.Name = "txtEsperMag3";
-            this.txtEsperMag3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag3.TabIndex = 132;
-            // 
-            // txtEsperMag2
-            // 
-            this.txtEsperMag2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag2.Location = new System.Drawing.Point(324, 281);
-            this.txtEsperMag2.Name = "txtEsperMag2";
-            this.txtEsperMag2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag2.TabIndex = 131;
-            // 
-            // txtEsperMag1
-            // 
-            this.txtEsperMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag1.Location = new System.Drawing.Point(288, 281);
-            this.txtEsperMag1.Name = "txtEsperMag1";
-            this.txtEsperMag1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag1.TabIndex = 130;
-            // 
-            // lblEsperLevel
-            // 
-            this.lblEsperLevel.AutoSize = true;
-            this.lblEsperLevel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel.Location = new System.Drawing.Point(217, 9);
-            this.lblEsperLevel.Name = "lblEsperLevel";
-            this.lblEsperLevel.Size = new System.Drawing.Size(149, 19);
-            this.lblEsperLevel.TabIndex = 150;
-            this.lblEsperLevel.Text = "Esper \"Level\" Bonus";
-            // 
-            // lblEsperLevel1
-            // 
-            this.lblEsperLevel1.AutoSize = true;
-            this.lblEsperLevel1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel1.Location = new System.Drawing.Point(284, 59);
-            this.lblEsperLevel1.Name = "lblEsperLevel1";
-            this.lblEsperLevel1.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel1.TabIndex = 151;
-            this.lblEsperLevel1.Text = "1";
-            // 
-            // lblEsperLevel2
-            // 
-            this.lblEsperLevel2.AutoSize = true;
-            this.lblEsperLevel2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel2.Location = new System.Drawing.Point(320, 59);
-            this.lblEsperLevel2.Name = "lblEsperLevel2";
-            this.lblEsperLevel2.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel2.TabIndex = 152;
-            this.lblEsperLevel2.Text = "2";
-            // 
-            // lblEsperLevel3
-            // 
-            this.lblEsperLevel3.AutoSize = true;
-            this.lblEsperLevel3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel3.Location = new System.Drawing.Point(356, 59);
-            this.lblEsperLevel3.Name = "lblEsperLevel3";
-            this.lblEsperLevel3.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel3.TabIndex = 153;
-            this.lblEsperLevel3.Text = "3";
-            // 
-            // lblEsperLevel4
-            // 
-            this.lblEsperLevel4.AutoSize = true;
-            this.lblEsperLevel4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel4.Location = new System.Drawing.Point(392, 59);
-            this.lblEsperLevel4.Name = "lblEsperLevel4";
-            this.lblEsperLevel4.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel4.TabIndex = 154;
-            this.lblEsperLevel4.Text = "4";
-            // 
-            // lblEsperLevel5
-            // 
-            this.lblEsperLevel5.AutoSize = true;
-            this.lblEsperLevel5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel5.Location = new System.Drawing.Point(428, 59);
-            this.lblEsperLevel5.Name = "lblEsperLevel5";
-            this.lblEsperLevel5.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel5.TabIndex = 155;
-            this.lblEsperLevel5.Text = "5";
-            // 
-            // lblEsperLevel6
-            // 
-            this.lblEsperLevel6.AutoSize = true;
-            this.lblEsperLevel6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel6.Location = new System.Drawing.Point(464, 59);
-            this.lblEsperLevel6.Name = "lblEsperLevel6";
-            this.lblEsperLevel6.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel6.TabIndex = 156;
-            this.lblEsperLevel6.Text = "6";
-            // 
-            // lblEsperLevel7
-            // 
-            this.lblEsperLevel7.AutoSize = true;
-            this.lblEsperLevel7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel7.Location = new System.Drawing.Point(500, 59);
-            this.lblEsperLevel7.Name = "lblEsperLevel7";
-            this.lblEsperLevel7.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel7.TabIndex = 157;
-            this.lblEsperLevel7.Text = "7";
-            // 
-            // lblEsperLevel8
-            // 
-            this.lblEsperLevel8.AutoSize = true;
-            this.lblEsperLevel8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel8.Location = new System.Drawing.Point(536, 59);
-            this.lblEsperLevel8.Name = "lblEsperLevel8";
-            this.lblEsperLevel8.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel8.TabIndex = 158;
-            this.lblEsperLevel8.Text = "8";
-            // 
-            // lblEsperLevel9
-            // 
-            this.lblEsperLevel9.AutoSize = true;
-            this.lblEsperLevel9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel9.Location = new System.Drawing.Point(572, 59);
-            this.lblEsperLevel9.Name = "lblEsperLevel9";
-            this.lblEsperLevel9.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel9.TabIndex = 159;
-            this.lblEsperLevel9.Text = "9";
-            // 
-            // lblEsperLevel10
-            // 
-            this.lblEsperLevel10.AutoSize = true;
-            this.lblEsperLevel10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel10.Location = new System.Drawing.Point(608, 59);
-            this.lblEsperLevel10.Name = "lblEsperLevel10";
-            this.lblEsperLevel10.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel10.TabIndex = 160;
-            this.lblEsperLevel10.Text = "10";
-            // 
-            // lblEsperLevel11
-            // 
-            this.lblEsperLevel11.AutoSize = true;
-            this.lblEsperLevel11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel11.Location = new System.Drawing.Point(644, 59);
-            this.lblEsperLevel11.Name = "lblEsperLevel11";
-            this.lblEsperLevel11.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel11.TabIndex = 161;
-            this.lblEsperLevel11.Text = "11";
-            // 
-            // lblEsperLevel12
-            // 
-            this.lblEsperLevel12.AutoSize = true;
-            this.lblEsperLevel12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel12.Location = new System.Drawing.Point(680, 59);
-            this.lblEsperLevel12.Name = "lblEsperLevel12";
-            this.lblEsperLevel12.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel12.TabIndex = 162;
-            this.lblEsperLevel12.Text = "12";
-            // 
-            // lblEsperLevel13
-            // 
-            this.lblEsperLevel13.AutoSize = true;
-            this.lblEsperLevel13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel13.Location = new System.Drawing.Point(716, 59);
-            this.lblEsperLevel13.Name = "lblEsperLevel13";
-            this.lblEsperLevel13.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel13.TabIndex = 163;
-            this.lblEsperLevel13.Text = "13";
-            // 
-            // lblEsperLevel14
-            // 
-            this.lblEsperLevel14.AutoSize = true;
-            this.lblEsperLevel14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel14.Location = new System.Drawing.Point(752, 59);
-            this.lblEsperLevel14.Name = "lblEsperLevel14";
-            this.lblEsperLevel14.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel14.TabIndex = 164;
-            this.lblEsperLevel14.Text = "14";
-            // 
-            // lblEsperLevel15
-            // 
-            this.lblEsperLevel15.AutoSize = true;
-            this.lblEsperLevel15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel15.Location = new System.Drawing.Point(788, 59);
-            this.lblEsperLevel15.Name = "lblEsperLevel15";
-            this.lblEsperLevel15.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel15.TabIndex = 165;
-            this.lblEsperLevel15.Text = "15";
-            // 
-            // lblEsperLevel16
-            // 
-            this.lblEsperLevel16.AutoSize = true;
-            this.lblEsperLevel16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel16.Location = new System.Drawing.Point(824, 59);
-            this.lblEsperLevel16.Name = "lblEsperLevel16";
-            this.lblEsperLevel16.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel16.TabIndex = 166;
-            this.lblEsperLevel16.Text = "16";
-            // 
-            // lblEsperLevel17
-            // 
-            this.lblEsperLevel17.AutoSize = true;
-            this.lblEsperLevel17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel17.Location = new System.Drawing.Point(860, 59);
-            this.lblEsperLevel17.Name = "lblEsperLevel17";
-            this.lblEsperLevel17.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel17.TabIndex = 167;
-            this.lblEsperLevel17.Text = "17";
-            // 
-            // lblEsperLevel18
-            // 
-            this.lblEsperLevel18.AutoSize = true;
-            this.lblEsperLevel18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel18.Location = new System.Drawing.Point(896, 59);
-            this.lblEsperLevel18.Name = "lblEsperLevel18";
-            this.lblEsperLevel18.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel18.TabIndex = 168;
-            this.lblEsperLevel18.Text = "18";
-            // 
-            // lblEsperLevel19
-            // 
-            this.lblEsperLevel19.AutoSize = true;
-            this.lblEsperLevel19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel19.Location = new System.Drawing.Point(933, 59);
-            this.lblEsperLevel19.Name = "lblEsperLevel19";
-            this.lblEsperLevel19.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel19.TabIndex = 169;
-            this.lblEsperLevel19.Text = "19";
-            // 
-            // lblEsperLevel20
-            // 
-            this.lblEsperLevel20.AutoSize = true;
-            this.lblEsperLevel20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel20.Location = new System.Drawing.Point(968, 59);
-            this.lblEsperLevel20.Name = "lblEsperLevel20";
-            this.lblEsperLevel20.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel20.TabIndex = 170;
-            this.lblEsperLevel20.Text = "20";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(218, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(620, 13);
-            this.label3.TabIndex = 171;
-            this.label3.Text = "*Note: Esper levels are representative of characters in multiples of 5, exclusive" +
-    ". i.e. 0-4 are Level 1, 5-9 are Level 2, et cetera.";
+            // numMonsterIndex
+            // 
+            this.numMonsterIndex.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterIndex.Location = new System.Drawing.Point(150, 6);
+            this.numMonsterIndex.Maximum = new decimal(new int[] {
+            383,
+            0,
+            0,
+            0});
+            this.numMonsterIndex.Name = "numMonsterIndex";
+            this.numMonsterIndex.Size = new System.Drawing.Size(48, 27);
+            this.numMonsterIndex.TabIndex = 138;
+            this.numMonsterIndex.ValueChanged += new System.EventHandler(this.numMonsterIndex_ValueChanged);
+            // 
+            // lblNormalAttack
+            // 
+            this.lblNormalAttack.AutoSize = true;
+            this.lblNormalAttack.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNormalAttack.Location = new System.Drawing.Point(2, 453);
+            this.lblNormalAttack.Name = "lblNormalAttack";
+            this.lblNormalAttack.Size = new System.Drawing.Size(188, 19);
+            this.lblNormalAttack.TabIndex = 137;
+            this.lblNormalAttack.Text = "Normal Attack Animation";
+            // 
+            // cmbNormalAttack
+            // 
+            this.cmbNormalAttack.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbNormalAttack.FormattingEnabled = true;
+            this.cmbNormalAttack.Items.AddRange(new object[] {
+            "Dagger",
+            "Mythril Knife",
+            "Main-gauche",
+            "Air Knife",
+            "Thief\'s Knife",
+            "Assassin Dagger",
+            "Man-eater",
+            "Swordbreaker",
+            "Gladius",
+            "Valiant Knife",
+            "Mythril Sword",
+            "Great Sword",
+            "Rune Blade",
+            "Flametongue",
+            "Icebrand",
+            "Thunder Blade",
+            "Bastard Sword",
+            "Stoneblade",
+            "Blood Sword",
+            "Enhancer",
+            "Crystal Sword",
+            "Falchion",
+            "Soul Sabre",
+            "Ogre Nyx",
+            "Excalibur",
+            "Zantetsuken",
+            "Lightbringer",
+            "Ragnarok",
+            "Ultima Weapon",
+            "Mythril Spear",
+            "Trident",
+            "Heavy Lance",
+            "Paritsan",
+            "Holy Lance",
+            "Golden Spear",
+            "Glow Lance",
+            "Sagojou\'s Spear",
+            "Kunai",
+            "Kodachi",
+            "Sakura Fubuki",
+            "Sasuke\'s Katana",
+            "Ichigeki",
+            "Kagenui",
+            "Ashura",
+            "Kotetsu",
+            "Kiku-ichimonji",
+            "Kazekiri",
+            "Murasame",
+            "Masamune",
+            "Murakumo",
+            "Mutsunokami",
+            "Healing Rod",
+            "Mythril Rod",
+            "Flame Rod",
+            "Ice Rod",
+            "Thunder Rod",
+            "Poison Rod",
+            "Holy Rod",
+            "Gravity Rod",
+            "Punisher",
+            "Magus Rod",
+            "Chocobo Brush",
+            "Da Vinci Brush",
+            "Magical Brush",
+            "Rainbow Brush",
+            "Shuriken",
+            "Fuma Shuriken",
+            "Pinwheel",
+            "Chain Flail",
+            "Full Moon Blade",
+            "Morning Star",
+            "Boomerang",
+            "Rising Sun",
+            "Hawkeye",
+            "Bone Club",
+            "Sniper",
+            "Wing Edge",
+            "Cards",
+            "Darts",
+            "Death\'s Cards",
+            "Viper Darts",
+            "Dice",
+            "Fixed Dice",
+            "Metal Knuckle",
+            "Mythril Claw",
+            "Kaiser Knuckle",
+            "Dark Claw",
+            "Burning Knuckle",
+            "Dragon Claw",
+            "Tigerfang",
+            "Buckler",
+            "Heavy Shield",
+            "Mythril Shield",
+            "Golden Shield",
+            "Aegis Shield",
+            "Diamond Shield",
+            "Flame Shield",
+            "Ice Shield",
+            "Thunder Shield",
+            "Crystal Shield",
+            "Genji\'s Shield",
+            "Tortoise Shield",
+            "Cursed Shield",
+            "Hero\'s Shield",
+            "Force Shield",
+            "Leather Cap",
+            "Hairband",
+            "Plumed Hat",
+            "Beret",
+            "Triangle Hat",
+            "Bandana",
+            "Iron Helm",
+            "Hypno Crown",
+            "Priest\'s Miter",
+            "Green Beret",
+            "Twist Headband",
+            "Mythril Helm",
+            "Tiara",
+            "Golden Helm",
+            "Tiger Mask",
+            "Red Cap",
+            "Mystery Veil",
+            "Circlet",
+            "Royal Crown",
+            "Diamond Helmet",
+            "Black Cowl",
+            "Crystal Helm",
+            "Oath Veil",
+            "Cat-ear Hood",
+            "Genji\'s Helmet",
+            "Thornlet",
+            "Saucer",
+            "Leather Armor",
+            "Cotton Robe",
+            "Kenpo Gi",
+            "Iron Armor",
+            "Silk Robe",
+            "Mythril Vest",
+            "Shinobi Garb",
+            "White Dress",
+            "Mythril Mail",
+            "Gaia Gear",
+            "Mirage Vest",
+            "Golden Armor",
+            "Power Suit",
+            "Luminous Robe",
+            "Diamond Plate",
+            "Red Jacket",
+            "Force Armor",
+            "Diamond Armor",
+            "Black Garb",
+            "Magus Robe",
+            "Crystal Mail",
+            "Regal Gown",
+            "Genji\'s Armor",
+            "Reed Cloak",
+            "Minerva Bustier",
+            "Tabby Suit",
+            "Chocobo Suit",
+            "Moogle Suit",
+            "Nutkin Suit",
+            "Behemoth Suit",
+            "Snow Muffler",
+            "Noiseblaster",
+            "Bioblaster",
+            "Sunbeam",
+            "Chainsaw",
+            "Debilitator",
+            "Drill",
+            "Air Anchor",
+            "Auto-Crossbow",
+            "Katon",
+            "Suiton",
+            "Raijin",
+            "Konoha Gakure",
+            "Kage Bunshin",
+            "Silver Glasses",
+            "Star Pendant",
+            "Peace Ring",
+            "Amulet",
+            "White Cape",
+            "Jeweled Ring",
+            "Fairy Ring",
+            "Barrier Ring",
+            "Mythril Glove",
+            "Protect Ring",
+            "Hermes Sandals",
+            "Reflect Ring",
+            "Angel Wings",
+            "Angel Ring",
+            "Knight\'s Code",
+            "Dragoon Boots",
+            "Zephyr Manteau",
+            "Princess Ring",
+            "Cursed Ring",
+            "Earring",
+            "Giant\'s Bracer",
+            "Blizzard Orb",
+            "Fury Ring",
+            "Thief Bracelet",
+            "Guard Bracelet",
+            "Brave\'s Ring",
+            "Ribbon",
+            "Muscle Belt",
+            "Crystal Orb",
+            "Gold Hairpin",
+            "Three Stars",
+            "Brigand\'s Glove",
+            "Gauntlet",
+            "Genji\'s Bracer",
+            "Hyper Wrist",
+            "Novitiate Proof",
+            "Forsaken Rosary",
+            "Black Belt",
+            "Heiji\'s Jitte",
+            "Fake Mustache",
+            "Soul of Thamasa",
+            "Hiryuu\'s Horn",
+            "Merit Award",
+            "Memento Ring",
+            "Safety Bit",
+            "Lich Ring",
+            "Molulu\'s Charm",
+            "Ward Bangle",
+            "Miracle Shoes",
+            "Alarm Earring",
+            "Gale Hairpin",
+            "Sniper Eye",
+            "Growth Egg",
+            "Cat\'s Bell",
+            "Sprint Shoes",
+            "Rename Card",
+            "Potion",
+            "Hi-Potion",
+            "X-Potion",
+            "Ether",
+            "Turbo Ether",
+            "Super Ether",
+            "Elixir",
+            "Megalixir",
+            "Phoenix Down",
+            "Holy Water",
+            "Antidote",
+            "Eye Drops",
+            "Gold Needle",
+            "Panacea",
+            "Sleeping Bag",
+            "Tent",
+            "Yellow Cherry",
+            "Magicite Shard",
+            "Super Ball",
+            "Echo Screen",
+            "Smoke Bomb",
+            "Teleport Stone",
+            "Jerky",
+            "Empty"});
+            this.cmbNormalAttack.Location = new System.Drawing.Point(6, 475);
+            this.cmbNormalAttack.Name = "cmbNormalAttack";
+            this.cmbNormalAttack.Size = new System.Drawing.Size(138, 27);
+            this.cmbNormalAttack.TabIndex = 136;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lblBlock);
+            this.groupBox1.Controls.Add(this.lblStartWith);
+            this.groupBox1.Controls.Add(this.chkBlockReflect);
+            this.groupBox1.Controls.Add(this.chkBlockSleep);
+            this.groupBox1.Controls.Add(this.chkBlockDance);
+            this.groupBox1.Controls.Add(this.chkBlockProtect);
+            this.groupBox1.Controls.Add(this.chkBlockDeath);
+            this.groupBox1.Controls.Add(this.chkBlockShell);
+            this.groupBox1.Controls.Add(this.chkBlockDoomed);
+            this.groupBox1.Controls.Add(this.chkBlockStop);
+            this.groupBox1.Controls.Add(this.chkBlockSap);
+            this.groupBox1.Controls.Add(this.chkBlockHaste);
+            this.groupBox1.Controls.Add(this.chkBlockSlow);
+            this.groupBox1.Controls.Add(this.chkBlockConfuse);
+            this.groupBox1.Controls.Add(this.chkBlockRegen);
+            this.groupBox1.Controls.Add(this.chkBlockDarkness);
+            this.groupBox1.Controls.Add(this.chkBlockBerserk);
+            this.groupBox1.Controls.Add(this.chkBlockPetrify);
+            this.groupBox1.Controls.Add(this.chkBlockSilence);
+            this.groupBox1.Controls.Add(this.chkBlockBlink);
+            this.groupBox1.Controls.Add(this.chkBlockImp);
+            this.groupBox1.Controls.Add(this.chkBlockCritical);
+            this.groupBox1.Controls.Add(this.chkBlockClear);
+            this.groupBox1.Controls.Add(this.chkBlockMagitek);
+            this.groupBox1.Controls.Add(this.chkBlockPoison);
+            this.groupBox1.Controls.Add(this.chkBlockZombie);
+            this.groupBox1.Controls.Add(this.lblReflect);
+            this.groupBox1.Controls.Add(this.lblProtect);
+            this.groupBox1.Controls.Add(this.lblShell);
+            this.groupBox1.Controls.Add(this.lblStop);
+            this.groupBox1.Controls.Add(this.lblHaste);
+            this.groupBox1.Controls.Add(this.lblSlow);
+            this.groupBox1.Controls.Add(this.lblRegen);
+            this.groupBox1.Controls.Add(this.lblFloat);
+            this.groupBox1.Controls.Add(this.lblSleep);
+            this.groupBox1.Controls.Add(this.lblSap);
+            this.groupBox1.Controls.Add(this.chkStartReflect);
+            this.groupBox1.Controls.Add(this.chkStartSleep);
+            this.groupBox1.Controls.Add(this.chkStartFloat);
+            this.groupBox1.Controls.Add(this.chkStartProtect);
+            this.groupBox1.Controls.Add(this.chkStartDeath);
+            this.groupBox1.Controls.Add(this.chkStartShell);
+            this.groupBox1.Controls.Add(this.chkStartDoomed);
+            this.groupBox1.Controls.Add(this.chkStartStop);
+            this.groupBox1.Controls.Add(this.chkStartSap);
+            this.groupBox1.Controls.Add(this.chkStartHaste);
+            this.groupBox1.Controls.Add(this.lblConfuse);
+            this.groupBox1.Controls.Add(this.chkStartSlow);
+            this.groupBox1.Controls.Add(this.chkStartConfuse);
+            this.groupBox1.Controls.Add(this.chkStartRegen);
+            this.groupBox1.Controls.Add(this.chkStartDarkness);
+            this.groupBox1.Controls.Add(this.chkStartBerserk);
+            this.groupBox1.Controls.Add(this.chkStartPetrify);
+            this.groupBox1.Controls.Add(this.chkStartSilence);
+            this.groupBox1.Controls.Add(this.lblBerserk);
+            this.groupBox1.Controls.Add(this.chkStartBlink);
+            this.groupBox1.Controls.Add(this.chkStartImp);
+            this.groupBox1.Controls.Add(this.chkStartCritical);
+            this.groupBox1.Controls.Add(this.lblSilence);
+            this.groupBox1.Controls.Add(this.chkStartClear);
+            this.groupBox1.Controls.Add(this.lblBlink);
+            this.groupBox1.Controls.Add(this.chkStartMagitek);
+            this.groupBox1.Controls.Add(this.lblCritical);
+            this.groupBox1.Controls.Add(this.chkStartPoison);
+            this.groupBox1.Controls.Add(this.lblDoomed);
+            this.groupBox1.Controls.Add(this.chkStartZombie);
+            this.groupBox1.Controls.Add(this.lblDeath);
+            this.groupBox1.Controls.Add(this.lblPetrify);
+            this.groupBox1.Controls.Add(this.lblImp);
+            this.groupBox1.Controls.Add(this.lblClear);
+            this.groupBox1.Controls.Add(this.lblMagitek);
+            this.groupBox1.Controls.Add(this.lblPsn);
+            this.groupBox1.Controls.Add(this.lblZombie);
+            this.groupBox1.Controls.Add(this.lblDarkness);
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(694, 6);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(181, 503);
+            this.groupBox1.TabIndex = 135;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Status";
+            // 
+            // lblBlock
+            // 
+            this.lblBlock.AutoSize = true;
+            this.lblBlock.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlock.Location = new System.Drawing.Point(136, 0);
+            this.lblBlock.Name = "lblBlock";
+            this.lblBlock.Size = new System.Drawing.Size(35, 14);
+            this.lblBlock.TabIndex = 159;
+            this.lblBlock.Text = "Block";
+            // 
+            // lblStartWith
+            // 
+            this.lblStartWith.AutoSize = true;
+            this.lblStartWith.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStartWith.Location = new System.Drawing.Point(99, 0);
+            this.lblStartWith.Name = "lblStartWith";
+            this.lblStartWith.Size = new System.Drawing.Size(34, 14);
+            this.lblStartWith.TabIndex = 136;
+            this.lblStartWith.Text = "Start";
+            // 
+            // chkBlockReflect
+            // 
+            this.chkBlockReflect.AutoSize = true;
+            this.chkBlockReflect.Location = new System.Drawing.Point(147, 482);
+            this.chkBlockReflect.Name = "chkBlockReflect";
+            this.chkBlockReflect.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockReflect.TabIndex = 158;
+            this.chkBlockReflect.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockSleep
+            // 
+            this.chkBlockSleep.AutoSize = true;
+            this.chkBlockSleep.Location = new System.Drawing.Point(147, 322);
+            this.chkBlockSleep.Name = "chkBlockSleep";
+            this.chkBlockSleep.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockSleep.TabIndex = 157;
+            this.chkBlockSleep.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockDance
+            // 
+            this.chkBlockDance.AutoSize = true;
+            this.chkBlockDance.Location = new System.Drawing.Point(147, 342);
+            this.chkBlockDance.Name = "chkBlockDance";
+            this.chkBlockDance.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockDance.TabIndex = 135;
+            this.chkBlockDance.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockProtect
+            // 
+            this.chkBlockProtect.AutoSize = true;
+            this.chkBlockProtect.Location = new System.Drawing.Point(147, 462);
+            this.chkBlockProtect.Name = "chkBlockProtect";
+            this.chkBlockProtect.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockProtect.TabIndex = 154;
+            this.chkBlockProtect.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockDeath
+            // 
+            this.chkBlockDeath.AutoSize = true;
+            this.chkBlockDeath.Location = new System.Drawing.Point(147, 162);
+            this.chkBlockDeath.Name = "chkBlockDeath";
+            this.chkBlockDeath.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockDeath.TabIndex = 156;
+            this.chkBlockDeath.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockShell
+            // 
+            this.chkBlockShell.AutoSize = true;
+            this.chkBlockShell.Location = new System.Drawing.Point(147, 442);
+            this.chkBlockShell.Name = "chkBlockShell";
+            this.chkBlockShell.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockShell.TabIndex = 152;
+            this.chkBlockShell.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockDoomed
+            // 
+            this.chkBlockDoomed.AutoSize = true;
+            this.chkBlockDoomed.Location = new System.Drawing.Point(147, 182);
+            this.chkBlockDoomed.Name = "chkBlockDoomed";
+            this.chkBlockDoomed.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockDoomed.TabIndex = 136;
+            this.chkBlockDoomed.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockStop
+            // 
+            this.chkBlockStop.AutoSize = true;
+            this.chkBlockStop.Location = new System.Drawing.Point(147, 422);
+            this.chkBlockStop.Name = "chkBlockStop";
+            this.chkBlockStop.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockStop.TabIndex = 148;
+            this.chkBlockStop.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockSap
+            // 
+            this.chkBlockSap.AutoSize = true;
+            this.chkBlockSap.Location = new System.Drawing.Point(147, 302);
+            this.chkBlockSap.Name = "chkBlockSap";
+            this.chkBlockSap.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockSap.TabIndex = 153;
+            this.chkBlockSap.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockHaste
+            // 
+            this.chkBlockHaste.AutoSize = true;
+            this.chkBlockHaste.Location = new System.Drawing.Point(147, 402);
+            this.chkBlockHaste.Name = "chkBlockHaste";
+            this.chkBlockHaste.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockHaste.TabIndex = 145;
+            this.chkBlockHaste.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockSlow
+            // 
+            this.chkBlockSlow.AutoSize = true;
+            this.chkBlockSlow.Location = new System.Drawing.Point(147, 382);
+            this.chkBlockSlow.Name = "chkBlockSlow";
+            this.chkBlockSlow.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockSlow.TabIndex = 142;
+            this.chkBlockSlow.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockConfuse
+            // 
+            this.chkBlockConfuse.AutoSize = true;
+            this.chkBlockConfuse.Location = new System.Drawing.Point(147, 282);
+            this.chkBlockConfuse.Name = "chkBlockConfuse";
+            this.chkBlockConfuse.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockConfuse.TabIndex = 151;
+            this.chkBlockConfuse.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockRegen
+            // 
+            this.chkBlockRegen.AutoSize = true;
+            this.chkBlockRegen.Location = new System.Drawing.Point(147, 362);
+            this.chkBlockRegen.Name = "chkBlockRegen";
+            this.chkBlockRegen.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockRegen.TabIndex = 140;
+            this.chkBlockRegen.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockDarkness
+            // 
+            this.chkBlockDarkness.AutoSize = true;
+            this.chkBlockDarkness.Location = new System.Drawing.Point(147, 22);
+            this.chkBlockDarkness.Name = "chkBlockDarkness";
+            this.chkBlockDarkness.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockDarkness.TabIndex = 137;
+            this.chkBlockDarkness.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockBerserk
+            // 
+            this.chkBlockBerserk.AutoSize = true;
+            this.chkBlockBerserk.Location = new System.Drawing.Point(147, 262);
+            this.chkBlockBerserk.Name = "chkBlockBerserk";
+            this.chkBlockBerserk.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockBerserk.TabIndex = 149;
+            this.chkBlockBerserk.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockPetrify
+            // 
+            this.chkBlockPetrify.AutoSize = true;
+            this.chkBlockPetrify.Location = new System.Drawing.Point(147, 142);
+            this.chkBlockPetrify.Name = "chkBlockPetrify";
+            this.chkBlockPetrify.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockPetrify.TabIndex = 155;
+            this.chkBlockPetrify.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockSilence
+            // 
+            this.chkBlockSilence.AutoSize = true;
+            this.chkBlockSilence.Location = new System.Drawing.Point(147, 242);
+            this.chkBlockSilence.Name = "chkBlockSilence";
+            this.chkBlockSilence.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockSilence.TabIndex = 146;
+            this.chkBlockSilence.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockBlink
+            // 
+            this.chkBlockBlink.AutoSize = true;
+            this.chkBlockBlink.Location = new System.Drawing.Point(147, 222);
+            this.chkBlockBlink.Name = "chkBlockBlink";
+            this.chkBlockBlink.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockBlink.TabIndex = 141;
+            this.chkBlockBlink.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockImp
+            // 
+            this.chkBlockImp.AutoSize = true;
+            this.chkBlockImp.Location = new System.Drawing.Point(147, 122);
+            this.chkBlockImp.Name = "chkBlockImp";
+            this.chkBlockImp.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockImp.TabIndex = 150;
+            this.chkBlockImp.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockCritical
+            // 
+            this.chkBlockCritical.AutoSize = true;
+            this.chkBlockCritical.Location = new System.Drawing.Point(147, 202);
+            this.chkBlockCritical.Name = "chkBlockCritical";
+            this.chkBlockCritical.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockCritical.TabIndex = 139;
+            this.chkBlockCritical.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockClear
+            // 
+            this.chkBlockClear.AutoSize = true;
+            this.chkBlockClear.Location = new System.Drawing.Point(147, 102);
+            this.chkBlockClear.Name = "chkBlockClear";
+            this.chkBlockClear.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockClear.TabIndex = 147;
+            this.chkBlockClear.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockMagitek
+            // 
+            this.chkBlockMagitek.AutoSize = true;
+            this.chkBlockMagitek.Location = new System.Drawing.Point(147, 82);
+            this.chkBlockMagitek.Name = "chkBlockMagitek";
+            this.chkBlockMagitek.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockMagitek.TabIndex = 144;
+            this.chkBlockMagitek.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockPoison
+            // 
+            this.chkBlockPoison.AutoSize = true;
+            this.chkBlockPoison.Location = new System.Drawing.Point(147, 62);
+            this.chkBlockPoison.Name = "chkBlockPoison";
+            this.chkBlockPoison.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockPoison.TabIndex = 143;
+            this.chkBlockPoison.UseVisualStyleBackColor = true;
+            // 
+            // chkBlockZombie
+            // 
+            this.chkBlockZombie.AutoSize = true;
+            this.chkBlockZombie.Location = new System.Drawing.Point(147, 42);
+            this.chkBlockZombie.Name = "chkBlockZombie";
+            this.chkBlockZombie.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockZombie.TabIndex = 138;
+            this.chkBlockZombie.UseVisualStyleBackColor = true;
+            // 
+            // lblReflect
+            // 
+            this.lblReflect.AutoSize = true;
+            this.lblReflect.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReflect.Location = new System.Drawing.Point(60, 480);
+            this.lblReflect.Name = "lblReflect";
+            this.lblReflect.Size = new System.Drawing.Size(47, 16);
+            this.lblReflect.TabIndex = 134;
+            this.lblReflect.Text = "Reflect";
+            // 
+            // lblProtect
+            // 
+            this.lblProtect.AutoSize = true;
+            this.lblProtect.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProtect.Location = new System.Drawing.Point(59, 460);
+            this.lblProtect.Name = "lblProtect";
+            this.lblProtect.Size = new System.Drawing.Size(48, 16);
+            this.lblProtect.TabIndex = 133;
+            this.lblProtect.Text = "Protect";
+            // 
+            // lblShell
+            // 
+            this.lblShell.AutoSize = true;
+            this.lblShell.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblShell.Location = new System.Drawing.Point(71, 440);
+            this.lblShell.Name = "lblShell";
+            this.lblShell.Size = new System.Drawing.Size(36, 16);
+            this.lblShell.TabIndex = 132;
+            this.lblShell.Text = "Shell";
+            // 
+            // lblStop
+            // 
+            this.lblStop.AutoSize = true;
+            this.lblStop.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStop.Location = new System.Drawing.Point(73, 420);
+            this.lblStop.Name = "lblStop";
+            this.lblStop.Size = new System.Drawing.Size(34, 16);
+            this.lblStop.TabIndex = 131;
+            this.lblStop.Text = "Stop";
+            // 
+            // lblHaste
+            // 
+            this.lblHaste.AutoSize = true;
+            this.lblHaste.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHaste.Location = new System.Drawing.Point(67, 400);
+            this.lblHaste.Name = "lblHaste";
+            this.lblHaste.Size = new System.Drawing.Size(40, 16);
+            this.lblHaste.TabIndex = 130;
+            this.lblHaste.Text = "Haste";
+            // 
+            // lblSlow
+            // 
+            this.lblSlow.AutoSize = true;
+            this.lblSlow.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSlow.Location = new System.Drawing.Point(71, 380);
+            this.lblSlow.Name = "lblSlow";
+            this.lblSlow.Size = new System.Drawing.Size(36, 16);
+            this.lblSlow.TabIndex = 129;
+            this.lblSlow.Text = "Slow";
+            // 
+            // lblRegen
+            // 
+            this.lblRegen.AutoSize = true;
+            this.lblRegen.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegen.Location = new System.Drawing.Point(63, 360);
+            this.lblRegen.Name = "lblRegen";
+            this.lblRegen.Size = new System.Drawing.Size(44, 16);
+            this.lblRegen.TabIndex = 128;
+            this.lblRegen.Text = "Regen";
+            // 
+            // lblFloat
+            // 
+            this.lblFloat.AutoSize = true;
+            this.lblFloat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloat.Location = new System.Drawing.Point(31, 340);
+            this.lblFloat.Name = "lblFloat";
+            this.lblFloat.Size = new System.Drawing.Size(76, 16);
+            this.lblFloat.TabIndex = 127;
+            this.lblFloat.Text = "Float/Dance";
+            // 
+            // lblSleep
+            // 
+            this.lblSleep.AutoSize = true;
+            this.lblSleep.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSleep.Location = new System.Drawing.Point(67, 320);
+            this.lblSleep.Name = "lblSleep";
+            this.lblSleep.Size = new System.Drawing.Size(40, 16);
+            this.lblSleep.TabIndex = 126;
+            this.lblSleep.Text = "Sleep";
+            // 
+            // lblSap
+            // 
+            this.lblSap.AutoSize = true;
+            this.lblSap.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSap.Location = new System.Drawing.Point(77, 300);
+            this.lblSap.Name = "lblSap";
+            this.lblSap.Size = new System.Drawing.Size(30, 16);
+            this.lblSap.TabIndex = 125;
+            this.lblSap.Text = "Sap";
+            // 
+            // chkStartReflect
+            // 
+            this.chkStartReflect.AutoSize = true;
+            this.chkStartReflect.Location = new System.Drawing.Point(113, 482);
+            this.chkStartReflect.Name = "chkStartReflect";
+            this.chkStartReflect.Size = new System.Drawing.Size(15, 14);
+            this.chkStartReflect.TabIndex = 124;
+            this.chkStartReflect.UseVisualStyleBackColor = true;
+            // 
+            // chkStartSleep
+            // 
+            this.chkStartSleep.AutoSize = true;
+            this.chkStartSleep.Location = new System.Drawing.Point(113, 322);
+            this.chkStartSleep.Name = "chkStartSleep";
+            this.chkStartSleep.Size = new System.Drawing.Size(15, 14);
+            this.chkStartSleep.TabIndex = 124;
+            this.chkStartSleep.UseVisualStyleBackColor = true;
+            // 
+            // chkStartFloat
+            // 
+            this.chkStartFloat.AutoSize = true;
+            this.chkStartFloat.Location = new System.Drawing.Point(113, 342);
+            this.chkStartFloat.Name = "chkStartFloat";
+            this.chkStartFloat.Size = new System.Drawing.Size(15, 14);
+            this.chkStartFloat.TabIndex = 117;
+            this.chkStartFloat.UseVisualStyleBackColor = true;
+            // 
+            // chkStartProtect
+            // 
+            this.chkStartProtect.AutoSize = true;
+            this.chkStartProtect.Location = new System.Drawing.Point(113, 462);
+            this.chkStartProtect.Name = "chkStartProtect";
+            this.chkStartProtect.Size = new System.Drawing.Size(15, 14);
+            this.chkStartProtect.TabIndex = 123;
+            this.chkStartProtect.UseVisualStyleBackColor = true;
+            // 
+            // chkStartDeath
+            // 
+            this.chkStartDeath.AutoSize = true;
+            this.chkStartDeath.Location = new System.Drawing.Point(113, 162);
+            this.chkStartDeath.Name = "chkStartDeath";
+            this.chkStartDeath.Size = new System.Drawing.Size(15, 14);
+            this.chkStartDeath.TabIndex = 124;
+            this.chkStartDeath.UseVisualStyleBackColor = true;
+            // 
+            // chkStartShell
+            // 
+            this.chkStartShell.AutoSize = true;
+            this.chkStartShell.Location = new System.Drawing.Point(113, 442);
+            this.chkStartShell.Name = "chkStartShell";
+            this.chkStartShell.Size = new System.Drawing.Size(15, 14);
+            this.chkStartShell.TabIndex = 122;
+            this.chkStartShell.UseVisualStyleBackColor = true;
+            // 
+            // chkStartDoomed
+            // 
+            this.chkStartDoomed.AutoSize = true;
+            this.chkStartDoomed.Location = new System.Drawing.Point(113, 182);
+            this.chkStartDoomed.Name = "chkStartDoomed";
+            this.chkStartDoomed.Size = new System.Drawing.Size(15, 14);
+            this.chkStartDoomed.TabIndex = 117;
+            this.chkStartDoomed.UseVisualStyleBackColor = true;
+            // 
+            // chkStartStop
+            // 
+            this.chkStartStop.AutoSize = true;
+            this.chkStartStop.Location = new System.Drawing.Point(113, 422);
+            this.chkStartStop.Name = "chkStartStop";
+            this.chkStartStop.Size = new System.Drawing.Size(15, 14);
+            this.chkStartStop.TabIndex = 121;
+            this.chkStartStop.UseVisualStyleBackColor = true;
+            // 
+            // chkStartSap
+            // 
+            this.chkStartSap.AutoSize = true;
+            this.chkStartSap.Location = new System.Drawing.Point(113, 302);
+            this.chkStartSap.Name = "chkStartSap";
+            this.chkStartSap.Size = new System.Drawing.Size(15, 14);
+            this.chkStartSap.TabIndex = 123;
+            this.chkStartSap.UseVisualStyleBackColor = true;
+            // 
+            // chkStartHaste
+            // 
+            this.chkStartHaste.AutoSize = true;
+            this.chkStartHaste.Location = new System.Drawing.Point(113, 402);
+            this.chkStartHaste.Name = "chkStartHaste";
+            this.chkStartHaste.Size = new System.Drawing.Size(15, 14);
+            this.chkStartHaste.TabIndex = 120;
+            this.chkStartHaste.UseVisualStyleBackColor = true;
+            // 
+            // lblConfuse
+            // 
+            this.lblConfuse.AutoSize = true;
+            this.lblConfuse.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfuse.Location = new System.Drawing.Point(53, 280);
+            this.lblConfuse.Name = "lblConfuse";
+            this.lblConfuse.Size = new System.Drawing.Size(54, 16);
+            this.lblConfuse.TabIndex = 95;
+            this.lblConfuse.Text = "Confuse";
+            // 
+            // chkStartSlow
+            // 
+            this.chkStartSlow.AutoSize = true;
+            this.chkStartSlow.Location = new System.Drawing.Point(113, 382);
+            this.chkStartSlow.Name = "chkStartSlow";
+            this.chkStartSlow.Size = new System.Drawing.Size(15, 14);
+            this.chkStartSlow.TabIndex = 119;
+            this.chkStartSlow.UseVisualStyleBackColor = true;
+            // 
+            // chkStartConfuse
+            // 
+            this.chkStartConfuse.AutoSize = true;
+            this.chkStartConfuse.Location = new System.Drawing.Point(113, 282);
+            this.chkStartConfuse.Name = "chkStartConfuse";
+            this.chkStartConfuse.Size = new System.Drawing.Size(15, 14);
+            this.chkStartConfuse.TabIndex = 122;
+            this.chkStartConfuse.UseVisualStyleBackColor = true;
+            // 
+            // chkStartRegen
+            // 
+            this.chkStartRegen.AutoSize = true;
+            this.chkStartRegen.Location = new System.Drawing.Point(113, 362);
+            this.chkStartRegen.Name = "chkStartRegen";
+            this.chkStartRegen.Size = new System.Drawing.Size(15, 14);
+            this.chkStartRegen.TabIndex = 118;
+            this.chkStartRegen.UseVisualStyleBackColor = true;
+            // 
+            // chkStartDarkness
+            // 
+            this.chkStartDarkness.AutoSize = true;
+            this.chkStartDarkness.Location = new System.Drawing.Point(113, 22);
+            this.chkStartDarkness.Name = "chkStartDarkness";
+            this.chkStartDarkness.Size = new System.Drawing.Size(15, 14);
+            this.chkStartDarkness.TabIndex = 117;
+            this.chkStartDarkness.UseVisualStyleBackColor = true;
+            // 
+            // chkStartBerserk
+            // 
+            this.chkStartBerserk.AutoSize = true;
+            this.chkStartBerserk.Location = new System.Drawing.Point(113, 262);
+            this.chkStartBerserk.Name = "chkStartBerserk";
+            this.chkStartBerserk.Size = new System.Drawing.Size(15, 14);
+            this.chkStartBerserk.TabIndex = 121;
+            this.chkStartBerserk.UseVisualStyleBackColor = true;
+            // 
+            // chkStartPetrify
+            // 
+            this.chkStartPetrify.AutoSize = true;
+            this.chkStartPetrify.Location = new System.Drawing.Point(113, 142);
+            this.chkStartPetrify.Name = "chkStartPetrify";
+            this.chkStartPetrify.Size = new System.Drawing.Size(15, 14);
+            this.chkStartPetrify.TabIndex = 123;
+            this.chkStartPetrify.UseVisualStyleBackColor = true;
+            // 
+            // chkStartSilence
+            // 
+            this.chkStartSilence.AutoSize = true;
+            this.chkStartSilence.Location = new System.Drawing.Point(113, 242);
+            this.chkStartSilence.Name = "chkStartSilence";
+            this.chkStartSilence.Size = new System.Drawing.Size(15, 14);
+            this.chkStartSilence.TabIndex = 120;
+            this.chkStartSilence.UseVisualStyleBackColor = true;
+            // 
+            // lblBerserk
+            // 
+            this.lblBerserk.AutoSize = true;
+            this.lblBerserk.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBerserk.Location = new System.Drawing.Point(56, 260);
+            this.lblBerserk.Name = "lblBerserk";
+            this.lblBerserk.Size = new System.Drawing.Size(51, 16);
+            this.lblBerserk.TabIndex = 95;
+            this.lblBerserk.Text = "Berserk";
+            // 
+            // chkStartBlink
+            // 
+            this.chkStartBlink.AutoSize = true;
+            this.chkStartBlink.Location = new System.Drawing.Point(113, 222);
+            this.chkStartBlink.Name = "chkStartBlink";
+            this.chkStartBlink.Size = new System.Drawing.Size(15, 14);
+            this.chkStartBlink.TabIndex = 119;
+            this.chkStartBlink.UseVisualStyleBackColor = true;
+            // 
+            // chkStartImp
+            // 
+            this.chkStartImp.AutoSize = true;
+            this.chkStartImp.Location = new System.Drawing.Point(113, 122);
+            this.chkStartImp.Name = "chkStartImp";
+            this.chkStartImp.Size = new System.Drawing.Size(15, 14);
+            this.chkStartImp.TabIndex = 122;
+            this.chkStartImp.UseVisualStyleBackColor = true;
+            // 
+            // chkStartCritical
+            // 
+            this.chkStartCritical.AutoSize = true;
+            this.chkStartCritical.Location = new System.Drawing.Point(113, 202);
+            this.chkStartCritical.Name = "chkStartCritical";
+            this.chkStartCritical.Size = new System.Drawing.Size(15, 14);
+            this.chkStartCritical.TabIndex = 118;
+            this.chkStartCritical.UseVisualStyleBackColor = true;
+            // 
+            // lblSilence
+            // 
+            this.lblSilence.AutoSize = true;
+            this.lblSilence.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSilence.Location = new System.Drawing.Point(58, 242);
+            this.lblSilence.Name = "lblSilence";
+            this.lblSilence.Size = new System.Drawing.Size(49, 16);
+            this.lblSilence.TabIndex = 94;
+            this.lblSilence.Text = "Silence";
+            // 
+            // chkStartClear
+            // 
+            this.chkStartClear.AutoSize = true;
+            this.chkStartClear.Location = new System.Drawing.Point(113, 102);
+            this.chkStartClear.Name = "chkStartClear";
+            this.chkStartClear.Size = new System.Drawing.Size(15, 14);
+            this.chkStartClear.TabIndex = 121;
+            this.chkStartClear.UseVisualStyleBackColor = true;
+            // 
+            // lblBlink
+            // 
+            this.lblBlink.AutoSize = true;
+            this.lblBlink.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlink.Location = new System.Drawing.Point(73, 222);
+            this.lblBlink.Name = "lblBlink";
+            this.lblBlink.Size = new System.Drawing.Size(34, 16);
+            this.lblBlink.TabIndex = 93;
+            this.lblBlink.Text = "Blink";
+            // 
+            // chkStartMagitek
+            // 
+            this.chkStartMagitek.AutoSize = true;
+            this.chkStartMagitek.Location = new System.Drawing.Point(113, 82);
+            this.chkStartMagitek.Name = "chkStartMagitek";
+            this.chkStartMagitek.Size = new System.Drawing.Size(15, 14);
+            this.chkStartMagitek.TabIndex = 120;
+            this.chkStartMagitek.UseVisualStyleBackColor = true;
+            // 
+            // lblCritical
+            // 
+            this.lblCritical.AutoSize = true;
+            this.lblCritical.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCritical.Location = new System.Drawing.Point(60, 202);
+            this.lblCritical.Name = "lblCritical";
+            this.lblCritical.Size = new System.Drawing.Size(47, 16);
+            this.lblCritical.TabIndex = 92;
+            this.lblCritical.Text = "Critical";
+            // 
+            // chkStartPoison
+            // 
+            this.chkStartPoison.AutoSize = true;
+            this.chkStartPoison.Location = new System.Drawing.Point(113, 62);
+            this.chkStartPoison.Name = "chkStartPoison";
+            this.chkStartPoison.Size = new System.Drawing.Size(15, 14);
+            this.chkStartPoison.TabIndex = 119;
+            this.chkStartPoison.UseVisualStyleBackColor = true;
+            // 
+            // lblDoomed
+            // 
+            this.lblDoomed.AutoSize = true;
+            this.lblDoomed.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoomed.Location = new System.Drawing.Point(52, 182);
+            this.lblDoomed.Name = "lblDoomed";
+            this.lblDoomed.Size = new System.Drawing.Size(55, 16);
+            this.lblDoomed.TabIndex = 91;
+            this.lblDoomed.Text = "Doomed";
+            // 
+            // chkStartZombie
+            // 
+            this.chkStartZombie.AutoSize = true;
+            this.chkStartZombie.Location = new System.Drawing.Point(113, 42);
+            this.chkStartZombie.Name = "chkStartZombie";
+            this.chkStartZombie.Size = new System.Drawing.Size(15, 14);
+            this.chkStartZombie.TabIndex = 118;
+            this.chkStartZombie.UseVisualStyleBackColor = true;
+            // 
+            // lblDeath
+            // 
+            this.lblDeath.AutoSize = true;
+            this.lblDeath.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeath.Location = new System.Drawing.Point(66, 160);
+            this.lblDeath.Name = "lblDeath";
+            this.lblDeath.Size = new System.Drawing.Size(41, 16);
+            this.lblDeath.TabIndex = 90;
+            this.lblDeath.Text = "Death";
+            // 
+            // lblPetrify
+            // 
+            this.lblPetrify.AutoSize = true;
+            this.lblPetrify.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPetrify.Location = new System.Drawing.Point(63, 140);
+            this.lblPetrify.Name = "lblPetrify";
+            this.lblPetrify.Size = new System.Drawing.Size(44, 16);
+            this.lblPetrify.TabIndex = 89;
+            this.lblPetrify.Text = "Petrify";
+            // 
+            // lblImp
+            // 
+            this.lblImp.AutoSize = true;
+            this.lblImp.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImp.Location = new System.Drawing.Point(77, 120);
+            this.lblImp.Name = "lblImp";
+            this.lblImp.Size = new System.Drawing.Size(30, 16);
+            this.lblImp.TabIndex = 85;
+            this.lblImp.Text = "Imp";
+            // 
+            // lblClear
+            // 
+            this.lblClear.AutoSize = true;
+            this.lblClear.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClear.Location = new System.Drawing.Point(69, 99);
+            this.lblClear.Name = "lblClear";
+            this.lblClear.Size = new System.Drawing.Size(38, 16);
+            this.lblClear.TabIndex = 88;
+            this.lblClear.Text = "Clear";
+            // 
+            // lblMagitek
+            // 
+            this.lblMagitek.AutoSize = true;
+            this.lblMagitek.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMagitek.Location = new System.Drawing.Point(55, 80);
+            this.lblMagitek.Name = "lblMagitek";
+            this.lblMagitek.Size = new System.Drawing.Size(52, 16);
+            this.lblMagitek.TabIndex = 87;
+            this.lblMagitek.Text = "Magitek";
+            // 
+            // lblPsn
+            // 
+            this.lblPsn.AutoSize = true;
+            this.lblPsn.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPsn.Location = new System.Drawing.Point(62, 60);
+            this.lblPsn.Name = "lblPsn";
+            this.lblPsn.Size = new System.Drawing.Size(45, 16);
+            this.lblPsn.TabIndex = 86;
+            this.lblPsn.Text = "Poison";
+            // 
+            // lblZombie
+            // 
+            this.lblZombie.AutoSize = true;
+            this.lblZombie.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZombie.Location = new System.Drawing.Point(57, 40);
+            this.lblZombie.Name = "lblZombie";
+            this.lblZombie.Size = new System.Drawing.Size(50, 16);
+            this.lblZombie.TabIndex = 85;
+            this.lblZombie.Text = "Zombie";
+            // 
+            // lblDarkness
+            // 
+            this.lblDarkness.AutoSize = true;
+            this.lblDarkness.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDarkness.Location = new System.Drawing.Point(47, 20);
+            this.lblDarkness.Name = "lblDarkness";
+            this.lblDarkness.Size = new System.Drawing.Size(60, 16);
+            this.lblDarkness.TabIndex = 84;
+            this.lblDarkness.Text = "Darkness";
+            // 
+            // grpSpecialStatus
+            // 
+            this.grpSpecialStatus.Controls.Add(this.lblRemovableFloat);
+            this.grpSpecialStatus.Controls.Add(this.lblUnknown7);
+            this.grpSpecialStatus.Controls.Add(this.lblUnknown6);
+            this.grpSpecialStatus.Controls.Add(this.lblUnknown5);
+            this.grpSpecialStatus.Controls.Add(this.lblUnknown4);
+            this.grpSpecialStatus.Controls.Add(this.lblReraise);
+            this.grpSpecialStatus.Controls.Add(this.lblRunic);
+            this.grpSpecialStatus.Controls.Add(this.lblTrueKnight);
+            this.grpSpecialStatus.Controls.Add(this.lblNoControl);
+            this.grpSpecialStatus.Controls.Add(this.lblSpecialEvent);
+            this.grpSpecialStatus.Controls.Add(this.chkRemovableFloat);
+            this.grpSpecialStatus.Controls.Add(this.chkNoControl);
+            this.grpSpecialStatus.Controls.Add(this.chkTrueKnight);
+            this.grpSpecialStatus.Controls.Add(this.chkUnknown7);
+            this.grpSpecialStatus.Controls.Add(this.chkUndead);
+            this.grpSpecialStatus.Controls.Add(this.chkUnknown6);
+            this.grpSpecialStatus.Controls.Add(this.chkHarderToRun);
+            this.grpSpecialStatus.Controls.Add(this.chkUnknown5);
+            this.grpSpecialStatus.Controls.Add(this.chkSpecialEvent);
+            this.grpSpecialStatus.Controls.Add(this.chkUnkown4);
+            this.grpSpecialStatus.Controls.Add(this.lblNoSketch);
+            this.grpSpecialStatus.Controls.Add(this.chkReraise);
+            this.grpSpecialStatus.Controls.Add(this.chkNoSketch);
+            this.grpSpecialStatus.Controls.Add(this.chkRunic);
+            this.grpSpecialStatus.Controls.Add(this.chkMPDeath);
+            this.grpSpecialStatus.Controls.Add(this.chkNoScan);
+            this.grpSpecialStatus.Controls.Add(this.chkCritImp);
+            this.grpSpecialStatus.Controls.Add(this.chkNoRun);
+            this.grpSpecialStatus.Controls.Add(this.lblNoScan);
+            this.grpSpecialStatus.Controls.Add(this.chkBlockSuplex);
+            this.grpSpecialStatus.Controls.Add(this.chkUnknown3);
+            this.grpSpecialStatus.Controls.Add(this.chkAttackFirst);
+            this.grpSpecialStatus.Controls.Add(this.lblNoRun);
+            this.grpSpecialStatus.Controls.Add(this.chkHumanoid);
+            this.grpSpecialStatus.Controls.Add(this.lblBlockSuplex);
+            this.grpSpecialStatus.Controls.Add(this.chkUnknown2);
+            this.grpSpecialStatus.Controls.Add(this.lblAttackFirst);
+            this.grpSpecialStatus.Controls.Add(this.chkNoName);
+            this.grpSpecialStatus.Controls.Add(this.lblHarderToRun);
+            this.grpSpecialStatus.Controls.Add(this.chkPierceReflect);
+            this.grpSpecialStatus.Controls.Add(this.lblUndead);
+            this.grpSpecialStatus.Controls.Add(this.lblCritImp);
+            this.grpSpecialStatus.Controls.Add(this.lblUnknown3);
+            this.grpSpecialStatus.Controls.Add(this.lblHumanoid);
+            this.grpSpecialStatus.Controls.Add(this.lblUnknown2);
+            this.grpSpecialStatus.Controls.Add(this.lblNoName);
+            this.grpSpecialStatus.Controls.Add(this.lblPierceReflect);
+            this.grpSpecialStatus.Controls.Add(this.lblMPDeath);
+            this.grpSpecialStatus.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSpecialStatus.Location = new System.Drawing.Point(554, 6);
+            this.grpSpecialStatus.Name = "grpSpecialStatus";
+            this.grpSpecialStatus.Size = new System.Drawing.Size(134, 503);
+            this.grpSpecialStatus.TabIndex = 83;
+            this.grpSpecialStatus.TabStop = false;
+            this.grpSpecialStatus.Text = "Special Status";
+            // 
+            // lblRemovableFloat
+            // 
+            this.lblRemovableFloat.AutoSize = true;
+            this.lblRemovableFloat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRemovableFloat.Location = new System.Drawing.Point(4, 480);
+            this.lblRemovableFloat.Name = "lblRemovableFloat";
+            this.lblRemovableFloat.Size = new System.Drawing.Size(103, 16);
+            this.lblRemovableFloat.TabIndex = 134;
+            this.lblRemovableFloat.Text = "Removable Float";
+            // 
+            // lblUnknown7
+            // 
+            this.lblUnknown7.AutoSize = true;
+            this.lblUnknown7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnknown7.Location = new System.Drawing.Point(81, 460);
+            this.lblUnknown7.Name = "lblUnknown7";
+            this.lblUnknown7.Size = new System.Drawing.Size(26, 16);
+            this.lblUnknown7.TabIndex = 133;
+            this.lblUnknown7.Text = "???";
+            // 
+            // lblUnknown6
+            // 
+            this.lblUnknown6.AutoSize = true;
+            this.lblUnknown6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnknown6.Location = new System.Drawing.Point(81, 440);
+            this.lblUnknown6.Name = "lblUnknown6";
+            this.lblUnknown6.Size = new System.Drawing.Size(26, 16);
+            this.lblUnknown6.TabIndex = 132;
+            this.lblUnknown6.Text = "???";
+            // 
+            // lblUnknown5
+            // 
+            this.lblUnknown5.AutoSize = true;
+            this.lblUnknown5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnknown5.Location = new System.Drawing.Point(81, 420);
+            this.lblUnknown5.Name = "lblUnknown5";
+            this.lblUnknown5.Size = new System.Drawing.Size(26, 16);
+            this.lblUnknown5.TabIndex = 131;
+            this.lblUnknown5.Text = "???";
+            // 
+            // lblUnknown4
+            // 
+            this.lblUnknown4.AutoSize = true;
+            this.lblUnknown4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnknown4.Location = new System.Drawing.Point(81, 400);
+            this.lblUnknown4.Name = "lblUnknown4";
+            this.lblUnknown4.Size = new System.Drawing.Size(26, 16);
+            this.lblUnknown4.TabIndex = 130;
+            this.lblUnknown4.Text = "???";
+            // 
+            // lblReraise
+            // 
+            this.lblReraise.AutoSize = true;
+            this.lblReraise.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReraise.Location = new System.Drawing.Point(56, 380);
+            this.lblReraise.Name = "lblReraise";
+            this.lblReraise.Size = new System.Drawing.Size(51, 16);
+            this.lblReraise.TabIndex = 129;
+            this.lblReraise.Text = "Reraise";
+            // 
+            // lblRunic
+            // 
+            this.lblRunic.AutoSize = true;
+            this.lblRunic.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRunic.Location = new System.Drawing.Point(68, 360);
+            this.lblRunic.Name = "lblRunic";
+            this.lblRunic.Size = new System.Drawing.Size(39, 16);
+            this.lblRunic.TabIndex = 128;
+            this.lblRunic.Text = "Runic";
+            // 
+            // lblTrueKnight
+            // 
+            this.lblTrueKnight.AutoSize = true;
+            this.lblTrueKnight.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTrueKnight.Location = new System.Drawing.Point(33, 340);
+            this.lblTrueKnight.Name = "lblTrueKnight";
+            this.lblTrueKnight.Size = new System.Drawing.Size(74, 16);
+            this.lblTrueKnight.TabIndex = 127;
+            this.lblTrueKnight.Text = "True Knight";
+            // 
+            // lblNoControl
+            // 
+            this.lblNoControl.AutoSize = true;
+            this.lblNoControl.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoControl.Location = new System.Drawing.Point(25, 320);
+            this.lblNoControl.Name = "lblNoControl";
+            this.lblNoControl.Size = new System.Drawing.Size(82, 16);
+            this.lblNoControl.TabIndex = 126;
+            this.lblNoControl.Text = "Can\'t Control";
+            // 
+            // lblSpecialEvent
+            // 
+            this.lblSpecialEvent.AutoSize = true;
+            this.lblSpecialEvent.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpecialEvent.Location = new System.Drawing.Point(23, 300);
+            this.lblSpecialEvent.Name = "lblSpecialEvent";
+            this.lblSpecialEvent.Size = new System.Drawing.Size(84, 16);
+            this.lblSpecialEvent.TabIndex = 125;
+            this.lblSpecialEvent.Text = "Special Event";
+            // 
+            // chkRemovableFloat
+            // 
+            this.chkRemovableFloat.AutoSize = true;
+            this.chkRemovableFloat.Location = new System.Drawing.Point(113, 482);
+            this.chkRemovableFloat.Name = "chkRemovableFloat";
+            this.chkRemovableFloat.Size = new System.Drawing.Size(15, 14);
+            this.chkRemovableFloat.TabIndex = 124;
+            this.chkRemovableFloat.UseVisualStyleBackColor = true;
+            // 
+            // chkNoControl
+            // 
+            this.chkNoControl.AutoSize = true;
+            this.chkNoControl.Location = new System.Drawing.Point(113, 322);
+            this.chkNoControl.Name = "chkNoControl";
+            this.chkNoControl.Size = new System.Drawing.Size(15, 14);
+            this.chkNoControl.TabIndex = 124;
+            this.chkNoControl.UseVisualStyleBackColor = true;
+            // 
+            // chkTrueKnight
+            // 
+            this.chkTrueKnight.AutoSize = true;
+            this.chkTrueKnight.Location = new System.Drawing.Point(113, 342);
+            this.chkTrueKnight.Name = "chkTrueKnight";
+            this.chkTrueKnight.Size = new System.Drawing.Size(15, 14);
+            this.chkTrueKnight.TabIndex = 117;
+            this.chkTrueKnight.UseVisualStyleBackColor = true;
+            // 
+            // chkUnknown7
+            // 
+            this.chkUnknown7.AutoSize = true;
+            this.chkUnknown7.Location = new System.Drawing.Point(113, 462);
+            this.chkUnknown7.Name = "chkUnknown7";
+            this.chkUnknown7.Size = new System.Drawing.Size(15, 14);
+            this.chkUnknown7.TabIndex = 123;
+            this.chkUnknown7.UseVisualStyleBackColor = true;
+            // 
+            // chkUndead
+            // 
+            this.chkUndead.AutoSize = true;
+            this.chkUndead.Location = new System.Drawing.Point(113, 162);
+            this.chkUndead.Name = "chkUndead";
+            this.chkUndead.Size = new System.Drawing.Size(15, 14);
+            this.chkUndead.TabIndex = 124;
+            this.chkUndead.UseVisualStyleBackColor = true;
+            // 
+            // chkUnknown6
+            // 
+            this.chkUnknown6.AutoSize = true;
+            this.chkUnknown6.Location = new System.Drawing.Point(113, 442);
+            this.chkUnknown6.Name = "chkUnknown6";
+            this.chkUnknown6.Size = new System.Drawing.Size(15, 14);
+            this.chkUnknown6.TabIndex = 122;
+            this.chkUnknown6.UseVisualStyleBackColor = true;
+            // 
+            // chkHarderToRun
+            // 
+            this.chkHarderToRun.AutoSize = true;
+            this.chkHarderToRun.Location = new System.Drawing.Point(113, 182);
+            this.chkHarderToRun.Name = "chkHarderToRun";
+            this.chkHarderToRun.Size = new System.Drawing.Size(15, 14);
+            this.chkHarderToRun.TabIndex = 117;
+            this.chkHarderToRun.UseVisualStyleBackColor = true;
+            // 
+            // chkUnknown5
+            // 
+            this.chkUnknown5.AutoSize = true;
+            this.chkUnknown5.Location = new System.Drawing.Point(113, 422);
+            this.chkUnknown5.Name = "chkUnknown5";
+            this.chkUnknown5.Size = new System.Drawing.Size(15, 14);
+            this.chkUnknown5.TabIndex = 121;
+            this.chkUnknown5.UseVisualStyleBackColor = true;
+            // 
+            // chkSpecialEvent
+            // 
+            this.chkSpecialEvent.AutoSize = true;
+            this.chkSpecialEvent.Location = new System.Drawing.Point(113, 302);
+            this.chkSpecialEvent.Name = "chkSpecialEvent";
+            this.chkSpecialEvent.Size = new System.Drawing.Size(15, 14);
+            this.chkSpecialEvent.TabIndex = 123;
+            this.chkSpecialEvent.UseVisualStyleBackColor = true;
+            // 
+            // chkUnkown4
+            // 
+            this.chkUnkown4.AutoSize = true;
+            this.chkUnkown4.Location = new System.Drawing.Point(113, 402);
+            this.chkUnkown4.Name = "chkUnkown4";
+            this.chkUnkown4.Size = new System.Drawing.Size(15, 14);
+            this.chkUnkown4.TabIndex = 120;
+            this.chkUnkown4.UseVisualStyleBackColor = true;
+            // 
+            // lblNoSketch
+            // 
+            this.lblNoSketch.AutoSize = true;
+            this.lblNoSketch.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoSketch.Location = new System.Drawing.Point(28, 280);
+            this.lblNoSketch.Name = "lblNoSketch";
+            this.lblNoSketch.Size = new System.Drawing.Size(79, 16);
+            this.lblNoSketch.TabIndex = 95;
+            this.lblNoSketch.Text = "Can\'t Sketch";
+            // 
+            // chkReraise
+            // 
+            this.chkReraise.AutoSize = true;
+            this.chkReraise.Location = new System.Drawing.Point(113, 382);
+            this.chkReraise.Name = "chkReraise";
+            this.chkReraise.Size = new System.Drawing.Size(15, 14);
+            this.chkReraise.TabIndex = 119;
+            this.chkReraise.UseVisualStyleBackColor = true;
+            // 
+            // chkNoSketch
+            // 
+            this.chkNoSketch.AutoSize = true;
+            this.chkNoSketch.Location = new System.Drawing.Point(113, 282);
+            this.chkNoSketch.Name = "chkNoSketch";
+            this.chkNoSketch.Size = new System.Drawing.Size(15, 14);
+            this.chkNoSketch.TabIndex = 122;
+            this.chkNoSketch.UseVisualStyleBackColor = true;
+            // 
+            // chkRunic
+            // 
+            this.chkRunic.AutoSize = true;
+            this.chkRunic.Location = new System.Drawing.Point(113, 362);
+            this.chkRunic.Name = "chkRunic";
+            this.chkRunic.Size = new System.Drawing.Size(15, 14);
+            this.chkRunic.TabIndex = 118;
+            this.chkRunic.UseVisualStyleBackColor = true;
+            // 
+            // chkMPDeath
+            // 
+            this.chkMPDeath.AutoSize = true;
+            this.chkMPDeath.Location = new System.Drawing.Point(113, 22);
+            this.chkMPDeath.Name = "chkMPDeath";
+            this.chkMPDeath.Size = new System.Drawing.Size(15, 14);
+            this.chkMPDeath.TabIndex = 117;
+            this.chkMPDeath.UseVisualStyleBackColor = true;
+            // 
+            // chkNoScan
+            // 
+            this.chkNoScan.AutoSize = true;
+            this.chkNoScan.Location = new System.Drawing.Point(113, 262);
+            this.chkNoScan.Name = "chkNoScan";
+            this.chkNoScan.Size = new System.Drawing.Size(15, 14);
+            this.chkNoScan.TabIndex = 121;
+            this.chkNoScan.UseVisualStyleBackColor = true;
+            // 
+            // chkCritImp
+            // 
+            this.chkCritImp.AutoSize = true;
+            this.chkCritImp.Location = new System.Drawing.Point(113, 142);
+            this.chkCritImp.Name = "chkCritImp";
+            this.chkCritImp.Size = new System.Drawing.Size(15, 14);
+            this.chkCritImp.TabIndex = 123;
+            this.chkCritImp.UseVisualStyleBackColor = true;
+            // 
+            // chkNoRun
+            // 
+            this.chkNoRun.AutoSize = true;
+            this.chkNoRun.Location = new System.Drawing.Point(113, 242);
+            this.chkNoRun.Name = "chkNoRun";
+            this.chkNoRun.Size = new System.Drawing.Size(15, 14);
+            this.chkNoRun.TabIndex = 120;
+            this.chkNoRun.UseVisualStyleBackColor = true;
+            // 
+            // lblNoScan
+            // 
+            this.lblNoScan.AutoSize = true;
+            this.lblNoScan.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoScan.Location = new System.Drawing.Point(38, 260);
+            this.lblNoScan.Name = "lblNoScan";
+            this.lblNoScan.Size = new System.Drawing.Size(69, 16);
+            this.lblNoScan.TabIndex = 95;
+            this.lblNoScan.Text = "Can\'t Scan";
+            // 
+            // chkBlockSuplex
+            // 
+            this.chkBlockSuplex.AutoSize = true;
+            this.chkBlockSuplex.Location = new System.Drawing.Point(113, 222);
+            this.chkBlockSuplex.Name = "chkBlockSuplex";
+            this.chkBlockSuplex.Size = new System.Drawing.Size(15, 14);
+            this.chkBlockSuplex.TabIndex = 119;
+            this.chkBlockSuplex.UseVisualStyleBackColor = true;
+            // 
+            // chkUnknown3
+            // 
+            this.chkUnknown3.AutoSize = true;
+            this.chkUnknown3.Location = new System.Drawing.Point(113, 122);
+            this.chkUnknown3.Name = "chkUnknown3";
+            this.chkUnknown3.Size = new System.Drawing.Size(15, 14);
+            this.chkUnknown3.TabIndex = 122;
+            this.chkUnknown3.UseVisualStyleBackColor = true;
+            // 
+            // chkAttackFirst
+            // 
+            this.chkAttackFirst.AutoSize = true;
+            this.chkAttackFirst.Location = new System.Drawing.Point(113, 202);
+            this.chkAttackFirst.Name = "chkAttackFirst";
+            this.chkAttackFirst.Size = new System.Drawing.Size(15, 14);
+            this.chkAttackFirst.TabIndex = 118;
+            this.chkAttackFirst.UseVisualStyleBackColor = true;
+            // 
+            // lblNoRun
+            // 
+            this.lblNoRun.AutoSize = true;
+            this.lblNoRun.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoRun.Location = new System.Drawing.Point(44, 240);
+            this.lblNoRun.Name = "lblNoRun";
+            this.lblNoRun.Size = new System.Drawing.Size(63, 16);
+            this.lblNoRun.TabIndex = 94;
+            this.lblNoRun.Text = "Can\'t Run";
+            // 
+            // chkHumanoid
+            // 
+            this.chkHumanoid.AutoSize = true;
+            this.chkHumanoid.Location = new System.Drawing.Point(113, 102);
+            this.chkHumanoid.Name = "chkHumanoid";
+            this.chkHumanoid.Size = new System.Drawing.Size(15, 14);
+            this.chkHumanoid.TabIndex = 121;
+            this.chkHumanoid.UseVisualStyleBackColor = true;
+            // 
+            // lblBlockSuplex
+            // 
+            this.lblBlockSuplex.AutoSize = true;
+            this.lblBlockSuplex.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBlockSuplex.Location = new System.Drawing.Point(28, 220);
+            this.lblBlockSuplex.Name = "lblBlockSuplex";
+            this.lblBlockSuplex.Size = new System.Drawing.Size(79, 16);
+            this.lblBlockSuplex.TabIndex = 93;
+            this.lblBlockSuplex.Text = "Block Suplex";
+            // 
+            // chkUnknown2
+            // 
+            this.chkUnknown2.AutoSize = true;
+            this.chkUnknown2.Location = new System.Drawing.Point(113, 82);
+            this.chkUnknown2.Name = "chkUnknown2";
+            this.chkUnknown2.Size = new System.Drawing.Size(15, 14);
+            this.chkUnknown2.TabIndex = 120;
+            this.chkUnknown2.UseVisualStyleBackColor = true;
+            // 
+            // lblAttackFirst
+            // 
+            this.lblAttackFirst.AutoSize = true;
+            this.lblAttackFirst.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAttackFirst.Location = new System.Drawing.Point(35, 200);
+            this.lblAttackFirst.Name = "lblAttackFirst";
+            this.lblAttackFirst.Size = new System.Drawing.Size(72, 16);
+            this.lblAttackFirst.TabIndex = 92;
+            this.lblAttackFirst.Text = "Attack First";
+            // 
+            // chkNoName
+            // 
+            this.chkNoName.AutoSize = true;
+            this.chkNoName.Location = new System.Drawing.Point(113, 62);
+            this.chkNoName.Name = "chkNoName";
+            this.chkNoName.Size = new System.Drawing.Size(15, 14);
+            this.chkNoName.TabIndex = 119;
+            this.chkNoName.UseVisualStyleBackColor = true;
+            // 
+            // lblHarderToRun
+            // 
+            this.lblHarderToRun.AutoSize = true;
+            this.lblHarderToRun.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHarderToRun.Location = new System.Drawing.Point(19, 180);
+            this.lblHarderToRun.Name = "lblHarderToRun";
+            this.lblHarderToRun.Size = new System.Drawing.Size(88, 16);
+            this.lblHarderToRun.TabIndex = 91;
+            this.lblHarderToRun.Text = "Harder to Run";
+            // 
+            // chkPierceReflect
+            // 
+            this.chkPierceReflect.AutoSize = true;
+            this.chkPierceReflect.Location = new System.Drawing.Point(113, 42);
+            this.chkPierceReflect.Name = "chkPierceReflect";
+            this.chkPierceReflect.Size = new System.Drawing.Size(15, 14);
+            this.chkPierceReflect.TabIndex = 118;
+            this.chkPierceReflect.UseVisualStyleBackColor = true;
+            // 
+            // lblUndead
+            // 
+            this.lblUndead.AutoSize = true;
+            this.lblUndead.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUndead.Location = new System.Drawing.Point(56, 160);
+            this.lblUndead.Name = "lblUndead";
+            this.lblUndead.Size = new System.Drawing.Size(51, 16);
+            this.lblUndead.TabIndex = 90;
+            this.lblUndead.Text = "Undead";
+            // 
+            // lblCritImp
+            // 
+            this.lblCritImp.AutoSize = true;
+            this.lblCritImp.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCritImp.Location = new System.Drawing.Point(23, 140);
+            this.lblCritImp.Name = "lblCritImp";
+            this.lblCritImp.Size = new System.Drawing.Size(84, 16);
+            this.lblCritImp.TabIndex = 89;
+            this.lblCritImp.Text = "Crit.Hit if Imp";
+            // 
+            // lblUnknown3
+            // 
+            this.lblUnknown3.AutoSize = true;
+            this.lblUnknown3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnknown3.Location = new System.Drawing.Point(81, 120);
+            this.lblUnknown3.Name = "lblUnknown3";
+            this.lblUnknown3.Size = new System.Drawing.Size(26, 16);
+            this.lblUnknown3.TabIndex = 85;
+            this.lblUnknown3.Text = "???";
+            // 
+            // lblHumanoid
+            // 
+            this.lblHumanoid.AutoSize = true;
+            this.lblHumanoid.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHumanoid.Location = new System.Drawing.Point(42, 99);
+            this.lblHumanoid.Name = "lblHumanoid";
+            this.lblHumanoid.Size = new System.Drawing.Size(65, 16);
+            this.lblHumanoid.TabIndex = 88;
+            this.lblHumanoid.Text = "Humanoid";
+            // 
+            // lblUnknown2
+            // 
+            this.lblUnknown2.AutoSize = true;
+            this.lblUnknown2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUnknown2.Location = new System.Drawing.Point(81, 80);
+            this.lblUnknown2.Name = "lblUnknown2";
+            this.lblUnknown2.Size = new System.Drawing.Size(26, 16);
+            this.lblUnknown2.TabIndex = 87;
+            this.lblUnknown2.Text = "???";
+            // 
+            // lblNoName
+            // 
+            this.lblNoName.AutoSize = true;
+            this.lblNoName.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoName.Location = new System.Drawing.Point(47, 60);
+            this.lblNoName.Name = "lblNoName";
+            this.lblNoName.Size = new System.Drawing.Size(60, 16);
+            this.lblNoName.TabIndex = 86;
+            this.lblNoName.Text = "No Name";
+            // 
+            // lblPierceReflect
+            // 
+            this.lblPierceReflect.AutoSize = true;
+            this.lblPierceReflect.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPierceReflect.Location = new System.Drawing.Point(21, 40);
+            this.lblPierceReflect.Name = "lblPierceReflect";
+            this.lblPierceReflect.Size = new System.Drawing.Size(86, 16);
+            this.lblPierceReflect.TabIndex = 85;
+            this.lblPierceReflect.Text = "Pierce Reflect";
+            // 
+            // lblMPDeath
+            // 
+            this.lblMPDeath.AutoSize = true;
+            this.lblMPDeath.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMPDeath.Location = new System.Drawing.Point(45, 20);
+            this.lblMPDeath.Name = "lblMPDeath";
+            this.lblMPDeath.Size = new System.Drawing.Size(62, 16);
+            this.lblMPDeath.TabIndex = 84;
+            this.lblMPDeath.Text = "MP Death";
+            // 
+            // grpMonsterElements
+            // 
+            this.grpMonsterElements.Controls.Add(this.checkBox17);
+            this.grpMonsterElements.Controls.Add(this.checkBox18);
+            this.grpMonsterElements.Controls.Add(this.checkBox19);
+            this.grpMonsterElements.Controls.Add(this.checkBox20);
+            this.grpMonsterElements.Controls.Add(this.checkBox21);
+            this.grpMonsterElements.Controls.Add(this.checkBox22);
+            this.grpMonsterElements.Controls.Add(this.checkBox23);
+            this.grpMonsterElements.Controls.Add(this.checkBox24);
+            this.grpMonsterElements.Controls.Add(this.checkBox9);
+            this.grpMonsterElements.Controls.Add(this.checkBox10);
+            this.grpMonsterElements.Controls.Add(this.checkBox11);
+            this.grpMonsterElements.Controls.Add(this.checkBox12);
+            this.grpMonsterElements.Controls.Add(this.checkBox13);
+            this.grpMonsterElements.Controls.Add(this.checkBox14);
+            this.grpMonsterElements.Controls.Add(this.checkBox15);
+            this.grpMonsterElements.Controls.Add(this.checkBox16);
+            this.grpMonsterElements.Controls.Add(this.checkBox1);
+            this.grpMonsterElements.Controls.Add(this.checkBox2);
+            this.grpMonsterElements.Controls.Add(this.checkBox3);
+            this.grpMonsterElements.Controls.Add(this.checkBox4);
+            this.grpMonsterElements.Controls.Add(this.checkBox5);
+            this.grpMonsterElements.Controls.Add(this.checkBox6);
+            this.grpMonsterElements.Controls.Add(this.checkBox7);
+            this.grpMonsterElements.Controls.Add(this.checkBox8);
+            this.grpMonsterElements.Controls.Add(this.chkWaterAbs);
+            this.grpMonsterElements.Controls.Add(this.chkFireAbs);
+            this.grpMonsterElements.Controls.Add(this.lblWeak);
+            this.grpMonsterElements.Controls.Add(this.chkEarthAbs);
+            this.grpMonsterElements.Controls.Add(this.lblHalf);
+            this.grpMonsterElements.Controls.Add(this.lblNull);
+            this.grpMonsterElements.Controls.Add(this.chkHolyAbs);
+            this.grpMonsterElements.Controls.Add(this.lblAbsorb);
+            this.grpMonsterElements.Controls.Add(this.lblWater);
+            this.grpMonsterElements.Controls.Add(this.chkWindAbs);
+            this.grpMonsterElements.Controls.Add(this.lblFire);
+            this.grpMonsterElements.Controls.Add(this.lblIce);
+            this.grpMonsterElements.Controls.Add(this.chkPoisonAbs);
+            this.grpMonsterElements.Controls.Add(this.lblThunder);
+            this.grpMonsterElements.Controls.Add(this.lblEarth);
+            this.grpMonsterElements.Controls.Add(this.chkThunderAbs);
+            this.grpMonsterElements.Controls.Add(this.lblPoison);
+            this.grpMonsterElements.Controls.Add(this.lblWind);
+            this.grpMonsterElements.Controls.Add(this.chkIceAbs);
+            this.grpMonsterElements.Controls.Add(this.lblHoly);
+            this.grpMonsterElements.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpMonsterElements.Location = new System.Drawing.Point(322, 6);
+            this.grpMonsterElements.Name = "grpMonsterElements";
+            this.grpMonsterElements.Size = new System.Drawing.Size(226, 212);
+            this.grpMonsterElements.TabIndex = 81;
+            this.grpMonsterElements.TabStop = false;
+            this.grpMonsterElements.Text = "Elements";
+            // 
+            // checkBox17
+            // 
+            this.checkBox17.AutoSize = true;
+            this.checkBox17.Location = new System.Drawing.Point(188, 175);
+            this.checkBox17.Name = "checkBox17";
+            this.checkBox17.Size = new System.Drawing.Size(15, 14);
+            this.checkBox17.TabIndex = 116;
+            this.checkBox17.UseVisualStyleBackColor = true;
+            // 
+            // checkBox18
+            // 
+            this.checkBox18.AutoSize = true;
+            this.checkBox18.Location = new System.Drawing.Point(188, 35);
+            this.checkBox18.Name = "checkBox18";
+            this.checkBox18.Size = new System.Drawing.Size(15, 14);
+            this.checkBox18.TabIndex = 109;
+            this.checkBox18.UseVisualStyleBackColor = true;
+            // 
+            // checkBox19
+            // 
+            this.checkBox19.AutoSize = true;
+            this.checkBox19.Location = new System.Drawing.Point(188, 155);
+            this.checkBox19.Name = "checkBox19";
+            this.checkBox19.Size = new System.Drawing.Size(15, 14);
+            this.checkBox19.TabIndex = 115;
+            this.checkBox19.UseVisualStyleBackColor = true;
+            // 
+            // checkBox20
+            // 
+            this.checkBox20.AutoSize = true;
+            this.checkBox20.Location = new System.Drawing.Point(188, 135);
+            this.checkBox20.Name = "checkBox20";
+            this.checkBox20.Size = new System.Drawing.Size(15, 14);
+            this.checkBox20.TabIndex = 114;
+            this.checkBox20.UseVisualStyleBackColor = true;
+            // 
+            // checkBox21
+            // 
+            this.checkBox21.AutoSize = true;
+            this.checkBox21.Location = new System.Drawing.Point(188, 115);
+            this.checkBox21.Name = "checkBox21";
+            this.checkBox21.Size = new System.Drawing.Size(15, 14);
+            this.checkBox21.TabIndex = 113;
+            this.checkBox21.UseVisualStyleBackColor = true;
+            // 
+            // checkBox22
+            // 
+            this.checkBox22.AutoSize = true;
+            this.checkBox22.Location = new System.Drawing.Point(188, 95);
+            this.checkBox22.Name = "checkBox22";
+            this.checkBox22.Size = new System.Drawing.Size(15, 14);
+            this.checkBox22.TabIndex = 112;
+            this.checkBox22.UseVisualStyleBackColor = true;
+            // 
+            // checkBox23
+            // 
+            this.checkBox23.AutoSize = true;
+            this.checkBox23.Location = new System.Drawing.Point(188, 75);
+            this.checkBox23.Name = "checkBox23";
+            this.checkBox23.Size = new System.Drawing.Size(15, 14);
+            this.checkBox23.TabIndex = 111;
+            this.checkBox23.UseVisualStyleBackColor = true;
+            // 
+            // checkBox24
+            // 
+            this.checkBox24.AutoSize = true;
+            this.checkBox24.Location = new System.Drawing.Point(188, 55);
+            this.checkBox24.Name = "checkBox24";
+            this.checkBox24.Size = new System.Drawing.Size(15, 14);
+            this.checkBox24.TabIndex = 110;
+            this.checkBox24.UseVisualStyleBackColor = true;
+            // 
+            // checkBox9
+            // 
+            this.checkBox9.AutoSize = true;
+            this.checkBox9.Location = new System.Drawing.Point(152, 175);
+            this.checkBox9.Name = "checkBox9";
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
+            this.checkBox9.TabIndex = 108;
+            this.checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox10
+            // 
+            this.checkBox10.AutoSize = true;
+            this.checkBox10.Location = new System.Drawing.Point(152, 35);
+            this.checkBox10.Name = "checkBox10";
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
+            this.checkBox10.TabIndex = 101;
+            this.checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox11
+            // 
+            this.checkBox11.AutoSize = true;
+            this.checkBox11.Location = new System.Drawing.Point(152, 155);
+            this.checkBox11.Name = "checkBox11";
+            this.checkBox11.Size = new System.Drawing.Size(15, 14);
+            this.checkBox11.TabIndex = 107;
+            this.checkBox11.UseVisualStyleBackColor = true;
+            // 
+            // checkBox12
+            // 
+            this.checkBox12.AutoSize = true;
+            this.checkBox12.Location = new System.Drawing.Point(152, 135);
+            this.checkBox12.Name = "checkBox12";
+            this.checkBox12.Size = new System.Drawing.Size(15, 14);
+            this.checkBox12.TabIndex = 106;
+            this.checkBox12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox13
+            // 
+            this.checkBox13.AutoSize = true;
+            this.checkBox13.Location = new System.Drawing.Point(152, 115);
+            this.checkBox13.Name = "checkBox13";
+            this.checkBox13.Size = new System.Drawing.Size(15, 14);
+            this.checkBox13.TabIndex = 105;
+            this.checkBox13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox14
+            // 
+            this.checkBox14.AutoSize = true;
+            this.checkBox14.Location = new System.Drawing.Point(152, 95);
+            this.checkBox14.Name = "checkBox14";
+            this.checkBox14.Size = new System.Drawing.Size(15, 14);
+            this.checkBox14.TabIndex = 104;
+            this.checkBox14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox15
+            // 
+            this.checkBox15.AutoSize = true;
+            this.checkBox15.Location = new System.Drawing.Point(152, 75);
+            this.checkBox15.Name = "checkBox15";
+            this.checkBox15.Size = new System.Drawing.Size(15, 14);
+            this.checkBox15.TabIndex = 103;
+            this.checkBox15.UseVisualStyleBackColor = true;
+            // 
+            // checkBox16
+            // 
+            this.checkBox16.AutoSize = true;
+            this.checkBox16.Location = new System.Drawing.Point(152, 55);
+            this.checkBox16.Name = "checkBox16";
+            this.checkBox16.Size = new System.Drawing.Size(15, 14);
+            this.checkBox16.TabIndex = 102;
+            this.checkBox16.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(118, 175);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 100;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(118, 35);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 93;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(118, 155);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 99;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(118, 135);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
+            this.checkBox4.TabIndex = 98;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(118, 115);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
+            this.checkBox5.TabIndex = 97;
+            this.checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.Location = new System.Drawing.Point(118, 95);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
+            this.checkBox6.TabIndex = 96;
+            this.checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(118, 75);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 95;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Location = new System.Drawing.Point(118, 55);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
+            this.checkBox8.TabIndex = 94;
+            this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // chkWaterAbs
+            // 
+            this.chkWaterAbs.AutoSize = true;
+            this.chkWaterAbs.Location = new System.Drawing.Point(82, 175);
+            this.chkWaterAbs.Name = "chkWaterAbs";
+            this.chkWaterAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkWaterAbs.TabIndex = 92;
+            this.chkWaterAbs.UseVisualStyleBackColor = true;
+            // 
+            // chkFireAbs
+            // 
+            this.chkFireAbs.AutoSize = true;
+            this.chkFireAbs.Location = new System.Drawing.Point(82, 35);
+            this.chkFireAbs.Name = "chkFireAbs";
+            this.chkFireAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkFireAbs.TabIndex = 82;
+            this.chkFireAbs.UseVisualStyleBackColor = true;
+            // 
+            // lblWeak
+            // 
+            this.lblWeak.AutoSize = true;
+            this.lblWeak.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeak.Location = new System.Drawing.Point(185, 10);
+            this.lblWeak.Name = "lblWeak";
+            this.lblWeak.Size = new System.Drawing.Size(40, 16);
+            this.lblWeak.TabIndex = 85;
+            this.lblWeak.Text = "Weak";
+            // 
+            // chkEarthAbs
+            // 
+            this.chkEarthAbs.AutoSize = true;
+            this.chkEarthAbs.Location = new System.Drawing.Point(82, 155);
+            this.chkEarthAbs.Name = "chkEarthAbs";
+            this.chkEarthAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkEarthAbs.TabIndex = 91;
+            this.chkEarthAbs.UseVisualStyleBackColor = true;
+            // 
+            // lblHalf
+            // 
+            this.lblHalf.AutoSize = true;
+            this.lblHalf.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHalf.Location = new System.Drawing.Point(149, 10);
+            this.lblHalf.Name = "lblHalf";
+            this.lblHalf.Size = new System.Drawing.Size(30, 16);
+            this.lblHalf.TabIndex = 84;
+            this.lblHalf.Text = "Half";
+            // 
+            // lblNull
+            // 
+            this.lblNull.AutoSize = true;
+            this.lblNull.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNull.Location = new System.Drawing.Point(114, 10);
+            this.lblNull.Name = "lblNull";
+            this.lblNull.Size = new System.Drawing.Size(29, 16);
+            this.lblNull.TabIndex = 83;
+            this.lblNull.Text = "Null";
+            // 
+            // chkHolyAbs
+            // 
+            this.chkHolyAbs.AutoSize = true;
+            this.chkHolyAbs.Location = new System.Drawing.Point(82, 135);
+            this.chkHolyAbs.Name = "chkHolyAbs";
+            this.chkHolyAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkHolyAbs.TabIndex = 90;
+            this.chkHolyAbs.UseVisualStyleBackColor = true;
+            // 
+            // lblAbsorb
+            // 
+            this.lblAbsorb.AutoSize = true;
+            this.lblAbsorb.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAbsorb.Location = new System.Drawing.Point(75, 10);
+            this.lblAbsorb.Name = "lblAbsorb";
+            this.lblAbsorb.Size = new System.Drawing.Size(33, 16);
+            this.lblAbsorb.TabIndex = 82;
+            this.lblAbsorb.Text = "Abs.";
+            // 
+            // lblWater
+            // 
+            this.lblWater.AutoSize = true;
+            this.lblWater.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWater.Location = new System.Drawing.Point(22, 172);
+            this.lblWater.Name = "lblWater";
+            this.lblWater.Size = new System.Drawing.Size(50, 19);
+            this.lblWater.TabIndex = 80;
+            this.lblWater.Text = "Water";
+            // 
+            // chkWindAbs
+            // 
+            this.chkWindAbs.AutoSize = true;
+            this.chkWindAbs.Location = new System.Drawing.Point(82, 115);
+            this.chkWindAbs.Name = "chkWindAbs";
+            this.chkWindAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkWindAbs.TabIndex = 89;
+            this.chkWindAbs.UseVisualStyleBackColor = true;
+            // 
+            // lblFire
+            // 
+            this.lblFire.AutoSize = true;
+            this.lblFire.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFire.Location = new System.Drawing.Point(37, 30);
+            this.lblFire.Name = "lblFire";
+            this.lblFire.Size = new System.Drawing.Size(35, 19);
+            this.lblFire.TabIndex = 73;
+            this.lblFire.Text = "Fire";
+            // 
+            // lblIce
+            // 
+            this.lblIce.AutoSize = true;
+            this.lblIce.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIce.Location = new System.Drawing.Point(42, 50);
+            this.lblIce.Name = "lblIce";
+            this.lblIce.Size = new System.Drawing.Size(30, 19);
+            this.lblIce.TabIndex = 74;
+            this.lblIce.Text = "Ice";
+            // 
+            // chkPoisonAbs
+            // 
+            this.chkPoisonAbs.AutoSize = true;
+            this.chkPoisonAbs.Location = new System.Drawing.Point(82, 95);
+            this.chkPoisonAbs.Name = "chkPoisonAbs";
+            this.chkPoisonAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkPoisonAbs.TabIndex = 88;
+            this.chkPoisonAbs.UseVisualStyleBackColor = true;
+            // 
+            // lblThunder
+            // 
+            this.lblThunder.AutoSize = true;
+            this.lblThunder.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThunder.Location = new System.Drawing.Point(3, 70);
+            this.lblThunder.Name = "lblThunder";
+            this.lblThunder.Size = new System.Drawing.Size(69, 19);
+            this.lblThunder.TabIndex = 75;
+            this.lblThunder.Text = "Thunder";
+            // 
+            // lblEarth
+            // 
+            this.lblEarth.AutoSize = true;
+            this.lblEarth.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEarth.Location = new System.Drawing.Point(26, 150);
+            this.lblEarth.Name = "lblEarth";
+            this.lblEarth.Size = new System.Drawing.Size(46, 19);
+            this.lblEarth.TabIndex = 79;
+            this.lblEarth.Text = "Earth";
+            // 
+            // chkThunderAbs
+            // 
+            this.chkThunderAbs.AutoSize = true;
+            this.chkThunderAbs.Location = new System.Drawing.Point(82, 75);
+            this.chkThunderAbs.Name = "chkThunderAbs";
+            this.chkThunderAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkThunderAbs.TabIndex = 87;
+            this.chkThunderAbs.UseVisualStyleBackColor = true;
+            // 
+            // lblPoison
+            // 
+            this.lblPoison.AutoSize = true;
+            this.lblPoison.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPoison.Location = new System.Drawing.Point(16, 90);
+            this.lblPoison.Name = "lblPoison";
+            this.lblPoison.Size = new System.Drawing.Size(56, 19);
+            this.lblPoison.TabIndex = 76;
+            this.lblPoison.Text = "Poison";
+            // 
+            // lblWind
+            // 
+            this.lblWind.AutoSize = true;
+            this.lblWind.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWind.Location = new System.Drawing.Point(27, 110);
+            this.lblWind.Name = "lblWind";
+            this.lblWind.Size = new System.Drawing.Size(45, 19);
+            this.lblWind.TabIndex = 77;
+            this.lblWind.Text = "Wind";
+            // 
+            // chkIceAbs
+            // 
+            this.chkIceAbs.AutoSize = true;
+            this.chkIceAbs.Location = new System.Drawing.Point(82, 55);
+            this.chkIceAbs.Name = "chkIceAbs";
+            this.chkIceAbs.Size = new System.Drawing.Size(15, 14);
+            this.chkIceAbs.TabIndex = 86;
+            this.chkIceAbs.UseVisualStyleBackColor = true;
+            // 
+            // lblHoly
+            // 
+            this.lblHoly.AutoSize = true;
+            this.lblHoly.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoly.Location = new System.Drawing.Point(31, 130);
+            this.lblHoly.Name = "lblHoly";
+            this.lblHoly.Size = new System.Drawing.Size(41, 19);
+            this.lblHoly.TabIndex = 78;
+            this.lblHoly.Text = "Holy";
+            // 
+            // numMonsterEXP
+            // 
+            this.numMonsterEXP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterEXP.Location = new System.Drawing.Point(239, 139);
+            this.numMonsterEXP.Maximum = new decimal(new int[] {
+            65536,
+            0,
+            0,
+            0});
+            this.numMonsterEXP.Name = "numMonsterEXP";
+            this.numMonsterEXP.Size = new System.Drawing.Size(77, 27);
+            this.numMonsterEXP.TabIndex = 71;
+            // 
+            // numMonsterGil
+            // 
+            this.numMonsterGil.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterGil.Location = new System.Drawing.Point(239, 172);
+            this.numMonsterGil.Maximum = new decimal(new int[] {
+            65536,
+            0,
+            0,
+            0});
+            this.numMonsterGil.Name = "numMonsterGil";
+            this.numMonsterGil.Size = new System.Drawing.Size(77, 27);
+            this.numMonsterGil.TabIndex = 70;
+            // 
+            // numMonsterMP
+            // 
+            this.numMonsterMP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterMP.Location = new System.Drawing.Point(224, 106);
+            this.numMonsterMP.Maximum = new decimal(new int[] {
+            65536,
+            0,
+            0,
+            0});
+            this.numMonsterMP.Name = "numMonsterMP";
+            this.numMonsterMP.Size = new System.Drawing.Size(92, 27);
+            this.numMonsterMP.TabIndex = 69;
+            // 
+            // numMonsterHP
+            // 
+            this.numMonsterHP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterHP.Location = new System.Drawing.Point(224, 73);
+            this.numMonsterHP.Maximum = new decimal(new int[] {
+            16777216,
+            0,
+            0,
+            0});
+            this.numMonsterHP.Name = "numMonsterHP";
+            this.numMonsterHP.Size = new System.Drawing.Size(92, 27);
+            this.numMonsterHP.TabIndex = 68;
+            // 
+            // btnMonstersCancel
+            // 
+            this.btnMonstersCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnMonstersCancel.Location = new System.Drawing.Point(1332, 489);
+            this.btnMonstersCancel.Name = "btnMonstersCancel";
+            this.btnMonstersCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnMonstersCancel.TabIndex = 67;
+            this.btnMonstersCancel.Text = "Cancel";
+            this.btnMonstersCancel.UseVisualStyleBackColor = false;
+            this.btnMonstersCancel.Click += new System.EventHandler(this.btnMonstersCancel_Click);
+            // 
+            // btnMonstersOkay
+            // 
+            this.btnMonstersOkay.Location = new System.Drawing.Point(1251, 489);
+            this.btnMonstersOkay.Name = "btnMonstersOkay";
+            this.btnMonstersOkay.Size = new System.Drawing.Size(75, 23);
+            this.btnMonstersOkay.TabIndex = 66;
+            this.btnMonstersOkay.Text = "Okay";
+            this.btnMonstersOkay.UseVisualStyleBackColor = true;
+            this.btnMonstersOkay.Click += new System.EventHandler(this.btnMonstersOkay_Click);
+            // 
+            // lblMonsterGil
+            // 
+            this.lblMonsterGil.AutoSize = true;
+            this.lblMonsterGil.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterGil.Location = new System.Drawing.Point(205, 176);
+            this.lblMonsterGil.Name = "lblMonsterGil";
+            this.lblMonsterGil.Size = new System.Drawing.Size(28, 19);
+            this.lblMonsterGil.TabIndex = 33;
+            this.lblMonsterGil.Text = "Gil";
+            // 
+            // lblMonsterEXP
+            // 
+            this.lblMonsterEXP.AutoSize = true;
+            this.lblMonsterEXP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterEXP.Location = new System.Drawing.Point(148, 143);
+            this.lblMonsterEXP.Name = "lblMonsterEXP";
+            this.lblMonsterEXP.Size = new System.Drawing.Size(85, 19);
+            this.lblMonsterEXP.TabIndex = 32;
+            this.lblMonsterEXP.Text = "Experience";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 39);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(138, 128);
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cmbDifficulty
+            // 
+            this.cmbDifficulty.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDifficulty.FormattingEnabled = true;
+            this.cmbDifficulty.Items.AddRange(new object[] {
+            "Normal",
+            "Easy",
+            "Hard"});
+            this.cmbDifficulty.Location = new System.Drawing.Point(239, 7);
+            this.cmbDifficulty.Name = "cmbDifficulty";
+            this.cmbDifficulty.Size = new System.Drawing.Size(77, 27);
+            this.cmbDifficulty.TabIndex = 27;
+            this.cmbDifficulty.SelectedIndexChanged += new System.EventHandler(this.cmbDifficulty_SelectedIndexChanged);
+            // 
+            // lblMonsterAccuracy
+            // 
+            this.lblMonsterAccuracy.AutoSize = true;
+            this.lblMonsterAccuracy.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterAccuracy.Location = new System.Drawing.Point(3, 379);
+            this.lblMonsterAccuracy.Name = "lblMonsterAccuracy";
+            this.lblMonsterAccuracy.Size = new System.Drawing.Size(72, 19);
+            this.lblMonsterAccuracy.TabIndex = 26;
+            this.lblMonsterAccuracy.Text = "Accuracy";
+            // 
+            // lblMonsterVitality
+            // 
+            this.lblMonsterVitality.AutoSize = true;
+            this.lblMonsterVitality.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterVitality.Location = new System.Drawing.Point(80, 222);
+            this.lblMonsterVitality.Name = "lblMonsterVitality";
+            this.lblMonsterVitality.Size = new System.Drawing.Size(57, 19);
+            this.lblMonsterVitality.TabIndex = 25;
+            this.lblMonsterVitality.Text = "Vitality";
+            // 
+            // numMonsterAttack
+            // 
+            this.numMonsterAttack.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterAttack.Location = new System.Drawing.Point(14, 244);
+            this.numMonsterAttack.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterAttack.Name = "numMonsterAttack";
+            this.numMonsterAttack.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterAttack.TabIndex = 24;
+            this.numMonsterAttack.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterDefense
+            // 
+            this.numMonsterDefense.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterDefense.Location = new System.Drawing.Point(14, 349);
+            this.numMonsterDefense.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterDefense.Name = "numMonsterDefense";
+            this.numMonsterDefense.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterDefense.TabIndex = 23;
+            this.numMonsterDefense.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterMagEva
+            // 
+            this.numMonsterMagEva.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterMagEva.Location = new System.Drawing.Point(84, 296);
+            this.numMonsterMagEva.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterMagEva.Name = "numMonsterMagEva";
+            this.numMonsterMagEva.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterMagEva.TabIndex = 22;
+            this.numMonsterMagEva.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterEvasion
+            // 
+            this.numMonsterEvasion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterEvasion.Location = new System.Drawing.Point(14, 296);
+            this.numMonsterEvasion.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterEvasion.Name = "numMonsterEvasion";
+            this.numMonsterEvasion.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterEvasion.TabIndex = 21;
+            this.numMonsterEvasion.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterVitality
+            // 
+            this.numMonsterVitality.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterVitality.Location = new System.Drawing.Point(84, 244);
+            this.numMonsterVitality.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterVitality.Name = "numMonsterVitality";
+            this.numMonsterVitality.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterVitality.TabIndex = 20;
+            this.numMonsterVitality.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterMagic
+            // 
+            this.numMonsterMagic.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterMagic.Location = new System.Drawing.Point(84, 192);
+            this.numMonsterMagic.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterMagic.Name = "numMonsterMagic";
+            this.numMonsterMagic.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterMagic.TabIndex = 19;
+            this.numMonsterMagic.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterAccuracy
+            // 
+            this.numMonsterAccuracy.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterAccuracy.Location = new System.Drawing.Point(14, 401);
+            this.numMonsterAccuracy.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterAccuracy.Name = "numMonsterAccuracy";
+            this.numMonsterAccuracy.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterAccuracy.TabIndex = 18;
+            this.numMonsterAccuracy.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterAgility
+            // 
+            this.numMonsterAgility.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterAgility.Location = new System.Drawing.Point(84, 401);
+            this.numMonsterAgility.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterAgility.Name = "numMonsterAgility";
+            this.numMonsterAgility.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterAgility.TabIndex = 17;
+            this.numMonsterAgility.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterMagDef
+            // 
+            this.numMonsterMagDef.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterMagDef.Location = new System.Drawing.Point(84, 349);
+            this.numMonsterMagDef.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterMagDef.Name = "numMonsterMagDef";
+            this.numMonsterMagDef.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterMagDef.TabIndex = 16;
+            this.numMonsterMagDef.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // numMonsterStrength
+            // 
+            this.numMonsterStrength.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterStrength.Location = new System.Drawing.Point(14, 192);
+            this.numMonsterStrength.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterStrength.Name = "numMonsterStrength";
+            this.numMonsterStrength.Size = new System.Drawing.Size(50, 27);
+            this.numMonsterStrength.TabIndex = 15;
+            this.numMonsterStrength.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lblMonsterAgility
+            // 
+            this.lblMonsterAgility.AutoSize = true;
+            this.lblMonsterAgility.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterAgility.Location = new System.Drawing.Point(81, 379);
+            this.lblMonsterAgility.Name = "lblMonsterAgility";
+            this.lblMonsterAgility.Size = new System.Drawing.Size(54, 19);
+            this.lblMonsterAgility.TabIndex = 14;
+            this.lblMonsterAgility.Text = "Agility";
+            // 
+            // lblMonsterEvasion
+            // 
+            this.lblMonsterEvasion.AutoSize = true;
+            this.lblMonsterEvasion.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterEvasion.Location = new System.Drawing.Point(8, 274);
+            this.lblMonsterEvasion.Name = "lblMonsterEvasion";
+            this.lblMonsterEvasion.Size = new System.Drawing.Size(63, 19);
+            this.lblMonsterEvasion.TabIndex = 13;
+            this.lblMonsterEvasion.Text = "Evasion";
+            // 
+            // lblMonsterDefense
+            // 
+            this.lblMonsterDefense.AutoSize = true;
+            this.lblMonsterDefense.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterDefense.Location = new System.Drawing.Point(8, 327);
+            this.lblMonsterDefense.Name = "lblMonsterDefense";
+            this.lblMonsterDefense.Size = new System.Drawing.Size(65, 19);
+            this.lblMonsterDefense.TabIndex = 12;
+            this.lblMonsterDefense.Text = "Defense";
+            // 
+            // lblMonsterMagic
+            // 
+            this.lblMonsterMagic.AutoSize = true;
+            this.lblMonsterMagic.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterMagic.Location = new System.Drawing.Point(81, 170);
+            this.lblMonsterMagic.Name = "lblMonsterMagic";
+            this.lblMonsterMagic.Size = new System.Drawing.Size(49, 19);
+            this.lblMonsterMagic.TabIndex = 11;
+            this.lblMonsterMagic.Text = "Magic";
+            // 
+            // lblMonsterAttack
+            // 
+            this.lblMonsterAttack.AutoSize = true;
+            this.lblMonsterAttack.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterAttack.Location = new System.Drawing.Point(11, 222);
+            this.lblMonsterAttack.Name = "lblMonsterAttack";
+            this.lblMonsterAttack.Size = new System.Drawing.Size(53, 19);
+            this.lblMonsterAttack.TabIndex = 10;
+            this.lblMonsterAttack.Text = "Attack";
+            // 
+            // lblMonsterMagEva
+            // 
+            this.lblMonsterMagEva.AutoSize = true;
+            this.lblMonsterMagEva.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterMagEva.Location = new System.Drawing.Point(75, 274);
+            this.lblMonsterMagEva.Name = "lblMonsterMagEva";
+            this.lblMonsterMagEva.Size = new System.Drawing.Size(68, 19);
+            this.lblMonsterMagEva.TabIndex = 9;
+            this.lblMonsterMagEva.Text = "Mag.Eva";
+            // 
+            // lblMonsterMagDef
+            // 
+            this.lblMonsterMagDef.AutoSize = true;
+            this.lblMonsterMagDef.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterMagDef.Location = new System.Drawing.Point(78, 327);
+            this.lblMonsterMagDef.Name = "lblMonsterMagDef";
+            this.lblMonsterMagDef.Size = new System.Drawing.Size(67, 19);
+            this.lblMonsterMagDef.TabIndex = 8;
+            this.lblMonsterMagDef.Text = "Mag.Def";
+            // 
+            // lblMonsterStrength
+            // 
+            this.lblMonsterStrength.AutoSize = true;
+            this.lblMonsterStrength.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterStrength.Location = new System.Drawing.Point(6, 170);
+            this.lblMonsterStrength.Name = "lblMonsterStrength";
+            this.lblMonsterStrength.Size = new System.Drawing.Size(69, 19);
+            this.lblMonsterStrength.TabIndex = 7;
+            this.lblMonsterStrength.Text = "Strength";
+            // 
+            // lblMonsterMP
+            // 
+            this.lblMonsterMP.AutoSize = true;
+            this.lblMonsterMP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterMP.Location = new System.Drawing.Point(188, 109);
+            this.lblMonsterMP.Name = "lblMonsterMP";
+            this.lblMonsterMP.Size = new System.Drawing.Size(30, 19);
+            this.lblMonsterMP.TabIndex = 6;
+            this.lblMonsterMP.Text = "MP";
+            // 
+            // lblMonsterHP
+            // 
+            this.lblMonsterHP.AutoSize = true;
+            this.lblMonsterHP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterHP.Location = new System.Drawing.Point(189, 76);
+            this.lblMonsterHP.Name = "lblMonsterHP";
+            this.lblMonsterHP.Size = new System.Drawing.Size(29, 19);
+            this.lblMonsterHP.TabIndex = 4;
+            this.lblMonsterHP.Text = "HP";
+            // 
+            // numMonsterLevel
+            // 
+            this.numMonsterLevel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMonsterLevel.Location = new System.Drawing.Point(265, 40);
+            this.numMonsterLevel.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numMonsterLevel.Name = "numMonsterLevel";
+            this.numMonsterLevel.Size = new System.Drawing.Size(51, 27);
+            this.numMonsterLevel.TabIndex = 2;
+            this.numMonsterLevel.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // lblMonsterLevel
+            // 
+            this.lblMonsterLevel.AutoSize = true;
+            this.lblMonsterLevel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonsterLevel.Location = new System.Drawing.Point(214, 42);
+            this.lblMonsterLevel.Name = "lblMonsterLevel";
+            this.lblMonsterLevel.Size = new System.Drawing.Size(45, 19);
+            this.lblMonsterLevel.TabIndex = 1;
+            this.lblMonsterLevel.Text = "Level";
+            // 
+            // cmbMonsters
+            // 
+            this.cmbMonsters.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbMonsters.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbMonsters.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMonsters.FormattingEnabled = true;
+            this.cmbMonsters.Items.AddRange(new object[] {
+            "Guard",
+            "Soldier",
+            "Templar",
+            "Ninja",
+            "Samurai",
+            "Borghese",
+            "Mag Roader",
+            "Yojimbo",
+            "Cloud",
+            "Misty",
+            "Al Jabr",
+            "Zaghrem",
+            "Apocrypha",
+            "BlackForce",
+            "Whisper",
+            "Oversoul",
+            "BoneHorror",
+            "Commander",
+            "Mu",
+            "Wererat",
+            "Mugbear",
+            "Belmodar",
+            "Muud Suud",
+            "Leaf Bunny",
+            "Stray Cat",
+            "SilverLobo",
+            "Doberman",
+            "Megalodoth",
+            "Boss",
+            "Briareus",
+            "Suriander",
+            "Chimera",
+            "Behemoth",
+            "Fafnir",
+            "Lopros",
+            "FossilDrgn",
+            "HolyDragon",
+            "Fiend Drgn",
+            "Brachiodos",
+            "Tyranosaur",
+            "Black Wind",
+            "Aepyornis",
+            "Vulture",
+            "Vasegiatta",
+            "Zokka",
+            "Trapper",
+            "Hornet",
+            "Hopper",
+            "Delta Bug",
+            "Killer Bug",
+            "Trillium",
+            "Rafflesia",
+            "Tumbleweed",
+            "Vamp Thorn",
+            "Cartagra",
+            "Siegfried",
+            "Nautiloid",
+            "Exocite",
+            "Anguiform",
+            "Reach Frog",
+            "Lizard",
+            "LitworChkn",
+            "Slugworm",
+            "Hell Rider",
+            "Typhon1",
+            "Onion",
+            "M-tekArmor",
+            "Sky Armor",
+            "Satellite",
+            "ArmedWeapn",
+            "Spritzer",
+            "Flan",
+            "Outcast",
+            "Humpty",
+            "Koja",
+            "Cruller",
+            "Cactuar",
+            "Bandit",
+            "Vice",
+            "Bomb",
+            "StillLife",
+            "Lunatys",
+            "VeilDancer",
+            "Hill Gigas",
+            "Tonberry",
+            "Magic Urn",
+            "Mover",
+            "FigaroLzrd",
+            "Devoahan",
+            "Aspilance",
+            "Ghost",
+            "Crawler",
+            "Sand Ray",
+            "Alacran",
+            "Actinian",
+            "Sand Horse",
+            "Darkside",
+            "Malboro",
+            "Demiurok",
+            "Foper",
+            "Leader",
+            "Sgt.Major",
+            "General",
+            "Invisible",
+            "Kamui",
+            "Warlock",
+            "Cherry",
+            "Joker",
+            "MotorDrive",
+            "Satan",
+            "Provoker",
+            "Powerdemon",
+            "Mahadeva",
+            "Vector Dog",
+            "Peep Bear",
+            "Stunner",
+            "Sorath",
+            "Destroyer",
+            "Spearbunny",
+            "Coeurl Cat",
+            "Blood Fang",
+            "HuntingDog",
+            "Gorgias",
+            "Don",
+            "Murussu",
+            "Wartpuck",
+            "Gorgimera",
+            "K.Behemoth",
+            "Vectorisos",
+            "Wyvern",
+            "DrgnZombie",
+            "Dragon",
+            "Old Dragon",
+            "Weredragon",
+            "Cirpius",
+            "Sprinter",
+            "Lenergia",
+            "Marchosias",
+            "Gloom Wind",
+            "Dropper",
+            "BrainSugar",
+            "Grasswyrm",
+            "Luridan",
+            "Twinscythe",
+            "Paraladia",
+            "Exoray",
+            "Crusher",
+            "Ouroboros",
+            "Acrophies",
+            "Schmidt",
+            "Devourer",
+            "Cancer",
+            "Gigantoad",
+            "Basilisk",
+            "MedusaChkn",
+            "Land Worm",
+            "Test Rider",
+            "PlutoArmor",
+            "Onion Dash",
+            "HeavyArmor",
+            "Chaser",
+            "Gamma",
+            "Poplium",
+            "Sleep Lion",
+            "Misfit",
+            "Creature",
+            "Enuo",
+            "Deep Eye",
+            "Unseelie",
+            "NeckHunter",
+            "Grenade",
+            "CharmyRide",
+            "Pandora",
+            "BladeDancr",
+            "Gigantos",
+            "Mag Roader",
+            "Lycaon",
+            "Parasite",
+            "Land Ray",
+            "Antares",
+            "Anemone",
+            "Moonform",
+            "Specter",
+            "Gt.Malboro",
+            "Bonnacon",
+            "Oceanus",
+            "LivingDead",
+            "Death Ward",
+            "Face",
+            "Outsider",
+            "Coco",
+            "Zeveak",
+            "Nitewalker",
+            "EvilKnight",
+            "Bodyguard",
+            "DesertHare",
+            "Wizard",
+            "Devil Fist",
+            "Illuyankas",
+            "Sergeant",
+            "Jasconius",
+            "Knotty",
+            "Luna Wolf",
+            "Belzecue",
+            "Caladrius",
+            "Tzakmaqiel",
+            "Lukhavi",
+            "Eukaryote",
+            "LandGrilon",
+            "Goetia",
+            "Mantis",
+            "Bogey",
+            "Purusa",
+            "Black Drgn",
+            "Adamankary",
+            "Dante",
+            "PlatnmDrgn",
+            "Duel Armor",
+            "Psycho",
+            "Mousse",
+            "Corpse",
+            "Punisher",
+            "Balloon",
+            "Gobledygok",
+            "GrBehemoth",
+            "Scorpion",
+            "Chaos Drgn",
+            "Spitfire",
+            "Vectimera",
+            "Lich",
+            "Rukh",
+            "Mag Roader",
+            "Bug",
+            "Seaflower",
+            "Armor Base",
+            "Venobennu",
+            "Galypdes",
+            "Junk",
+            "Mandragora",
+            "Valeor",
+            "Amduscias",
+            "Necromancr",
+            "Caasimolar",
+            "Mag Roader",
+            "Wild Rat",
+            "Gold Bear",
+            "InnoSent",
+            "Clymenus",
+            "Garm",
+            "Daedalus",
+            "Baalzephon",
+            "Ahriman",
+            "Death Mech",
+            "IronHitman",
+            "Io",
+            "Tonberries",
+            "Ymir(Shell)",
+            "Presenter(Shell)",
+            "Mega Armor",
+            "Vargas",
+            "Dig Armor",
+            "Prometheus",
+            "DemonTrain",
+            "Dadaluma",
+            "Shiva",
+            "Ifrit",
+            "Number 024",
+            "Number 128",
+            "Inferno",
+            "Crane1",
+            "Crane2",
+            "Yeti1",
+            "Yeti2",
+            "Guardian1",
+            "Guardian2",
+            "Air Force",
+            "Esper",
+            "Valigarmanda",
+            "FlameEater",
+            "U.Weapon",
+            "Nelapa",
+            "K.Behemoth",
+            "Kefka",
+            "Tentacle1",
+            "Dullahan",
+            "Death Gaze",
+            "Chadarnook",
+            "Curlax",
+            "Laragorn",
+            "Moebius",
+            "Alexsoul",
+            "Hidon",
+            "Sam. Soul",
+            "Lv30 Magic",
+            "Erebus",
+            "Sephirah",
+            "Sophia",
+            "Zurvan",
+            "Kefka",
+            "Lv40 Magic",
+            "Orthros1",
+            "Orthros2",
+            "Orthros3",
+            "Typhon2",
+            "Lv20 Magic",
+            "Siegfried",
+            "Lv10 Magic",
+            "Lv50 Magic",
+            "Ymir(Head)",
+            "Presenter(Head)",
+            "Giant",
+            "KaiserDrgn",
+            "M.Tonberry",
+            "Lv60 Magic",
+            "Merchant",
+            "Naked",
+            "Tentacle2",
+            "Tentacle3",
+            "Tentacle4",
+            "RightBlade",
+            "Left Blade",
+            "Rahu",
+            "Ketu",
+            "Lv70 Magic",
+            "Valigarmanda",
+            "Laser Gun",
+            "Bit",
+            "MissileBay",
+            "Chadarnook",
+            "Ice Dragon",
+            "Kefka",
+            "Storm Drgn",
+            "Earth Drgn",
+            "Ipooh",
+            "Captain",
+            "Imperial",
+            "YellowDrgn",
+            "Skull Drgn",
+            "BlueDragon",
+            "Red Dragon",
+            "Opinicus",
+            "Rhizopas",
+            "Apparition",
+            "Short Arm",
+            "Long Arm",
+            "Face",
+            "Tiger",
+            "Machine",
+            "Magic",
+            "Power",
+            "Lady",
+            "Rest",
+            "Erebus1",
+            "Erebus2",
+            "Erebus3",
+            "Lv80 Magic",
+            "Lv90 Magic",
+            "ProtoArmor",
+            "MagiMaster",
+            "Soul Saber",
+            "Orthros",
+            "Naude",
+            "Humbaba1",
+            "Humbaba2",
+            "Humbaba3",
+            "Humbaba4",
+            "(Nothing)1",
+            "(Nothing)2",
+            "(Nothing)3",
+            "Zone Eater",
+            "(Nothing)4",
+            "(Nothing)5",
+            "(Nothing)6",
+            "Cadet",
+            "Officer",
+            "(Nothing)7",
+            "(Nothing)8",
+            "Imperial",
+            "(Nothing)9",
+            "(Nothing)10",
+            "(Nothing)11",
+            "U.Buster",
+            "(Nothing)12",
+            "(Nothing)13"});
+            this.cmbMonsters.Location = new System.Drawing.Point(6, 6);
+            this.cmbMonsters.Name = "cmbMonsters";
+            this.cmbMonsters.Size = new System.Drawing.Size(138, 27);
+            this.cmbMonsters.TabIndex = 0;
+            this.cmbMonsters.SelectedIndexChanged += new System.EventHandler(this.cmbMonsters_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 630);
+            this.ClientSize = new System.Drawing.Size(1445, 583);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -10850,6 +14002,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic1)).EndInit();
+            this.tabEnemies.ResumeLayout(false);
+            this.tabEnemies.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterIndex)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.grpSpecialStatus.ResumeLayout(false);
+            this.grpSpecialStatus.PerformLayout();
+            this.grpMonsterElements.ResumeLayout(false);
+            this.grpMonsterElements.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterEXP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterGil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterHP)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterAttack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterDefense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagEva)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterEvasion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterVitality)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterAccuracy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterAgility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagDef)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMonsterLevel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -11188,6 +14365,213 @@
         private System.Windows.Forms.Label lblEsperLevel2;
         private System.Windows.Forms.Label lblEsperLevel1;
         private System.Windows.Forms.Label lblEsperLevel;
+        private System.Windows.Forms.ComboBox cmbMonsters;
+        private System.Windows.Forms.NumericUpDown numMonsterLevel;
+        private System.Windows.Forms.Label lblMonsterLevel;
+        private System.Windows.Forms.Label lblMonsterAccuracy;
+        private System.Windows.Forms.Label lblMonsterVitality;
+        private System.Windows.Forms.NumericUpDown numMonsterAttack;
+        private System.Windows.Forms.NumericUpDown numMonsterDefense;
+        private System.Windows.Forms.NumericUpDown numMonsterMagEva;
+        private System.Windows.Forms.NumericUpDown numMonsterEvasion;
+        private System.Windows.Forms.NumericUpDown numMonsterVitality;
+        private System.Windows.Forms.NumericUpDown numMonsterMagic;
+        private System.Windows.Forms.NumericUpDown numMonsterAccuracy;
+        private System.Windows.Forms.NumericUpDown numMonsterAgility;
+        private System.Windows.Forms.NumericUpDown numMonsterMagDef;
+        private System.Windows.Forms.NumericUpDown numMonsterStrength;
+        private System.Windows.Forms.Label lblMonsterAgility;
+        private System.Windows.Forms.Label lblMonsterEvasion;
+        private System.Windows.Forms.Label lblMonsterDefense;
+        private System.Windows.Forms.Label lblMonsterMagic;
+        private System.Windows.Forms.Label lblMonsterAttack;
+        private System.Windows.Forms.Label lblMonsterMagEva;
+        private System.Windows.Forms.Label lblMonsterMagDef;
+        private System.Windows.Forms.Label lblMonsterStrength;
+        private System.Windows.Forms.Label lblMonsterMP;
+        private System.Windows.Forms.Label lblMonsterHP;
+        private System.Windows.Forms.ComboBox cmbDifficulty;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblMonsterGil;
+        private System.Windows.Forms.Label lblMonsterEXP;
+        private System.Windows.Forms.Button btnMonstersCancel;
+        private System.Windows.Forms.Button btnMonstersOkay;
+        private System.Windows.Forms.NumericUpDown numMonsterEXP;
+        private System.Windows.Forms.NumericUpDown numMonsterGil;
+        private System.Windows.Forms.NumericUpDown numMonsterMP;
+        private System.Windows.Forms.NumericUpDown numMonsterHP;
+        private System.Windows.Forms.GroupBox grpMonsterElements;
+        private System.Windows.Forms.CheckBox chkWaterAbs;
+        private System.Windows.Forms.CheckBox chkFireAbs;
+        private System.Windows.Forms.Label lblWeak;
+        private System.Windows.Forms.CheckBox chkEarthAbs;
+        private System.Windows.Forms.Label lblHalf;
+        private System.Windows.Forms.Label lblNull;
+        private System.Windows.Forms.CheckBox chkHolyAbs;
+        private System.Windows.Forms.Label lblAbsorb;
+        private System.Windows.Forms.Label lblWater;
+        private System.Windows.Forms.CheckBox chkWindAbs;
+        private System.Windows.Forms.Label lblFire;
+        private System.Windows.Forms.Label lblIce;
+        private System.Windows.Forms.CheckBox chkPoisonAbs;
+        private System.Windows.Forms.Label lblThunder;
+        private System.Windows.Forms.Label lblEarth;
+        private System.Windows.Forms.CheckBox chkThunderAbs;
+        private System.Windows.Forms.Label lblPoison;
+        private System.Windows.Forms.Label lblWind;
+        private System.Windows.Forms.CheckBox chkIceAbs;
+        private System.Windows.Forms.Label lblHoly;
+        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.CheckBox checkBox18;
+        private System.Windows.Forms.CheckBox checkBox19;
+        private System.Windows.Forms.CheckBox checkBox20;
+        private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.CheckBox checkBox22;
+        private System.Windows.Forms.CheckBox checkBox23;
+        private System.Windows.Forms.CheckBox checkBox24;
+        private System.Windows.Forms.CheckBox checkBox9;
+        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox6;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblBlock;
+        private System.Windows.Forms.Label lblStartWith;
+        private System.Windows.Forms.CheckBox chkBlockReflect;
+        private System.Windows.Forms.CheckBox chkBlockSleep;
+        private System.Windows.Forms.CheckBox chkBlockDance;
+        private System.Windows.Forms.CheckBox chkBlockProtect;
+        private System.Windows.Forms.CheckBox chkBlockDeath;
+        private System.Windows.Forms.CheckBox chkBlockShell;
+        private System.Windows.Forms.CheckBox chkBlockDoomed;
+        private System.Windows.Forms.CheckBox chkBlockStop;
+        private System.Windows.Forms.CheckBox chkBlockSap;
+        private System.Windows.Forms.CheckBox chkBlockHaste;
+        private System.Windows.Forms.CheckBox chkBlockSlow;
+        private System.Windows.Forms.CheckBox chkBlockConfuse;
+        private System.Windows.Forms.CheckBox chkBlockRegen;
+        private System.Windows.Forms.CheckBox chkBlockDarkness;
+        private System.Windows.Forms.CheckBox chkBlockBerserk;
+        private System.Windows.Forms.CheckBox chkBlockPetrify;
+        private System.Windows.Forms.CheckBox chkBlockSilence;
+        private System.Windows.Forms.CheckBox chkBlockBlink;
+        private System.Windows.Forms.CheckBox chkBlockImp;
+        private System.Windows.Forms.CheckBox chkBlockCritical;
+        private System.Windows.Forms.CheckBox chkBlockClear;
+        private System.Windows.Forms.CheckBox chkBlockMagitek;
+        private System.Windows.Forms.CheckBox chkBlockPoison;
+        private System.Windows.Forms.CheckBox chkBlockZombie;
+        private System.Windows.Forms.Label lblReflect;
+        private System.Windows.Forms.Label lblProtect;
+        private System.Windows.Forms.Label lblShell;
+        private System.Windows.Forms.Label lblStop;
+        private System.Windows.Forms.Label lblHaste;
+        private System.Windows.Forms.Label lblSlow;
+        private System.Windows.Forms.Label lblRegen;
+        private System.Windows.Forms.Label lblFloat;
+        private System.Windows.Forms.Label lblSleep;
+        private System.Windows.Forms.Label lblSap;
+        private System.Windows.Forms.CheckBox chkStartReflect;
+        private System.Windows.Forms.CheckBox chkStartSleep;
+        private System.Windows.Forms.CheckBox chkStartFloat;
+        private System.Windows.Forms.CheckBox chkStartProtect;
+        private System.Windows.Forms.CheckBox chkStartDeath;
+        private System.Windows.Forms.CheckBox chkStartShell;
+        private System.Windows.Forms.CheckBox chkStartDoomed;
+        private System.Windows.Forms.CheckBox chkStartStop;
+        private System.Windows.Forms.CheckBox chkStartSap;
+        private System.Windows.Forms.CheckBox chkStartHaste;
+        private System.Windows.Forms.Label lblConfuse;
+        private System.Windows.Forms.CheckBox chkStartSlow;
+        private System.Windows.Forms.CheckBox chkStartConfuse;
+        private System.Windows.Forms.CheckBox chkStartRegen;
+        private System.Windows.Forms.CheckBox chkStartDarkness;
+        private System.Windows.Forms.CheckBox chkStartBerserk;
+        private System.Windows.Forms.CheckBox chkStartPetrify;
+        private System.Windows.Forms.CheckBox chkStartSilence;
+        private System.Windows.Forms.Label lblBerserk;
+        private System.Windows.Forms.CheckBox chkStartBlink;
+        private System.Windows.Forms.CheckBox chkStartImp;
+        private System.Windows.Forms.CheckBox chkStartCritical;
+        private System.Windows.Forms.Label lblSilence;
+        private System.Windows.Forms.CheckBox chkStartClear;
+        private System.Windows.Forms.Label lblBlink;
+        private System.Windows.Forms.CheckBox chkStartMagitek;
+        private System.Windows.Forms.Label lblCritical;
+        private System.Windows.Forms.CheckBox chkStartPoison;
+        private System.Windows.Forms.Label lblDoomed;
+        private System.Windows.Forms.CheckBox chkStartZombie;
+        private System.Windows.Forms.Label lblDeath;
+        private System.Windows.Forms.Label lblPetrify;
+        private System.Windows.Forms.Label lblImp;
+        private System.Windows.Forms.Label lblClear;
+        private System.Windows.Forms.Label lblMagitek;
+        private System.Windows.Forms.Label lblPsn;
+        private System.Windows.Forms.Label lblZombie;
+        private System.Windows.Forms.Label lblDarkness;
+        private System.Windows.Forms.GroupBox grpSpecialStatus;
+        private System.Windows.Forms.Label lblRemovableFloat;
+        private System.Windows.Forms.Label lblUnknown7;
+        private System.Windows.Forms.Label lblUnknown6;
+        private System.Windows.Forms.Label lblUnknown5;
+        private System.Windows.Forms.Label lblUnknown4;
+        private System.Windows.Forms.Label lblReraise;
+        private System.Windows.Forms.Label lblRunic;
+        private System.Windows.Forms.Label lblTrueKnight;
+        private System.Windows.Forms.Label lblNoControl;
+        private System.Windows.Forms.Label lblSpecialEvent;
+        private System.Windows.Forms.CheckBox chkRemovableFloat;
+        private System.Windows.Forms.CheckBox chkNoControl;
+        private System.Windows.Forms.CheckBox chkTrueKnight;
+        private System.Windows.Forms.CheckBox chkUnknown7;
+        private System.Windows.Forms.CheckBox chkUndead;
+        private System.Windows.Forms.CheckBox chkUnknown6;
+        private System.Windows.Forms.CheckBox chkHarderToRun;
+        private System.Windows.Forms.CheckBox chkUnknown5;
+        private System.Windows.Forms.CheckBox chkSpecialEvent;
+        private System.Windows.Forms.CheckBox chkUnkown4;
+        private System.Windows.Forms.Label lblNoSketch;
+        private System.Windows.Forms.CheckBox chkReraise;
+        private System.Windows.Forms.CheckBox chkNoSketch;
+        private System.Windows.Forms.CheckBox chkRunic;
+        private System.Windows.Forms.CheckBox chkMPDeath;
+        private System.Windows.Forms.CheckBox chkNoScan;
+        private System.Windows.Forms.CheckBox chkCritImp;
+        private System.Windows.Forms.CheckBox chkNoRun;
+        private System.Windows.Forms.Label lblNoScan;
+        private System.Windows.Forms.CheckBox chkBlockSuplex;
+        private System.Windows.Forms.CheckBox chkUnknown3;
+        private System.Windows.Forms.CheckBox chkAttackFirst;
+        private System.Windows.Forms.Label lblNoRun;
+        private System.Windows.Forms.CheckBox chkHumanoid;
+        private System.Windows.Forms.Label lblBlockSuplex;
+        private System.Windows.Forms.CheckBox chkUnknown2;
+        private System.Windows.Forms.Label lblAttackFirst;
+        private System.Windows.Forms.CheckBox chkNoName;
+        private System.Windows.Forms.Label lblHarderToRun;
+        private System.Windows.Forms.CheckBox chkPierceReflect;
+        private System.Windows.Forms.Label lblUndead;
+        private System.Windows.Forms.Label lblCritImp;
+        private System.Windows.Forms.Label lblUnknown3;
+        private System.Windows.Forms.Label lblHumanoid;
+        private System.Windows.Forms.Label lblUnknown2;
+        private System.Windows.Forms.Label lblNoName;
+        private System.Windows.Forms.Label lblPierceReflect;
+        private System.Windows.Forms.Label lblMPDeath;
+        private System.Windows.Forms.Label lblNormalAttack;
+        private System.Windows.Forms.ComboBox cmbNormalAttack;
+        private System.Windows.Forms.NumericUpDown numMonsterIndex;
     }
 }
 

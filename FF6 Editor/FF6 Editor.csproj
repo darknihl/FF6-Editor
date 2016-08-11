@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MonsterSpecs.cs" />
     <Compile Include="RomData.cs" />
     <Compile Include="RomFileIO.cs" />
     <Compile Include="Form1.cs">

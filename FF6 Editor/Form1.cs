@@ -24,6 +24,24 @@ namespace FF6_Editor
         int LevelCheck;
         int EsperLevelCheck;
         int EsperCheckMagic;
+        int MonsterIndexCheck;
+        int MonsterDiffCheck;
+        int MonsterHPByteCheck;
+        /*byte ElementalNull;
+        byte ElementalAbsorb;
+        byte ElementalHalf;
+        byte ElementalWeak;
+        byte Special_1;
+        byte Special_2;
+        byte Special_3;
+        byte Status_Start_1;
+        byte Status_Start_2;
+        byte Status_Start_3;
+        byte Status_Block_1;
+        byte Status_Block_2;
+        byte Status_Block_3;
+        byte SpecialAttack;*/
+
 
         public Form1()
         {
@@ -55,6 +73,11 @@ namespace FF6_Editor
             }
             FName = Path.GetFullPath(ofd.FileName);
             rom.Open(ofd.FileName);
+            if (!CheckRomIntegrity())
+            {
+                MessageBox.Show("ROM does not appear to be valid SFC or SNES ROM.");
+                return;
+            }
             if (rom.IsOpen())
             {
                 saveAsToolStripMenuItem.Enabled = true;
@@ -64,6 +87,8 @@ namespace FF6_Editor
             UpdateActorsElements();
             cmbActors.SelectedIndex = 0;
             cmbEspers.SelectedIndex = 0;
+            cmbMonsters.SelectedIndex = 0;
+            cmbDifficulty.SelectedIndex = 0;
         }
 
 
@@ -298,6 +323,43 @@ namespace FF6_Editor
             rom.Write8(Convert.ToByte(txtEsperMag18.Text));
             rom.Write8(Convert.ToByte(txtEsperMag19.Text));
             rom.Write8(Convert.ToByte(txtEsperMag20.Text));
+
+        }
+
+        private void SaveMonsterStats()
+        {
+          /*Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12
+            Special_2 = rom.Read8(); //0x13
+            Status_Block_1 = rom.Read8(); //0x14
+            Status_Block_2 = rom.Read8(); //0x15
+            Status_Block_3 = rom.Read8(); //0x16
+            ElementalAbsorb = rom.Read8(); //0x17
+            ElementalNull = rom.Read8(); //0x18
+            ElementalWeak = rom.Read8(); //0x19
+            rom.Read8(); //0x1A
+            Status_Start_1 = rom.Read8(); //0x1B
+            Status_Start_2 = rom.Read8(); //0x1C
+            Status_Start_3 = rom.Read8(); //0x1D
+            Special_3 = rom.Read8(); //0x1E
+            SpecialAttack = rom.Read8(); //0x1F  
+
+            MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
+            MonsterHPByteCheck = cmbDifficulty.SelectedIndex * 0x200;
+            MonsterDiffCheck = cmbDifficulty.SelectedIndex * 0x4000;
+            rom.Write8(Convert.ToByte(numMonsterAgility.Value),RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck);
+            rom.Write8(Convert.ToByte(numMonsterAttack.Value));
+            rom.Write8(Convert.ToByte(numMonsterAccuracy.Value));
+            rom.Write8(Convert.ToByte(numMonsterEvasion.Value));
+            rom.Write8(Convert.ToByte(numMonsterMagEva.Value));
+            rom.Write8(Convert.ToByte(numMonsterDefense.Value));
+            rom.Write8(Convert.ToByte(numMonsterMagDef.Value));
+            rom.Write8(Convert.ToByte(numMonsterMagic.Value));
+            WriteMonsterHP(numMonsterHP.Value);
+            rom.Write16(Convert.ToByte(numMonsterMP.Value), RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 10);
+            rom.Write16(Convert.ToByte(numMonsterEXP.Value));
+            rom.Write16(Convert.ToByte(numMonsterGil.Value));
+            rom.Write8(Convert.ToByte(numMonsterLevel.Value));
+            WriteMonsterBitflags();*/
 
         }
 
@@ -583,6 +645,104 @@ namespace FF6_Editor
 
         }
 
+        private void UpdateMonsterStats()
+        {
+           /* MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
+            MonsterHPByteCheck = cmbDifficulty.SelectedIndex * 0x200;
+            MonsterDiffCheck = cmbDifficulty.SelectedIndex * 0x4000;
+            //Monster bit flags
+            Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12
+            Special_2 = rom.Read8(); //0x13
+            Status_Block_1 = rom.Read8(); //0x14
+            Status_Block_2 = rom.Read8(); //0x15
+            Status_Block_3 = rom.Read8(); //0x16
+            ElementalAbsorb = rom.Read8(); //0x17
+            ElementalNull = rom.Read8(); //0x18
+            ElementalWeak = rom.Read8(); //0x19
+            //TODO: Normal Attack Animation; ComboBox, uses list of Items for animation index
+            rom.Read8(); //0x1A
+            Status_Start_1 = rom.Read8(); //0x1B
+            Status_Start_2 = rom.Read8(); //0x1C
+            Status_Start_3 = rom.Read8(); //0x1D
+            Special_3 = rom.Read8(); //0x1E
+            SpecialAttack = rom.Read8(); //0x1F  
+
+            numMonsterAgility.Value = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck); //0x00
+            numMonsterAttack.Value = rom.Read8(); //0x01
+            numMonsterAccuracy.Value = rom.Read8(); //0x02
+            numMonsterEvasion.Value = rom.Read8(); //0x03
+            numMonsterMagEva.Value = rom.Read8(); //0x04
+            numMonsterDefense.Value = rom.Read8(); //0x05
+            numMonsterMagDef.Value = rom.Read8(); //0x06
+            numMonsterMagic.Value = rom.Read8(); //0x07
+            numMonsterHP.Value = ReadMonsterHP(rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x08),
+                rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x09),
+                rom.Read8(RomData.MONSTER_HP_HIGH_BYTE_NORMAL + cmbMonsters.SelectedIndex + MonsterHPByteCheck)); //0x08, 0x09
+            numMonsterMP.Value = rom.Read16(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x0A); //0x0A, 0x0B
+            numMonsterEXP.Value = rom.Read16(); //0x0C, 0x0D
+            numMonsterGil.Value = rom.Read16(); //0x0E, 0x0F
+            numMonsterLevel.Value = rom.Read8(); //0x10
+            //Metamorphisis value
+            rom.Read8(); //0x11
+            ReadMonsterBitflags();
+            cmbNormalAttack.SelectedIndex = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x1A);*/
+        }
+
+        private void ReadMonsterBitflags()
+        {
+            /*  //Monster bit flags
+                Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12; MP death, Pierce Reflect, et al
+                Special_2 = rom.Read8(); //0x13; Harder to run from, attacks first, et al
+                Status_Block_1 = rom.Read8(); //0x14; Block darkness, block Zombie, et al
+                Status_Block_2 = rom.Read8(); //0x15; Block doomed, block critical, et al
+                Status_Block_3 = rom.Read8(); //0x16; Block dance, block regen, et al
+                ElementalAbsorb = rom.Read8(); //0x17; Absorb Fire, Ice, Thunder, Poison, Wind, Holy, Earth, Water
+                ElementalNull = rom.Read8(); //0x18; Nullify Fire, Ice, Thunder, Poison, Wind, Holy, Earth, Water
+                ElementalWeak = rom.Read8(); //0x19; Weak to Fire, Ice, Thunder, Poison, Wind, Holy, Earth, Water
+                //Normal Attack Animation; ComboBox, uses list of Items for animation index
+                rom.Read8(); //0x1A
+                Status_Start_1 = rom.Read8(); //0x1B; Start with darkness, zombie, et al
+                Status_Start_2 = rom.Read8(); //0x1C; Start with doomed, critical, et al
+                Status_Start_3 = rom.Read8(); //0x1D; Start with float, regen, et al
+                Special_3 = rom.Read8(); //0x1E; True Knight, Runic, et al
+                SpecialAttack = rom.Read8(); //0x1F; Bits 0-5 comprise index for special attack effect, bit 7 = No damage, bit 8 = Can't evade  
+
+            chkMPDeath.Checked = Convert.ToBoolean(Special_1 & 0x01);
+            chkPierceReflect.Checked = Convert.ToBoolean(Special_1 & 0x02);
+            chkNoName.Checked = Convert.ToBoolean(Special_1 & 0x04);
+            chkUnknown2.Checked = Convert.ToBoolean(Special_1 & 0x08);
+            chkHumanoid.Checked = Convert.ToBoolean(Special_1 & 0x10);
+            chkUnknown3.Checked = Convert.ToBoolean(Special_1 & 0x20);
+            chkCritImp.Checked = Convert.ToBoolean(Special_1 & 0x40);
+            chkUndead.Checked = Convert.ToBoolean(Special_1 & 0x80);
+            */
+
+
+        }
+
+        private void WriteMonsterBitflags()
+        {
+          /*Special_1 = 0x00;
+            Special_1 = Convert.ToByte(chkMPDeath.Checked) | Special_1;*/
+        }
+
+        /*private int ReadMonsterHP(byte LowByte, byte MidByte, byte HighByte)
+        {
+          /*int i = HighByte * 256;
+            int j = (i + MidByte) * 256;
+            int u = j + LowByte;
+            return u;
+        }*/
+
+        private void WriteMonsterHP(decimal MonsterHP)
+        {
+          /*uint i = Convert.ToUInt32(MonsterHP);
+            byte[] j = BitConverter.GetBytes(i);
+            rom.Write8(j[0], RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 8);
+            rom.Write8(j[1], RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 9);
+            rom.Write8(j[2], RomData.MONSTER_HP_HIGH_BYTE_NORMAL + cmbMonsters.SelectedIndex + MonsterHPByteCheck);*/
+        }
+
         private int SumOfStatValues(int FileOffset, int CalcValue)
         {
             statSum = 0;
@@ -616,21 +776,18 @@ namespace FF6_Editor
                 return 255;
             }
         }
-        /*private bool txtKeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                return true;
-            }
-        }
 
-        private bool txtStrLv0_KeyDown(object sender, KeyEventArgs e)
+        private bool CheckRomIntegrity()
         {
-            if (e.KeyCode == Keys.Enter)
+            byte integrity_check_value = 0x0e;
+            int integrity_check;
+            integrity_check = rom.Read8(integrity_check_value);
+            if (integrity_check != 234)
             {
-                return true;
+                return false;
             }
-        }*/
+            else return true;
+        }
 
         private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -763,5 +920,52 @@ namespace FF6_Editor
         {
             UpdateEsperElements();
         }
+
+        private void cmbMonsters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            numMonsterIndex.Value = cmbMonsters.SelectedIndex;
+            UpdateMonsterStats();
+        }
+
+        private void cmbDifficulty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateMonsterStats();
+        }
+
+        private void numMonsterIndex_ValueChanged(object sender, EventArgs e)
+        {
+            if (numMonsterIndex.Value < 384)
+            {
+                int i;
+                i = Convert.ToInt16(numMonsterIndex.Value);
+                cmbMonsters.SelectedIndex = i;
+            }
+            else
+            {
+                return;
+            }
+            UpdateMonsterStats();
+        }
+
+        private void btnMonstersOkay_Click(object sender, EventArgs e)
+        {
+            SaveMonsterStats();
+        }
+
+        private void btnMonstersCancel_Click(object sender, EventArgs e)
+        {
+            UpdateMonsterStats();
+        }
+
+        /*private void btnMoveHP_Click(object sender, EventArgs e)
+        {
+            // for (int i = 0; i < 384; i++) { short hp = ROM.Read16(offset + 0x20 * i); ROM.Write16(offset2 + 0x20 * i); }
+            for (int i = 0; i < 384; i++)
+            {
+                ushort hp = rom.Read16(RomData.MONSTER_STATS_NORMAL_DATA + 0x08 + (i*0x20));
+                rom.Write16(hp, RomData.MONSTER_HP_NORMAL + i*3);
+                rom.Write8(0);
+            }
+        }*/
     }
 }
