@@ -16,17 +16,18 @@ namespace FF6_Editor
     public partial class Form1 : Form
     {
         RomFileIO rom = new RomFileIO();
+        MonsterSpecs specs = new MonsterSpecs();
         public string FName;
-        private int statSum = 0;
+        public int statSum = 0;
         public int Fileoffset { get; private set; }
-        int ActorCheckStats;
-        int ActorCheckNaturalMagic;
-        int LevelCheck;
-        int EsperLevelCheck;
-        int EsperCheckMagic;
-        int MonsterIndexCheck;
-        int MonsterDiffCheck;
-        int MonsterHPByteCheck;
+        public int ActorCheckStats;
+        public int ActorCheckNaturalMagic;
+        public int LevelCheck;
+        public int EsperLevelCheck;
+        public int EsperCheckMagic;
+        public int MonsterIndexCheck;
+        public int MonsterDiffCheck;
+        public int MonsterHPByteCheck;
         /*byte ElementalNull;
         byte ElementalAbsorb;
         byte ElementalHalf;
@@ -647,45 +648,46 @@ namespace FF6_Editor
 
         private void UpdateMonsterStats()
         {
-           /* MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
+            MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
             MonsterHPByteCheck = cmbDifficulty.SelectedIndex * 0x200;
             MonsterDiffCheck = cmbDifficulty.SelectedIndex * 0x4000;
-            //Monster bit flags
-            Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12
-            Special_2 = rom.Read8(); //0x13
-            Status_Block_1 = rom.Read8(); //0x14
-            Status_Block_2 = rom.Read8(); //0x15
-            Status_Block_3 = rom.Read8(); //0x16
-            ElementalAbsorb = rom.Read8(); //0x17
-            ElementalNull = rom.Read8(); //0x18
-            ElementalWeak = rom.Read8(); //0x19
-            //TODO: Normal Attack Animation; ComboBox, uses list of Items for animation index
-            rom.Read8(); //0x1A
-            Status_Start_1 = rom.Read8(); //0x1B
-            Status_Start_2 = rom.Read8(); //0x1C
-            Status_Start_3 = rom.Read8(); //0x1D
-            Special_3 = rom.Read8(); //0x1E
-            SpecialAttack = rom.Read8(); //0x1F  
+            /*//Monster bit flags
+              Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12
+              Special_2 = rom.Read8(); //0x13
+              Status_Block_1 = rom.Read8(); //0x14
+              Status_Block_2 = rom.Read8(); //0x15
+              Status_Block_3 = rom.Read8(); //0x16
+              ElementalAbsorb = rom.Read8(); //0x17
+              ElementalNull = rom.Read8(); //0x18
+              ElementalWeak = rom.Read8(); //0x19
+              //TODO: Normal Attack Animation; ComboBox, uses list of Items for animation index
+              rom.Read8(); //0x1A
+              Status_Start_1 = rom.Read8(); //0x1B
+              Status_Start_2 = rom.Read8(); //0x1C
+              Status_Start_3 = rom.Read8(); //0x1D
+              Special_3 = rom.Read8(); //0x1E
+              SpecialAttack = rom.Read8(); //0x1F*/
 
-            numMonsterAgility.Value = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck); //0x00
-            numMonsterAttack.Value = rom.Read8(); //0x01
-            numMonsterAccuracy.Value = rom.Read8(); //0x02
-            numMonsterEvasion.Value = rom.Read8(); //0x03
-            numMonsterMagEva.Value = rom.Read8(); //0x04
-            numMonsterDefense.Value = rom.Read8(); //0x05
-            numMonsterMagDef.Value = rom.Read8(); //0x06
-            numMonsterMagic.Value = rom.Read8(); //0x07
-            numMonsterHP.Value = ReadMonsterHP(rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x08),
-                rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x09),
-                rom.Read8(RomData.MONSTER_HP_HIGH_BYTE_NORMAL + cmbMonsters.SelectedIndex + MonsterHPByteCheck)); //0x08, 0x09
-            numMonsterMP.Value = rom.Read16(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x0A); //0x0A, 0x0B
-            numMonsterEXP.Value = rom.Read16(); //0x0C, 0x0D
-            numMonsterGil.Value = rom.Read16(); //0x0E, 0x0F
-            numMonsterLevel.Value = rom.Read8(); //0x10
-            //Metamorphisis value
-            rom.Read8(); //0x11
-            ReadMonsterBitflags();
-            cmbNormalAttack.SelectedIndex = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x1A);*/
+            //numMonsterAgility.Value = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck); //0x00
+            numMonsterAgility.Value = Convert.ToDecimal(specs.ToBinary()); //0x00
+            /*numMonsterAttack.Value = rom.Read8(); //0x01
+              numMonsterAccuracy.Value = rom.Read8(); //0x02
+              numMonsterEvasion.Value = rom.Read8(); //0x03
+              numMonsterMagEva.Value = rom.Read8(); //0x04
+              numMonsterDefense.Value = rom.Read8(); //0x05
+              numMonsterMagDef.Value = rom.Read8(); //0x06
+              numMonsterMagic.Value = rom.Read8(); //0x07
+              numMonsterHP.Value = ReadMonsterHP(rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x08),
+                  rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x09),
+                  rom.Read8(RomData.MONSTER_HP_HIGH_BYTE_NORMAL + cmbMonsters.SelectedIndex + MonsterHPByteCheck)); //0x08, 0x09
+              numMonsterMP.Value = rom.Read16(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x0A); //0x0A, 0x0B
+              numMonsterEXP.Value = rom.Read16(); //0x0C, 0x0D
+              numMonsterGil.Value = rom.Read16(); //0x0E, 0x0F
+              numMonsterLevel.Value = rom.Read8(); //0x10
+              //Metamorphisis value
+              rom.Read8(); //0x11
+              ReadMonsterBitflags();
+              cmbNormalAttack.SelectedIndex = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x1A);*/
         }
 
         private void ReadMonsterBitflags()

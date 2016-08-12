@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace FF6_Editor
 {
     [Flags]
-    enum MonsterFlagsA : ushort
+    public enum MonsterFlagsA : ushort
     {
         MPDeath = 0x1, // Dies on 0 MP
         ReflectPierce = 0x2, // Ignores Reflect status
@@ -28,7 +28,7 @@ namespace FF6_Editor
     }
 
     [Flags]
-    enum StatusBlock : uint
+    public enum StatusBlock : uint
     {
         Darkness = 0x1,                    // Block Darkness
 	    Zombie = 0x2,                      // Block Zombie
@@ -57,7 +57,7 @@ namespace FF6_Editor
     }
 
     [Flags]
-    enum StatusBegin : uint
+    public enum StatusBegin : uint
     {
         Darkness = 0x1,                    // Start with Darkness
         Zombie = 0x2,                      // Start with Zombie
@@ -86,7 +86,7 @@ namespace FF6_Editor
     }
 
     [Flags]
-    enum Element : byte
+    public enum Element : byte
     {
         Fire = 0x1,
         Ice = 0x2,
@@ -99,7 +99,7 @@ namespace FF6_Editor
     }
 
     [Flags]
-    enum MonsterFlagsB : byte
+    public enum MonsterFlagsB : byte
     {
         Cover = 0x1,                // True Knight effect
         Runic = 0x2,                // Runic
@@ -111,7 +111,7 @@ namespace FF6_Editor
         Float = 0x80                // Removable Float
     }
 
-    enum SpecialAttackAttributes : byte
+    public enum SpecialAttackAttributes : byte
     {
         Blind = 0x00,
         Zombie = 0x01,
@@ -180,14 +180,15 @@ namespace FF6_Editor
     };
 
     [Flags]
-    enum SpecialAttackAttributesFlags : byte
+    public enum SpecialAttackAttributesFlags : byte
     {
         NoDamage = 0x40,
         NoDodge = 0x80
     }
 
-    class MonsterSpecs
+    public class MonsterSpecs
     {
+        RomFileIO rom = new RomFileIO();
         public byte Agility;
         public byte Attack;
         public byte Accuracy;
@@ -288,18 +289,15 @@ namespace FF6_Editor
 
         }
         */
-        public void ReadMonsterStats()
-        {
-            Agility = 
-        }
 
-        byte[] ToBinary()
+        public byte[] ToBinary()
         {
             byte[] ret = new byte[21];
             byte[] hp = BinaryHP();
             byte[] mp = BinaryMP();
             byte[] xp = BinaryXP();
             byte[] gil = BinaryGil();
+            //Agility = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck);
 
             ret[0] = Agility;
             ret[1] = Attack;
@@ -330,6 +328,7 @@ namespace FF6_Editor
             ret[20] = Strength;
             ret[21] = Vitality;
 
+            return ret;
         }
     }
 }
