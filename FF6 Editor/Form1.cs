@@ -28,21 +28,8 @@ namespace FF6_Editor
         public int MonsterIndexCheck;
         public int MonsterDiffCheck;
         public int MonsterHPByteCheck;
-        /*byte ElementalNull;
-        byte ElementalAbsorb;
-        byte ElementalHalf;
-        byte ElementalWeak;
-        byte Special_1;
-        byte Special_2;
-        byte Special_3;
-        byte Status_Start_1;
-        byte Status_Start_2;
-        byte Status_Start_3;
-        byte Status_Block_1;
-        byte Status_Block_2;
-        byte Status_Block_3;
-        byte SpecialAttack;*/
-
+        public int MonsterSecondaryIndexCheck;
+        public int MonsterSecondaryDiffCheck;
 
         public Form1()
         {
@@ -231,7 +218,7 @@ namespace FF6_Editor
         {
             //Write the esper magic struct to the MemoryStream.
             EsperCheckMagic = cmbEspers.SelectedIndex * 11;
-            rom.Write8(Convert.ToByte(cmbEsperMagic1.SelectedIndex),RomData.ESPER_MAGIC_DATA + EsperCheckMagic);
+            rom.Write8(Convert.ToByte(cmbEsperMagic1.SelectedIndex), RomData.ESPER_MAGIC_DATA + EsperCheckMagic);
             rom.Write8(Convert.ToByte(cmbEsperMagic2.SelectedIndex));
             rom.Write8(Convert.ToByte(cmbEsperMagic3.SelectedIndex));
             rom.Write8(Convert.ToByte(cmbEsperMagic4.SelectedIndex));
@@ -329,39 +316,40 @@ namespace FF6_Editor
 
         private void SaveMonsterStats()
         {
-          /*Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12
-            Special_2 = rom.Read8(); //0x13
-            Status_Block_1 = rom.Read8(); //0x14
-            Status_Block_2 = rom.Read8(); //0x15
-            Status_Block_3 = rom.Read8(); //0x16
-            ElementalAbsorb = rom.Read8(); //0x17
-            ElementalNull = rom.Read8(); //0x18
-            ElementalWeak = rom.Read8(); //0x19
-            rom.Read8(); //0x1A
-            Status_Start_1 = rom.Read8(); //0x1B
-            Status_Start_2 = rom.Read8(); //0x1C
-            Status_Start_3 = rom.Read8(); //0x1D
-            Special_3 = rom.Read8(); //0x1E
-            SpecialAttack = rom.Read8(); //0x1F  
-
             MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
-            MonsterHPByteCheck = cmbDifficulty.SelectedIndex * 0x200;
             MonsterDiffCheck = cmbDifficulty.SelectedIndex * 0x4000;
-            rom.Write8(Convert.ToByte(numMonsterAgility.Value),RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck);
-            rom.Write8(Convert.ToByte(numMonsterAttack.Value));
-            rom.Write8(Convert.ToByte(numMonsterAccuracy.Value));
-            rom.Write8(Convert.ToByte(numMonsterEvasion.Value));
-            rom.Write8(Convert.ToByte(numMonsterMagEva.Value));
-            rom.Write8(Convert.ToByte(numMonsterDefense.Value));
-            rom.Write8(Convert.ToByte(numMonsterMagDef.Value));
-            rom.Write8(Convert.ToByte(numMonsterMagic.Value));
-            WriteMonsterHP(numMonsterHP.Value);
-            rom.Write16(Convert.ToByte(numMonsterMP.Value), RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 10);
-            rom.Write16(Convert.ToByte(numMonsterEXP.Value));
-            rom.Write16(Convert.ToByte(numMonsterGil.Value));
-            rom.Write8(Convert.ToByte(numMonsterLevel.Value));
-            WriteMonsterBitflags();*/
+            MonsterSecondaryIndexCheck = cmbMonsters.SelectedIndex * 3;
+            MonsterSecondaryDiffCheck = cmbDifficulty.SelectedIndex * 0x0600;
 
+            specs.Agility = Convert.ToByte(numMonsterAgility.Value);
+            specs.Attack = Convert.ToByte(numMonsterAttack.Value);
+            specs.Accuracy = Convert.ToByte(numMonsterAccuracy.Value);
+            specs.Evasion = Convert.ToByte(numMonsterEvasion.Value);
+            specs.MagEva = Convert.ToByte(numMonsterMagEva.Value);
+            specs.Defense = Convert.ToByte(numMonsterDefense.Value);
+            specs.MagDef = Convert.ToByte(numMonsterMagDef.Value);
+            specs.Magic = Convert.ToByte(numMonsterMagic.Value);
+            specs.HP = Convert.ToUInt32(numMonsterHP.Value);
+            specs.MP = Convert.ToUInt16(numMonsterMP.Value);
+            specs.XP = Convert.ToUInt16(numMonsterEXP.Value);
+            specs.Gil = Convert.ToUInt16(numMonsterGil.Value);
+            specs.Level = Convert.ToByte(numMonsterLevel.Value);
+            specs.Strength = Convert.ToByte(numMonsterStrength.Value);
+            specs.Vitality = Convert.ToByte(numMonsterVitality.Value);
+            //if (checked) byte |= flag, else byte &= ~flag;
+            if (chkMPDeath.Checked == true)
+            {
+                specs.FlagsA |= chkMPDeath;
+            }
+            else
+            {
+                specs.FlagsA &= ~chkMPDeath;
+            }
+
+
+
+            specs.WriteMonsterNormal(rom, RomData.MONSTER_STATS_NORMAL_DATA, MonsterIndexCheck, MonsterDiffCheck);
+            specs.WriteMonsterSecondary(rom, RomData.MONSTER_STATS_NORMAL_SECONDARY_DATA, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
         }
 
         private void UpdateActorsElements()
@@ -649,92 +637,150 @@ namespace FF6_Editor
         private void UpdateMonsterStats()
         {
             MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
-            MonsterHPByteCheck = cmbDifficulty.SelectedIndex * 0x200;
             MonsterDiffCheck = cmbDifficulty.SelectedIndex * 0x4000;
-            /*//Monster bit flags
-              Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12
-              Special_2 = rom.Read8(); //0x13
-              Status_Block_1 = rom.Read8(); //0x14
-              Status_Block_2 = rom.Read8(); //0x15
-              Status_Block_3 = rom.Read8(); //0x16
-              ElementalAbsorb = rom.Read8(); //0x17
-              ElementalNull = rom.Read8(); //0x18
-              ElementalWeak = rom.Read8(); //0x19
-              //TODO: Normal Attack Animation; ComboBox, uses list of Items for animation index
-              rom.Read8(); //0x1A
-              Status_Start_1 = rom.Read8(); //0x1B
-              Status_Start_2 = rom.Read8(); //0x1C
-              Status_Start_3 = rom.Read8(); //0x1D
-              Special_3 = rom.Read8(); //0x1E
-              SpecialAttack = rom.Read8(); //0x1F*/
+            MonsterSecondaryIndexCheck = cmbMonsters.SelectedIndex * 3;
+            MonsterSecondaryDiffCheck = cmbDifficulty.SelectedIndex * 0x0600;
 
-            //numMonsterAgility.Value = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck); //0x00
-            numMonsterAgility.Value = Convert.ToDecimal(specs.ToBinary()); //0x00
-            /*numMonsterAttack.Value = rom.Read8(); //0x01
-              numMonsterAccuracy.Value = rom.Read8(); //0x02
-              numMonsterEvasion.Value = rom.Read8(); //0x03
-              numMonsterMagEva.Value = rom.Read8(); //0x04
-              numMonsterDefense.Value = rom.Read8(); //0x05
-              numMonsterMagDef.Value = rom.Read8(); //0x06
-              numMonsterMagic.Value = rom.Read8(); //0x07
-              numMonsterHP.Value = ReadMonsterHP(rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x08),
+            //Begin populating stat values
+            specs.ReadMonsterNormal(rom, RomData.MONSTER_STATS_NORMAL_DATA, MonsterIndexCheck, MonsterDiffCheck);
+            specs.ReadMonsterSecondary(rom, RomData.MONSTER_STATS_NORMAL_SECONDARY_DATA, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
+            specs.ReadMonsterHP(rom, RomData.MONSTER_HP_NORMAL, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
+            numMonsterAgility.Value = specs.Agility;
+            numMonsterAttack.Value = specs.Attack;
+            numMonsterAccuracy.Value = specs.Accuracy;
+            numMonsterEvasion.Value = specs.Evasion;
+            numMonsterMagEva.Value = specs.MagEva;
+            numMonsterDefense.Value = specs.Defense;
+            numMonsterMagDef.Value = specs.MagDef;
+            numMonsterMagic.Value = specs.Magic;
+            numMonsterHP.Value = specs.HP;
+            numMonsterMP.Value = specs.MP;
+            numMonsterEXP.Value = specs.XP;
+            numMonsterGil.Value = specs.Gil;
+            numMonsterLevel.Value = specs.Level;
+            numMonsterStrength.Value = specs.Strength;
+            numMonsterVitality.Value = specs.Vitality;
+            //Begin populating the first two special bytes
+            chkMPDeath.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.MPDeath);
+            chkPierceReflect.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.ReflectPierce);
+            chkNoName.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.NameHide);
+            chkUnknown2.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.UnknownA);
+            chkHumanoid.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.Humanoid);
+            chkUnknown3.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.UnknownB);
+            chkCritImp.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.ImpSucks);
+            chkUndead.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.Undead);
+            chkHarderToRun.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.FlightRisky);
+            chkAttackFirst.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.Preemptive);
+            chkBlockSuplex.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.NoSuplex);
+            chkNoRun.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.FlightBanned);
+            chkNoScan.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.NoScan);
+            chkNoSketch.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.NoSketch);
+            chkSpecialEvent.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.Event);
+            chkNoControl.Checked = specs.FlagsA.HasFlag(MonsterFlagsA.NoControl);
+            //Begin parsing status blocking bytes
+            chkBlockDarkness.Checked = specs.BlockStatus.HasFlag(Status.Darkness);
+            chkBlockZombie.Checked = specs.BlockStatus.HasFlag(Status.Zombie);
+            chkBlockPoison.Checked = specs.BlockStatus.HasFlag(Status.Poison);
+            chkBlockMagitek.Checked = specs.BlockStatus.HasFlag(Status.Magitek);
+            chkBlockClear.Checked = specs.BlockStatus.HasFlag(Status.Clear);
+            chkBlockImp.Checked = specs.BlockStatus.HasFlag(Status.Imp);
+            chkBlockPetrify.Checked = specs.BlockStatus.HasFlag(Status.Petrify);
+            chkBlockDeath.Checked = specs.BlockStatus.HasFlag(Status.Death);
+            chkBlockDoomed.Checked = specs.BlockStatus.HasFlag(Status.Doomed);
+            chkBlockCritical.Checked = specs.BlockStatus.HasFlag(Status.Critical);
+            chkBlockBlink.Checked = specs.BlockStatus.HasFlag(Status.Blink);
+            chkBlockSilence.Checked = specs.BlockStatus.HasFlag(Status.Silence);
+            chkBlockBerserk.Checked = specs.BlockStatus.HasFlag(Status.Berserk);
+            chkBlockConfuse.Checked = specs.BlockStatus.HasFlag(Status.Confusion);
+            chkBlockSap.Checked = specs.BlockStatus.HasFlag(Status.Sap);
+            chkBlockSleep.Checked = specs.BlockStatus.HasFlag(Status.Sleep);
+            chkBlockDance.Checked = specs.BlockStatus.HasFlag(Status.Dance);
+            chkBlockRegen.Checked = specs.BlockStatus.HasFlag(Status.Regen);
+            chkBlockSlow.Checked = specs.BlockStatus.HasFlag(Status.Slow);
+            chkBlockHaste.Checked = specs.BlockStatus.HasFlag(Status.Haste);
+            chkBlockStop.Checked = specs.BlockStatus.HasFlag(Status.Stop);
+            chkBlockShell.Checked = specs.BlockStatus.HasFlag(Status.Shell);
+            chkBlockProtect.Checked = specs.BlockStatus.HasFlag(Status.Protect);
+            chkBlockReflect.Checked = specs.BlockStatus.HasFlag(Status.Reflect);
+            //Begin parsing elemental properties, sans Half
+            chkFireAbs.Checked = specs.Absorb.HasFlag(Element.Fire);
+            chkIceAbs.Checked = specs.Absorb.HasFlag(Element.Ice);
+            chkThunderAbs.Checked = specs.Absorb.HasFlag(Element.Thunder);
+            chkPoisonAbs.Checked = specs.Absorb.HasFlag(Element.Poison);
+            chkWindAbs.Checked = specs.Absorb.HasFlag(Element.Wind);
+            chkHolyAbs.Checked = specs.Absorb.HasFlag(Element.Holy);
+            chkEarthAbs.Checked = specs.Absorb.HasFlag(Element.Earth);
+            chkWaterAbs.Checked = specs.Absorb.HasFlag(Element.Water);
+            chkFireNull.Checked = specs.Nullify.HasFlag(Element.Fire);
+            chkIceNull.Checked = specs.Nullify.HasFlag(Element.Ice);
+            chkThunderNull.Checked = specs.Nullify.HasFlag(Element.Thunder);
+            chkPoisonNull.Checked = specs.Nullify.HasFlag(Element.Poison);
+            chkWindNull.Checked = specs.Nullify.HasFlag(Element.Wind);
+            chkHolyNull.Checked = specs.Nullify.HasFlag(Element.Holy);
+            chkEarthNull.Checked = specs.Nullify.HasFlag(Element.Earth);
+            chkWaterNull.Checked = specs.Nullify.HasFlag(Element.Water);
+            chkFireWeak.Checked = specs.Weakness.HasFlag(Element.Fire);
+            chkIceWeak.Checked = specs.Weakness.HasFlag(Element.Ice);
+            chkThunderWeak.Checked = specs.Weakness.HasFlag(Element.Thunder);
+            chkPoisonWeak.Checked = specs.Weakness.HasFlag(Element.Poison);
+            chkWindWeak.Checked = specs.Weakness.HasFlag(Element.Wind);
+            chkHolyWeak.Checked = specs.Weakness.HasFlag(Element.Holy);
+            chkEarthWeak.Checked = specs.Weakness.HasFlag(Element.Earth);
+            chkWaterWeak.Checked = specs.Weakness.HasFlag(Element.Water);
+            //Attack animation
+            cmbNormalAttack.SelectedIndex = specs.AttackAnimation;
+            //Begin parsing StartStatus values
+            chkStartDarkness.Checked = specs.StartStatus.HasFlag(Status.Darkness);
+            chkStartZombie.Checked = specs.StartStatus.HasFlag(Status.Zombie);
+            chkStartPoison.Checked = specs.StartStatus.HasFlag(Status.Poison);
+            chkStartMagitek.Checked = specs.StartStatus.HasFlag(Status.Magitek);
+            chkStartClear.Checked = specs.StartStatus.HasFlag(Status.Clear);
+            chkStartImp.Checked = specs.StartStatus.HasFlag(Status.Imp);
+            chkStartPetrify.Checked = specs.StartStatus.HasFlag(Status.Petrify);
+            chkStartDeath.Checked = specs.StartStatus.HasFlag(Status.Death);
+            chkStartDoomed.Checked = specs.StartStatus.HasFlag(Status.Doomed);
+            chkStartCritical.Checked = specs.StartStatus.HasFlag(Status.Critical);
+            chkStartBlink.Checked = specs.StartStatus.HasFlag(Status.Blink);
+            chkStartSilence.Checked = specs.StartStatus.HasFlag(Status.Silence);
+            chkStartBerserk.Checked = specs.StartStatus.HasFlag(Status.Berserk);
+            chkStartConfuse.Checked = specs.StartStatus.HasFlag(Status.Confusion);
+            chkStartSap.Checked = specs.StartStatus.HasFlag(Status.Sap);
+            chkStartSleep.Checked = specs.StartStatus.HasFlag(Status.Sleep);
+            chkStartFloat.Checked = specs.StartStatus.HasFlag(Status.Dance);
+            chkStartRegen.Checked = specs.StartStatus.HasFlag(Status.Regen);
+            chkStartSlow.Checked = specs.StartStatus.HasFlag(Status.Slow);
+            chkStartHaste.Checked = specs.StartStatus.HasFlag(Status.Haste);
+            chkStartStop.Checked = specs.StartStatus.HasFlag(Status.Stop);
+            chkStartShell.Checked = specs.StartStatus.HasFlag(Status.Shell);
+            chkStartProtect.Checked = specs.StartStatus.HasFlag(Status.Protect);
+            chkStartReflect.Checked = specs.StartStatus.HasFlag(Status.Reflect);
+            //Begin parsing final special flags byte
+            chkCover.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.Cover);
+            chkRunic.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.Runic);
+            chkReraise.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.Reraise);
+            chkUnknown4.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.UnknownA);
+            chkUnknown5.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.UnknownB);
+            chkUnknown6.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.UnknownC);
+            chkUnknown7.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.UnknownD);
+            chkRemovableFloat.Checked = specs.FlagsB.HasFlag(MonsterFlagsB.Float);
+            //TODO: Special Attack
+            cmbSpecialAttack.SelectedIndex = (specs.SpecialAttack & 0x3F);
+            chkNoPhys.Checked = specs.SpecialAttackFlags.HasFlag(SpecialAttackAttributesFlags.NoDamage);
+            chkNoDodge.Checked = specs.SpecialAttackFlags.HasFlag(SpecialAttackAttributesFlags.NoDodge);
+            //Elemental resistances
+            chkFireHalf.Checked = specs.Half.HasFlag(Element.Fire);
+            chkIceHalf.Checked = specs.Half.HasFlag(Element.Ice);
+            chkThunderHalf.Checked = specs.Half.HasFlag(Element.Thunder);
+            chkPoisonHalf.Checked = specs.Half.HasFlag(Element.Poison);
+            chkWindHalf.Checked = specs.Half.HasFlag(Element.Wind);
+            chkHolyHalf.Checked = specs.Half.HasFlag(Element.Holy);
+            chkEarthHalf.Checked = specs.Half.HasFlag(Element.Earth);
+            chkWaterHalf.Checked = specs.Half.HasFlag(Element.Water);
+            /*numMonsterHP.Value = ReadMonsterHP(rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x08),
                   rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x09),
-                  rom.Read8(RomData.MONSTER_HP_HIGH_BYTE_NORMAL + cmbMonsters.SelectedIndex + MonsterHPByteCheck)); //0x08, 0x09
-              numMonsterMP.Value = rom.Read16(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x0A); //0x0A, 0x0B
-              numMonsterEXP.Value = rom.Read16(); //0x0C, 0x0D
-              numMonsterGil.Value = rom.Read16(); //0x0E, 0x0F
-              numMonsterLevel.Value = rom.Read8(); //0x10
-              //Metamorphisis value
-              rom.Read8(); //0x11
-              ReadMonsterBitflags();
-              cmbNormalAttack.SelectedIndex = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x1A);*/
-        }
-
-        private void ReadMonsterBitflags()
-        {
-            /*  //Monster bit flags
-                Special_1 = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck + 0x12); //0x12; MP death, Pierce Reflect, et al
-                Special_2 = rom.Read8(); //0x13; Harder to run from, attacks first, et al
-                Status_Block_1 = rom.Read8(); //0x14; Block darkness, block Zombie, et al
-                Status_Block_2 = rom.Read8(); //0x15; Block doomed, block critical, et al
-                Status_Block_3 = rom.Read8(); //0x16; Block dance, block regen, et al
-                ElementalAbsorb = rom.Read8(); //0x17; Absorb Fire, Ice, Thunder, Poison, Wind, Holy, Earth, Water
-                ElementalNull = rom.Read8(); //0x18; Nullify Fire, Ice, Thunder, Poison, Wind, Holy, Earth, Water
-                ElementalWeak = rom.Read8(); //0x19; Weak to Fire, Ice, Thunder, Poison, Wind, Holy, Earth, Water
-                //Normal Attack Animation; ComboBox, uses list of Items for animation index
-                rom.Read8(); //0x1A
-                Status_Start_1 = rom.Read8(); //0x1B; Start with darkness, zombie, et al
-                Status_Start_2 = rom.Read8(); //0x1C; Start with doomed, critical, et al
-                Status_Start_3 = rom.Read8(); //0x1D; Start with float, regen, et al
-                Special_3 = rom.Read8(); //0x1E; True Knight, Runic, et al
-                SpecialAttack = rom.Read8(); //0x1F; Bits 0-5 comprise index for special attack effect, bit 7 = No damage, bit 8 = Can't evade  
-
-            chkMPDeath.Checked = Convert.ToBoolean(Special_1 & 0x01);
-            chkPierceReflect.Checked = Convert.ToBoolean(Special_1 & 0x02);
-            chkNoName.Checked = Convert.ToBoolean(Special_1 & 0x04);
-            chkUnknown2.Checked = Convert.ToBoolean(Special_1 & 0x08);
-            chkHumanoid.Checked = Convert.ToBoolean(Special_1 & 0x10);
-            chkUnknown3.Checked = Convert.ToBoolean(Special_1 & 0x20);
-            chkCritImp.Checked = Convert.ToBoolean(Special_1 & 0x40);
-            chkUndead.Checked = Convert.ToBoolean(Special_1 & 0x80);
-            */
-
+                  rom.Read8(RomData.MONSTER_HP_HIGH_BYTE_NORMAL + cmbMonsters.SelectedIndex + MonsterHPByteCheck)); //0x08, 0x09*/
 
         }
-
-        private void WriteMonsterBitflags()
-        {
-          /*Special_1 = 0x00;
-            Special_1 = Convert.ToByte(chkMPDeath.Checked) | Special_1;*/
-        }
-
-        /*private int ReadMonsterHP(byte LowByte, byte MidByte, byte HighByte)
-        {
-          /*int i = HighByte * 256;
-            int j = (i + MidByte) * 256;
-            int u = j + LowByte;
-            return u;
-        }*/
 
         private void WriteMonsterHP(decimal MonsterHP)
         {

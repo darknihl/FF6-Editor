@@ -28,7 +28,7 @@ namespace FF6_Editor
     }
 
     [Flags]
-    public enum StatusBlock : uint
+    public enum Status : uint
     {
         Darkness = 0x1,                    // Block Darkness
 	    Zombie = 0x2,                      // Block Zombie
@@ -46,7 +46,7 @@ namespace FF6_Editor
 	    Confusion = 0x2000,                // Block Confusion
 	    Sap = 0x4000,                      // Block Sap
 	    Sleep = 0x8000,                    // Block Sleep
-        Dance = 0x10000,                   // Block Dance
+        Dance = 0x10000,                   // Block Dance / Start with Float
 	    Regen = 0x20000,                   // Block Regen
 	    Slow = 0x40000,                    // Block Slow
 	    Haste = 0x80000,                   // Block Haste
@@ -54,35 +54,6 @@ namespace FF6_Editor
 	    Shell = 0x200000,                  // Block Shell
 	    Protect = 0x400000,                // Block Protect
 	    Reflect = 0x800000                 // Block Reflect
-    }
-
-    [Flags]
-    public enum StatusBegin : uint
-    {
-        Darkness = 0x1,                    // Start with Darkness
-        Zombie = 0x2,                      // Start with Zombie
-        Poison = 0x4,                      // Start with Poison
-        Magitek = 0x8,                     // Start with Magitek
-        Clear = 0x10,                      // Start with Clear
-        Imp = 0x20,                        // Start with Imp
-        Petrify = 0x40,                    // Start with Petrify
-        Death = 0x80,                      // Start with Death
-        Doomed = 0x100,                    // Start with Doomed
-        Critical = 0x200,                  // Start with Near Fatal
-        Blink = 0x400,                     // Start with Image
-        Silence = 0x800,                   // Start with Silence
-        Berserk = 0x1000,                  // Start with Berserk
-        Confusion = 0x2000,                // Start with Confusion
-        Sap = 0x4000,                      // Start with Sap
-        Sleep = 0x8000,                    // Start with Sleep
-        Float = 0x10000,                   // Start with Dance
-        Regen = 0x20000,                   // Start with Regen
-        Slow = 0x40000,                    // Start with Slow
-        Haste = 0x80000,                   // Start with Haste
-        Stop = 0x100000,                   // Start with Stop
-        Shell = 0x200000,                  // Start with Shell
-        Protect = 0x400000,                // Start with Protect
-        Reflect = 0x800000                 // Start with Reflect
     }
 
     [Flags]
@@ -111,7 +82,7 @@ namespace FF6_Editor
         Float = 0x80                // Removable Float
     }
 
-    public enum SpecialAttackAttributes : byte
+    /*public enum SpecialAttackAttributes : byte
     {
         Blind = 0x00,
         Zombie = 0x01,
@@ -176,8 +147,11 @@ namespace FF6_Editor
         Unknown11 = 0x3C,
         Unknown12 = 0x3D,
         Unknown13 = 0x3E,
-        Unknown14 = 0x3F
+        Unknown14 = 0x3F,
+        NoDamage = 0x40,
+        NoDodge = 0x80
     };
+    */
 
     [Flags]
     public enum SpecialAttackAttributesFlags : byte
@@ -205,17 +179,20 @@ namespace FF6_Editor
         public byte Metamorph;
         public byte MetaMiss;
         public MonsterFlagsA FlagsA;
-        public StatusBlock BlockStatus;
+        public Status BlockStatus;
         public Element Absorb;
         public Element Nullify;
         public Element Weakness;
         public byte AttackAnimation;
-        public StatusBegin StartStatus;
+        public Status StartStatus;
         public MonsterFlagsB FlagsB;
-        public SpecialAttackAttributes SpecialAttackAttributes;
+        public int SpecialAttack;
+        public int SpecialAttackEffects;
+        public SpecialAttackAttributesFlags SpecialAttackFlags;
         public byte Strength;
         public Element Half;
         public byte Vitality;
+        public ushort FlagsA_Return;
 
         byte[] BinaryHP()
         {
@@ -228,35 +205,6 @@ namespace FF6_Editor
             return ret;
         }
 
-        byte[] BinaryMP()
-        {
-            byte[] ret = new byte[2];
-
-            ret[0] = Convert.ToByte(MP & 0xFF);
-            ret[1] = Convert.ToByte((MP & 0xFF00) >> 8);
-
-            return ret;
-        }
-
-        byte[] BinaryXP()
-        {
-            byte[] ret = new byte[2];
-
-            ret[0] = Convert.ToByte(XP & 0xFF);
-            ret[1] = Convert.ToByte((XP & 0xFF00) >> 8);
-
-            return ret;
-        }
-
-        byte[] BinaryGil()
-        {
-            byte[] ret = new byte[2];
-
-            ret[0] = Convert.ToByte(Gil & 0xFF);
-            ret[1] = Convert.ToByte((Gil & 0xFF00) >> 8);
-
-            return ret;
-        }
         /*
         byte[] BinaryFlagsA()
         {
@@ -290,45 +238,115 @@ namespace FF6_Editor
         }
         */
 
-        public byte[] ToBinary()
+        public void ReadMonsterNormal(RomFileIO rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
         {
-            byte[] ret = new byte[21];
-            byte[] hp = BinaryHP();
-            byte[] mp = BinaryMP();
-            byte[] xp = BinaryXP();
-            byte[] gil = BinaryGil();
-            //Agility = rom.Read8(RomData.MONSTER_STATS_NORMAL_DATA + MonsterIndexCheck + MonsterDiffCheck);
+            if (!rom.IsOpen())
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                Agility = rom.Read8(BaseOffset + MonsterIndex + MonsterDifficulty);
+                Attack = rom.Read8();
+                Accuracy = rom.Read8();
+                Evasion = rom.Read8();
+                MagEva = rom.Read8();
+                Defense = rom.Read8();
+                MagDef = rom.Read8();
+                Magic = rom.Read8();
+                rom.Read16(); // old HP int
+                MP = rom.Read16();
+                XP = rom.Read16();
+                Gil = rom.Read16();
+                Level = rom.Read8();
+                rom.Read8(); // Metamorph byte
+                FlagsA = (MonsterFlagsA)rom.Read16();
+                BlockStatus = (Status)rom.Read24();
+                Absorb = (Element)rom.Read8();
+                Nullify = (Element)rom.Read8();
+                Weakness = (Element)rom.Read8();
+                AttackAnimation = rom.Read8();
+                StartStatus = (Status)rom.Read24();
+                FlagsB = (MonsterFlagsB)rom.Read8();
+                SpecialAttack = rom.Read8();
+                SpecialAttackFlags = (SpecialAttackAttributesFlags)SpecialAttack;
+           }
+        }
 
-            ret[0] = Agility;
-            ret[1] = Attack;
-            ret[2] = Accuracy;
-            ret[3] = Evasion;
-            ret[4] = MagEva;
-            ret[5] = Defense;
-            ret[6] = MagDef;
-            ret[7] = MagDef;
-            ret[8] = 0;
-            ret[9] = 0;
-            for (byte i = 0; i < 2; i++)
+        public void ReadMonsterSecondary(RomFileIO rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
+        {
+            if (!rom.IsOpen())
             {
-                ret[10 + i] = mp[i];
+                throw new NullReferenceException();
             }
-            for (byte i = 0; i < 2; i++)
+            else
             {
-                ret[12 + i] = xp[i];
+                Strength = rom.Read8(BaseOffset + MonsterIndex + MonsterDifficulty);
+                Half = (Element)rom.Read8();
+                Vitality = rom.Read8();
             }
-            for (byte i = 0; i < 2; i++)
-            {
-                ret[14 + i] = gil[i];
-            }
-            ret[16] = Level;
-            ret[17] = Metamorph;
-            ret[18] = MetaMiss;
-            ret[19] = AttackAnimation;
-            ret[20] = Strength;
-            ret[21] = Vitality;
+        }
 
-            return ret;
+        public void ReadMonsterHP(RomFileIO rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
+        {
+            if (!rom.IsOpen())
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                HP = rom.Read24(BaseOffset + MonsterIndex + MonsterDifficulty);
+            }
+        }
+
+        public void WriteMonsterNormal(RomFileIO rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
+        {
+            if (!rom.IsOpen())
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                rom.Write8(Agility, BaseOffset + MonsterIndex + MonsterDifficulty);
+                rom.Write8(Attack);
+                rom.Write8(Accuracy);
+                rom.Write8(Evasion);
+                rom.Write8(MagEva);
+                rom.Write8(Defense);
+                rom.Write8(MagDef);
+                rom.Write8(Magic);
+                rom.Read16();
+                rom.Write16(MP);
+                rom.Write16(XP);
+                rom.Write16(Gil);
+                rom.Write8(Level);
+            }
+        }
+
+        public void WriteMonsterSecondary(RomFileIO rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
+        {
+            if (!rom.IsOpen())
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                rom.Write8(Strength, BaseOffset + MonsterIndex + MonsterDifficulty);
+                rom.Write8(Convert.ToByte(Half));
+                rom.Write8(Vitality);
+            }
+        }
+
+        public void WriteMonsterHP(RomFileIO rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
+        {
+            if (!rom.IsOpen())
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+
+            }
         }
     }
 }

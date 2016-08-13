@@ -71,6 +71,19 @@ namespace FF6_Editor
                 throw new NullReferenceException();
         }
 
+        public uint Read24()
+        {
+            if (ROM != null)
+            {
+                uint i = br.ReadByte();
+                i |= Convert.ToUInt32(br.ReadByte() << 8);
+                i |= Convert.ToUInt32(br.ReadByte() << 16);
+                return i;
+            }
+            else
+                throw new NullReferenceException();
+        }
+
         public uint Read32()
         {
             if (ROM != null)
@@ -101,6 +114,20 @@ namespace FF6_Editor
                 throw new NullReferenceException();
         }
 
+        public uint Read24(int FileOffset)
+        {
+            if (ROM != null)
+            {
+                Seek(FileOffset);
+                uint i = br.ReadByte();
+                i |= Convert.ToUInt16(br.ReadByte() << 8);
+                i |= Convert.ToUInt32(br.ReadByte() << 16);
+                return i;
+            }
+            else
+                throw new NullReferenceException();
+        }
+
         public uint Read32(int FileOffset)
         {
             if (ROM != null)
@@ -124,6 +151,16 @@ namespace FF6_Editor
         {
             if (ROM != null)
                 bw.Write(val);
+            else
+                throw new NullReferenceException();
+        }
+
+        public void Write24(uint val)
+        {
+            if (ROM != null)
+            {
+
+            }
             else
                 throw new NullReferenceException();
         }
