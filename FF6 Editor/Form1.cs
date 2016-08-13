@@ -321,35 +321,145 @@ namespace FF6_Editor
             MonsterSecondaryIndexCheck = cmbMonsters.SelectedIndex * 3;
             MonsterSecondaryDiffCheck = cmbDifficulty.SelectedIndex * 0x0600;
 
-            specs.Agility = Convert.ToByte(numMonsterAgility.Value);
-            specs.Attack = Convert.ToByte(numMonsterAttack.Value);
-            specs.Accuracy = Convert.ToByte(numMonsterAccuracy.Value);
-            specs.Evasion = Convert.ToByte(numMonsterEvasion.Value);
-            specs.MagEva = Convert.ToByte(numMonsterMagEva.Value);
-            specs.Defense = Convert.ToByte(numMonsterDefense.Value);
-            specs.MagDef = Convert.ToByte(numMonsterMagDef.Value);
-            specs.Magic = Convert.ToByte(numMonsterMagic.Value);
-            specs.HP = Convert.ToUInt32(numMonsterHP.Value);
-            specs.MP = Convert.ToUInt16(numMonsterMP.Value);
-            specs.XP = Convert.ToUInt16(numMonsterEXP.Value);
-            specs.Gil = Convert.ToUInt16(numMonsterGil.Value);
-            specs.Level = Convert.ToByte(numMonsterLevel.Value);
-            specs.Strength = Convert.ToByte(numMonsterStrength.Value);
-            specs.Vitality = Convert.ToByte(numMonsterVitality.Value);
-            //if (checked) byte |= flag, else byte &= ~flag;
-            if (chkMPDeath.Checked == true)
-            {
-                specs.FlagsA |= chkMPDeath;
-            }
-            else
-            {
-                specs.FlagsA &= ~chkMPDeath;
-            }
+            specs.Agility = (byte)numMonsterAgility.Value;
+            specs.Attack = (byte)numMonsterAttack.Value;
+            specs.Accuracy = (byte)numMonsterAccuracy.Value;
+            specs.Evasion = (byte)numMonsterEvasion.Value;
+            specs.MagEva = (byte)numMonsterMagEva.Value;
+            specs.Defense = (byte)numMonsterDefense.Value;
+            specs.MagDef = (byte)numMonsterMagDef.Value;
+            specs.Magic = (byte)numMonsterMagic.Value;
+            specs.HP = (uint)numMonsterHP.Value;
+            specs.MP = (ushort)numMonsterMP.Value;
+            specs.XP = (ushort)numMonsterEXP.Value;
+            specs.Gil = (ushort)numMonsterGil.Value;
+            specs.Level = (byte)numMonsterLevel.Value;
+            specs.Strength = (byte)numMonsterStrength.Value;
+            specs.Vitality = (byte)numMonsterVitality.Value;
+            //Write first two special bytes
+            if (chkMPDeath.Checked == true) specs.FlagsA |= MonsterFlagsA.MPDeath; else specs.FlagsA &= ~MonsterFlagsA.MPDeath;
+            if (chkPierceReflect.Checked == true) specs.FlagsA |= MonsterFlagsA.ReflectPierce; else specs.FlagsA &= ~MonsterFlagsA.ReflectPierce;
+            if (chkNoName.Checked == true) specs.FlagsA |= MonsterFlagsA.NameHide; else specs.FlagsA &= ~MonsterFlagsA.NameHide;
+            if (chkUnknown2.Checked == true) specs.FlagsA |= MonsterFlagsA.UnknownA; else specs.FlagsA &= ~MonsterFlagsA.UnknownA;
+            if (chkHumanoid.Checked == true) specs.FlagsA |= MonsterFlagsA.Humanoid; else specs.FlagsA &= ~MonsterFlagsA.Humanoid;
+            if (chkUnknown3.Checked == true) specs.FlagsA |= MonsterFlagsA.UnknownB; else specs.FlagsA &= ~MonsterFlagsA.UnknownB;
+            if (chkCritImp.Checked == true) specs.FlagsA |= MonsterFlagsA.ImpSucks; else specs.FlagsA &= ~MonsterFlagsA.ImpSucks;
+            if (chkUndead.Checked == true) specs.FlagsA |= MonsterFlagsA.Undead; else specs.FlagsA &= ~MonsterFlagsA.Undead;
+            if (chkHarderToRun.Checked == true) specs.FlagsA |= MonsterFlagsA.FlightRisky; else specs.FlagsA &= ~MonsterFlagsA.FlightRisky;
+            if (chkAttackFirst.Checked == true) specs.FlagsA |= MonsterFlagsA.Preemptive; else specs.FlagsA &= ~MonsterFlagsA.Preemptive;
+            if (chkBlockSuplex.Checked == true) specs.FlagsA |= MonsterFlagsA.NoSuplex; else specs.FlagsA &= ~MonsterFlagsA.NoSuplex;
+            if (chkNoRun.Checked == true) specs.FlagsA |= MonsterFlagsA.FlightBanned; else specs.FlagsA &= ~MonsterFlagsA.FlightBanned;
+            if (chkNoScan.Checked == true) specs.FlagsA |= MonsterFlagsA.NoScan; else specs.FlagsA &= ~MonsterFlagsA.NoScan;
+            if (chkNoSketch.Checked == true) specs.FlagsA |= MonsterFlagsA.NoSketch; else specs.FlagsA &= ~MonsterFlagsA.NoSketch;
+            if (chkSpecialEvent.Checked == true) specs.FlagsA |= MonsterFlagsA.Event; else specs.FlagsA &= ~MonsterFlagsA.Event;
+            if (chkNoControl.Checked == true) specs.FlagsA |= MonsterFlagsA.NoControl; else specs.FlagsA &= ~MonsterFlagsA.NoControl;
+            //Write blocked status bytes
+            if (chkBlockDarkness.Checked == true) specs.BlockStatus |= Status.Darkness; else specs.BlockStatus &= ~Status.Darkness;
+            if (chkBlockZombie.Checked == true) specs.BlockStatus |= Status.Zombie; else specs.BlockStatus &= ~Status.Zombie;
+            if (chkBlockPoison.Checked == true) specs.BlockStatus |= Status.Poison; else specs.BlockStatus &= ~Status.Poison;
+            if (chkBlockMagitek.Checked == true) specs.BlockStatus |= Status.Magitek; else specs.BlockStatus &= ~Status.Magitek;
+            if (chkBlockClear.Checked == true) specs.BlockStatus |= Status.Clear; else specs.BlockStatus &= ~Status.Clear;
+            if (chkBlockImp.Checked == true) specs.BlockStatus |= Status.Imp; else specs.BlockStatus &= ~Status.Imp;
+            if (chkBlockPetrify.Checked == true) specs.BlockStatus |= Status.Petrify; else specs.BlockStatus &= ~Status.Petrify;
+            if (chkBlockDeath.Checked == true) specs.BlockStatus |= Status.Death; else specs.BlockStatus &= ~Status.Death;
+            if (chkBlockDoomed.Checked == true) specs.BlockStatus |= Status.Doomed; else specs.BlockStatus &= ~Status.Doomed;
+            if (chkBlockCritical.Checked == true) specs.BlockStatus |= Status.Critical; else specs.BlockStatus &= ~Status.Critical;
+            if (chkBlockBlink.Checked == true) specs.BlockStatus |= Status.Blink; else specs.BlockStatus &= ~Status.Blink;
+            if (chkBlockSilence.Checked == true) specs.BlockStatus |= Status.Silence; else specs.BlockStatus &= ~Status.Silence;
+            if (chkBlockBerserk.Checked == true) specs.BlockStatus |= Status.Berserk; else specs.BlockStatus &= ~Status.Berserk;
+            if (chkBlockConfuse.Checked == true) specs.BlockStatus |= Status.Confusion; else specs.BlockStatus &= ~Status.Confusion;
+            if (chkBlockSap.Checked == true) specs.BlockStatus |= Status.Sap; else specs.BlockStatus &= ~Status.Sap;
+            if (chkBlockSleep.Checked == true) specs.BlockStatus |= Status.Sleep; else specs.BlockStatus &= ~Status.Sleep;
+            if (chkBlockDance.Checked == true) specs.BlockStatus |= Status.Dance; else specs.BlockStatus &= ~Status.Dance;
+            if (chkBlockRegen.Checked == true) specs.BlockStatus |= Status.Regen; else specs.BlockStatus &= ~Status.Regen;
+            if (chkBlockSlow.Checked == true) specs.BlockStatus |= Status.Slow; else specs.BlockStatus &= ~Status.Slow;
+            if (chkBlockHaste.Checked == true) specs.BlockStatus |= Status.Haste; else specs.BlockStatus &= ~Status.Haste;
+            if (chkBlockStop.Checked == true) specs.BlockStatus |= Status.Stop; else specs.BlockStatus &= ~Status.Stop;
+            if (chkBlockShell.Checked == true) specs.BlockStatus |= Status.Shell; else specs.BlockStatus &= ~Status.Shell;
+            if (chkBlockProtect.Checked == true) specs.BlockStatus |= Status.Protect; else specs.BlockStatus &= ~Status.Protect;
+            if (chkBlockReflect.Checked == true) specs.BlockStatus |= Status.Reflect; else specs.BlockStatus &= ~Status.Reflect;
+            //Elemental properties -- Absorb, Nullify, Weak; Half is in a different struct
+            if (chkFireAbs.Checked == true) specs.Absorb |= Element.Fire; else specs.Absorb &= ~Element.Fire;
+            if (chkIceAbs.Checked == true) specs.Absorb |= Element.Ice; else specs.Absorb &= ~Element.Ice;
+            if (chkThunderAbs.Checked == true) specs.Absorb |= Element.Thunder; else specs.Absorb &= ~Element.Thunder;
+            if (chkPoisonAbs.Checked == true) specs.Absorb |= Element.Poison; else specs.Absorb &= ~Element.Poison;
+            if (chkWindAbs.Checked == true) specs.Absorb |= Element.Wind; else specs.Absorb &= ~Element.Wind;
+            if (chkHolyAbs.Checked == true) specs.Absorb |= Element.Holy; else specs.Absorb &= ~Element.Holy;
+            if (chkEarthAbs.Checked == true) specs.Absorb |= Element.Earth; else specs.Absorb &= ~Element.Earth;
+            if (chkWaterAbs.Checked == true) specs.Absorb |= Element.Water; else specs.Absorb &= ~Element.Water;
+            //Nullify
+            if (chkFireNull.Checked == true) specs.Nullify |= Element.Fire; else specs.Nullify &= ~Element.Fire;
+            if (chkIceNull.Checked == true) specs.Nullify |= Element.Ice; else specs.Nullify &= ~Element.Ice;
+            if (chkThunderNull.Checked == true) specs.Nullify |= Element.Thunder; else specs.Nullify &= ~Element.Thunder;
+            if (chkPoisonNull.Checked == true) specs.Nullify |= Element.Poison; else specs.Nullify &= ~Element.Poison;
+            if (chkWindNull.Checked == true) specs.Nullify |= Element.Wind; else specs.Nullify &= ~Element.Wind;
+            if (chkHolyNull.Checked == true) specs.Nullify |= Element.Holy; else specs.Nullify &= ~Element.Holy;
+            if (chkEarthNull.Checked == true) specs.Nullify |= Element.Earth; else specs.Nullify &= ~Element.Earth;
+            if (chkWaterNull.Checked == true) specs.Nullify |= Element.Water; else specs.Nullify &= ~Element.Water;
+            //Weakness
+            if (chkFireWeak.Checked == true) specs.Weakness |= Element.Fire; else specs.Weakness &= ~Element.Fire;
+            if (chkIceWeak.Checked == true) specs.Weakness |= Element.Ice; else specs.Weakness &= ~Element.Ice;
+            if (chkThunderWeak.Checked == true) specs.Weakness |= Element.Thunder; else specs.Weakness &= ~Element.Thunder;
+            if (chkPoisonWeak.Checked == true) specs.Weakness |= Element.Poison; else specs.Weakness &= ~Element.Poison;
+            if (chkWindWeak.Checked == true) specs.Weakness |= Element.Wind; else specs.Weakness &= ~Element.Wind;
+            if (chkHolyWeak.Checked == true) specs.Weakness |= Element.Holy; else specs.Weakness &= ~Element.Holy;
+            if (chkEarthWeak.Checked == true) specs.Weakness |= Element.Earth; else specs.Weakness &= ~Element.Earth;
+            if (chkWaterWeak.Checked == true) specs.Weakness |= Element.Water; else specs.Weakness &= ~Element.Water;
+            //Attack Animation
+            specs.AttackAnimation = (byte)cmbNormalAttack.SelectedIndex;
+            //Start battle status
+            if (chkStartDarkness.Checked == true) specs.BlockStatus |= Status.Darkness; else specs.StartStatus &= ~Status.Darkness;
+            if (chkStartZombie.Checked == true) specs.BlockStatus |= Status.Zombie; else specs.StartStatus &= ~Status.Zombie;
+            if (chkStartPoison.Checked == true) specs.BlockStatus |= Status.Poison; else specs.StartStatus &= ~Status.Poison;
+            if (chkStartMagitek.Checked == true) specs.BlockStatus |= Status.Magitek; else specs.StartStatus &= ~Status.Magitek;
+            if (chkStartClear.Checked == true) specs.BlockStatus |= Status.Clear; else specs.StartStatus &= ~Status.Clear;
+            if (chkStartImp.Checked == true) specs.BlockStatus |= Status.Imp; else specs.StartStatus &= ~Status.Imp;
+            if (chkStartPetrify.Checked == true) specs.BlockStatus |= Status.Petrify; else specs.StartStatus &= ~Status.Petrify;
+            if (chkStartDeath.Checked == true) specs.BlockStatus |= Status.Death; else specs.StartStatus &= ~Status.Death;
+            if (chkStartDoomed.Checked == true) specs.BlockStatus |= Status.Doomed; else specs.StartStatus &= ~Status.Doomed;
+            if (chkStartCritical.Checked == true) specs.BlockStatus |= Status.Critical; else specs.StartStatus &= ~Status.Critical;
+            if (chkStartBlink.Checked == true) specs.BlockStatus |= Status.Blink; else specs.StartStatus &= ~Status.Blink;
+            if (chkStartSilence.Checked == true) specs.BlockStatus |= Status.Silence; else specs.StartStatus &= ~Status.Silence;
+            if (chkStartBerserk.Checked == true) specs.BlockStatus |= Status.Berserk; else specs.StartStatus &= ~Status.Berserk;
+            if (chkStartConfuse.Checked == true) specs.BlockStatus |= Status.Confusion; else specs.StartStatus &= ~Status.Confusion;
+            if (chkStartSap.Checked == true) specs.BlockStatus |= Status.Sap; else specs.StartStatus &= ~Status.Sap;
+            if (chkStartSleep.Checked == true) specs.BlockStatus |= Status.Sleep; else specs.StartStatus &= ~Status.Sleep;
+            if (chkStartFloat.Checked == true) specs.BlockStatus |= Status.Dance; else specs.StartStatus &= ~Status.Dance;
+            if (chkStartRegen.Checked == true) specs.BlockStatus |= Status.Regen; else specs.StartStatus &= ~Status.Regen;
+            if (chkStartSlow.Checked == true) specs.BlockStatus |= Status.Slow; else specs.StartStatus &= ~Status.Slow;
+            if (chkStartHaste.Checked == true) specs.BlockStatus |= Status.Haste; else specs.StartStatus &= ~Status.Haste;
+            if (chkStartStop.Checked == true) specs.BlockStatus |= Status.Stop; else specs.StartStatus &= ~Status.Stop;
+            if (chkStartShell.Checked == true) specs.BlockStatus |= Status.Shell; else specs.StartStatus &= ~Status.Shell;
+            if (chkStartProtect.Checked == true) specs.BlockStatus |= Status.Protect; else specs.StartStatus &= ~Status.Protect;
+            if (chkStartReflect.Checked == true) specs.BlockStatus |= Status.Reflect; else specs.StartStatus &= ~Status.Reflect;
+            //Final special flags byte
+            if (chkCover.Checked == true) specs.FlagsB |= MonsterFlagsB.Cover; else specs.FlagsB &= ~MonsterFlagsB.Cover;
+            if (chkRunic.Checked == true) specs.FlagsB |= MonsterFlagsB.Runic; else specs.FlagsB &= ~MonsterFlagsB.Runic;
+            if (chkReraise.Checked == true) specs.FlagsB |= MonsterFlagsB.Reraise; else specs.FlagsB &= ~MonsterFlagsB.Reraise;
+            if (chkUnknown4.Checked == true) specs.FlagsB |= MonsterFlagsB.UnknownA; else specs.FlagsB &= ~MonsterFlagsB.UnknownA;
+            if (chkUnknown5.Checked == true) specs.FlagsB |= MonsterFlagsB.UnknownB; else specs.FlagsB &= ~MonsterFlagsB.UnknownB;
+            if (chkUnknown6.Checked == true) specs.FlagsB |= MonsterFlagsB.UnknownC; else specs.FlagsB &= ~MonsterFlagsB.UnknownC;
+            if (chkUnknown7.Checked == true) specs.FlagsB |= MonsterFlagsB.UnknownD; else specs.FlagsB &= ~MonsterFlagsB.UnknownD;
+            if (chkRemovableFloat.Checked == true) specs.FlagsB |= MonsterFlagsB.Cover; else specs.FlagsB &= ~MonsterFlagsB.Float;
+            //Special attack
+            specs.SpecialAttack = (byte)cmbSpecialAttack.SelectedIndex;
+            if (chkNoPhys.Checked == true) specs.SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDamage; else specs.SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDamage;
+            if (chkNoDodge.Checked == true) specs.SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDodge; else specs.SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDodge;
+            specs.SpecialAttack |= (byte)specs.SpecialAttackFlags;
+            //Elemental REsistences
+            if (chkFireHalf.Checked == true) specs.Half |= Element.Fire; else specs.Half &= ~Element.Fire;
+            if (chkIceHalf.Checked == true) specs.Half |= Element.Ice; else specs.Half &= ~Element.Ice;
+            if (chkThunderHalf.Checked == true) specs.Half |= Element.Thunder; else specs.Half &= ~Element.Thunder;
+            if (chkPoisonHalf.Checked == true) specs.Half |= Element.Poison; else specs.Half &= ~Element.Poison;
+            if (chkWindHalf.Checked == true) specs.Half |= Element.Wind; else specs.Half &= ~Element.Wind;
+            if (chkHolyHalf.Checked == true) specs.Half |= Element.Holy; else specs.Half &= ~Element.Holy;
+            if (chkEarthHalf.Checked == true) specs.Half |= Element.Earth; else specs.Half &= ~Element.Earth;
+            if (chkWaterHalf.Checked == true) specs.Half |= Element.Water; else specs.Half &= ~Element.Water;
 
-
-
+            //Actual write code
             specs.WriteMonsterNormal(rom, RomData.MONSTER_STATS_NORMAL_DATA, MonsterIndexCheck, MonsterDiffCheck);
             specs.WriteMonsterSecondary(rom, RomData.MONSTER_STATS_NORMAL_SECONDARY_DATA, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
+            specs.WriteMonsterHP(rom, RomData.MONSTER_HP_NORMAL, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
         }
 
         private void UpdateActorsElements()

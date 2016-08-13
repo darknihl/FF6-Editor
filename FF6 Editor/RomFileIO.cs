@@ -159,7 +159,14 @@ namespace FF6_Editor
         {
             if (ROM != null)
             {
+                byte[] i = new byte[3];
 
+                i[0] = Convert.ToByte(val & 0xFF);
+                i[1] = Convert.ToByte((val & 0xFF00) >> 8);
+                i[2] = Convert.ToByte((val & 0xFF0000) >> 16);
+                Write8(i[0]);
+                Write8(i[1]);
+                Write8(i[2]);
             }
             else
                 throw new NullReferenceException();
@@ -194,6 +201,26 @@ namespace FF6_Editor
             else
                 throw new NullReferenceException();
         }
+
+        public void Write24(uint val, int FileOffset)
+        {
+            if (ROM != null)
+            {
+                byte[] i = new byte[3];
+
+                i[0] = Convert.ToByte(val & 0xFF);
+                i[1] = Convert.ToByte((val & 0xFF00) >> 8);
+                i[2] = Convert.ToByte((val & 0xFF0000) >> 16);
+                Seek(FileOffset);
+                Write8(i[0]);
+                Write8(i[1]);
+                Write8(i[2]);
+
+            }
+            else
+                throw new NullReferenceException();
+        }
+
 
         public void Write32(uint val, int FileOffset)
         {

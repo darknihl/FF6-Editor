@@ -192,9 +192,8 @@ namespace FF6_Editor
         public byte Strength;
         public Element Half;
         public byte Vitality;
-        public ushort FlagsA_Return;
 
-        byte[] BinaryHP()
+        /*byte[] BinaryHP()
         {
             byte[] ret = new byte[3];
 
@@ -203,40 +202,7 @@ namespace FF6_Editor
             ret[2] = Convert.ToByte((HP & 0xFF0000) >> 16);
 
             return ret;
-        }
-
-        /*
-        byte[] BinaryFlagsA()
-        {
-            // ... 
-            
-
-        }
-        byte[] BinaryFlagsB()
-        {
-            // ...
-        }
-
-        byte[] ElementsAbsorb()
-        {
-            
-        }
-
-        byte[] ElementsNull()
-        {
-
-        }
-
-        byte[] ElementsWeak()
-        {
-
-        }
-
-        byte[] ElementsHalf()
-        {
-
-        }
-        */
+        }*/
 
         public void ReadMonsterNormal(RomFileIO rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
         {
@@ -320,6 +286,16 @@ namespace FF6_Editor
                 rom.Write16(XP);
                 rom.Write16(Gil);
                 rom.Write8(Level);
+                rom.Read8(); // Ragnarok metamorph byte
+                rom.Write16((ushort)FlagsA);
+                rom.Write24((uint)BlockStatus);
+                rom.Write8((byte)Absorb);
+                rom.Write8((byte)Nullify);
+                rom.Write8((byte)Weakness);
+                rom.Write8(AttackAnimation);
+                rom.Write24((uint)StartStatus);
+                rom.Write8((byte)FlagsB);
+                rom.Write8((byte)SpecialAttack);
             }
         }
 
@@ -345,7 +321,7 @@ namespace FF6_Editor
             }
             else
             {
-
+                rom.Write24(HP, BaseOffset + MonsterIndex + MonsterDifficulty);
             }
         }
     }
