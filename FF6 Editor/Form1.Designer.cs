@@ -230,112 +230,43 @@
             this.btnActorsCancel = new System.Windows.Forms.Button();
             this.btnActorsOkay = new System.Windows.Forms.Button();
             this.tabEspers = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblEsperLevel20 = new System.Windows.Forms.Label();
-            this.lblEsperLevel19 = new System.Windows.Forms.Label();
-            this.lblEsperLevel18 = new System.Windows.Forms.Label();
-            this.lblEsperLevel17 = new System.Windows.Forms.Label();
-            this.lblEsperLevel16 = new System.Windows.Forms.Label();
-            this.lblEsperLevel15 = new System.Windows.Forms.Label();
-            this.lblEsperLevel14 = new System.Windows.Forms.Label();
-            this.lblEsperLevel13 = new System.Windows.Forms.Label();
-            this.lblEsperLevel12 = new System.Windows.Forms.Label();
-            this.lblEsperLevel11 = new System.Windows.Forms.Label();
-            this.lblEsperLevel10 = new System.Windows.Forms.Label();
-            this.lblEsperLevel9 = new System.Windows.Forms.Label();
-            this.lblEsperLevel8 = new System.Windows.Forms.Label();
-            this.lblEsperLevel7 = new System.Windows.Forms.Label();
-            this.lblEsperLevel6 = new System.Windows.Forms.Label();
-            this.lblEsperLevel5 = new System.Windows.Forms.Label();
-            this.lblEsperLevel4 = new System.Windows.Forms.Label();
-            this.lblEsperLevel3 = new System.Windows.Forms.Label();
-            this.lblEsperLevel2 = new System.Windows.Forms.Label();
-            this.lblEsperLevel1 = new System.Windows.Forms.Label();
-            this.lblEsperLevel = new System.Windows.Forms.Label();
-            this.txtEsperMag20 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag19 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag18 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag17 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag16 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag15 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag14 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag13 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag12 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag11 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag10 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag9 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag8 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag7 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag6 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag5 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag4 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag3 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag2 = new System.Windows.Forms.TextBox();
-            this.txtEsperMag1 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit20 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit19 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit18 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit17 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit16 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit15 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit14 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit13 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit12 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit11 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit10 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit9 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit8 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit7 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit6 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit5 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit4 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit3 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit2 = new System.Windows.Forms.TextBox();
-            this.txtEsperVit1 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi20 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi19 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi18 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi17 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi16 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi15 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi14 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi13 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi12 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi11 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi10 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi9 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi8 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi7 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi6 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi5 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi4 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi3 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi2 = new System.Windows.Forms.TextBox();
-            this.txtEsperAgi1 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr20 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr19 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr18 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr17 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr16 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr15 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr14 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr13 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr12 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr11 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr10 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr9 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr8 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr7 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr6 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr5 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr4 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr3 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr2 = new System.Windows.Forms.TextBox();
-            this.txtEsperStr1 = new System.Windows.Forms.TextBox();
-            this.lblEsperMag1 = new System.Windows.Forms.Label();
-            this.lblEsperVit1 = new System.Windows.Forms.Label();
-            this.lblEsperAgi1 = new System.Windows.Forms.Label();
-            this.lblEsperStr1 = new System.Windows.Forms.Label();
+            this.lblSkillPoints5 = new System.Windows.Forms.Label();
+            this.numSkillPoints25 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints24 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints23 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints22 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints21 = new System.Windows.Forms.NumericUpDown();
+            this.lblSkillPoints4 = new System.Windows.Forms.Label();
+            this.numSkillPoints20 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints19 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints18 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints17 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints16 = new System.Windows.Forms.NumericUpDown();
+            this.lblSkillPoints3 = new System.Windows.Forms.Label();
+            this.numSkillPoints15 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints14 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints13 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints12 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints11 = new System.Windows.Forms.NumericUpDown();
+            this.lblSkillPoints2 = new System.Windows.Forms.Label();
+            this.numSkillPoints10 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints9 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints8 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints7 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints6 = new System.Windows.Forms.NumericUpDown();
+            this.lblSkillPoints1 = new System.Windows.Forms.Label();
+            this.numSkillPoints5 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints4 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints3 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints2 = new System.Windows.Forms.NumericUpDown();
+            this.numSkillPoints1 = new System.Windows.Forms.NumericUpDown();
+            this.lblSkillNeeded = new System.Windows.Forms.Label();
+            this.chkLstEsperStats = new System.Windows.Forms.CheckedListBox();
+            this.lblAvailableStats = new System.Windows.Forms.Label();
+            this.btnEspersNone = new System.Windows.Forms.Button();
+            this.btnEspersAll = new System.Windows.Forms.Button();
+            this.chkLstEsperChars = new System.Windows.Forms.CheckedListBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnEspersCancel = new System.Windows.Forms.Button();
             this.btnEspersOkay = new System.Windows.Forms.Button();
             this.nmbEsperMagic10 = new System.Windows.Forms.NumericUpDown();
@@ -360,6 +291,38 @@
             this.cmbEsperMagic1 = new System.Windows.Forms.ComboBox();
             this.cmbEspers = new System.Windows.Forms.ComboBox();
             this.tabEnemies = new System.Windows.Forms.TabPage();
+            this.lblCommonSketch = new System.Windows.Forms.Label();
+            this.lblRareSketch = new System.Windows.Forms.Label();
+            this.lblSkillExp = new System.Windows.Forms.Label();
+            this.numSkillExp = new System.Windows.Forms.NumericUpDown();
+            this.grpControl = new System.Windows.Forms.GroupBox();
+            this.cmbControl4 = new System.Windows.Forms.ComboBox();
+            this.cmbControl2 = new System.Windows.Forms.ComboBox();
+            this.cmbControl3 = new System.Windows.Forms.ComboBox();
+            this.cmbControl1 = new System.Windows.Forms.ComboBox();
+            this.cmbSketch2 = new System.Windows.Forms.ComboBox();
+            this.cmbSketch1 = new System.Windows.Forms.ComboBox();
+            this.lblSketch = new System.Windows.Forms.Label();
+            this.cmbRage2 = new System.Windows.Forms.ComboBox();
+            this.lblStealsCommon = new System.Windows.Forms.Label();
+            this.lblRage = new System.Windows.Forms.Label();
+            this.cmbRage1 = new System.Windows.Forms.ComboBox();
+            this.cmbStealsCommon = new System.Windows.Forms.ComboBox();
+            this.lblStealsRare = new System.Windows.Forms.Label();
+            this.cmbStealsRare = new System.Windows.Forms.ComboBox();
+            this.lblStolenItems = new System.Windows.Forms.Label();
+            this.lblDropsCommon = new System.Windows.Forms.Label();
+            this.cmbDropsCommon = new System.Windows.Forms.ComboBox();
+            this.lblDropsRare = new System.Windows.Forms.Label();
+            this.cmbDropsRare = new System.Windows.Forms.ComboBox();
+            this.lblDrops = new System.Windows.Forms.Label();
+            this.grpSpecialAttacks = new System.Windows.Forms.GroupBox();
+            this.lblNoDodge = new System.Windows.Forms.Label();
+            this.lblNoPhys = new System.Windows.Forms.Label();
+            this.chkNoDodge = new System.Windows.Forms.CheckBox();
+            this.chkNoPhys = new System.Windows.Forms.CheckBox();
+            this.cmbSpecialAttack = new System.Windows.Forms.ComboBox();
+            this.lblExtraEffect = new System.Windows.Forms.Label();
             this.numMonsterIndex = new System.Windows.Forms.NumericUpDown();
             this.lblNormalAttack = new System.Windows.Forms.Label();
             this.cmbNormalAttack = new System.Windows.Forms.ComboBox();
@@ -469,7 +432,7 @@
             this.chkNoRun = new System.Windows.Forms.CheckBox();
             this.lblNoScan = new System.Windows.Forms.Label();
             this.chkBlockSuplex = new System.Windows.Forms.CheckBox();
-            this.chkUnknown3 = new System.Windows.Forms.CheckBox();
+            this.chkIgnoreITD = new System.Windows.Forms.CheckBox();
             this.chkAttackFirst = new System.Windows.Forms.CheckBox();
             this.lblNoRun = new System.Windows.Forms.Label();
             this.chkHumanoid = new System.Windows.Forms.CheckBox();
@@ -481,11 +444,11 @@
             this.chkPierceReflect = new System.Windows.Forms.CheckBox();
             this.lblUndead = new System.Windows.Forms.Label();
             this.lblCritImp = new System.Windows.Forms.Label();
-            this.lblUnknown3 = new System.Windows.Forms.Label();
+            this.lblPierceReflect = new System.Windows.Forms.Label();
             this.lblHumanoid = new System.Windows.Forms.Label();
             this.lblUnknown2 = new System.Windows.Forms.Label();
             this.lblNoName = new System.Windows.Forms.Label();
-            this.lblPierceReflect = new System.Windows.Forms.Label();
+            this.lblIgnoreITD = new System.Windows.Forms.Label();
             this.lblMPDeath = new System.Windows.Forms.Label();
             this.grpMonsterElements = new System.Windows.Forms.GroupBox();
             this.chkWaterWeak = new System.Windows.Forms.CheckBox();
@@ -567,13 +530,44 @@
             this.numMonsterLevel = new System.Windows.Forms.NumericUpDown();
             this.lblMonsterLevel = new System.Windows.Forms.Label();
             this.cmbMonsters = new System.Windows.Forms.ComboBox();
-            this.grpSpecialAttacks = new System.Windows.Forms.GroupBox();
-            this.lblExtraEffect = new System.Windows.Forms.Label();
-            this.cmbSpecialAttack = new System.Windows.Forms.ComboBox();
-            this.chkNoDodge = new System.Windows.Forms.CheckBox();
-            this.chkNoPhys = new System.Windows.Forms.CheckBox();
-            this.lblNoDodge = new System.Windows.Forms.Label();
-            this.lblNoPhys = new System.Windows.Forms.Label();
+            this.tabScripts = new System.Windows.Forms.TabPage();
+            this.tabCommands = new System.Windows.Forms.TabPage();
+            this.tabSpells = new System.Windows.Forms.TabPage();
+            this.btnRenameSpell = new System.Windows.Forms.Button();
+            this.numSpellDelay = new System.Windows.Forms.NumericUpDown();
+            this.lblSpellDelay = new System.Windows.Forms.Label();
+            this.lblSpellStatus4 = new System.Windows.Forms.Label();
+            this.chkLstSpellStatus4 = new System.Windows.Forms.CheckedListBox();
+            this.lblSpellStatus3 = new System.Windows.Forms.Label();
+            this.chkLstSpellStatus3 = new System.Windows.Forms.CheckedListBox();
+            this.lblSpellStatus2 = new System.Windows.Forms.Label();
+            this.chkLstSpellStatus2 = new System.Windows.Forms.CheckedListBox();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.chkLstSpellStatus1 = new System.Windows.Forms.CheckedListBox();
+            this.lblSpellMisc = new System.Windows.Forms.Label();
+            this.chkLstSpellMisc = new System.Windows.Forms.CheckedListBox();
+            this.lblSpellSpecial3 = new System.Windows.Forms.Label();
+            this.chkLstSpellSpecial3 = new System.Windows.Forms.CheckedListBox();
+            this.lblFractionNote = new System.Windows.Forms.Label();
+            this.lblSpellSpecial2 = new System.Windows.Forms.Label();
+            this.chkLstSpellSpecial2 = new System.Windows.Forms.CheckedListBox();
+            this.lblSpellSpecial1 = new System.Windows.Forms.Label();
+            this.chkLstSpellSpecial1 = new System.Windows.Forms.CheckedListBox();
+            this.lblSpellElement = new System.Windows.Forms.Label();
+            this.chkLstSpellElement = new System.Windows.Forms.CheckedListBox();
+            this.numSuccessRate = new System.Windows.Forms.NumericUpDown();
+            this.lblSuccessRate = new System.Windows.Forms.Label();
+            this.numSpellPower = new System.Windows.Forms.NumericUpDown();
+            this.lblSpellPower = new System.Windows.Forms.Label();
+            this.numMPCost = new System.Windows.Forms.NumericUpDown();
+            this.lblMPCost = new System.Windows.Forms.Label();
+            this.lblSpellTargetting = new System.Windows.Forms.Label();
+            this.chkLstSpellTargetting = new System.Windows.Forms.CheckedListBox();
+            this.btnSpellsCancel = new System.Windows.Forms.Button();
+            this.btnSpellsOkay = new System.Windows.Forms.Button();
+            this.numSpellIndex = new System.Windows.Forms.NumericUpDown();
+            this.cmbSpells = new System.Windows.Forms.ComboBox();
+            this.tabItems = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabActors.SuspendLayout();
@@ -595,6 +589,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.numNatMag1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).BeginInit();
             this.tabEspers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic8)).BeginInit();
@@ -606,6 +625,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic1)).BeginInit();
             this.tabEnemies.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillExp)).BeginInit();
+            this.grpControl.SuspendLayout();
+            this.grpSpecialAttacks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterIndex)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.grpSpecialStatus.SuspendLayout();
@@ -626,7 +648,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagDef)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterLevel)).BeginInit();
-            this.grpSpecialAttacks.SuspendLayout();
+            this.tabSpells.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpellDelay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSuccessRate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpellPower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMPCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpellIndex)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -643,7 +670,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1073, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1145, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -693,10 +720,15 @@
             this.tabControl1.Controls.Add(this.tabActors);
             this.tabControl1.Controls.Add(this.tabEspers);
             this.tabControl1.Controls.Add(this.tabEnemies);
+            this.tabControl1.Controls.Add(this.tabScripts);
+            this.tabControl1.Controls.Add(this.tabCommands);
+            this.tabControl1.Controls.Add(this.tabSpells);
+            this.tabControl1.Controls.Add(this.tabItems);
+            this.tabControl1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1049, 578);
+            this.tabControl1.Size = new System.Drawing.Size(1121, 600);
             this.tabControl1.TabIndex = 2;
             // 
             // tabActors
@@ -892,10 +924,10 @@
             this.tabActors.Controls.Add(this.lblStrength);
             this.tabActors.Controls.Add(this.btnActorsCancel);
             this.tabActors.Controls.Add(this.btnActorsOkay);
-            this.tabActors.Location = new System.Drawing.Point(4, 22);
+            this.tabActors.Location = new System.Drawing.Point(4, 23);
             this.tabActors.Name = "tabActors";
             this.tabActors.Padding = new System.Windows.Forms.Padding(3);
-            this.tabActors.Size = new System.Drawing.Size(1041, 552);
+            this.tabActors.Size = new System.Drawing.Size(1113, 573);
             this.tabActors.TabIndex = 0;
             this.tabActors.Text = "Actors";
             this.tabActors.UseVisualStyleBackColor = true;
@@ -903,7 +935,7 @@
             // numNatMag16
             // 
             this.numNatMag16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag16.Location = new System.Drawing.Point(833, 306);
+            this.numNatMag16.Location = new System.Drawing.Point(668, 540);
             this.numNatMag16.Maximum = new decimal(new int[] {
             255,
             0,
@@ -927,274 +959,18 @@
             // 
             this.cmbNatMag16.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag16.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag16.FormattingEnabled = true;
-            this.cmbNatMag16.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag16.Location = new System.Drawing.Point(891, 306);
+            this.cmbNatMag16.Location = new System.Drawing.Point(723, 540);
             this.cmbNatMag16.Name = "cmbNatMag16";
-            this.cmbNatMag16.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag16.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag16.TabIndex = 93;
             // 
             // numNatMag15
             // 
             this.numNatMag15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag15.Location = new System.Drawing.Point(833, 273);
+            this.numNatMag15.Location = new System.Drawing.Point(668, 507);
             this.numNatMag15.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1218,274 +994,18 @@
             // 
             this.cmbNatMag15.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag15.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag15.FormattingEnabled = true;
-            this.cmbNatMag15.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag15.Location = new System.Drawing.Point(891, 273);
+            this.cmbNatMag15.Location = new System.Drawing.Point(723, 507);
             this.cmbNatMag15.Name = "cmbNatMag15";
-            this.cmbNatMag15.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag15.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag15.TabIndex = 91;
             // 
             // numNatMag14
             // 
             this.numNatMag14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag14.Location = new System.Drawing.Point(833, 240);
+            this.numNatMag14.Location = new System.Drawing.Point(668, 474);
             this.numNatMag14.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1509,274 +1029,18 @@
             // 
             this.cmbNatMag14.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag14.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag14.FormattingEnabled = true;
-            this.cmbNatMag14.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag14.Location = new System.Drawing.Point(891, 240);
+            this.cmbNatMag14.Location = new System.Drawing.Point(723, 474);
             this.cmbNatMag14.Name = "cmbNatMag14";
-            this.cmbNatMag14.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag14.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag14.TabIndex = 89;
             // 
             // numNatMag13
             // 
             this.numNatMag13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag13.Location = new System.Drawing.Point(833, 207);
+            this.numNatMag13.Location = new System.Drawing.Point(668, 441);
             this.numNatMag13.Maximum = new decimal(new int[] {
             255,
             0,
@@ -1800,274 +1064,18 @@
             // 
             this.cmbNatMag13.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag13.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag13.FormattingEnabled = true;
-            this.cmbNatMag13.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag13.Location = new System.Drawing.Point(891, 207);
+            this.cmbNatMag13.Location = new System.Drawing.Point(723, 441);
             this.cmbNatMag13.Name = "cmbNatMag13";
-            this.cmbNatMag13.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag13.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag13.TabIndex = 87;
             // 
             // numNatMag12
             // 
             this.numNatMag12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag12.Location = new System.Drawing.Point(833, 174);
+            this.numNatMag12.Location = new System.Drawing.Point(668, 408);
             this.numNatMag12.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2091,274 +1099,18 @@
             // 
             this.cmbNatMag12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag12.FormattingEnabled = true;
-            this.cmbNatMag12.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag12.Location = new System.Drawing.Point(891, 174);
+            this.cmbNatMag12.Location = new System.Drawing.Point(723, 408);
             this.cmbNatMag12.Name = "cmbNatMag12";
-            this.cmbNatMag12.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag12.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag12.TabIndex = 85;
             // 
             // numNatMag11
             // 
             this.numNatMag11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag11.Location = new System.Drawing.Point(833, 141);
+            this.numNatMag11.Location = new System.Drawing.Point(668, 375);
             this.numNatMag11.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2382,274 +1134,18 @@
             // 
             this.cmbNatMag11.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag11.FormattingEnabled = true;
-            this.cmbNatMag11.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag11.Location = new System.Drawing.Point(891, 141);
+            this.cmbNatMag11.Location = new System.Drawing.Point(723, 375);
             this.cmbNatMag11.Name = "cmbNatMag11";
-            this.cmbNatMag11.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag11.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag11.TabIndex = 83;
             // 
             // numNatMag10
             // 
             this.numNatMag10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag10.Location = new System.Drawing.Point(833, 108);
+            this.numNatMag10.Location = new System.Drawing.Point(668, 342);
             this.numNatMag10.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2673,274 +1169,18 @@
             // 
             this.cmbNatMag10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag10.FormattingEnabled = true;
-            this.cmbNatMag10.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag10.Location = new System.Drawing.Point(891, 108);
+            this.cmbNatMag10.Location = new System.Drawing.Point(723, 342);
             this.cmbNatMag10.Name = "cmbNatMag10";
-            this.cmbNatMag10.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag10.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag10.TabIndex = 81;
             // 
             // numNatMag9
             // 
             this.numNatMag9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag9.Location = new System.Drawing.Point(833, 75);
+            this.numNatMag9.Location = new System.Drawing.Point(668, 309);
             this.numNatMag9.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2964,274 +1204,18 @@
             // 
             this.cmbNatMag9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag9.FormattingEnabled = true;
-            this.cmbNatMag9.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag9.Location = new System.Drawing.Point(891, 75);
+            this.cmbNatMag9.Location = new System.Drawing.Point(723, 309);
             this.cmbNatMag9.Name = "cmbNatMag9";
-            this.cmbNatMag9.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag9.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag9.TabIndex = 79;
             // 
             // numNatMag8
             // 
             this.numNatMag8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag8.Location = new System.Drawing.Point(625, 306);
+            this.numNatMag8.Location = new System.Drawing.Point(668, 276);
             this.numNatMag8.Maximum = new decimal(new int[] {
             255,
             0,
@@ -3255,274 +1239,18 @@
             // 
             this.cmbNatMag8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag8.FormattingEnabled = true;
-            this.cmbNatMag8.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag8.Location = new System.Drawing.Point(680, 306);
+            this.cmbNatMag8.Location = new System.Drawing.Point(723, 276);
             this.cmbNatMag8.Name = "cmbNatMag8";
-            this.cmbNatMag8.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag8.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag8.TabIndex = 77;
             // 
             // numNatMag7
             // 
             this.numNatMag7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag7.Location = new System.Drawing.Point(625, 273);
+            this.numNatMag7.Location = new System.Drawing.Point(668, 243);
             this.numNatMag7.Maximum = new decimal(new int[] {
             255,
             0,
@@ -3546,274 +1274,18 @@
             // 
             this.cmbNatMag7.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag7.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag7.FormattingEnabled = true;
-            this.cmbNatMag7.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag7.Location = new System.Drawing.Point(680, 273);
+            this.cmbNatMag7.Location = new System.Drawing.Point(723, 243);
             this.cmbNatMag7.Name = "cmbNatMag7";
-            this.cmbNatMag7.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag7.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag7.TabIndex = 75;
             // 
             // numNatMag6
             // 
             this.numNatMag6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag6.Location = new System.Drawing.Point(625, 240);
+            this.numNatMag6.Location = new System.Drawing.Point(668, 210);
             this.numNatMag6.Maximum = new decimal(new int[] {
             255,
             0,
@@ -3837,274 +1309,18 @@
             // 
             this.cmbNatMag6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag6.FormattingEnabled = true;
-            this.cmbNatMag6.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag6.Location = new System.Drawing.Point(680, 240);
+            this.cmbNatMag6.Location = new System.Drawing.Point(723, 210);
             this.cmbNatMag6.Name = "cmbNatMag6";
-            this.cmbNatMag6.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag6.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag6.TabIndex = 73;
             // 
             // numNatMag5
             // 
             this.numNatMag5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag5.Location = new System.Drawing.Point(625, 207);
+            this.numNatMag5.Location = new System.Drawing.Point(668, 177);
             this.numNatMag5.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4128,274 +1344,18 @@
             // 
             this.cmbNatMag5.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag5.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag5.FormattingEnabled = true;
-            this.cmbNatMag5.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag5.Location = new System.Drawing.Point(680, 207);
+            this.cmbNatMag5.Location = new System.Drawing.Point(723, 177);
             this.cmbNatMag5.Name = "cmbNatMag5";
-            this.cmbNatMag5.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag5.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag5.TabIndex = 71;
             // 
             // numNatMag4
             // 
             this.numNatMag4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag4.Location = new System.Drawing.Point(625, 174);
+            this.numNatMag4.Location = new System.Drawing.Point(668, 144);
             this.numNatMag4.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4419,274 +1379,18 @@
             // 
             this.cmbNatMag4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag4.FormattingEnabled = true;
-            this.cmbNatMag4.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag4.Location = new System.Drawing.Point(680, 174);
+            this.cmbNatMag4.Location = new System.Drawing.Point(723, 144);
             this.cmbNatMag4.Name = "cmbNatMag4";
-            this.cmbNatMag4.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag4.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag4.TabIndex = 69;
             // 
             // numNatMag3
             // 
             this.numNatMag3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag3.Location = new System.Drawing.Point(625, 141);
+            this.numNatMag3.Location = new System.Drawing.Point(668, 111);
             this.numNatMag3.Maximum = new decimal(new int[] {
             255,
             0,
@@ -4710,274 +1414,18 @@
             // 
             this.cmbNatMag3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag3.FormattingEnabled = true;
-            this.cmbNatMag3.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag3.Location = new System.Drawing.Point(680, 141);
+            this.cmbNatMag3.Location = new System.Drawing.Point(723, 111);
             this.cmbNatMag3.Name = "cmbNatMag3";
-            this.cmbNatMag3.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag3.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag3.TabIndex = 67;
             // 
             // numNatMag2
             // 
             this.numNatMag2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag2.Location = new System.Drawing.Point(625, 108);
+            this.numNatMag2.Location = new System.Drawing.Point(668, 78);
             this.numNatMag2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -5001,274 +1449,18 @@
             // 
             this.cmbNatMag2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag2.FormattingEnabled = true;
-            this.cmbNatMag2.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag2.Location = new System.Drawing.Point(680, 108);
+            this.cmbNatMag2.Location = new System.Drawing.Point(723, 78);
             this.cmbNatMag2.Name = "cmbNatMag2";
-            this.cmbNatMag2.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag2.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag2.TabIndex = 65;
             // 
             // numNatMag1
             // 
             this.numNatMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numNatMag1.Location = new System.Drawing.Point(625, 75);
+            this.numNatMag1.Location = new System.Drawing.Point(668, 45);
             this.numNatMag1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -5293,268 +1485,12 @@
             // 
             this.cmbNatMag1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbNatMag1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNatMag1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNatMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNatMag1.FormattingEnabled = true;
-            this.cmbNatMag1.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
-            this.cmbNatMag1.Location = new System.Drawing.Point(680, 75);
+            this.cmbNatMag1.Location = new System.Drawing.Point(723, 45);
             this.cmbNatMag1.Name = "cmbNatMag1";
-            this.cmbNatMag1.Size = new System.Drawing.Size(121, 27);
+            this.cmbNatMag1.Size = new System.Drawing.Size(222, 27);
             this.cmbNatMag1.TabIndex = 63;
             this.cmbNatMag1.SelectedIndexChanged += new System.EventHandler(this.cmbNatMag1_SelectedIndexChanged);
             // 
@@ -5562,7 +1498,7 @@
             // 
             this.lblNaturalMagic.AutoSize = true;
             this.lblNaturalMagic.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaturalMagic.Location = new System.Drawing.Point(676, 4);
+            this.lblNaturalMagic.Location = new System.Drawing.Point(749, 9);
             this.lblNaturalMagic.Name = "lblNaturalMagic";
             this.lblNaturalMagic.Size = new System.Drawing.Size(105, 19);
             this.lblNaturalMagic.TabIndex = 218;
@@ -6613,6 +2549,7 @@
             // 
             this.cmbActors.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbActors.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbActors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbActors.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cmbActors.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbActors.FormattingEnabled = true;
@@ -6634,7 +2571,7 @@
             "Banon"});
             this.cmbActors.Location = new System.Drawing.Point(6, 6);
             this.cmbActors.Name = "cmbActors";
-            this.cmbActors.Size = new System.Drawing.Size(130, 27);
+            this.cmbActors.Size = new System.Drawing.Size(138, 27);
             this.cmbActors.TabIndex = 0;
             this.cmbActors.SelectedIndexChanged += new System.EventHandler(this.CmbActors_SelectedIndexChanged);
             // 
@@ -6660,7 +2597,7 @@
             // 
             this.txtAgiLv7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv7.Location = new System.Drawing.Point(409, 104);
-            this.txtAgiLv7.MaxLength = 3;
+            this.txtAgiLv7.MaxLength = 19;
             this.txtAgiLv7.Name = "txtAgiLv7";
             this.txtAgiLv7.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv7.TabIndex = 19;
@@ -6669,7 +2606,7 @@
             // 
             this.txtStrLv7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv7.Location = new System.Drawing.Point(409, 75);
-            this.txtStrLv7.MaxLength = 3;
+            this.txtStrLv7.MaxLength = 9;
             this.txtStrLv7.Name = "txtStrLv7";
             this.txtStrLv7.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv7.TabIndex = 9;
@@ -6706,7 +2643,7 @@
             // 
             this.txtAgiLv6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv6.Location = new System.Drawing.Point(363, 104);
-            this.txtAgiLv6.MaxLength = 3;
+            this.txtAgiLv6.MaxLength = 18;
             this.txtAgiLv6.Name = "txtAgiLv6";
             this.txtAgiLv6.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv6.TabIndex = 18;
@@ -6715,7 +2652,7 @@
             // 
             this.txtStrLv6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv6.Location = new System.Drawing.Point(363, 75);
-            this.txtStrLv6.MaxLength = 3;
+            this.txtStrLv6.MaxLength = 8;
             this.txtStrLv6.Name = "txtStrLv6";
             this.txtStrLv6.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv6.TabIndex = 8;
@@ -6752,7 +2689,7 @@
             // 
             this.txtAgiLv9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv9.Location = new System.Drawing.Point(500, 104);
-            this.txtAgiLv9.MaxLength = 3;
+            this.txtAgiLv9.MaxLength = 21;
             this.txtAgiLv9.Name = "txtAgiLv9";
             this.txtAgiLv9.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv9.TabIndex = 21;
@@ -6761,7 +2698,7 @@
             // 
             this.txtStrLv9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv9.Location = new System.Drawing.Point(500, 75);
-            this.txtStrLv9.MaxLength = 3;
+            this.txtStrLv9.MaxLength = 11;
             this.txtStrLv9.Name = "txtStrLv9";
             this.txtStrLv9.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv9.TabIndex = 11;
@@ -6798,7 +2735,7 @@
             // 
             this.txtAgiLv8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv8.Location = new System.Drawing.Point(455, 104);
-            this.txtAgiLv8.MaxLength = 3;
+            this.txtAgiLv8.MaxLength = 20;
             this.txtAgiLv8.Name = "txtAgiLv8";
             this.txtAgiLv8.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv8.TabIndex = 20;
@@ -6807,7 +2744,7 @@
             // 
             this.txtStrLv8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv8.Location = new System.Drawing.Point(455, 75);
-            this.txtStrLv8.MaxLength = 3;
+            this.txtStrLv8.MaxLength = 10;
             this.txtStrLv8.Name = "txtStrLv8";
             this.txtStrLv8.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv8.TabIndex = 10;
@@ -6844,7 +2781,7 @@
             // 
             this.txtAgiLv5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv5.Location = new System.Drawing.Point(316, 104);
-            this.txtAgiLv5.MaxLength = 3;
+            this.txtAgiLv5.MaxLength = 17;
             this.txtAgiLv5.Name = "txtAgiLv5";
             this.txtAgiLv5.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv5.TabIndex = 17;
@@ -6853,7 +2790,7 @@
             // 
             this.txtStrLv5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv5.Location = new System.Drawing.Point(316, 75);
-            this.txtStrLv5.MaxLength = 3;
+            this.txtStrLv5.MaxLength = 7;
             this.txtStrLv5.Name = "txtStrLv5";
             this.txtStrLv5.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv5.TabIndex = 7;
@@ -6890,7 +2827,7 @@
             // 
             this.txtAgiLv4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv4.Location = new System.Drawing.Point(270, 104);
-            this.txtAgiLv4.MaxLength = 3;
+            this.txtAgiLv4.MaxLength = 16;
             this.txtAgiLv4.Name = "txtAgiLv4";
             this.txtAgiLv4.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv4.TabIndex = 16;
@@ -6899,7 +2836,7 @@
             // 
             this.txtStrLv4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv4.Location = new System.Drawing.Point(270, 75);
-            this.txtStrLv4.MaxLength = 3;
+            this.txtStrLv4.MaxLength = 6;
             this.txtStrLv4.Name = "txtStrLv4";
             this.txtStrLv4.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv4.TabIndex = 6;
@@ -6936,7 +2873,7 @@
             // 
             this.txtAgiLv3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv3.Location = new System.Drawing.Point(224, 104);
-            this.txtAgiLv3.MaxLength = 3;
+            this.txtAgiLv3.MaxLength = 15;
             this.txtAgiLv3.Name = "txtAgiLv3";
             this.txtAgiLv3.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv3.TabIndex = 15;
@@ -6945,7 +2882,7 @@
             // 
             this.txtStrLv3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv3.Location = new System.Drawing.Point(224, 75);
-            this.txtStrLv3.MaxLength = 3;
+            this.txtStrLv3.MaxLength = 5;
             this.txtStrLv3.Name = "txtStrLv3";
             this.txtStrLv3.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv3.TabIndex = 5;
@@ -6982,7 +2919,7 @@
             // 
             this.txtAgiLv2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv2.Location = new System.Drawing.Point(178, 104);
-            this.txtAgiLv2.MaxLength = 3;
+            this.txtAgiLv2.MaxLength = 14;
             this.txtAgiLv2.Name = "txtAgiLv2";
             this.txtAgiLv2.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv2.TabIndex = 14;
@@ -6991,7 +2928,7 @@
             // 
             this.txtStrLv2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStrLv2.Location = new System.Drawing.Point(178, 75);
-            this.txtStrLv2.MaxLength = 3;
+            this.txtStrLv2.MaxLength = 4;
             this.txtStrLv2.Name = "txtStrLv2";
             this.txtStrLv2.Size = new System.Drawing.Size(40, 27);
             this.txtStrLv2.TabIndex = 4;
@@ -7019,7 +2956,7 @@
             // 
             this.txtStaLv0.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStaLv0.Location = new System.Drawing.Point(86, 133);
-            this.txtStaLv0.MaxLength = 3;
+            this.txtStaLv0.MaxLength = 22;
             this.txtStaLv0.Name = "txtStaLv0";
             this.txtStaLv0.Size = new System.Drawing.Size(40, 27);
             this.txtStaLv0.TabIndex = 22;
@@ -7028,7 +2965,7 @@
             // 
             this.txtAgiLv0.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv0.Location = new System.Drawing.Point(86, 104);
-            this.txtAgiLv0.MaxLength = 3;
+            this.txtAgiLv0.MaxLength = 12;
             this.txtAgiLv0.Name = "txtAgiLv0";
             this.txtAgiLv0.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv0.TabIndex = 12;
@@ -7093,7 +3030,7 @@
             // 
             this.txtAgiLv1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgiLv1.Location = new System.Drawing.Point(132, 104);
-            this.txtAgiLv1.MaxLength = 3;
+            this.txtAgiLv1.MaxLength = 13;
             this.txtAgiLv1.Name = "txtAgiLv1";
             this.txtAgiLv1.Size = new System.Drawing.Size(40, 27);
             this.txtAgiLv1.TabIndex = 13;
@@ -7160,7 +3097,7 @@
             // btnActorsCancel
             // 
             this.btnActorsCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnActorsCancel.Location = new System.Drawing.Point(960, 523);
+            this.btnActorsCancel.Location = new System.Drawing.Point(1032, 544);
             this.btnActorsCancel.Name = "btnActorsCancel";
             this.btnActorsCancel.Size = new System.Drawing.Size(75, 23);
             this.btnActorsCancel.TabIndex = 95;
@@ -7170,7 +3107,7 @@
             // 
             // btnActorsOkay
             // 
-            this.btnActorsOkay.Location = new System.Drawing.Point(879, 523);
+            this.btnActorsOkay.Location = new System.Drawing.Point(951, 544);
             this.btnActorsOkay.Name = "btnActorsOkay";
             this.btnActorsOkay.Size = new System.Drawing.Size(75, 23);
             this.btnActorsOkay.TabIndex = 94;
@@ -7180,112 +3117,43 @@
             // 
             // tabEspers
             // 
-            this.tabEspers.Controls.Add(this.label3);
-            this.tabEspers.Controls.Add(this.lblEsperLevel20);
-            this.tabEspers.Controls.Add(this.lblEsperLevel19);
-            this.tabEspers.Controls.Add(this.lblEsperLevel18);
-            this.tabEspers.Controls.Add(this.lblEsperLevel17);
-            this.tabEspers.Controls.Add(this.lblEsperLevel16);
-            this.tabEspers.Controls.Add(this.lblEsperLevel15);
-            this.tabEspers.Controls.Add(this.lblEsperLevel14);
-            this.tabEspers.Controls.Add(this.lblEsperLevel13);
-            this.tabEspers.Controls.Add(this.lblEsperLevel12);
-            this.tabEspers.Controls.Add(this.lblEsperLevel11);
-            this.tabEspers.Controls.Add(this.lblEsperLevel10);
-            this.tabEspers.Controls.Add(this.lblEsperLevel9);
-            this.tabEspers.Controls.Add(this.lblEsperLevel8);
-            this.tabEspers.Controls.Add(this.lblEsperLevel7);
-            this.tabEspers.Controls.Add(this.lblEsperLevel6);
-            this.tabEspers.Controls.Add(this.lblEsperLevel5);
-            this.tabEspers.Controls.Add(this.lblEsperLevel4);
-            this.tabEspers.Controls.Add(this.lblEsperLevel3);
-            this.tabEspers.Controls.Add(this.lblEsperLevel2);
-            this.tabEspers.Controls.Add(this.lblEsperLevel1);
-            this.tabEspers.Controls.Add(this.lblEsperLevel);
-            this.tabEspers.Controls.Add(this.txtEsperMag20);
-            this.tabEspers.Controls.Add(this.txtEsperMag19);
-            this.tabEspers.Controls.Add(this.txtEsperMag18);
-            this.tabEspers.Controls.Add(this.txtEsperMag17);
-            this.tabEspers.Controls.Add(this.txtEsperMag16);
-            this.tabEspers.Controls.Add(this.txtEsperMag15);
-            this.tabEspers.Controls.Add(this.txtEsperMag14);
-            this.tabEspers.Controls.Add(this.txtEsperMag13);
-            this.tabEspers.Controls.Add(this.txtEsperMag12);
-            this.tabEspers.Controls.Add(this.txtEsperMag11);
-            this.tabEspers.Controls.Add(this.txtEsperMag10);
-            this.tabEspers.Controls.Add(this.txtEsperMag9);
-            this.tabEspers.Controls.Add(this.txtEsperMag8);
-            this.tabEspers.Controls.Add(this.txtEsperMag7);
-            this.tabEspers.Controls.Add(this.txtEsperMag6);
-            this.tabEspers.Controls.Add(this.txtEsperMag5);
-            this.tabEspers.Controls.Add(this.txtEsperMag4);
-            this.tabEspers.Controls.Add(this.txtEsperMag3);
-            this.tabEspers.Controls.Add(this.txtEsperMag2);
-            this.tabEspers.Controls.Add(this.txtEsperMag1);
-            this.tabEspers.Controls.Add(this.txtEsperVit20);
-            this.tabEspers.Controls.Add(this.txtEsperVit19);
-            this.tabEspers.Controls.Add(this.txtEsperVit18);
-            this.tabEspers.Controls.Add(this.txtEsperVit17);
-            this.tabEspers.Controls.Add(this.txtEsperVit16);
-            this.tabEspers.Controls.Add(this.txtEsperVit15);
-            this.tabEspers.Controls.Add(this.txtEsperVit14);
-            this.tabEspers.Controls.Add(this.txtEsperVit13);
-            this.tabEspers.Controls.Add(this.txtEsperVit12);
-            this.tabEspers.Controls.Add(this.txtEsperVit11);
-            this.tabEspers.Controls.Add(this.txtEsperVit10);
-            this.tabEspers.Controls.Add(this.txtEsperVit9);
-            this.tabEspers.Controls.Add(this.txtEsperVit8);
-            this.tabEspers.Controls.Add(this.txtEsperVit7);
-            this.tabEspers.Controls.Add(this.txtEsperVit6);
-            this.tabEspers.Controls.Add(this.txtEsperVit5);
-            this.tabEspers.Controls.Add(this.txtEsperVit4);
-            this.tabEspers.Controls.Add(this.txtEsperVit3);
-            this.tabEspers.Controls.Add(this.txtEsperVit2);
-            this.tabEspers.Controls.Add(this.txtEsperVit1);
-            this.tabEspers.Controls.Add(this.txtEsperAgi20);
-            this.tabEspers.Controls.Add(this.txtEsperAgi19);
-            this.tabEspers.Controls.Add(this.txtEsperAgi18);
-            this.tabEspers.Controls.Add(this.txtEsperAgi17);
-            this.tabEspers.Controls.Add(this.txtEsperAgi16);
-            this.tabEspers.Controls.Add(this.txtEsperAgi15);
-            this.tabEspers.Controls.Add(this.txtEsperAgi14);
-            this.tabEspers.Controls.Add(this.txtEsperAgi13);
-            this.tabEspers.Controls.Add(this.txtEsperAgi12);
-            this.tabEspers.Controls.Add(this.txtEsperAgi11);
-            this.tabEspers.Controls.Add(this.txtEsperAgi10);
-            this.tabEspers.Controls.Add(this.txtEsperAgi9);
-            this.tabEspers.Controls.Add(this.txtEsperAgi8);
-            this.tabEspers.Controls.Add(this.txtEsperAgi7);
-            this.tabEspers.Controls.Add(this.txtEsperAgi6);
-            this.tabEspers.Controls.Add(this.txtEsperAgi5);
-            this.tabEspers.Controls.Add(this.txtEsperAgi4);
-            this.tabEspers.Controls.Add(this.txtEsperAgi3);
-            this.tabEspers.Controls.Add(this.txtEsperAgi2);
-            this.tabEspers.Controls.Add(this.txtEsperAgi1);
-            this.tabEspers.Controls.Add(this.txtEsperStr20);
-            this.tabEspers.Controls.Add(this.txtEsperStr19);
-            this.tabEspers.Controls.Add(this.txtEsperStr18);
-            this.tabEspers.Controls.Add(this.txtEsperStr17);
-            this.tabEspers.Controls.Add(this.txtEsperStr16);
-            this.tabEspers.Controls.Add(this.txtEsperStr15);
-            this.tabEspers.Controls.Add(this.txtEsperStr14);
-            this.tabEspers.Controls.Add(this.txtEsperStr13);
-            this.tabEspers.Controls.Add(this.txtEsperStr12);
-            this.tabEspers.Controls.Add(this.txtEsperStr11);
-            this.tabEspers.Controls.Add(this.txtEsperStr10);
-            this.tabEspers.Controls.Add(this.txtEsperStr9);
-            this.tabEspers.Controls.Add(this.txtEsperStr8);
-            this.tabEspers.Controls.Add(this.txtEsperStr7);
-            this.tabEspers.Controls.Add(this.txtEsperStr6);
-            this.tabEspers.Controls.Add(this.txtEsperStr5);
-            this.tabEspers.Controls.Add(this.txtEsperStr4);
-            this.tabEspers.Controls.Add(this.txtEsperStr3);
-            this.tabEspers.Controls.Add(this.txtEsperStr2);
-            this.tabEspers.Controls.Add(this.txtEsperStr1);
-            this.tabEspers.Controls.Add(this.lblEsperMag1);
-            this.tabEspers.Controls.Add(this.lblEsperVit1);
-            this.tabEspers.Controls.Add(this.lblEsperAgi1);
-            this.tabEspers.Controls.Add(this.lblEsperStr1);
+            this.tabEspers.Controls.Add(this.lblSkillPoints5);
+            this.tabEspers.Controls.Add(this.numSkillPoints25);
+            this.tabEspers.Controls.Add(this.numSkillPoints24);
+            this.tabEspers.Controls.Add(this.numSkillPoints23);
+            this.tabEspers.Controls.Add(this.numSkillPoints22);
+            this.tabEspers.Controls.Add(this.numSkillPoints21);
+            this.tabEspers.Controls.Add(this.lblSkillPoints4);
+            this.tabEspers.Controls.Add(this.numSkillPoints20);
+            this.tabEspers.Controls.Add(this.numSkillPoints19);
+            this.tabEspers.Controls.Add(this.numSkillPoints18);
+            this.tabEspers.Controls.Add(this.numSkillPoints17);
+            this.tabEspers.Controls.Add(this.numSkillPoints16);
+            this.tabEspers.Controls.Add(this.lblSkillPoints3);
+            this.tabEspers.Controls.Add(this.numSkillPoints15);
+            this.tabEspers.Controls.Add(this.numSkillPoints14);
+            this.tabEspers.Controls.Add(this.numSkillPoints13);
+            this.tabEspers.Controls.Add(this.numSkillPoints12);
+            this.tabEspers.Controls.Add(this.numSkillPoints11);
+            this.tabEspers.Controls.Add(this.lblSkillPoints2);
+            this.tabEspers.Controls.Add(this.numSkillPoints10);
+            this.tabEspers.Controls.Add(this.numSkillPoints9);
+            this.tabEspers.Controls.Add(this.numSkillPoints8);
+            this.tabEspers.Controls.Add(this.numSkillPoints7);
+            this.tabEspers.Controls.Add(this.numSkillPoints6);
+            this.tabEspers.Controls.Add(this.lblSkillPoints1);
+            this.tabEspers.Controls.Add(this.numSkillPoints5);
+            this.tabEspers.Controls.Add(this.numSkillPoints4);
+            this.tabEspers.Controls.Add(this.numSkillPoints3);
+            this.tabEspers.Controls.Add(this.numSkillPoints2);
+            this.tabEspers.Controls.Add(this.numSkillPoints1);
+            this.tabEspers.Controls.Add(this.lblSkillNeeded);
+            this.tabEspers.Controls.Add(this.chkLstEsperStats);
+            this.tabEspers.Controls.Add(this.lblAvailableStats);
+            this.tabEspers.Controls.Add(this.btnEspersNone);
+            this.tabEspers.Controls.Add(this.btnEspersAll);
+            this.tabEspers.Controls.Add(this.chkLstEsperChars);
+            this.tabEspers.Controls.Add(this.label4);
             this.tabEspers.Controls.Add(this.btnEspersCancel);
             this.tabEspers.Controls.Add(this.btnEspersOkay);
             this.tabEspers.Controls.Add(this.nmbEsperMagic10);
@@ -7309,932 +3177,500 @@
             this.tabEspers.Controls.Add(this.cmbEsperMagic6);
             this.tabEspers.Controls.Add(this.cmbEsperMagic1);
             this.tabEspers.Controls.Add(this.cmbEspers);
-            this.tabEspers.Location = new System.Drawing.Point(4, 22);
+            this.tabEspers.Location = new System.Drawing.Point(4, 23);
             this.tabEspers.Name = "tabEspers";
             this.tabEspers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEspers.Size = new System.Drawing.Size(1041, 552);
+            this.tabEspers.Size = new System.Drawing.Size(1113, 573);
             this.tabEspers.TabIndex = 1;
             this.tabEspers.Text = "Espers";
             this.tabEspers.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(218, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(620, 13);
-            this.label3.TabIndex = 171;
-            this.label3.Text = "*Note: Esper levels are representative of characters in multiples of 5, exclusive" +
-    ". i.e. 0-4 are Level 1, 5-9 are Level 2, et cetera.";
-            // 
-            // lblEsperLevel20
-            // 
-            this.lblEsperLevel20.AutoSize = true;
-            this.lblEsperLevel20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel20.Location = new System.Drawing.Point(968, 59);
-            this.lblEsperLevel20.Name = "lblEsperLevel20";
-            this.lblEsperLevel20.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel20.TabIndex = 170;
-            this.lblEsperLevel20.Text = "20";
-            // 
-            // lblEsperLevel19
-            // 
-            this.lblEsperLevel19.AutoSize = true;
-            this.lblEsperLevel19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel19.Location = new System.Drawing.Point(933, 59);
-            this.lblEsperLevel19.Name = "lblEsperLevel19";
-            this.lblEsperLevel19.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel19.TabIndex = 169;
-            this.lblEsperLevel19.Text = "19";
-            // 
-            // lblEsperLevel18
-            // 
-            this.lblEsperLevel18.AutoSize = true;
-            this.lblEsperLevel18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel18.Location = new System.Drawing.Point(896, 59);
-            this.lblEsperLevel18.Name = "lblEsperLevel18";
-            this.lblEsperLevel18.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel18.TabIndex = 168;
-            this.lblEsperLevel18.Text = "18";
-            // 
-            // lblEsperLevel17
-            // 
-            this.lblEsperLevel17.AutoSize = true;
-            this.lblEsperLevel17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel17.Location = new System.Drawing.Point(860, 59);
-            this.lblEsperLevel17.Name = "lblEsperLevel17";
-            this.lblEsperLevel17.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel17.TabIndex = 167;
-            this.lblEsperLevel17.Text = "17";
-            // 
-            // lblEsperLevel16
-            // 
-            this.lblEsperLevel16.AutoSize = true;
-            this.lblEsperLevel16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel16.Location = new System.Drawing.Point(824, 59);
-            this.lblEsperLevel16.Name = "lblEsperLevel16";
-            this.lblEsperLevel16.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel16.TabIndex = 166;
-            this.lblEsperLevel16.Text = "16";
-            // 
-            // lblEsperLevel15
-            // 
-            this.lblEsperLevel15.AutoSize = true;
-            this.lblEsperLevel15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel15.Location = new System.Drawing.Point(788, 59);
-            this.lblEsperLevel15.Name = "lblEsperLevel15";
-            this.lblEsperLevel15.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel15.TabIndex = 165;
-            this.lblEsperLevel15.Text = "15";
-            // 
-            // lblEsperLevel14
-            // 
-            this.lblEsperLevel14.AutoSize = true;
-            this.lblEsperLevel14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel14.Location = new System.Drawing.Point(752, 59);
-            this.lblEsperLevel14.Name = "lblEsperLevel14";
-            this.lblEsperLevel14.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel14.TabIndex = 164;
-            this.lblEsperLevel14.Text = "14";
-            // 
-            // lblEsperLevel13
-            // 
-            this.lblEsperLevel13.AutoSize = true;
-            this.lblEsperLevel13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel13.Location = new System.Drawing.Point(716, 59);
-            this.lblEsperLevel13.Name = "lblEsperLevel13";
-            this.lblEsperLevel13.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel13.TabIndex = 163;
-            this.lblEsperLevel13.Text = "13";
-            // 
-            // lblEsperLevel12
-            // 
-            this.lblEsperLevel12.AutoSize = true;
-            this.lblEsperLevel12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel12.Location = new System.Drawing.Point(680, 59);
-            this.lblEsperLevel12.Name = "lblEsperLevel12";
-            this.lblEsperLevel12.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel12.TabIndex = 162;
-            this.lblEsperLevel12.Text = "12";
-            // 
-            // lblEsperLevel11
-            // 
-            this.lblEsperLevel11.AutoSize = true;
-            this.lblEsperLevel11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel11.Location = new System.Drawing.Point(644, 59);
-            this.lblEsperLevel11.Name = "lblEsperLevel11";
-            this.lblEsperLevel11.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel11.TabIndex = 161;
-            this.lblEsperLevel11.Text = "11";
-            // 
-            // lblEsperLevel10
-            // 
-            this.lblEsperLevel10.AutoSize = true;
-            this.lblEsperLevel10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel10.Location = new System.Drawing.Point(608, 59);
-            this.lblEsperLevel10.Name = "lblEsperLevel10";
-            this.lblEsperLevel10.Size = new System.Drawing.Size(27, 19);
-            this.lblEsperLevel10.TabIndex = 160;
-            this.lblEsperLevel10.Text = "10";
-            // 
-            // lblEsperLevel9
-            // 
-            this.lblEsperLevel9.AutoSize = true;
-            this.lblEsperLevel9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel9.Location = new System.Drawing.Point(572, 59);
-            this.lblEsperLevel9.Name = "lblEsperLevel9";
-            this.lblEsperLevel9.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel9.TabIndex = 159;
-            this.lblEsperLevel9.Text = "9";
-            // 
-            // lblEsperLevel8
-            // 
-            this.lblEsperLevel8.AutoSize = true;
-            this.lblEsperLevel8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel8.Location = new System.Drawing.Point(536, 59);
-            this.lblEsperLevel8.Name = "lblEsperLevel8";
-            this.lblEsperLevel8.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel8.TabIndex = 158;
-            this.lblEsperLevel8.Text = "8";
-            // 
-            // lblEsperLevel7
-            // 
-            this.lblEsperLevel7.AutoSize = true;
-            this.lblEsperLevel7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel7.Location = new System.Drawing.Point(500, 59);
-            this.lblEsperLevel7.Name = "lblEsperLevel7";
-            this.lblEsperLevel7.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel7.TabIndex = 157;
-            this.lblEsperLevel7.Text = "7";
-            // 
-            // lblEsperLevel6
-            // 
-            this.lblEsperLevel6.AutoSize = true;
-            this.lblEsperLevel6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel6.Location = new System.Drawing.Point(464, 59);
-            this.lblEsperLevel6.Name = "lblEsperLevel6";
-            this.lblEsperLevel6.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel6.TabIndex = 156;
-            this.lblEsperLevel6.Text = "6";
-            // 
-            // lblEsperLevel5
-            // 
-            this.lblEsperLevel5.AutoSize = true;
-            this.lblEsperLevel5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel5.Location = new System.Drawing.Point(428, 59);
-            this.lblEsperLevel5.Name = "lblEsperLevel5";
-            this.lblEsperLevel5.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel5.TabIndex = 155;
-            this.lblEsperLevel5.Text = "5";
-            // 
-            // lblEsperLevel4
-            // 
-            this.lblEsperLevel4.AutoSize = true;
-            this.lblEsperLevel4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel4.Location = new System.Drawing.Point(392, 59);
-            this.lblEsperLevel4.Name = "lblEsperLevel4";
-            this.lblEsperLevel4.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel4.TabIndex = 154;
-            this.lblEsperLevel4.Text = "4";
-            // 
-            // lblEsperLevel3
-            // 
-            this.lblEsperLevel3.AutoSize = true;
-            this.lblEsperLevel3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel3.Location = new System.Drawing.Point(356, 59);
-            this.lblEsperLevel3.Name = "lblEsperLevel3";
-            this.lblEsperLevel3.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel3.TabIndex = 153;
-            this.lblEsperLevel3.Text = "3";
-            // 
-            // lblEsperLevel2
-            // 
-            this.lblEsperLevel2.AutoSize = true;
-            this.lblEsperLevel2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel2.Location = new System.Drawing.Point(320, 59);
-            this.lblEsperLevel2.Name = "lblEsperLevel2";
-            this.lblEsperLevel2.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel2.TabIndex = 152;
-            this.lblEsperLevel2.Text = "2";
-            // 
-            // lblEsperLevel1
-            // 
-            this.lblEsperLevel1.AutoSize = true;
-            this.lblEsperLevel1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel1.Location = new System.Drawing.Point(284, 59);
-            this.lblEsperLevel1.Name = "lblEsperLevel1";
-            this.lblEsperLevel1.Size = new System.Drawing.Size(18, 19);
-            this.lblEsperLevel1.TabIndex = 151;
-            this.lblEsperLevel1.Text = "1";
-            // 
-            // lblEsperLevel
-            // 
-            this.lblEsperLevel.AutoSize = true;
-            this.lblEsperLevel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperLevel.Location = new System.Drawing.Point(217, 9);
-            this.lblEsperLevel.Name = "lblEsperLevel";
-            this.lblEsperLevel.Size = new System.Drawing.Size(149, 19);
-            this.lblEsperLevel.TabIndex = 150;
-            this.lblEsperLevel.Text = "Esper \"Level\" Bonus";
-            // 
-            // txtEsperMag20
-            // 
-            this.txtEsperMag20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag20.Location = new System.Drawing.Point(972, 282);
-            this.txtEsperMag20.Name = "txtEsperMag20";
-            this.txtEsperMag20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag20.TabIndex = 149;
-            // 
-            // txtEsperMag19
-            // 
-            this.txtEsperMag19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag19.Location = new System.Drawing.Point(936, 282);
-            this.txtEsperMag19.Name = "txtEsperMag19";
-            this.txtEsperMag19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag19.TabIndex = 148;
-            // 
-            // txtEsperMag18
-            // 
-            this.txtEsperMag18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag18.Location = new System.Drawing.Point(900, 282);
-            this.txtEsperMag18.Name = "txtEsperMag18";
-            this.txtEsperMag18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag18.TabIndex = 147;
-            // 
-            // txtEsperMag17
-            // 
-            this.txtEsperMag17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag17.Location = new System.Drawing.Point(864, 282);
-            this.txtEsperMag17.Name = "txtEsperMag17";
-            this.txtEsperMag17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag17.TabIndex = 146;
-            // 
-            // txtEsperMag16
-            // 
-            this.txtEsperMag16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag16.Location = new System.Drawing.Point(828, 282);
-            this.txtEsperMag16.Name = "txtEsperMag16";
-            this.txtEsperMag16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag16.TabIndex = 145;
-            // 
-            // txtEsperMag15
-            // 
-            this.txtEsperMag15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag15.Location = new System.Drawing.Point(792, 282);
-            this.txtEsperMag15.Name = "txtEsperMag15";
-            this.txtEsperMag15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag15.TabIndex = 144;
-            // 
-            // txtEsperMag14
-            // 
-            this.txtEsperMag14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag14.Location = new System.Drawing.Point(756, 282);
-            this.txtEsperMag14.Name = "txtEsperMag14";
-            this.txtEsperMag14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag14.TabIndex = 143;
-            // 
-            // txtEsperMag13
-            // 
-            this.txtEsperMag13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag13.Location = new System.Drawing.Point(720, 282);
-            this.txtEsperMag13.Name = "txtEsperMag13";
-            this.txtEsperMag13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag13.TabIndex = 142;
-            // 
-            // txtEsperMag12
-            // 
-            this.txtEsperMag12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag12.Location = new System.Drawing.Point(684, 282);
-            this.txtEsperMag12.Name = "txtEsperMag12";
-            this.txtEsperMag12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag12.TabIndex = 141;
-            // 
-            // txtEsperMag11
-            // 
-            this.txtEsperMag11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag11.Location = new System.Drawing.Point(648, 282);
-            this.txtEsperMag11.Name = "txtEsperMag11";
-            this.txtEsperMag11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag11.TabIndex = 140;
-            // 
-            // txtEsperMag10
-            // 
-            this.txtEsperMag10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag10.Location = new System.Drawing.Point(612, 281);
-            this.txtEsperMag10.Name = "txtEsperMag10";
-            this.txtEsperMag10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag10.TabIndex = 139;
-            // 
-            // txtEsperMag9
-            // 
-            this.txtEsperMag9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag9.Location = new System.Drawing.Point(576, 281);
-            this.txtEsperMag9.Name = "txtEsperMag9";
-            this.txtEsperMag9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag9.TabIndex = 138;
-            // 
-            // txtEsperMag8
-            // 
-            this.txtEsperMag8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag8.Location = new System.Drawing.Point(540, 281);
-            this.txtEsperMag8.Name = "txtEsperMag8";
-            this.txtEsperMag8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag8.TabIndex = 137;
-            // 
-            // txtEsperMag7
-            // 
-            this.txtEsperMag7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag7.Location = new System.Drawing.Point(504, 281);
-            this.txtEsperMag7.Name = "txtEsperMag7";
-            this.txtEsperMag7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag7.TabIndex = 136;
-            // 
-            // txtEsperMag6
-            // 
-            this.txtEsperMag6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag6.Location = new System.Drawing.Point(468, 281);
-            this.txtEsperMag6.Name = "txtEsperMag6";
-            this.txtEsperMag6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag6.TabIndex = 135;
-            // 
-            // txtEsperMag5
-            // 
-            this.txtEsperMag5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag5.Location = new System.Drawing.Point(432, 281);
-            this.txtEsperMag5.Name = "txtEsperMag5";
-            this.txtEsperMag5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag5.TabIndex = 134;
-            // 
-            // txtEsperMag4
-            // 
-            this.txtEsperMag4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag4.Location = new System.Drawing.Point(396, 281);
-            this.txtEsperMag4.Name = "txtEsperMag4";
-            this.txtEsperMag4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag4.TabIndex = 133;
-            // 
-            // txtEsperMag3
-            // 
-            this.txtEsperMag3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag3.Location = new System.Drawing.Point(360, 281);
-            this.txtEsperMag3.Name = "txtEsperMag3";
-            this.txtEsperMag3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag3.TabIndex = 132;
-            // 
-            // txtEsperMag2
-            // 
-            this.txtEsperMag2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag2.Location = new System.Drawing.Point(324, 281);
-            this.txtEsperMag2.Name = "txtEsperMag2";
-            this.txtEsperMag2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag2.TabIndex = 131;
-            // 
-            // txtEsperMag1
-            // 
-            this.txtEsperMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperMag1.Location = new System.Drawing.Point(288, 281);
-            this.txtEsperMag1.Name = "txtEsperMag1";
-            this.txtEsperMag1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperMag1.TabIndex = 130;
-            // 
-            // txtEsperVit20
-            // 
-            this.txtEsperVit20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit20.Location = new System.Drawing.Point(972, 215);
-            this.txtEsperVit20.Name = "txtEsperVit20";
-            this.txtEsperVit20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit20.TabIndex = 129;
-            // 
-            // txtEsperVit19
-            // 
-            this.txtEsperVit19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit19.Location = new System.Drawing.Point(936, 215);
-            this.txtEsperVit19.Name = "txtEsperVit19";
-            this.txtEsperVit19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit19.TabIndex = 128;
-            // 
-            // txtEsperVit18
-            // 
-            this.txtEsperVit18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit18.Location = new System.Drawing.Point(900, 215);
-            this.txtEsperVit18.Name = "txtEsperVit18";
-            this.txtEsperVit18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit18.TabIndex = 127;
-            // 
-            // txtEsperVit17
-            // 
-            this.txtEsperVit17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit17.Location = new System.Drawing.Point(864, 215);
-            this.txtEsperVit17.Name = "txtEsperVit17";
-            this.txtEsperVit17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit17.TabIndex = 126;
-            // 
-            // txtEsperVit16
-            // 
-            this.txtEsperVit16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit16.Location = new System.Drawing.Point(828, 215);
-            this.txtEsperVit16.Name = "txtEsperVit16";
-            this.txtEsperVit16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit16.TabIndex = 125;
-            // 
-            // txtEsperVit15
-            // 
-            this.txtEsperVit15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit15.Location = new System.Drawing.Point(792, 215);
-            this.txtEsperVit15.Name = "txtEsperVit15";
-            this.txtEsperVit15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit15.TabIndex = 124;
-            // 
-            // txtEsperVit14
-            // 
-            this.txtEsperVit14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit14.Location = new System.Drawing.Point(756, 215);
-            this.txtEsperVit14.Name = "txtEsperVit14";
-            this.txtEsperVit14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit14.TabIndex = 123;
-            // 
-            // txtEsperVit13
-            // 
-            this.txtEsperVit13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit13.Location = new System.Drawing.Point(720, 215);
-            this.txtEsperVit13.Name = "txtEsperVit13";
-            this.txtEsperVit13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit13.TabIndex = 122;
-            // 
-            // txtEsperVit12
-            // 
-            this.txtEsperVit12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit12.Location = new System.Drawing.Point(684, 215);
-            this.txtEsperVit12.Name = "txtEsperVit12";
-            this.txtEsperVit12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit12.TabIndex = 121;
-            // 
-            // txtEsperVit11
-            // 
-            this.txtEsperVit11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit11.Location = new System.Drawing.Point(648, 215);
-            this.txtEsperVit11.Name = "txtEsperVit11";
-            this.txtEsperVit11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit11.TabIndex = 120;
-            // 
-            // txtEsperVit10
-            // 
-            this.txtEsperVit10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit10.Location = new System.Drawing.Point(612, 215);
-            this.txtEsperVit10.Name = "txtEsperVit10";
-            this.txtEsperVit10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit10.TabIndex = 119;
-            // 
-            // txtEsperVit9
-            // 
-            this.txtEsperVit9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit9.Location = new System.Drawing.Point(576, 215);
-            this.txtEsperVit9.Name = "txtEsperVit9";
-            this.txtEsperVit9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit9.TabIndex = 118;
-            // 
-            // txtEsperVit8
-            // 
-            this.txtEsperVit8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit8.Location = new System.Drawing.Point(540, 215);
-            this.txtEsperVit8.Name = "txtEsperVit8";
-            this.txtEsperVit8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit8.TabIndex = 117;
-            // 
-            // txtEsperVit7
-            // 
-            this.txtEsperVit7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit7.Location = new System.Drawing.Point(504, 215);
-            this.txtEsperVit7.Name = "txtEsperVit7";
-            this.txtEsperVit7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit7.TabIndex = 116;
-            // 
-            // txtEsperVit6
-            // 
-            this.txtEsperVit6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit6.Location = new System.Drawing.Point(468, 215);
-            this.txtEsperVit6.Name = "txtEsperVit6";
-            this.txtEsperVit6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit6.TabIndex = 115;
-            // 
-            // txtEsperVit5
-            // 
-            this.txtEsperVit5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit5.Location = new System.Drawing.Point(432, 215);
-            this.txtEsperVit5.Name = "txtEsperVit5";
-            this.txtEsperVit5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit5.TabIndex = 114;
-            // 
-            // txtEsperVit4
-            // 
-            this.txtEsperVit4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit4.Location = new System.Drawing.Point(396, 215);
-            this.txtEsperVit4.Name = "txtEsperVit4";
-            this.txtEsperVit4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit4.TabIndex = 113;
-            // 
-            // txtEsperVit3
-            // 
-            this.txtEsperVit3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit3.Location = new System.Drawing.Point(360, 215);
-            this.txtEsperVit3.Name = "txtEsperVit3";
-            this.txtEsperVit3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit3.TabIndex = 112;
-            // 
-            // txtEsperVit2
-            // 
-            this.txtEsperVit2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit2.Location = new System.Drawing.Point(324, 215);
-            this.txtEsperVit2.Name = "txtEsperVit2";
-            this.txtEsperVit2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit2.TabIndex = 111;
-            // 
-            // txtEsperVit1
-            // 
-            this.txtEsperVit1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperVit1.Location = new System.Drawing.Point(288, 215);
-            this.txtEsperVit1.Name = "txtEsperVit1";
-            this.txtEsperVit1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperVit1.TabIndex = 110;
-            // 
-            // txtEsperAgi20
-            // 
-            this.txtEsperAgi20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi20.Location = new System.Drawing.Point(972, 149);
-            this.txtEsperAgi20.Name = "txtEsperAgi20";
-            this.txtEsperAgi20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi20.TabIndex = 109;
-            // 
-            // txtEsperAgi19
-            // 
-            this.txtEsperAgi19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi19.Location = new System.Drawing.Point(936, 149);
-            this.txtEsperAgi19.Name = "txtEsperAgi19";
-            this.txtEsperAgi19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi19.TabIndex = 108;
-            // 
-            // txtEsperAgi18
-            // 
-            this.txtEsperAgi18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi18.Location = new System.Drawing.Point(900, 149);
-            this.txtEsperAgi18.Name = "txtEsperAgi18";
-            this.txtEsperAgi18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi18.TabIndex = 107;
-            // 
-            // txtEsperAgi17
-            // 
-            this.txtEsperAgi17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi17.Location = new System.Drawing.Point(864, 149);
-            this.txtEsperAgi17.Name = "txtEsperAgi17";
-            this.txtEsperAgi17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi17.TabIndex = 106;
-            // 
-            // txtEsperAgi16
-            // 
-            this.txtEsperAgi16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi16.Location = new System.Drawing.Point(828, 149);
-            this.txtEsperAgi16.Name = "txtEsperAgi16";
-            this.txtEsperAgi16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi16.TabIndex = 105;
-            // 
-            // txtEsperAgi15
-            // 
-            this.txtEsperAgi15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi15.Location = new System.Drawing.Point(792, 149);
-            this.txtEsperAgi15.Name = "txtEsperAgi15";
-            this.txtEsperAgi15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi15.TabIndex = 104;
-            // 
-            // txtEsperAgi14
-            // 
-            this.txtEsperAgi14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi14.Location = new System.Drawing.Point(756, 149);
-            this.txtEsperAgi14.Name = "txtEsperAgi14";
-            this.txtEsperAgi14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi14.TabIndex = 103;
-            // 
-            // txtEsperAgi13
-            // 
-            this.txtEsperAgi13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi13.Location = new System.Drawing.Point(720, 149);
-            this.txtEsperAgi13.Name = "txtEsperAgi13";
-            this.txtEsperAgi13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi13.TabIndex = 102;
-            // 
-            // txtEsperAgi12
-            // 
-            this.txtEsperAgi12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi12.Location = new System.Drawing.Point(684, 149);
-            this.txtEsperAgi12.Name = "txtEsperAgi12";
-            this.txtEsperAgi12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi12.TabIndex = 101;
-            // 
-            // txtEsperAgi11
-            // 
-            this.txtEsperAgi11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi11.Location = new System.Drawing.Point(648, 149);
-            this.txtEsperAgi11.Name = "txtEsperAgi11";
-            this.txtEsperAgi11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi11.TabIndex = 100;
-            // 
-            // txtEsperAgi10
-            // 
-            this.txtEsperAgi10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi10.Location = new System.Drawing.Point(612, 149);
-            this.txtEsperAgi10.Name = "txtEsperAgi10";
-            this.txtEsperAgi10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi10.TabIndex = 99;
-            // 
-            // txtEsperAgi9
-            // 
-            this.txtEsperAgi9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi9.Location = new System.Drawing.Point(576, 149);
-            this.txtEsperAgi9.Name = "txtEsperAgi9";
-            this.txtEsperAgi9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi9.TabIndex = 98;
-            // 
-            // txtEsperAgi8
-            // 
-            this.txtEsperAgi8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi8.Location = new System.Drawing.Point(540, 149);
-            this.txtEsperAgi8.Name = "txtEsperAgi8";
-            this.txtEsperAgi8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi8.TabIndex = 97;
-            // 
-            // txtEsperAgi7
-            // 
-            this.txtEsperAgi7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi7.Location = new System.Drawing.Point(504, 149);
-            this.txtEsperAgi7.Name = "txtEsperAgi7";
-            this.txtEsperAgi7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi7.TabIndex = 96;
-            // 
-            // txtEsperAgi6
-            // 
-            this.txtEsperAgi6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi6.Location = new System.Drawing.Point(468, 149);
-            this.txtEsperAgi6.Name = "txtEsperAgi6";
-            this.txtEsperAgi6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi6.TabIndex = 95;
-            // 
-            // txtEsperAgi5
-            // 
-            this.txtEsperAgi5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi5.Location = new System.Drawing.Point(432, 149);
-            this.txtEsperAgi5.Name = "txtEsperAgi5";
-            this.txtEsperAgi5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi5.TabIndex = 94;
-            // 
-            // txtEsperAgi4
-            // 
-            this.txtEsperAgi4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi4.Location = new System.Drawing.Point(396, 149);
-            this.txtEsperAgi4.Name = "txtEsperAgi4";
-            this.txtEsperAgi4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi4.TabIndex = 93;
-            // 
-            // txtEsperAgi3
-            // 
-            this.txtEsperAgi3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi3.Location = new System.Drawing.Point(360, 149);
-            this.txtEsperAgi3.Name = "txtEsperAgi3";
-            this.txtEsperAgi3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi3.TabIndex = 92;
-            // 
-            // txtEsperAgi2
-            // 
-            this.txtEsperAgi2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi2.Location = new System.Drawing.Point(324, 149);
-            this.txtEsperAgi2.Name = "txtEsperAgi2";
-            this.txtEsperAgi2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi2.TabIndex = 91;
-            // 
-            // txtEsperAgi1
-            // 
-            this.txtEsperAgi1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperAgi1.Location = new System.Drawing.Point(288, 149);
-            this.txtEsperAgi1.Name = "txtEsperAgi1";
-            this.txtEsperAgi1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperAgi1.TabIndex = 90;
-            // 
-            // txtEsperStr20
-            // 
-            this.txtEsperStr20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr20.Location = new System.Drawing.Point(972, 83);
-            this.txtEsperStr20.Name = "txtEsperStr20";
-            this.txtEsperStr20.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr20.TabIndex = 89;
-            // 
-            // txtEsperStr19
-            // 
-            this.txtEsperStr19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr19.Location = new System.Drawing.Point(936, 83);
-            this.txtEsperStr19.Name = "txtEsperStr19";
-            this.txtEsperStr19.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr19.TabIndex = 88;
-            // 
-            // txtEsperStr18
-            // 
-            this.txtEsperStr18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr18.Location = new System.Drawing.Point(900, 83);
-            this.txtEsperStr18.Name = "txtEsperStr18";
-            this.txtEsperStr18.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr18.TabIndex = 87;
-            // 
-            // txtEsperStr17
-            // 
-            this.txtEsperStr17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr17.Location = new System.Drawing.Point(864, 83);
-            this.txtEsperStr17.Name = "txtEsperStr17";
-            this.txtEsperStr17.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr17.TabIndex = 86;
-            // 
-            // txtEsperStr16
-            // 
-            this.txtEsperStr16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr16.Location = new System.Drawing.Point(828, 83);
-            this.txtEsperStr16.Name = "txtEsperStr16";
-            this.txtEsperStr16.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr16.TabIndex = 85;
-            // 
-            // txtEsperStr15
-            // 
-            this.txtEsperStr15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr15.Location = new System.Drawing.Point(792, 83);
-            this.txtEsperStr15.Name = "txtEsperStr15";
-            this.txtEsperStr15.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr15.TabIndex = 84;
-            // 
-            // txtEsperStr14
-            // 
-            this.txtEsperStr14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr14.Location = new System.Drawing.Point(756, 83);
-            this.txtEsperStr14.Name = "txtEsperStr14";
-            this.txtEsperStr14.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr14.TabIndex = 83;
-            // 
-            // txtEsperStr13
-            // 
-            this.txtEsperStr13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr13.Location = new System.Drawing.Point(720, 83);
-            this.txtEsperStr13.Name = "txtEsperStr13";
-            this.txtEsperStr13.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr13.TabIndex = 82;
-            // 
-            // txtEsperStr12
-            // 
-            this.txtEsperStr12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr12.Location = new System.Drawing.Point(684, 83);
-            this.txtEsperStr12.Name = "txtEsperStr12";
-            this.txtEsperStr12.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr12.TabIndex = 81;
-            // 
-            // txtEsperStr11
-            // 
-            this.txtEsperStr11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr11.Location = new System.Drawing.Point(648, 83);
-            this.txtEsperStr11.Name = "txtEsperStr11";
-            this.txtEsperStr11.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr11.TabIndex = 80;
-            // 
-            // txtEsperStr10
-            // 
-            this.txtEsperStr10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr10.Location = new System.Drawing.Point(612, 83);
-            this.txtEsperStr10.Name = "txtEsperStr10";
-            this.txtEsperStr10.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr10.TabIndex = 79;
-            // 
-            // txtEsperStr9
-            // 
-            this.txtEsperStr9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr9.Location = new System.Drawing.Point(576, 83);
-            this.txtEsperStr9.Name = "txtEsperStr9";
-            this.txtEsperStr9.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr9.TabIndex = 78;
-            // 
-            // txtEsperStr8
-            // 
-            this.txtEsperStr8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr8.Location = new System.Drawing.Point(540, 83);
-            this.txtEsperStr8.Name = "txtEsperStr8";
-            this.txtEsperStr8.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr8.TabIndex = 77;
-            // 
-            // txtEsperStr7
-            // 
-            this.txtEsperStr7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr7.Location = new System.Drawing.Point(504, 83);
-            this.txtEsperStr7.Name = "txtEsperStr7";
-            this.txtEsperStr7.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr7.TabIndex = 76;
-            // 
-            // txtEsperStr6
-            // 
-            this.txtEsperStr6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr6.Location = new System.Drawing.Point(468, 83);
-            this.txtEsperStr6.Name = "txtEsperStr6";
-            this.txtEsperStr6.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr6.TabIndex = 75;
-            // 
-            // txtEsperStr5
-            // 
-            this.txtEsperStr5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr5.Location = new System.Drawing.Point(432, 83);
-            this.txtEsperStr5.Name = "txtEsperStr5";
-            this.txtEsperStr5.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr5.TabIndex = 74;
-            // 
-            // txtEsperStr4
-            // 
-            this.txtEsperStr4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr4.Location = new System.Drawing.Point(396, 83);
-            this.txtEsperStr4.Name = "txtEsperStr4";
-            this.txtEsperStr4.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr4.TabIndex = 73;
-            // 
-            // txtEsperStr3
-            // 
-            this.txtEsperStr3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr3.Location = new System.Drawing.Point(360, 83);
-            this.txtEsperStr3.Name = "txtEsperStr3";
-            this.txtEsperStr3.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr3.TabIndex = 72;
-            // 
-            // txtEsperStr2
-            // 
-            this.txtEsperStr2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr2.Location = new System.Drawing.Point(324, 83);
-            this.txtEsperStr2.Name = "txtEsperStr2";
-            this.txtEsperStr2.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr2.TabIndex = 71;
-            // 
-            // txtEsperStr1
-            // 
-            this.txtEsperStr1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEsperStr1.Location = new System.Drawing.Point(288, 83);
-            this.txtEsperStr1.Name = "txtEsperStr1";
-            this.txtEsperStr1.Size = new System.Drawing.Size(30, 27);
-            this.txtEsperStr1.TabIndex = 70;
-            // 
-            // lblEsperMag1
-            // 
-            this.lblEsperMag1.AutoSize = true;
-            this.lblEsperMag1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperMag1.Location = new System.Drawing.Point(233, 284);
-            this.lblEsperMag1.Name = "lblEsperMag1";
-            this.lblEsperMag1.Size = new System.Drawing.Size(49, 19);
-            this.lblEsperMag1.TabIndex = 69;
-            this.lblEsperMag1.Text = "Magic";
-            // 
-            // lblEsperVit1
-            // 
-            this.lblEsperVit1.AutoSize = true;
-            this.lblEsperVit1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperVit1.Location = new System.Drawing.Point(225, 218);
-            this.lblEsperVit1.Name = "lblEsperVit1";
-            this.lblEsperVit1.Size = new System.Drawing.Size(57, 19);
-            this.lblEsperVit1.TabIndex = 68;
-            this.lblEsperVit1.Text = "Vitality";
-            // 
-            // lblEsperAgi1
-            // 
-            this.lblEsperAgi1.AutoSize = true;
-            this.lblEsperAgi1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperAgi1.Location = new System.Drawing.Point(228, 152);
-            this.lblEsperAgi1.Name = "lblEsperAgi1";
-            this.lblEsperAgi1.Size = new System.Drawing.Size(54, 19);
-            this.lblEsperAgi1.TabIndex = 67;
-            this.lblEsperAgi1.Text = "Agility";
-            // 
-            // lblEsperStr1
-            // 
-            this.lblEsperStr1.AutoSize = true;
-            this.lblEsperStr1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEsperStr1.Location = new System.Drawing.Point(213, 86);
-            this.lblEsperStr1.Name = "lblEsperStr1";
-            this.lblEsperStr1.Size = new System.Drawing.Size(69, 19);
-            this.lblEsperStr1.TabIndex = 66;
-            this.lblEsperStr1.Text = "Strength";
+            // lblSkillPoints5
+            // 
+            this.lblSkillPoints5.AutoSize = true;
+            this.lblSkillPoints5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillPoints5.Location = new System.Drawing.Point(253, 186);
+            this.lblSkillPoints5.Name = "lblSkillPoints5";
+            this.lblSkillPoints5.Size = new System.Drawing.Size(99, 19);
+            this.lblSkillPoints5.TabIndex = 208;
+            this.lblSkillPoints5.Text = "Levels 21-25";
+            // 
+            // numSkillPoints25
+            // 
+            this.numSkillPoints25.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints25.Location = new System.Drawing.Point(578, 183);
+            this.numSkillPoints25.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints25.Name = "numSkillPoints25";
+            this.numSkillPoints25.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints25.TabIndex = 45;
+            // 
+            // numSkillPoints24
+            // 
+            this.numSkillPoints24.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints24.Location = new System.Drawing.Point(523, 183);
+            this.numSkillPoints24.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints24.Name = "numSkillPoints24";
+            this.numSkillPoints24.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints24.TabIndex = 44;
+            // 
+            // numSkillPoints23
+            // 
+            this.numSkillPoints23.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints23.Location = new System.Drawing.Point(468, 183);
+            this.numSkillPoints23.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints23.Name = "numSkillPoints23";
+            this.numSkillPoints23.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints23.TabIndex = 43;
+            // 
+            // numSkillPoints22
+            // 
+            this.numSkillPoints22.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints22.Location = new System.Drawing.Point(413, 183);
+            this.numSkillPoints22.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints22.Name = "numSkillPoints22";
+            this.numSkillPoints22.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints22.TabIndex = 42;
+            // 
+            // numSkillPoints21
+            // 
+            this.numSkillPoints21.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints21.Location = new System.Drawing.Point(358, 183);
+            this.numSkillPoints21.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints21.Name = "numSkillPoints21";
+            this.numSkillPoints21.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints21.TabIndex = 41;
+            // 
+            // lblSkillPoints4
+            // 
+            this.lblSkillPoints4.AutoSize = true;
+            this.lblSkillPoints4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillPoints4.Location = new System.Drawing.Point(253, 153);
+            this.lblSkillPoints4.Name = "lblSkillPoints4";
+            this.lblSkillPoints4.Size = new System.Drawing.Size(99, 19);
+            this.lblSkillPoints4.TabIndex = 202;
+            this.lblSkillPoints4.Text = "Levels 16-20";
+            // 
+            // numSkillPoints20
+            // 
+            this.numSkillPoints20.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints20.Location = new System.Drawing.Point(578, 150);
+            this.numSkillPoints20.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints20.Name = "numSkillPoints20";
+            this.numSkillPoints20.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints20.TabIndex = 40;
+            // 
+            // numSkillPoints19
+            // 
+            this.numSkillPoints19.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints19.Location = new System.Drawing.Point(523, 150);
+            this.numSkillPoints19.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints19.Name = "numSkillPoints19";
+            this.numSkillPoints19.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints19.TabIndex = 39;
+            // 
+            // numSkillPoints18
+            // 
+            this.numSkillPoints18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints18.Location = new System.Drawing.Point(468, 150);
+            this.numSkillPoints18.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints18.Name = "numSkillPoints18";
+            this.numSkillPoints18.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints18.TabIndex = 38;
+            // 
+            // numSkillPoints17
+            // 
+            this.numSkillPoints17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints17.Location = new System.Drawing.Point(413, 150);
+            this.numSkillPoints17.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints17.Name = "numSkillPoints17";
+            this.numSkillPoints17.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints17.TabIndex = 37;
+            // 
+            // numSkillPoints16
+            // 
+            this.numSkillPoints16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints16.Location = new System.Drawing.Point(358, 150);
+            this.numSkillPoints16.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints16.Name = "numSkillPoints16";
+            this.numSkillPoints16.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints16.TabIndex = 36;
+            // 
+            // lblSkillPoints3
+            // 
+            this.lblSkillPoints3.AutoSize = true;
+            this.lblSkillPoints3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillPoints3.Location = new System.Drawing.Point(253, 119);
+            this.lblSkillPoints3.Name = "lblSkillPoints3";
+            this.lblSkillPoints3.Size = new System.Drawing.Size(99, 19);
+            this.lblSkillPoints3.TabIndex = 196;
+            this.lblSkillPoints3.Text = "Levels 11-15";
+            // 
+            // numSkillPoints15
+            // 
+            this.numSkillPoints15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints15.Location = new System.Drawing.Point(578, 117);
+            this.numSkillPoints15.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints15.Name = "numSkillPoints15";
+            this.numSkillPoints15.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints15.TabIndex = 35;
+            // 
+            // numSkillPoints14
+            // 
+            this.numSkillPoints14.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints14.Location = new System.Drawing.Point(523, 117);
+            this.numSkillPoints14.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints14.Name = "numSkillPoints14";
+            this.numSkillPoints14.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints14.TabIndex = 34;
+            // 
+            // numSkillPoints13
+            // 
+            this.numSkillPoints13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints13.Location = new System.Drawing.Point(468, 117);
+            this.numSkillPoints13.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints13.Name = "numSkillPoints13";
+            this.numSkillPoints13.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints13.TabIndex = 33;
+            // 
+            // numSkillPoints12
+            // 
+            this.numSkillPoints12.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints12.Location = new System.Drawing.Point(413, 117);
+            this.numSkillPoints12.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints12.Name = "numSkillPoints12";
+            this.numSkillPoints12.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints12.TabIndex = 32;
+            // 
+            // numSkillPoints11
+            // 
+            this.numSkillPoints11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints11.Location = new System.Drawing.Point(358, 117);
+            this.numSkillPoints11.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints11.Name = "numSkillPoints11";
+            this.numSkillPoints11.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints11.TabIndex = 31;
+            // 
+            // lblSkillPoints2
+            // 
+            this.lblSkillPoints2.AutoSize = true;
+            this.lblSkillPoints2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillPoints2.Location = new System.Drawing.Point(262, 87);
+            this.lblSkillPoints2.Name = "lblSkillPoints2";
+            this.lblSkillPoints2.Size = new System.Drawing.Size(90, 19);
+            this.lblSkillPoints2.TabIndex = 190;
+            this.lblSkillPoints2.Text = "Levels 6-10";
+            // 
+            // numSkillPoints10
+            // 
+            this.numSkillPoints10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints10.Location = new System.Drawing.Point(578, 84);
+            this.numSkillPoints10.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints10.Name = "numSkillPoints10";
+            this.numSkillPoints10.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints10.TabIndex = 30;
+            // 
+            // numSkillPoints9
+            // 
+            this.numSkillPoints9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints9.Location = new System.Drawing.Point(523, 84);
+            this.numSkillPoints9.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints9.Name = "numSkillPoints9";
+            this.numSkillPoints9.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints9.TabIndex = 29;
+            // 
+            // numSkillPoints8
+            // 
+            this.numSkillPoints8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints8.Location = new System.Drawing.Point(468, 84);
+            this.numSkillPoints8.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints8.Name = "numSkillPoints8";
+            this.numSkillPoints8.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints8.TabIndex = 28;
+            // 
+            // numSkillPoints7
+            // 
+            this.numSkillPoints7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints7.Location = new System.Drawing.Point(413, 84);
+            this.numSkillPoints7.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints7.Name = "numSkillPoints7";
+            this.numSkillPoints7.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints7.TabIndex = 27;
+            // 
+            // numSkillPoints6
+            // 
+            this.numSkillPoints6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints6.Location = new System.Drawing.Point(358, 84);
+            this.numSkillPoints6.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints6.Name = "numSkillPoints6";
+            this.numSkillPoints6.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints6.TabIndex = 26;
+            // 
+            // lblSkillPoints1
+            // 
+            this.lblSkillPoints1.AutoSize = true;
+            this.lblSkillPoints1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillPoints1.Location = new System.Drawing.Point(271, 54);
+            this.lblSkillPoints1.Name = "lblSkillPoints1";
+            this.lblSkillPoints1.Size = new System.Drawing.Size(81, 19);
+            this.lblSkillPoints1.TabIndex = 184;
+            this.lblSkillPoints1.Text = "Levels 1-5";
+            // 
+            // numSkillPoints5
+            // 
+            this.numSkillPoints5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints5.Location = new System.Drawing.Point(578, 51);
+            this.numSkillPoints5.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints5.Name = "numSkillPoints5";
+            this.numSkillPoints5.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints5.TabIndex = 25;
+            // 
+            // numSkillPoints4
+            // 
+            this.numSkillPoints4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints4.Location = new System.Drawing.Point(523, 51);
+            this.numSkillPoints4.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints4.Name = "numSkillPoints4";
+            this.numSkillPoints4.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints4.TabIndex = 24;
+            // 
+            // numSkillPoints3
+            // 
+            this.numSkillPoints3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints3.Location = new System.Drawing.Point(468, 51);
+            this.numSkillPoints3.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints3.Name = "numSkillPoints3";
+            this.numSkillPoints3.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints3.TabIndex = 23;
+            // 
+            // numSkillPoints2
+            // 
+            this.numSkillPoints2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints2.Location = new System.Drawing.Point(413, 51);
+            this.numSkillPoints2.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints2.Name = "numSkillPoints2";
+            this.numSkillPoints2.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints2.TabIndex = 22;
+            // 
+            // numSkillPoints1
+            // 
+            this.numSkillPoints1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillPoints1.Location = new System.Drawing.Point(358, 51);
+            this.numSkillPoints1.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
+            this.numSkillPoints1.Name = "numSkillPoints1";
+            this.numSkillPoints1.Size = new System.Drawing.Size(49, 27);
+            this.numSkillPoints1.TabIndex = 21;
+            // 
+            // lblSkillNeeded
+            // 
+            this.lblSkillNeeded.AutoSize = true;
+            this.lblSkillNeeded.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillNeeded.Location = new System.Drawing.Point(329, 9);
+            this.lblSkillNeeded.Name = "lblSkillNeeded";
+            this.lblSkillNeeded.Size = new System.Drawing.Size(144, 19);
+            this.lblSkillNeeded.TabIndex = 178;
+            this.lblSkillNeeded.Text = "Needed Skill Points";
+            // 
+            // chkLstEsperStats
+            // 
+            this.chkLstEsperStats.CheckOnClick = true;
+            this.chkLstEsperStats.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstEsperStats.FormattingEnabled = true;
+            this.chkLstEsperStats.Items.AddRange(new object[] {
+            "Strength",
+            "Agility",
+            "Vitality",
+            "Magic"});
+            this.chkLstEsperStats.Location = new System.Drawing.Point(809, 348);
+            this.chkLstEsperStats.MultiColumn = true;
+            this.chkLstEsperStats.Name = "chkLstEsperStats";
+            this.chkLstEsperStats.Size = new System.Drawing.Size(78, 76);
+            this.chkLstEsperStats.TabIndex = 49;
+            // 
+            // lblAvailableStats
+            // 
+            this.lblAvailableStats.AutoSize = true;
+            this.lblAvailableStats.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvailableStats.Location = new System.Drawing.Point(691, 356);
+            this.lblAvailableStats.Name = "lblAvailableStats";
+            this.lblAvailableStats.Size = new System.Drawing.Size(112, 19);
+            this.lblAvailableStats.TabIndex = 176;
+            this.lblAvailableStats.Text = "Available Stats";
+            // 
+            // btnEspersNone
+            // 
+            this.btnEspersNone.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEspersNone.Location = new System.Drawing.Point(479, 457);
+            this.btnEspersNone.Name = "btnEspersNone";
+            this.btnEspersNone.Size = new System.Drawing.Size(58, 28);
+            this.btnEspersNone.TabIndex = 48;
+            this.btnEspersNone.Text = "None";
+            this.btnEspersNone.UseVisualStyleBackColor = true;
+            this.btnEspersNone.Click += new System.EventHandler(this.btnEspersNone_Click);
+            // 
+            // btnEspersAll
+            // 
+            this.btnEspersAll.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEspersAll.Location = new System.Drawing.Point(424, 457);
+            this.btnEspersAll.Name = "btnEspersAll";
+            this.btnEspersAll.Size = new System.Drawing.Size(49, 28);
+            this.btnEspersAll.TabIndex = 47;
+            this.btnEspersAll.Text = "All";
+            this.btnEspersAll.UseVisualStyleBackColor = true;
+            this.btnEspersAll.Click += new System.EventHandler(this.btnEspersAll_Click);
+            // 
+            // chkLstEsperChars
+            // 
+            this.chkLstEsperChars.CheckOnClick = true;
+            this.chkLstEsperChars.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstEsperChars.FormattingEnabled = true;
+            this.chkLstEsperChars.Items.AddRange(new object[] {
+            "Terra",
+            "Locke",
+            "Cyan",
+            "Shadow",
+            "Edgar",
+            "Sabin",
+            "Celes",
+            "Strago",
+            "Relm",
+            "Setzer",
+            "Mog",
+            "Gau",
+            "Gogo",
+            "Umaro"});
+            this.chkLstEsperChars.Location = new System.Drawing.Point(425, 321);
+            this.chkLstEsperChars.MultiColumn = true;
+            this.chkLstEsperChars.Name = "chkLstEsperChars";
+            this.chkLstEsperChars.Size = new System.Drawing.Size(245, 130);
+            this.chkLstEsperChars.TabIndex = 46;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(241, 356);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(166, 19);
+            this.label4.TabIndex = 172;
+            this.label4.Text = "Equippable Characters";
             // 
             // btnEspersCancel
             // 
             this.btnEspersCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnEspersCancel.Location = new System.Drawing.Point(960, 523);
+            this.btnEspersCancel.Location = new System.Drawing.Point(1032, 544);
             this.btnEspersCancel.Name = "btnEspersCancel";
             this.btnEspersCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnEspersCancel.TabIndex = 65;
+            this.btnEspersCancel.TabIndex = 51;
             this.btnEspersCancel.Text = "Cancel";
             this.btnEspersCancel.UseVisualStyleBackColor = false;
             this.btnEspersCancel.Click += new System.EventHandler(this.btnEspersCancel_Click);
             // 
             // btnEspersOkay
             // 
-            this.btnEspersOkay.Location = new System.Drawing.Point(879, 523);
+            this.btnEspersOkay.Location = new System.Drawing.Point(951, 544);
             this.btnEspersOkay.Name = "btnEspersOkay";
             this.btnEspersOkay.Size = new System.Drawing.Size(75, 23);
-            this.btnEspersOkay.TabIndex = 64;
+            this.btnEspersOkay.TabIndex = 50;
             this.btnEspersOkay.Text = "Okay";
             this.btnEspersOkay.UseVisualStyleBackColor = true;
             this.btnEspersOkay.Click += new System.EventHandler(this.btnEspersOkay_Click);
@@ -8242,2757 +3678,238 @@
             // nmbEsperMagic10
             // 
             this.nmbEsperMagic10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic10.Location = new System.Drawing.Point(133, 348);
+            this.nmbEsperMagic10.Location = new System.Drawing.Point(164, 348);
+            this.nmbEsperMagic10.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic10.Name = "nmbEsperMagic10";
             this.nmbEsperMagic10.Size = new System.Drawing.Size(49, 27);
             this.nmbEsperMagic10.TabIndex = 20;
-            this.nmbEsperMagic10.Visible = false;
             // 
             // nmbEsperMagic9
             // 
             this.nmbEsperMagic9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic9.Location = new System.Drawing.Point(133, 315);
+            this.nmbEsperMagic9.Location = new System.Drawing.Point(164, 315);
+            this.nmbEsperMagic9.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic9.Name = "nmbEsperMagic9";
             this.nmbEsperMagic9.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic9.TabIndex = 19;
-            this.nmbEsperMagic9.Visible = false;
+            this.nmbEsperMagic9.TabIndex = 18;
             // 
             // nmbEsperMagic8
             // 
             this.nmbEsperMagic8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic8.Location = new System.Drawing.Point(133, 282);
+            this.nmbEsperMagic8.Location = new System.Drawing.Point(164, 282);
+            this.nmbEsperMagic8.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic8.Name = "nmbEsperMagic8";
             this.nmbEsperMagic8.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic8.TabIndex = 18;
-            this.nmbEsperMagic8.Visible = false;
+            this.nmbEsperMagic8.TabIndex = 16;
             // 
             // nmbEsperMagic7
             // 
             this.nmbEsperMagic7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic7.Location = new System.Drawing.Point(133, 249);
+            this.nmbEsperMagic7.Location = new System.Drawing.Point(164, 249);
+            this.nmbEsperMagic7.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic7.Name = "nmbEsperMagic7";
             this.nmbEsperMagic7.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic7.TabIndex = 17;
-            this.nmbEsperMagic7.Visible = false;
+            this.nmbEsperMagic7.TabIndex = 14;
             // 
             // nmbEsperMagic6
             // 
             this.nmbEsperMagic6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic6.Location = new System.Drawing.Point(133, 216);
+            this.nmbEsperMagic6.Location = new System.Drawing.Point(164, 216);
+            this.nmbEsperMagic6.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic6.Name = "nmbEsperMagic6";
             this.nmbEsperMagic6.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic6.TabIndex = 16;
-            this.nmbEsperMagic6.Visible = false;
+            this.nmbEsperMagic6.TabIndex = 12;
             // 
             // nmbEsperMagic5
             // 
             this.nmbEsperMagic5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic5.Location = new System.Drawing.Point(133, 183);
+            this.nmbEsperMagic5.Location = new System.Drawing.Point(164, 183);
+            this.nmbEsperMagic5.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic5.Name = "nmbEsperMagic5";
             this.nmbEsperMagic5.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic5.TabIndex = 15;
-            this.nmbEsperMagic5.Visible = false;
+            this.nmbEsperMagic5.TabIndex = 10;
             // 
             // nmbEsperMagic4
             // 
             this.nmbEsperMagic4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic4.Location = new System.Drawing.Point(133, 150);
+            this.nmbEsperMagic4.Location = new System.Drawing.Point(164, 150);
+            this.nmbEsperMagic4.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic4.Name = "nmbEsperMagic4";
             this.nmbEsperMagic4.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic4.TabIndex = 14;
-            this.nmbEsperMagic4.Visible = false;
+            this.nmbEsperMagic4.TabIndex = 8;
             // 
             // nmbEsperMagic3
             // 
             this.nmbEsperMagic3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic3.Location = new System.Drawing.Point(133, 117);
+            this.nmbEsperMagic3.Location = new System.Drawing.Point(164, 117);
+            this.nmbEsperMagic3.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic3.Name = "nmbEsperMagic3";
             this.nmbEsperMagic3.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic3.TabIndex = 13;
-            this.nmbEsperMagic3.Visible = false;
+            this.nmbEsperMagic3.TabIndex = 6;
             // 
             // nmbEsperMagic2
             // 
             this.nmbEsperMagic2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic2.Location = new System.Drawing.Point(133, 84);
+            this.nmbEsperMagic2.Location = new System.Drawing.Point(164, 84);
+            this.nmbEsperMagic2.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic2.Name = "nmbEsperMagic2";
             this.nmbEsperMagic2.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic2.TabIndex = 12;
-            this.nmbEsperMagic2.Visible = false;
+            this.nmbEsperMagic2.TabIndex = 4;
             // 
             // nmbEsperMagic1
             // 
             this.nmbEsperMagic1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmbEsperMagic1.Location = new System.Drawing.Point(133, 51);
+            this.nmbEsperMagic1.Location = new System.Drawing.Point(164, 51);
+            this.nmbEsperMagic1.Maximum = new decimal(new int[] {
+            256,
+            0,
+            0,
+            0});
             this.nmbEsperMagic1.Name = "nmbEsperMagic1";
             this.nmbEsperMagic1.Size = new System.Drawing.Size(49, 27);
-            this.nmbEsperMagic1.TabIndex = 11;
-            this.nmbEsperMagic1.Visible = false;
+            this.nmbEsperMagic1.TabIndex = 2;
             // 
             // cmbEsperMagic10
             // 
+            this.cmbEsperMagic10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic10.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic10.FormattingEnabled = true;
-            this.cmbEsperMagic10.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic10.Location = new System.Drawing.Point(6, 348);
             this.cmbEsperMagic10.Name = "cmbEsperMagic10";
-            this.cmbEsperMagic10.Size = new System.Drawing.Size(121, 27);
-            this.cmbEsperMagic10.TabIndex = 10;
+            this.cmbEsperMagic10.Size = new System.Drawing.Size(152, 27);
+            this.cmbEsperMagic10.TabIndex = 19;
             // 
             // cmbEsperMagic5
             // 
+            this.cmbEsperMagic5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic5.FormattingEnabled = true;
-            this.cmbEsperMagic5.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic5.Location = new System.Drawing.Point(6, 183);
             this.cmbEsperMagic5.Name = "cmbEsperMagic5";
-            this.cmbEsperMagic5.Size = new System.Drawing.Size(121, 27);
+            this.cmbEsperMagic5.Size = new System.Drawing.Size(152, 27);
             this.cmbEsperMagic5.TabIndex = 9;
             // 
             // cmbEsperMagic9
             // 
+            this.cmbEsperMagic9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic9.FormattingEnabled = true;
-            this.cmbEsperMagic9.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic9.Location = new System.Drawing.Point(6, 315);
             this.cmbEsperMagic9.Name = "cmbEsperMagic9";
-            this.cmbEsperMagic9.Size = new System.Drawing.Size(121, 27);
-            this.cmbEsperMagic9.TabIndex = 8;
+            this.cmbEsperMagic9.Size = new System.Drawing.Size(152, 27);
+            this.cmbEsperMagic9.TabIndex = 17;
             // 
             // cmbEsperMagic4
             // 
+            this.cmbEsperMagic4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic4.FormattingEnabled = true;
-            this.cmbEsperMagic4.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic4.Location = new System.Drawing.Point(6, 150);
             this.cmbEsperMagic4.Name = "cmbEsperMagic4";
-            this.cmbEsperMagic4.Size = new System.Drawing.Size(121, 27);
+            this.cmbEsperMagic4.Size = new System.Drawing.Size(152, 27);
             this.cmbEsperMagic4.TabIndex = 7;
             // 
             // cmbEsperMagic8
             // 
+            this.cmbEsperMagic8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic8.FormattingEnabled = true;
-            this.cmbEsperMagic8.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic8.Location = new System.Drawing.Point(6, 282);
             this.cmbEsperMagic8.Name = "cmbEsperMagic8";
-            this.cmbEsperMagic8.Size = new System.Drawing.Size(121, 27);
-            this.cmbEsperMagic8.TabIndex = 6;
+            this.cmbEsperMagic8.Size = new System.Drawing.Size(152, 27);
+            this.cmbEsperMagic8.TabIndex = 15;
             // 
             // cmbEsperMagic3
             // 
+            this.cmbEsperMagic3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic3.FormattingEnabled = true;
-            this.cmbEsperMagic3.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic3.Location = new System.Drawing.Point(6, 117);
             this.cmbEsperMagic3.Name = "cmbEsperMagic3";
-            this.cmbEsperMagic3.Size = new System.Drawing.Size(121, 27);
+            this.cmbEsperMagic3.Size = new System.Drawing.Size(152, 27);
             this.cmbEsperMagic3.TabIndex = 5;
             // 
             // cmbEsperMagic7
             // 
+            this.cmbEsperMagic7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic7.FormattingEnabled = true;
-            this.cmbEsperMagic7.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic7.Location = new System.Drawing.Point(6, 249);
             this.cmbEsperMagic7.Name = "cmbEsperMagic7";
-            this.cmbEsperMagic7.Size = new System.Drawing.Size(121, 27);
-            this.cmbEsperMagic7.TabIndex = 4;
+            this.cmbEsperMagic7.Size = new System.Drawing.Size(152, 27);
+            this.cmbEsperMagic7.TabIndex = 13;
             // 
             // cmbEsperMagic2
             // 
+            this.cmbEsperMagic2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic2.FormattingEnabled = true;
-            this.cmbEsperMagic2.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic2.Location = new System.Drawing.Point(6, 84);
             this.cmbEsperMagic2.Name = "cmbEsperMagic2";
-            this.cmbEsperMagic2.Size = new System.Drawing.Size(121, 27);
+            this.cmbEsperMagic2.Size = new System.Drawing.Size(152, 27);
             this.cmbEsperMagic2.TabIndex = 3;
             // 
             // cmbEsperMagic6
             // 
+            this.cmbEsperMagic6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic6.FormattingEnabled = true;
-            this.cmbEsperMagic6.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic6.Location = new System.Drawing.Point(6, 216);
             this.cmbEsperMagic6.Name = "cmbEsperMagic6";
-            this.cmbEsperMagic6.Size = new System.Drawing.Size(121, 27);
-            this.cmbEsperMagic6.TabIndex = 2;
+            this.cmbEsperMagic6.Size = new System.Drawing.Size(152, 27);
+            this.cmbEsperMagic6.TabIndex = 11;
             // 
             // cmbEsperMagic1
             // 
+            this.cmbEsperMagic1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEsperMagic1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEsperMagic1.FormattingEnabled = true;
-            this.cmbEsperMagic1.Items.AddRange(new object[] {
-            "Fire",
-            "Blizzard",
-            "Thunder",
-            "Poison",
-            "Drain",
-            "Fira",
-            "Blizzara",
-            "Thundara",
-            "Bio",
-            "Firaga",
-            "Blizzaga",
-            "Thundaga",
-            "Break",
-            "Death",
-            "Holy",
-            "Flare",
-            "Gravity",
-            "Graviga",
-            "Banish",
-            "Meteor",
-            "Ultima",
-            "Quake",
-            "Tornado",
-            "Meltdown",
-            "Libra",
-            "Slow",
-            "Rasp",
-            "Silence",
-            "Protect",
-            "Sleep",
-            "Confuse",
-            "Haste",
-            "Stop",
-            "Berserk",
-            "Float",
-            "Imp",
-            "Reflect",
-            "Shell",
-            "Vanish",
-            "Hastega",
-            "Slowga",
-            "Aspir",
-            "Teleport",
-            "Guard",
-            "Dispel",
-            "Cure",
-            "Cura",
-            "Curaga",
-            "Raise",
-            "Arise",
-            "Curasa",
-            "Esuna",
-            "Regen",
-            "Regenga",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "INVALID",
-            "Nothing"});
             this.cmbEsperMagic1.Location = new System.Drawing.Point(6, 51);
             this.cmbEsperMagic1.Name = "cmbEsperMagic1";
-            this.cmbEsperMagic1.Size = new System.Drawing.Size(121, 27);
+            this.cmbEsperMagic1.Size = new System.Drawing.Size(152, 27);
             this.cmbEsperMagic1.TabIndex = 1;
             // 
             // cmbEspers
             // 
             this.cmbEspers.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbEspers.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbEspers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspers.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEspers.FormattingEnabled = true;
             this.cmbEspers.Items.AddRange(new object[] {
@@ -11025,12 +3942,33 @@
             "Phoenix"});
             this.cmbEspers.Location = new System.Drawing.Point(6, 6);
             this.cmbEspers.Name = "cmbEspers";
-            this.cmbEspers.Size = new System.Drawing.Size(130, 27);
+            this.cmbEspers.Size = new System.Drawing.Size(138, 27);
             this.cmbEspers.TabIndex = 0;
             this.cmbEspers.SelectedIndexChanged += new System.EventHandler(this.cmbEspers_SelectedIndexChanged);
             // 
             // tabEnemies
             // 
+            this.tabEnemies.Controls.Add(this.lblCommonSketch);
+            this.tabEnemies.Controls.Add(this.lblRareSketch);
+            this.tabEnemies.Controls.Add(this.lblSkillExp);
+            this.tabEnemies.Controls.Add(this.numSkillExp);
+            this.tabEnemies.Controls.Add(this.grpControl);
+            this.tabEnemies.Controls.Add(this.cmbSketch2);
+            this.tabEnemies.Controls.Add(this.cmbSketch1);
+            this.tabEnemies.Controls.Add(this.lblSketch);
+            this.tabEnemies.Controls.Add(this.cmbRage2);
+            this.tabEnemies.Controls.Add(this.lblStealsCommon);
+            this.tabEnemies.Controls.Add(this.lblRage);
+            this.tabEnemies.Controls.Add(this.cmbRage1);
+            this.tabEnemies.Controls.Add(this.cmbStealsCommon);
+            this.tabEnemies.Controls.Add(this.lblStealsRare);
+            this.tabEnemies.Controls.Add(this.cmbStealsRare);
+            this.tabEnemies.Controls.Add(this.lblStolenItems);
+            this.tabEnemies.Controls.Add(this.lblDropsCommon);
+            this.tabEnemies.Controls.Add(this.cmbDropsCommon);
+            this.tabEnemies.Controls.Add(this.lblDropsRare);
+            this.tabEnemies.Controls.Add(this.cmbDropsRare);
+            this.tabEnemies.Controls.Add(this.lblDrops);
             this.tabEnemies.Controls.Add(this.grpSpecialAttacks);
             this.tabEnemies.Controls.Add(this.numMonsterIndex);
             this.tabEnemies.Controls.Add(this.lblNormalAttack);
@@ -11073,13 +4011,1461 @@
             this.tabEnemies.Controls.Add(this.numMonsterLevel);
             this.tabEnemies.Controls.Add(this.lblMonsterLevel);
             this.tabEnemies.Controls.Add(this.cmbMonsters);
-            this.tabEnemies.Location = new System.Drawing.Point(4, 22);
+            this.tabEnemies.Location = new System.Drawing.Point(4, 23);
             this.tabEnemies.Name = "tabEnemies";
             this.tabEnemies.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEnemies.Size = new System.Drawing.Size(1041, 552);
+            this.tabEnemies.Size = new System.Drawing.Size(1113, 573);
             this.tabEnemies.TabIndex = 2;
             this.tabEnemies.Text = "Enemies";
             this.tabEnemies.UseVisualStyleBackColor = true;
+            // 
+            // lblCommonSketch
+            // 
+            this.lblCommonSketch.AutoSize = true;
+            this.lblCommonSketch.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCommonSketch.Location = new System.Drawing.Point(976, 323);
+            this.lblCommonSketch.Name = "lblCommonSketch";
+            this.lblCommonSketch.Size = new System.Drawing.Size(59, 16);
+            this.lblCommonSketch.TabIndex = 160;
+            this.lblCommonSketch.Text = "Common";
+            // 
+            // lblRareSketch
+            // 
+            this.lblRareSketch.AutoSize = true;
+            this.lblRareSketch.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRareSketch.Location = new System.Drawing.Point(1000, 274);
+            this.lblRareSketch.Name = "lblRareSketch";
+            this.lblRareSketch.Size = new System.Drawing.Size(35, 16);
+            this.lblRareSketch.TabIndex = 159;
+            this.lblRareSketch.Text = "Rare";
+            // 
+            // lblSkillExp
+            // 
+            this.lblSkillExp.AutoSize = true;
+            this.lblSkillExp.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkillExp.Location = new System.Drawing.Point(163, 208);
+            this.lblSkillExp.Name = "lblSkillExp";
+            this.lblSkillExp.Size = new System.Drawing.Size(69, 19);
+            this.lblSkillExp.TabIndex = 158;
+            this.lblSkillExp.Text = "Skill Exp";
+            // 
+            // numSkillExp
+            // 
+            this.numSkillExp.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSkillExp.Location = new System.Drawing.Point(238, 204);
+            this.numSkillExp.Maximum = new decimal(new int[] {
+            65536,
+            0,
+            0,
+            0});
+            this.numSkillExp.Name = "numSkillExp";
+            this.numSkillExp.Size = new System.Drawing.Size(77, 27);
+            this.numSkillExp.TabIndex = 8;
+            // 
+            // grpControl
+            // 
+            this.grpControl.Controls.Add(this.cmbControl4);
+            this.grpControl.Controls.Add(this.cmbControl2);
+            this.grpControl.Controls.Add(this.cmbControl3);
+            this.grpControl.Controls.Add(this.cmbControl1);
+            this.grpControl.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpControl.Location = new System.Drawing.Point(152, 399);
+            this.grpControl.Name = "grpControl";
+            this.grpControl.Size = new System.Drawing.Size(395, 110);
+            this.grpControl.TabIndex = 156;
+            this.grpControl.TabStop = false;
+            this.grpControl.Text = "Control/Confuse";
+            // 
+            // cmbControl4
+            // 
+            this.cmbControl4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbControl4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbControl4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbControl4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbControl4.FormattingEnabled = true;
+            this.cmbControl4.Location = new System.Drawing.Point(203, 59);
+            this.cmbControl4.Name = "cmbControl4";
+            this.cmbControl4.Size = new System.Drawing.Size(175, 27);
+            this.cmbControl4.TabIndex = 24;
+            // 
+            // cmbControl2
+            // 
+            this.cmbControl2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbControl2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbControl2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbControl2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbControl2.FormattingEnabled = true;
+            this.cmbControl2.Location = new System.Drawing.Point(18, 59);
+            this.cmbControl2.Name = "cmbControl2";
+            this.cmbControl2.Size = new System.Drawing.Size(179, 27);
+            this.cmbControl2.TabIndex = 23;
+            // 
+            // cmbControl3
+            // 
+            this.cmbControl3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbControl3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbControl3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbControl3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbControl3.FormattingEnabled = true;
+            this.cmbControl3.Location = new System.Drawing.Point(203, 26);
+            this.cmbControl3.Name = "cmbControl3";
+            this.cmbControl3.Size = new System.Drawing.Size(175, 27);
+            this.cmbControl3.TabIndex = 22;
+            // 
+            // cmbControl1
+            // 
+            this.cmbControl1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbControl1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbControl1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbControl1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbControl1.FormattingEnabled = true;
+            this.cmbControl1.Location = new System.Drawing.Point(18, 26);
+            this.cmbControl1.Name = "cmbControl1";
+            this.cmbControl1.Size = new System.Drawing.Size(179, 27);
+            this.cmbControl1.TabIndex = 21;
+            // 
+            // cmbSketch2
+            // 
+            this.cmbSketch2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbSketch2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbSketch2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSketch2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSketch2.FormattingEnabled = true;
+            this.cmbSketch2.Location = new System.Drawing.Point(885, 340);
+            this.cmbSketch2.Name = "cmbSketch2";
+            this.cmbSketch2.Size = new System.Drawing.Size(187, 27);
+            this.cmbSketch2.TabIndex = 32;
+            // 
+            // cmbSketch1
+            // 
+            this.cmbSketch1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbSketch1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbSketch1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSketch1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSketch1.FormattingEnabled = true;
+            this.cmbSketch1.Location = new System.Drawing.Point(885, 295);
+            this.cmbSketch1.Name = "cmbSketch1";
+            this.cmbSketch1.Size = new System.Drawing.Size(187, 27);
+            this.cmbSketch1.TabIndex = 31;
+            // 
+            // lblSketch
+            // 
+            this.lblSketch.AutoSize = true;
+            this.lblSketch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSketch.Location = new System.Drawing.Point(881, 266);
+            this.lblSketch.Name = "lblSketch";
+            this.lblSketch.Size = new System.Drawing.Size(55, 19);
+            this.lblSketch.TabIndex = 153;
+            this.lblSketch.Text = "Sketch";
+            // 
+            // cmbRage2
+            // 
+            this.cmbRage2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbRage2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbRage2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRage2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRage2.FormattingEnabled = true;
+            this.cmbRage2.Location = new System.Drawing.Point(885, 462);
+            this.cmbRage2.Name = "cmbRage2";
+            this.cmbRage2.Size = new System.Drawing.Size(187, 27);
+            this.cmbRage2.TabIndex = 34;
+            // 
+            // lblStealsCommon
+            // 
+            this.lblStealsCommon.AutoSize = true;
+            this.lblStealsCommon.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStealsCommon.Location = new System.Drawing.Point(976, 70);
+            this.lblStealsCommon.Name = "lblStealsCommon";
+            this.lblStealsCommon.Size = new System.Drawing.Size(59, 16);
+            this.lblStealsCommon.TabIndex = 149;
+            this.lblStealsCommon.Text = "Common";
+            // 
+            // lblRage
+            // 
+            this.lblRage.AutoSize = true;
+            this.lblRage.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRage.Location = new System.Drawing.Point(881, 388);
+            this.lblRage.Name = "lblRage";
+            this.lblRage.Size = new System.Drawing.Size(44, 19);
+            this.lblRage.TabIndex = 150;
+            this.lblRage.Text = "Rage";
+            // 
+            // cmbRage1
+            // 
+            this.cmbRage1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbRage1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbRage1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRage1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbRage1.FormattingEnabled = true;
+            this.cmbRage1.Location = new System.Drawing.Point(885, 415);
+            this.cmbRage1.Name = "cmbRage1";
+            this.cmbRage1.Size = new System.Drawing.Size(187, 27);
+            this.cmbRage1.TabIndex = 33;
+            // 
+            // cmbStealsCommon
+            // 
+            this.cmbStealsCommon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbStealsCommon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbStealsCommon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStealsCommon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStealsCommon.FormattingEnabled = true;
+            this.cmbStealsCommon.Items.AddRange(new object[] {
+            "Dagger",
+            "Mythril Knife",
+            "Main-gauche",
+            "Air Knife",
+            "Thief\'s Knife",
+            "Assassin Dagger",
+            "Man-eater",
+            "Swordbreaker",
+            "Gladius",
+            "Valiant Knife",
+            "Mythril Sword",
+            "Great Sword",
+            "Rune Blade",
+            "Flametongue",
+            "Icebrand",
+            "Thunder Blade",
+            "Bastard Sword",
+            "Stoneblade",
+            "Blood Sword",
+            "Enhancer",
+            "Crystal Sword",
+            "Falchion",
+            "Soul Sabre",
+            "Ogre Nyx",
+            "Excalibur",
+            "Zantetsuken",
+            "Lightbringer",
+            "Ragnarok",
+            "Ultima Weapon",
+            "Mythril Spear",
+            "Trident",
+            "Heavy Lance",
+            "Paritsan",
+            "Holy Lance",
+            "Golden Spear",
+            "Glow Lance",
+            "Sagojou\'s Spear",
+            "Kunai",
+            "Kodachi",
+            "Sakura Fubuki",
+            "Sasuke\'s Katana",
+            "Ichigeki",
+            "Kagenui",
+            "Ashura",
+            "Kotetsu",
+            "Kiku-ichimonji",
+            "Kazekiri",
+            "Murasame",
+            "Masamune",
+            "Murakumo",
+            "Mutsunokami",
+            "Healing Rod",
+            "Mythril Rod",
+            "Flame Rod",
+            "Ice Rod",
+            "Thunder Rod",
+            "Poison Rod",
+            "Holy Rod",
+            "Gravity Rod",
+            "Punisher",
+            "Magus Rod",
+            "Chocobo Brush",
+            "Da Vinci Brush",
+            "Magical Brush",
+            "Rainbow Brush",
+            "Shuriken",
+            "Fuma Shuriken",
+            "Pinwheel",
+            "Chain Flail",
+            "Full Moon Blade",
+            "Morning Star",
+            "Boomerang",
+            "Rising Sun",
+            "Hawkeye",
+            "Bone Club",
+            "Sniper",
+            "Wing Edge",
+            "Cards",
+            "Darts",
+            "Death\'s Cards",
+            "Viper Darts",
+            "Dice",
+            "Fixed Dice",
+            "Metal Knuckle",
+            "Mythril Claw",
+            "Kaiser Knuckle",
+            "Dark Claw",
+            "Burning Knuckle",
+            "Dragon Claw",
+            "Tigerfang",
+            "Buckler",
+            "Heavy Shield",
+            "Mythril Shield",
+            "Golden Shield",
+            "Aegis Shield",
+            "Diamond Shield",
+            "Flame Shield",
+            "Ice Shield",
+            "Thunder Shield",
+            "Crystal Shield",
+            "Genji\'s Shield",
+            "Tortoise Shield",
+            "Cursed Shield",
+            "Hero\'s Shield",
+            "Force Shield",
+            "Leather Cap",
+            "Hairband",
+            "Plumed Hat",
+            "Beret",
+            "Triangle Hat",
+            "Bandana",
+            "Iron Helm",
+            "Hypno Crown",
+            "Priest\'s Miter",
+            "Green Beret",
+            "Twist Headband",
+            "Mythril Helm",
+            "Tiara",
+            "Golden Helm",
+            "Tiger Mask",
+            "Red Cap",
+            "Mystery Veil",
+            "Circlet",
+            "Royal Crown",
+            "Diamond Helmet",
+            "Black Cowl",
+            "Crystal Helm",
+            "Oath Veil",
+            "Cat-ear Hood",
+            "Genji\'s Helmet",
+            "Thornlet",
+            "Saucer",
+            "Leather Armor",
+            "Cotton Robe",
+            "Kenpo Gi",
+            "Iron Armor",
+            "Silk Robe",
+            "Mythril Vest",
+            "Shinobi Garb",
+            "White Dress",
+            "Mythril Mail",
+            "Gaia Gear",
+            "Mirage Vest",
+            "Golden Armor",
+            "Power Suit",
+            "Luminous Robe",
+            "Diamond Plate",
+            "Red Jacket",
+            "Force Armor",
+            "Diamond Armor",
+            "Black Garb",
+            "Magus Robe",
+            "Crystal Mail",
+            "Regal Gown",
+            "Genji\'s Armor",
+            "Reed Cloak",
+            "Minerva Bustier",
+            "Tabby Suit",
+            "Chocobo Suit",
+            "Moogle Suit",
+            "Nutkin Suit",
+            "Behemoth Suit",
+            "Snow Muffler",
+            "Noiseblaster",
+            "Bioblaster",
+            "Sunbeam",
+            "Chainsaw",
+            "Debilitator",
+            "Drill",
+            "Air Anchor",
+            "Auto-Crossbow",
+            "Katon",
+            "Suiton",
+            "Raijin",
+            "Konoha Gakure",
+            "Kage Bunshin",
+            "Silver Glasses",
+            "Star Pendant",
+            "Peace Ring",
+            "Amulet",
+            "White Cape",
+            "Jeweled Ring",
+            "Fairy Ring",
+            "Barrier Ring",
+            "Mythril Glove",
+            "Protect Ring",
+            "Hermes Sandals",
+            "Reflect Ring",
+            "Angel Wings",
+            "Angel Ring",
+            "Knight\'s Code",
+            "Dragoon Boots",
+            "Zephyr Manteau",
+            "Princess Ring",
+            "Cursed Ring",
+            "Earring",
+            "Giant\'s Bracer",
+            "Blizzard Orb",
+            "Fury Ring",
+            "Thief Bracelet",
+            "Guard Bracelet",
+            "Brave\'s Ring",
+            "Ribbon",
+            "Muscle Belt",
+            "Crystal Orb",
+            "Gold Hairpin",
+            "Three Stars",
+            "Brigand\'s Glove",
+            "Gauntlet",
+            "Genji\'s Bracer",
+            "Hyper Wrist",
+            "Novitiate Proof",
+            "Forsaken Rosary",
+            "Black Belt",
+            "Heiji\'s Jitte",
+            "Fake Mustache",
+            "Soul of Thamasa",
+            "Hiryuu\'s Horn",
+            "Merit Award",
+            "Memento Ring",
+            "Safety Bit",
+            "Lich Ring",
+            "Molulu\'s Charm",
+            "Ward Bangle",
+            "Miracle Shoes",
+            "Alarm Earring",
+            "Gale Hairpin",
+            "Sniper Eye",
+            "Growth Egg",
+            "Cat\'s Bell",
+            "Sprint Shoes",
+            "Rename Card",
+            "Potion",
+            "Hi-Potion",
+            "X-Potion",
+            "Ether",
+            "Turbo Ether",
+            "Super Ether",
+            "Elixir",
+            "Megalixir",
+            "Phoenix Down",
+            "Holy Water",
+            "Antidote",
+            "Eye Drops",
+            "Gold Needle",
+            "Panacea",
+            "Sleeping Bag",
+            "Tent",
+            "Yellow Cherry",
+            "Magicite Shard",
+            "Super Ball",
+            "Echo Screen",
+            "Smoke Bomb",
+            "Teleport Stone",
+            "Jerky",
+            "Empty"});
+            this.cmbStealsCommon.Location = new System.Drawing.Point(885, 89);
+            this.cmbStealsCommon.Name = "cmbStealsCommon";
+            this.cmbStealsCommon.Size = new System.Drawing.Size(187, 27);
+            this.cmbStealsCommon.TabIndex = 28;
+            // 
+            // lblStealsRare
+            // 
+            this.lblStealsRare.AutoSize = true;
+            this.lblStealsRare.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStealsRare.Location = new System.Drawing.Point(1000, 21);
+            this.lblStealsRare.Name = "lblStealsRare";
+            this.lblStealsRare.Size = new System.Drawing.Size(35, 16);
+            this.lblStealsRare.TabIndex = 147;
+            this.lblStealsRare.Text = "Rare";
+            // 
+            // cmbStealsRare
+            // 
+            this.cmbStealsRare.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbStealsRare.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbStealsRare.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStealsRare.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStealsRare.FormattingEnabled = true;
+            this.cmbStealsRare.Items.AddRange(new object[] {
+            "Dagger",
+            "Mythril Knife",
+            "Main-gauche",
+            "Air Knife",
+            "Thief\'s Knife",
+            "Assassin Dagger",
+            "Man-eater",
+            "Swordbreaker",
+            "Gladius",
+            "Valiant Knife",
+            "Mythril Sword",
+            "Great Sword",
+            "Rune Blade",
+            "Flametongue",
+            "Icebrand",
+            "Thunder Blade",
+            "Bastard Sword",
+            "Stoneblade",
+            "Blood Sword",
+            "Enhancer",
+            "Crystal Sword",
+            "Falchion",
+            "Soul Sabre",
+            "Ogre Nyx",
+            "Excalibur",
+            "Zantetsuken",
+            "Lightbringer",
+            "Ragnarok",
+            "Ultima Weapon",
+            "Mythril Spear",
+            "Trident",
+            "Heavy Lance",
+            "Paritsan",
+            "Holy Lance",
+            "Golden Spear",
+            "Glow Lance",
+            "Sagojou\'s Spear",
+            "Kunai",
+            "Kodachi",
+            "Sakura Fubuki",
+            "Sasuke\'s Katana",
+            "Ichigeki",
+            "Kagenui",
+            "Ashura",
+            "Kotetsu",
+            "Kiku-ichimonji",
+            "Kazekiri",
+            "Murasame",
+            "Masamune",
+            "Murakumo",
+            "Mutsunokami",
+            "Healing Rod",
+            "Mythril Rod",
+            "Flame Rod",
+            "Ice Rod",
+            "Thunder Rod",
+            "Poison Rod",
+            "Holy Rod",
+            "Gravity Rod",
+            "Punisher",
+            "Magus Rod",
+            "Chocobo Brush",
+            "Da Vinci Brush",
+            "Magical Brush",
+            "Rainbow Brush",
+            "Shuriken",
+            "Fuma Shuriken",
+            "Pinwheel",
+            "Chain Flail",
+            "Full Moon Blade",
+            "Morning Star",
+            "Boomerang",
+            "Rising Sun",
+            "Hawkeye",
+            "Bone Club",
+            "Sniper",
+            "Wing Edge",
+            "Cards",
+            "Darts",
+            "Death\'s Cards",
+            "Viper Darts",
+            "Dice",
+            "Fixed Dice",
+            "Metal Knuckle",
+            "Mythril Claw",
+            "Kaiser Knuckle",
+            "Dark Claw",
+            "Burning Knuckle",
+            "Dragon Claw",
+            "Tigerfang",
+            "Buckler",
+            "Heavy Shield",
+            "Mythril Shield",
+            "Golden Shield",
+            "Aegis Shield",
+            "Diamond Shield",
+            "Flame Shield",
+            "Ice Shield",
+            "Thunder Shield",
+            "Crystal Shield",
+            "Genji\'s Shield",
+            "Tortoise Shield",
+            "Cursed Shield",
+            "Hero\'s Shield",
+            "Force Shield",
+            "Leather Cap",
+            "Hairband",
+            "Plumed Hat",
+            "Beret",
+            "Triangle Hat",
+            "Bandana",
+            "Iron Helm",
+            "Hypno Crown",
+            "Priest\'s Miter",
+            "Green Beret",
+            "Twist Headband",
+            "Mythril Helm",
+            "Tiara",
+            "Golden Helm",
+            "Tiger Mask",
+            "Red Cap",
+            "Mystery Veil",
+            "Circlet",
+            "Royal Crown",
+            "Diamond Helmet",
+            "Black Cowl",
+            "Crystal Helm",
+            "Oath Veil",
+            "Cat-ear Hood",
+            "Genji\'s Helmet",
+            "Thornlet",
+            "Saucer",
+            "Leather Armor",
+            "Cotton Robe",
+            "Kenpo Gi",
+            "Iron Armor",
+            "Silk Robe",
+            "Mythril Vest",
+            "Shinobi Garb",
+            "White Dress",
+            "Mythril Mail",
+            "Gaia Gear",
+            "Mirage Vest",
+            "Golden Armor",
+            "Power Suit",
+            "Luminous Robe",
+            "Diamond Plate",
+            "Red Jacket",
+            "Force Armor",
+            "Diamond Armor",
+            "Black Garb",
+            "Magus Robe",
+            "Crystal Mail",
+            "Regal Gown",
+            "Genji\'s Armor",
+            "Reed Cloak",
+            "Minerva Bustier",
+            "Tabby Suit",
+            "Chocobo Suit",
+            "Moogle Suit",
+            "Nutkin Suit",
+            "Behemoth Suit",
+            "Snow Muffler",
+            "Noiseblaster",
+            "Bioblaster",
+            "Sunbeam",
+            "Chainsaw",
+            "Debilitator",
+            "Drill",
+            "Air Anchor",
+            "Auto-Crossbow",
+            "Katon",
+            "Suiton",
+            "Raijin",
+            "Konoha Gakure",
+            "Kage Bunshin",
+            "Silver Glasses",
+            "Star Pendant",
+            "Peace Ring",
+            "Amulet",
+            "White Cape",
+            "Jeweled Ring",
+            "Fairy Ring",
+            "Barrier Ring",
+            "Mythril Glove",
+            "Protect Ring",
+            "Hermes Sandals",
+            "Reflect Ring",
+            "Angel Wings",
+            "Angel Ring",
+            "Knight\'s Code",
+            "Dragoon Boots",
+            "Zephyr Manteau",
+            "Princess Ring",
+            "Cursed Ring",
+            "Earring",
+            "Giant\'s Bracer",
+            "Blizzard Orb",
+            "Fury Ring",
+            "Thief Bracelet",
+            "Guard Bracelet",
+            "Brave\'s Ring",
+            "Ribbon",
+            "Muscle Belt",
+            "Crystal Orb",
+            "Gold Hairpin",
+            "Three Stars",
+            "Brigand\'s Glove",
+            "Gauntlet",
+            "Genji\'s Bracer",
+            "Hyper Wrist",
+            "Novitiate Proof",
+            "Forsaken Rosary",
+            "Black Belt",
+            "Heiji\'s Jitte",
+            "Fake Mustache",
+            "Soul of Thamasa",
+            "Hiryuu\'s Horn",
+            "Merit Award",
+            "Memento Ring",
+            "Safety Bit",
+            "Lich Ring",
+            "Molulu\'s Charm",
+            "Ward Bangle",
+            "Miracle Shoes",
+            "Alarm Earring",
+            "Gale Hairpin",
+            "Sniper Eye",
+            "Growth Egg",
+            "Cat\'s Bell",
+            "Sprint Shoes",
+            "Rename Card",
+            "Potion",
+            "Hi-Potion",
+            "X-Potion",
+            "Ether",
+            "Turbo Ether",
+            "Super Ether",
+            "Elixir",
+            "Megalixir",
+            "Phoenix Down",
+            "Holy Water",
+            "Antidote",
+            "Eye Drops",
+            "Gold Needle",
+            "Panacea",
+            "Sleeping Bag",
+            "Tent",
+            "Yellow Cherry",
+            "Magicite Shard",
+            "Super Ball",
+            "Echo Screen",
+            "Smoke Bomb",
+            "Teleport Stone",
+            "Jerky",
+            "Empty"});
+            this.cmbStealsRare.Location = new System.Drawing.Point(885, 40);
+            this.cmbStealsRare.Name = "cmbStealsRare";
+            this.cmbStealsRare.Size = new System.Drawing.Size(187, 27);
+            this.cmbStealsRare.TabIndex = 27;
+            // 
+            // lblStolenItems
+            // 
+            this.lblStolenItems.AutoSize = true;
+            this.lblStolenItems.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStolenItems.Location = new System.Drawing.Point(881, 6);
+            this.lblStolenItems.Name = "lblStolenItems";
+            this.lblStolenItems.Size = new System.Drawing.Size(98, 19);
+            this.lblStolenItems.TabIndex = 145;
+            this.lblStolenItems.Text = "Stolen Items";
+            // 
+            // lblDropsCommon
+            // 
+            this.lblDropsCommon.AutoSize = true;
+            this.lblDropsCommon.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDropsCommon.Location = new System.Drawing.Point(976, 200);
+            this.lblDropsCommon.Name = "lblDropsCommon";
+            this.lblDropsCommon.Size = new System.Drawing.Size(59, 16);
+            this.lblDropsCommon.TabIndex = 144;
+            this.lblDropsCommon.Text = "Common";
+            // 
+            // cmbDropsCommon
+            // 
+            this.cmbDropsCommon.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbDropsCommon.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbDropsCommon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDropsCommon.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDropsCommon.FormattingEnabled = true;
+            this.cmbDropsCommon.Items.AddRange(new object[] {
+            "Dagger",
+            "Mythril Knife",
+            "Main-gauche",
+            "Air Knife",
+            "Thief\'s Knife",
+            "Assassin Dagger",
+            "Man-eater",
+            "Swordbreaker",
+            "Gladius",
+            "Valiant Knife",
+            "Mythril Sword",
+            "Great Sword",
+            "Rune Blade",
+            "Flametongue",
+            "Icebrand",
+            "Thunder Blade",
+            "Bastard Sword",
+            "Stoneblade",
+            "Blood Sword",
+            "Enhancer",
+            "Crystal Sword",
+            "Falchion",
+            "Soul Sabre",
+            "Ogre Nyx",
+            "Excalibur",
+            "Zantetsuken",
+            "Lightbringer",
+            "Ragnarok",
+            "Ultima Weapon",
+            "Mythril Spear",
+            "Trident",
+            "Heavy Lance",
+            "Paritsan",
+            "Holy Lance",
+            "Golden Spear",
+            "Glow Lance",
+            "Sagojou\'s Spear",
+            "Kunai",
+            "Kodachi",
+            "Sakura Fubuki",
+            "Sasuke\'s Katana",
+            "Ichigeki",
+            "Kagenui",
+            "Ashura",
+            "Kotetsu",
+            "Kiku-ichimonji",
+            "Kazekiri",
+            "Murasame",
+            "Masamune",
+            "Murakumo",
+            "Mutsunokami",
+            "Healing Rod",
+            "Mythril Rod",
+            "Flame Rod",
+            "Ice Rod",
+            "Thunder Rod",
+            "Poison Rod",
+            "Holy Rod",
+            "Gravity Rod",
+            "Punisher",
+            "Magus Rod",
+            "Chocobo Brush",
+            "Da Vinci Brush",
+            "Magical Brush",
+            "Rainbow Brush",
+            "Shuriken",
+            "Fuma Shuriken",
+            "Pinwheel",
+            "Chain Flail",
+            "Full Moon Blade",
+            "Morning Star",
+            "Boomerang",
+            "Rising Sun",
+            "Hawkeye",
+            "Bone Club",
+            "Sniper",
+            "Wing Edge",
+            "Cards",
+            "Darts",
+            "Death\'s Cards",
+            "Viper Darts",
+            "Dice",
+            "Fixed Dice",
+            "Metal Knuckle",
+            "Mythril Claw",
+            "Kaiser Knuckle",
+            "Dark Claw",
+            "Burning Knuckle",
+            "Dragon Claw",
+            "Tigerfang",
+            "Buckler",
+            "Heavy Shield",
+            "Mythril Shield",
+            "Golden Shield",
+            "Aegis Shield",
+            "Diamond Shield",
+            "Flame Shield",
+            "Ice Shield",
+            "Thunder Shield",
+            "Crystal Shield",
+            "Genji\'s Shield",
+            "Tortoise Shield",
+            "Cursed Shield",
+            "Hero\'s Shield",
+            "Force Shield",
+            "Leather Cap",
+            "Hairband",
+            "Plumed Hat",
+            "Beret",
+            "Triangle Hat",
+            "Bandana",
+            "Iron Helm",
+            "Hypno Crown",
+            "Priest\'s Miter",
+            "Green Beret",
+            "Twist Headband",
+            "Mythril Helm",
+            "Tiara",
+            "Golden Helm",
+            "Tiger Mask",
+            "Red Cap",
+            "Mystery Veil",
+            "Circlet",
+            "Royal Crown",
+            "Diamond Helmet",
+            "Black Cowl",
+            "Crystal Helm",
+            "Oath Veil",
+            "Cat-ear Hood",
+            "Genji\'s Helmet",
+            "Thornlet",
+            "Saucer",
+            "Leather Armor",
+            "Cotton Robe",
+            "Kenpo Gi",
+            "Iron Armor",
+            "Silk Robe",
+            "Mythril Vest",
+            "Shinobi Garb",
+            "White Dress",
+            "Mythril Mail",
+            "Gaia Gear",
+            "Mirage Vest",
+            "Golden Armor",
+            "Power Suit",
+            "Luminous Robe",
+            "Diamond Plate",
+            "Red Jacket",
+            "Force Armor",
+            "Diamond Armor",
+            "Black Garb",
+            "Magus Robe",
+            "Crystal Mail",
+            "Regal Gown",
+            "Genji\'s Armor",
+            "Reed Cloak",
+            "Minerva Bustier",
+            "Tabby Suit",
+            "Chocobo Suit",
+            "Moogle Suit",
+            "Nutkin Suit",
+            "Behemoth Suit",
+            "Snow Muffler",
+            "Noiseblaster",
+            "Bioblaster",
+            "Sunbeam",
+            "Chainsaw",
+            "Debilitator",
+            "Drill",
+            "Air Anchor",
+            "Auto-Crossbow",
+            "Katon",
+            "Suiton",
+            "Raijin",
+            "Konoha Gakure",
+            "Kage Bunshin",
+            "Silver Glasses",
+            "Star Pendant",
+            "Peace Ring",
+            "Amulet",
+            "White Cape",
+            "Jeweled Ring",
+            "Fairy Ring",
+            "Barrier Ring",
+            "Mythril Glove",
+            "Protect Ring",
+            "Hermes Sandals",
+            "Reflect Ring",
+            "Angel Wings",
+            "Angel Ring",
+            "Knight\'s Code",
+            "Dragoon Boots",
+            "Zephyr Manteau",
+            "Princess Ring",
+            "Cursed Ring",
+            "Earring",
+            "Giant\'s Bracer",
+            "Blizzard Orb",
+            "Fury Ring",
+            "Thief Bracelet",
+            "Guard Bracelet",
+            "Brave\'s Ring",
+            "Ribbon",
+            "Muscle Belt",
+            "Crystal Orb",
+            "Gold Hairpin",
+            "Three Stars",
+            "Brigand\'s Glove",
+            "Gauntlet",
+            "Genji\'s Bracer",
+            "Hyper Wrist",
+            "Novitiate Proof",
+            "Forsaken Rosary",
+            "Black Belt",
+            "Heiji\'s Jitte",
+            "Fake Mustache",
+            "Soul of Thamasa",
+            "Hiryuu\'s Horn",
+            "Merit Award",
+            "Memento Ring",
+            "Safety Bit",
+            "Lich Ring",
+            "Molulu\'s Charm",
+            "Ward Bangle",
+            "Miracle Shoes",
+            "Alarm Earring",
+            "Gale Hairpin",
+            "Sniper Eye",
+            "Growth Egg",
+            "Cat\'s Bell",
+            "Sprint Shoes",
+            "Rename Card",
+            "Potion",
+            "Hi-Potion",
+            "X-Potion",
+            "Ether",
+            "Turbo Ether",
+            "Super Ether",
+            "Elixir",
+            "Megalixir",
+            "Phoenix Down",
+            "Holy Water",
+            "Antidote",
+            "Eye Drops",
+            "Gold Needle",
+            "Panacea",
+            "Sleeping Bag",
+            "Tent",
+            "Yellow Cherry",
+            "Magicite Shard",
+            "Super Ball",
+            "Echo Screen",
+            "Smoke Bomb",
+            "Teleport Stone",
+            "Jerky",
+            "Empty"});
+            this.cmbDropsCommon.Location = new System.Drawing.Point(885, 219);
+            this.cmbDropsCommon.Name = "cmbDropsCommon";
+            this.cmbDropsCommon.Size = new System.Drawing.Size(187, 27);
+            this.cmbDropsCommon.TabIndex = 30;
+            // 
+            // lblDropsRare
+            // 
+            this.lblDropsRare.AutoSize = true;
+            this.lblDropsRare.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDropsRare.Location = new System.Drawing.Point(1000, 151);
+            this.lblDropsRare.Name = "lblDropsRare";
+            this.lblDropsRare.Size = new System.Drawing.Size(35, 16);
+            this.lblDropsRare.TabIndex = 142;
+            this.lblDropsRare.Text = "Rare";
+            // 
+            // cmbDropsRare
+            // 
+            this.cmbDropsRare.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbDropsRare.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbDropsRare.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDropsRare.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDropsRare.FormattingEnabled = true;
+            this.cmbDropsRare.Items.AddRange(new object[] {
+            "Dagger",
+            "Mythril Knife",
+            "Main-gauche",
+            "Air Knife",
+            "Thief\'s Knife",
+            "Assassin Dagger",
+            "Man-eater",
+            "Swordbreaker",
+            "Gladius",
+            "Valiant Knife",
+            "Mythril Sword",
+            "Great Sword",
+            "Rune Blade",
+            "Flametongue",
+            "Icebrand",
+            "Thunder Blade",
+            "Bastard Sword",
+            "Stoneblade",
+            "Blood Sword",
+            "Enhancer",
+            "Crystal Sword",
+            "Falchion",
+            "Soul Sabre",
+            "Ogre Nyx",
+            "Excalibur",
+            "Zantetsuken",
+            "Lightbringer",
+            "Ragnarok",
+            "Ultima Weapon",
+            "Mythril Spear",
+            "Trident",
+            "Heavy Lance",
+            "Paritsan",
+            "Holy Lance",
+            "Golden Spear",
+            "Glow Lance",
+            "Sagojou\'s Spear",
+            "Kunai",
+            "Kodachi",
+            "Sakura Fubuki",
+            "Sasuke\'s Katana",
+            "Ichigeki",
+            "Kagenui",
+            "Ashura",
+            "Kotetsu",
+            "Kiku-ichimonji",
+            "Kazekiri",
+            "Murasame",
+            "Masamune",
+            "Murakumo",
+            "Mutsunokami",
+            "Healing Rod",
+            "Mythril Rod",
+            "Flame Rod",
+            "Ice Rod",
+            "Thunder Rod",
+            "Poison Rod",
+            "Holy Rod",
+            "Gravity Rod",
+            "Punisher",
+            "Magus Rod",
+            "Chocobo Brush",
+            "Da Vinci Brush",
+            "Magical Brush",
+            "Rainbow Brush",
+            "Shuriken",
+            "Fuma Shuriken",
+            "Pinwheel",
+            "Chain Flail",
+            "Full Moon Blade",
+            "Morning Star",
+            "Boomerang",
+            "Rising Sun",
+            "Hawkeye",
+            "Bone Club",
+            "Sniper",
+            "Wing Edge",
+            "Cards",
+            "Darts",
+            "Death\'s Cards",
+            "Viper Darts",
+            "Dice",
+            "Fixed Dice",
+            "Metal Knuckle",
+            "Mythril Claw",
+            "Kaiser Knuckle",
+            "Dark Claw",
+            "Burning Knuckle",
+            "Dragon Claw",
+            "Tigerfang",
+            "Buckler",
+            "Heavy Shield",
+            "Mythril Shield",
+            "Golden Shield",
+            "Aegis Shield",
+            "Diamond Shield",
+            "Flame Shield",
+            "Ice Shield",
+            "Thunder Shield",
+            "Crystal Shield",
+            "Genji\'s Shield",
+            "Tortoise Shield",
+            "Cursed Shield",
+            "Hero\'s Shield",
+            "Force Shield",
+            "Leather Cap",
+            "Hairband",
+            "Plumed Hat",
+            "Beret",
+            "Triangle Hat",
+            "Bandana",
+            "Iron Helm",
+            "Hypno Crown",
+            "Priest\'s Miter",
+            "Green Beret",
+            "Twist Headband",
+            "Mythril Helm",
+            "Tiara",
+            "Golden Helm",
+            "Tiger Mask",
+            "Red Cap",
+            "Mystery Veil",
+            "Circlet",
+            "Royal Crown",
+            "Diamond Helmet",
+            "Black Cowl",
+            "Crystal Helm",
+            "Oath Veil",
+            "Cat-ear Hood",
+            "Genji\'s Helmet",
+            "Thornlet",
+            "Saucer",
+            "Leather Armor",
+            "Cotton Robe",
+            "Kenpo Gi",
+            "Iron Armor",
+            "Silk Robe",
+            "Mythril Vest",
+            "Shinobi Garb",
+            "White Dress",
+            "Mythril Mail",
+            "Gaia Gear",
+            "Mirage Vest",
+            "Golden Armor",
+            "Power Suit",
+            "Luminous Robe",
+            "Diamond Plate",
+            "Red Jacket",
+            "Force Armor",
+            "Diamond Armor",
+            "Black Garb",
+            "Magus Robe",
+            "Crystal Mail",
+            "Regal Gown",
+            "Genji\'s Armor",
+            "Reed Cloak",
+            "Minerva Bustier",
+            "Tabby Suit",
+            "Chocobo Suit",
+            "Moogle Suit",
+            "Nutkin Suit",
+            "Behemoth Suit",
+            "Snow Muffler",
+            "Noiseblaster",
+            "Bioblaster",
+            "Sunbeam",
+            "Chainsaw",
+            "Debilitator",
+            "Drill",
+            "Air Anchor",
+            "Auto-Crossbow",
+            "Katon",
+            "Suiton",
+            "Raijin",
+            "Konoha Gakure",
+            "Kage Bunshin",
+            "Silver Glasses",
+            "Star Pendant",
+            "Peace Ring",
+            "Amulet",
+            "White Cape",
+            "Jeweled Ring",
+            "Fairy Ring",
+            "Barrier Ring",
+            "Mythril Glove",
+            "Protect Ring",
+            "Hermes Sandals",
+            "Reflect Ring",
+            "Angel Wings",
+            "Angel Ring",
+            "Knight\'s Code",
+            "Dragoon Boots",
+            "Zephyr Manteau",
+            "Princess Ring",
+            "Cursed Ring",
+            "Earring",
+            "Giant\'s Bracer",
+            "Blizzard Orb",
+            "Fury Ring",
+            "Thief Bracelet",
+            "Guard Bracelet",
+            "Brave\'s Ring",
+            "Ribbon",
+            "Muscle Belt",
+            "Crystal Orb",
+            "Gold Hairpin",
+            "Three Stars",
+            "Brigand\'s Glove",
+            "Gauntlet",
+            "Genji\'s Bracer",
+            "Hyper Wrist",
+            "Novitiate Proof",
+            "Forsaken Rosary",
+            "Black Belt",
+            "Heiji\'s Jitte",
+            "Fake Mustache",
+            "Soul of Thamasa",
+            "Hiryuu\'s Horn",
+            "Merit Award",
+            "Memento Ring",
+            "Safety Bit",
+            "Lich Ring",
+            "Molulu\'s Charm",
+            "Ward Bangle",
+            "Miracle Shoes",
+            "Alarm Earring",
+            "Gale Hairpin",
+            "Sniper Eye",
+            "Growth Egg",
+            "Cat\'s Bell",
+            "Sprint Shoes",
+            "Rename Card",
+            "Potion",
+            "Hi-Potion",
+            "X-Potion",
+            "Ether",
+            "Turbo Ether",
+            "Super Ether",
+            "Elixir",
+            "Megalixir",
+            "Phoenix Down",
+            "Holy Water",
+            "Antidote",
+            "Eye Drops",
+            "Gold Needle",
+            "Panacea",
+            "Sleeping Bag",
+            "Tent",
+            "Yellow Cherry",
+            "Magicite Shard",
+            "Super Ball",
+            "Echo Screen",
+            "Smoke Bomb",
+            "Teleport Stone",
+            "Jerky",
+            "Empty"});
+            this.cmbDropsRare.Location = new System.Drawing.Point(885, 170);
+            this.cmbDropsRare.Name = "cmbDropsRare";
+            this.cmbDropsRare.Size = new System.Drawing.Size(187, 27);
+            this.cmbDropsRare.TabIndex = 29;
+            // 
+            // lblDrops
+            // 
+            this.lblDrops.AutoSize = true;
+            this.lblDrops.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDrops.Location = new System.Drawing.Point(881, 136);
+            this.lblDrops.Name = "lblDrops";
+            this.lblDrops.Size = new System.Drawing.Size(51, 19);
+            this.lblDrops.TabIndex = 140;
+            this.lblDrops.Text = "Drops";
+            // 
+            // grpSpecialAttacks
+            // 
+            this.grpSpecialAttacks.Controls.Add(this.lblNoDodge);
+            this.grpSpecialAttacks.Controls.Add(this.lblNoPhys);
+            this.grpSpecialAttacks.Controls.Add(this.chkNoDodge);
+            this.grpSpecialAttacks.Controls.Add(this.chkNoPhys);
+            this.grpSpecialAttacks.Controls.Add(this.cmbSpecialAttack);
+            this.grpSpecialAttacks.Controls.Add(this.lblExtraEffect);
+            this.grpSpecialAttacks.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSpecialAttacks.Location = new System.Drawing.Point(152, 271);
+            this.grpSpecialAttacks.Name = "grpSpecialAttacks";
+            this.grpSpecialAttacks.Size = new System.Drawing.Size(395, 122);
+            this.grpSpecialAttacks.TabIndex = 200;
+            this.grpSpecialAttacks.TabStop = false;
+            this.grpSpecialAttacks.Text = "Special Attacks";
+            // 
+            // lblNoDodge
+            // 
+            this.lblNoDodge.AutoSize = true;
+            this.lblNoDodge.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoDodge.Location = new System.Drawing.Point(227, 99);
+            this.lblNoDodge.Name = "lblNoDodge";
+            this.lblNoDodge.Size = new System.Drawing.Size(141, 19);
+            this.lblNoDodge.TabIndex = 117;
+            this.lblNoDodge.Text = "Cannot be Dodged";
+            // 
+            // lblNoPhys
+            // 
+            this.lblNoPhys.AutoSize = true;
+            this.lblNoPhys.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoPhys.Location = new System.Drawing.Point(234, 80);
+            this.lblNoPhys.Name = "lblNoPhys";
+            this.lblNoPhys.Size = new System.Drawing.Size(134, 19);
+            this.lblNoPhys.TabIndex = 118;
+            this.lblNoPhys.Text = "No Physical Harm";
+            // 
+            // chkNoDodge
+            // 
+            this.chkNoDodge.AutoSize = true;
+            this.chkNoDodge.Location = new System.Drawing.Point(374, 102);
+            this.chkNoDodge.Name = "chkNoDodge";
+            this.chkNoDodge.Size = new System.Drawing.Size(15, 14);
+            this.chkNoDodge.TabIndex = 117;
+            this.chkNoDodge.UseVisualStyleBackColor = true;
+            // 
+            // chkNoPhys
+            // 
+            this.chkNoPhys.AutoSize = true;
+            this.chkNoPhys.Location = new System.Drawing.Point(374, 85);
+            this.chkNoPhys.Name = "chkNoPhys";
+            this.chkNoPhys.Size = new System.Drawing.Size(15, 14);
+            this.chkNoPhys.TabIndex = 118;
+            this.chkNoPhys.UseVisualStyleBackColor = true;
+            // 
+            // cmbSpecialAttack
+            // 
+            this.cmbSpecialAttack.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbSpecialAttack.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbSpecialAttack.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSpecialAttack.FormattingEnabled = true;
+            this.cmbSpecialAttack.Items.AddRange(new object[] {
+            "Darkness",
+            "Zombie",
+            "Poison",
+            "Magitek",
+            "Clear",
+            "Imp",
+            "Petrify",
+            "Death",
+            "Doomed",
+            "Critical",
+            "Image",
+            "Silence",
+            "Berserk",
+            "Confusion",
+            "Sap",
+            "Sleep",
+            "Dance",
+            "Regen",
+            "Slow",
+            "Haste",
+            "Stop",
+            "Shell",
+            "Protect",
+            "Rage",
+            "Freeze",
+            "Reraise",
+            "Morph",
+            "Chanting",
+            "Disappear",
+            "Dog Block",
+            "Float",
+            "Attack Level 1",
+            "Attack Level 2",
+            "Attack Level 3",
+            "Attack Level 4",
+            "Attack Level 5",
+            "Attack Level 6",
+            "Attack Level 7",
+            "Attack Level 8",
+            "Attack Level 9",
+            "Attack Level 10",
+            "Attack Level 11",
+            "Attack Level 12",
+            "Attack Level 13",
+            "Attack Level 14",
+            "Attack Level 15",
+            "Attack Level 16",
+            "Drain",
+            "Osmose",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown"});
+            this.cmbSpecialAttack.Location = new System.Drawing.Point(238, 47);
+            this.cmbSpecialAttack.Name = "cmbSpecialAttack";
+            this.cmbSpecialAttack.Size = new System.Drawing.Size(151, 27);
+            this.cmbSpecialAttack.TabIndex = 20;
+            // 
+            // lblExtraEffect
+            // 
+            this.lblExtraEffect.AutoSize = true;
+            this.lblExtraEffect.Location = new System.Drawing.Point(300, 19);
+            this.lblExtraEffect.Name = "lblExtraEffect";
+            this.lblExtraEffect.Size = new System.Drawing.Size(89, 19);
+            this.lblExtraEffect.TabIndex = 0;
+            this.lblExtraEffect.Text = "Extra Effect";
             // 
             // numMonsterIndex
             // 
@@ -11091,15 +5477,15 @@
             0,
             0});
             this.numMonsterIndex.Name = "numMonsterIndex";
-            this.numMonsterIndex.Size = new System.Drawing.Size(48, 27);
-            this.numMonsterIndex.TabIndex = 138;
+            this.numMonsterIndex.Size = new System.Drawing.Size(51, 27);
+            this.numMonsterIndex.TabIndex = 1;
             this.numMonsterIndex.ValueChanged += new System.EventHandler(this.numMonsterIndex_ValueChanged);
             // 
             // lblNormalAttack
             // 
             this.lblNormalAttack.AutoSize = true;
             this.lblNormalAttack.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNormalAttack.Location = new System.Drawing.Point(2, 453);
+            this.lblNormalAttack.Location = new System.Drawing.Point(3, 458);
             this.lblNormalAttack.Name = "lblNormalAttack";
             this.lblNormalAttack.Size = new System.Drawing.Size(110, 19);
             this.lblNormalAttack.TabIndex = 137;
@@ -11107,6 +5493,9 @@
             // 
             // cmbNormalAttack
             // 
+            this.cmbNormalAttack.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbNormalAttack.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbNormalAttack.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNormalAttack.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbNormalAttack.FormattingEnabled = true;
             this.cmbNormalAttack.Items.AddRange(new object[] {
@@ -11366,10 +5755,10 @@
             "Teleport Stone",
             "Jerky",
             "Empty"});
-            this.cmbNormalAttack.Location = new System.Drawing.Point(6, 475);
+            this.cmbNormalAttack.Location = new System.Drawing.Point(7, 480);
             this.cmbNormalAttack.Name = "cmbNormalAttack";
             this.cmbNormalAttack.Size = new System.Drawing.Size(138, 27);
-            this.cmbNormalAttack.TabIndex = 136;
+            this.cmbNormalAttack.TabIndex = 19;
             // 
             // groupBox1
             // 
@@ -11451,7 +5840,7 @@
             this.groupBox1.Location = new System.Drawing.Point(694, 6);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(181, 503);
-            this.groupBox1.TabIndex = 135;
+            this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Status";
             // 
@@ -12179,7 +6568,7 @@
             this.grpSpecialStatus.Controls.Add(this.chkNoRun);
             this.grpSpecialStatus.Controls.Add(this.lblNoScan);
             this.grpSpecialStatus.Controls.Add(this.chkBlockSuplex);
-            this.grpSpecialStatus.Controls.Add(this.chkUnknown3);
+            this.grpSpecialStatus.Controls.Add(this.chkIgnoreITD);
             this.grpSpecialStatus.Controls.Add(this.chkAttackFirst);
             this.grpSpecialStatus.Controls.Add(this.lblNoRun);
             this.grpSpecialStatus.Controls.Add(this.chkHumanoid);
@@ -12191,17 +6580,17 @@
             this.grpSpecialStatus.Controls.Add(this.chkPierceReflect);
             this.grpSpecialStatus.Controls.Add(this.lblUndead);
             this.grpSpecialStatus.Controls.Add(this.lblCritImp);
-            this.grpSpecialStatus.Controls.Add(this.lblUnknown3);
+            this.grpSpecialStatus.Controls.Add(this.lblPierceReflect);
             this.grpSpecialStatus.Controls.Add(this.lblHumanoid);
             this.grpSpecialStatus.Controls.Add(this.lblUnknown2);
             this.grpSpecialStatus.Controls.Add(this.lblNoName);
-            this.grpSpecialStatus.Controls.Add(this.lblPierceReflect);
+            this.grpSpecialStatus.Controls.Add(this.lblIgnoreITD);
             this.grpSpecialStatus.Controls.Add(this.lblMPDeath);
             this.grpSpecialStatus.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpSpecialStatus.Location = new System.Drawing.Point(554, 6);
             this.grpSpecialStatus.Name = "grpSpecialStatus";
             this.grpSpecialStatus.Size = new System.Drawing.Size(134, 503);
-            this.grpSpecialStatus.TabIndex = 83;
+            this.grpSpecialStatus.TabIndex = 25;
             this.grpSpecialStatus.TabStop = false;
             this.grpSpecialStatus.Text = "Special Status";
             // 
@@ -12487,14 +6876,14 @@
             this.chkBlockSuplex.TabIndex = 119;
             this.chkBlockSuplex.UseVisualStyleBackColor = true;
             // 
-            // chkUnknown3
+            // chkIgnoreITD
             // 
-            this.chkUnknown3.AutoSize = true;
-            this.chkUnknown3.Location = new System.Drawing.Point(113, 122);
-            this.chkUnknown3.Name = "chkUnknown3";
-            this.chkUnknown3.Size = new System.Drawing.Size(15, 14);
-            this.chkUnknown3.TabIndex = 122;
-            this.chkUnknown3.UseVisualStyleBackColor = true;
+            this.chkIgnoreITD.AutoSize = true;
+            this.chkIgnoreITD.Location = new System.Drawing.Point(113, 42);
+            this.chkIgnoreITD.Name = "chkIgnoreITD";
+            this.chkIgnoreITD.Size = new System.Drawing.Size(15, 14);
+            this.chkIgnoreITD.TabIndex = 122;
+            this.chkIgnoreITD.UseVisualStyleBackColor = true;
             // 
             // chkAttackFirst
             // 
@@ -12537,7 +6926,7 @@
             // chkUnknown2
             // 
             this.chkUnknown2.AutoSize = true;
-            this.chkUnknown2.Location = new System.Drawing.Point(113, 82);
+            this.chkUnknown2.Location = new System.Drawing.Point(113, 120);
             this.chkUnknown2.Name = "chkUnknown2";
             this.chkUnknown2.Size = new System.Drawing.Size(15, 14);
             this.chkUnknown2.TabIndex = 120;
@@ -12575,7 +6964,7 @@
             // chkPierceReflect
             // 
             this.chkPierceReflect.AutoSize = true;
-            this.chkPierceReflect.Location = new System.Drawing.Point(113, 42);
+            this.chkPierceReflect.Location = new System.Drawing.Point(113, 82);
             this.chkPierceReflect.Name = "chkPierceReflect";
             this.chkPierceReflect.Size = new System.Drawing.Size(15, 14);
             this.chkPierceReflect.TabIndex = 118;
@@ -12601,15 +6990,15 @@
             this.lblCritImp.TabIndex = 89;
             this.lblCritImp.Text = "Crit.Hit if Imp";
             // 
-            // lblUnknown3
+            // lblPierceReflect
             // 
-            this.lblUnknown3.AutoSize = true;
-            this.lblUnknown3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnknown3.Location = new System.Drawing.Point(81, 120);
-            this.lblUnknown3.Name = "lblUnknown3";
-            this.lblUnknown3.Size = new System.Drawing.Size(26, 16);
-            this.lblUnknown3.TabIndex = 85;
-            this.lblUnknown3.Text = "???";
+            this.lblPierceReflect.AutoSize = true;
+            this.lblPierceReflect.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPierceReflect.Location = new System.Drawing.Point(21, 80);
+            this.lblPierceReflect.Name = "lblPierceReflect";
+            this.lblPierceReflect.Size = new System.Drawing.Size(86, 16);
+            this.lblPierceReflect.TabIndex = 85;
+            this.lblPierceReflect.Text = "Pierce Reflect";
             // 
             // lblHumanoid
             // 
@@ -12625,7 +7014,7 @@
             // 
             this.lblUnknown2.AutoSize = true;
             this.lblUnknown2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUnknown2.Location = new System.Drawing.Point(81, 80);
+            this.lblUnknown2.Location = new System.Drawing.Point(81, 120);
             this.lblUnknown2.Name = "lblUnknown2";
             this.lblUnknown2.Size = new System.Drawing.Size(26, 16);
             this.lblUnknown2.TabIndex = 87;
@@ -12641,15 +7030,15 @@
             this.lblNoName.TabIndex = 86;
             this.lblNoName.Text = "No Name";
             // 
-            // lblPierceReflect
+            // lblIgnoreITD
             // 
-            this.lblPierceReflect.AutoSize = true;
-            this.lblPierceReflect.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPierceReflect.Location = new System.Drawing.Point(21, 40);
-            this.lblPierceReflect.Name = "lblPierceReflect";
-            this.lblPierceReflect.Size = new System.Drawing.Size(86, 16);
-            this.lblPierceReflect.TabIndex = 85;
-            this.lblPierceReflect.Text = "Pierce Reflect";
+            this.lblIgnoreITD.AutoSize = true;
+            this.lblIgnoreITD.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIgnoreITD.Location = new System.Drawing.Point(38, 40);
+            this.lblIgnoreITD.Name = "lblIgnoreITD";
+            this.lblIgnoreITD.Size = new System.Drawing.Size(69, 16);
+            this.lblIgnoreITD.TabIndex = 85;
+            this.lblIgnoreITD.Text = "Ignore ITD";
             // 
             // lblMPDeath
             // 
@@ -12710,7 +7099,7 @@
             this.grpMonsterElements.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpMonsterElements.Location = new System.Drawing.Point(322, 6);
             this.grpMonsterElements.Name = "grpMonsterElements";
-            this.grpMonsterElements.Size = new System.Drawing.Size(226, 212);
+            this.grpMonsterElements.Size = new System.Drawing.Size(226, 225);
             this.grpMonsterElements.TabIndex = 81;
             this.grpMonsterElements.TabStop = false;
             this.grpMonsterElements.Text = "Elements";
@@ -13126,7 +7515,7 @@
             // numMonsterEXP
             // 
             this.numMonsterEXP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMonsterEXP.Location = new System.Drawing.Point(239, 139);
+            this.numMonsterEXP.Location = new System.Drawing.Point(238, 138);
             this.numMonsterEXP.Maximum = new decimal(new int[] {
             65536,
             0,
@@ -13134,12 +7523,12 @@
             0});
             this.numMonsterEXP.Name = "numMonsterEXP";
             this.numMonsterEXP.Size = new System.Drawing.Size(77, 27);
-            this.numMonsterEXP.TabIndex = 71;
+            this.numMonsterEXP.TabIndex = 6;
             // 
             // numMonsterGil
             // 
             this.numMonsterGil.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMonsterGil.Location = new System.Drawing.Point(239, 172);
+            this.numMonsterGil.Location = new System.Drawing.Point(238, 171);
             this.numMonsterGil.Maximum = new decimal(new int[] {
             65536,
             0,
@@ -13147,12 +7536,12 @@
             0});
             this.numMonsterGil.Name = "numMonsterGil";
             this.numMonsterGil.Size = new System.Drawing.Size(77, 27);
-            this.numMonsterGil.TabIndex = 70;
+            this.numMonsterGil.TabIndex = 7;
             // 
             // numMonsterMP
             // 
             this.numMonsterMP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMonsterMP.Location = new System.Drawing.Point(224, 106);
+            this.numMonsterMP.Location = new System.Drawing.Point(223, 105);
             this.numMonsterMP.Maximum = new decimal(new int[] {
             65536,
             0,
@@ -13160,12 +7549,12 @@
             0});
             this.numMonsterMP.Name = "numMonsterMP";
             this.numMonsterMP.Size = new System.Drawing.Size(92, 27);
-            this.numMonsterMP.TabIndex = 69;
+            this.numMonsterMP.TabIndex = 5;
             // 
             // numMonsterHP
             // 
             this.numMonsterHP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMonsterHP.Location = new System.Drawing.Point(224, 73);
+            this.numMonsterHP.Location = new System.Drawing.Point(223, 72);
             this.numMonsterHP.Maximum = new decimal(new int[] {
             16777216,
             0,
@@ -13173,25 +7562,25 @@
             0});
             this.numMonsterHP.Name = "numMonsterHP";
             this.numMonsterHP.Size = new System.Drawing.Size(92, 27);
-            this.numMonsterHP.TabIndex = 68;
+            this.numMonsterHP.TabIndex = 4;
             // 
             // btnMonstersCancel
             // 
             this.btnMonstersCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnMonstersCancel.Location = new System.Drawing.Point(960, 523);
+            this.btnMonstersCancel.Location = new System.Drawing.Point(1032, 544);
             this.btnMonstersCancel.Name = "btnMonstersCancel";
             this.btnMonstersCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnMonstersCancel.TabIndex = 67;
+            this.btnMonstersCancel.TabIndex = 36;
             this.btnMonstersCancel.Text = "Cancel";
             this.btnMonstersCancel.UseVisualStyleBackColor = false;
             this.btnMonstersCancel.Click += new System.EventHandler(this.btnMonstersCancel_Click);
             // 
             // btnMonstersOkay
             // 
-            this.btnMonstersOkay.Location = new System.Drawing.Point(879, 523);
+            this.btnMonstersOkay.Location = new System.Drawing.Point(951, 544);
             this.btnMonstersOkay.Name = "btnMonstersOkay";
             this.btnMonstersOkay.Size = new System.Drawing.Size(75, 23);
-            this.btnMonstersOkay.TabIndex = 66;
+            this.btnMonstersOkay.TabIndex = 35;
             this.btnMonstersOkay.Text = "Okay";
             this.btnMonstersOkay.UseVisualStyleBackColor = true;
             this.btnMonstersOkay.Click += new System.EventHandler(this.btnMonstersOkay_Click);
@@ -13200,7 +7589,7 @@
             // 
             this.lblMonsterGil.AutoSize = true;
             this.lblMonsterGil.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonsterGil.Location = new System.Drawing.Point(205, 176);
+            this.lblMonsterGil.Location = new System.Drawing.Point(204, 175);
             this.lblMonsterGil.Name = "lblMonsterGil";
             this.lblMonsterGil.Size = new System.Drawing.Size(28, 19);
             this.lblMonsterGil.TabIndex = 33;
@@ -13210,7 +7599,7 @@
             // 
             this.lblMonsterEXP.AutoSize = true;
             this.lblMonsterEXP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonsterEXP.Location = new System.Drawing.Point(148, 143);
+            this.lblMonsterEXP.Location = new System.Drawing.Point(147, 142);
             this.lblMonsterEXP.Name = "lblMonsterEXP";
             this.lblMonsterEXP.Size = new System.Drawing.Size(85, 19);
             this.lblMonsterEXP.TabIndex = 32;
@@ -13227,16 +7616,17 @@
             // 
             // cmbDifficulty
             // 
+            this.cmbDifficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDifficulty.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDifficulty.FormattingEnabled = true;
             this.cmbDifficulty.Items.AddRange(new object[] {
+            "Hard",
             "Normal",
-            "Easy",
-            "Hard"});
-            this.cmbDifficulty.Location = new System.Drawing.Point(239, 7);
+            "Meltdown"});
+            this.cmbDifficulty.Location = new System.Drawing.Point(207, 6);
             this.cmbDifficulty.Name = "cmbDifficulty";
-            this.cmbDifficulty.Size = new System.Drawing.Size(77, 27);
-            this.cmbDifficulty.TabIndex = 27;
+            this.cmbDifficulty.Size = new System.Drawing.Size(108, 27);
+            this.cmbDifficulty.TabIndex = 2;
             this.cmbDifficulty.SelectedIndexChanged += new System.EventHandler(this.cmbDifficulty_SelectedIndexChanged);
             // 
             // lblMonsterAccuracy
@@ -13270,7 +7660,7 @@
             0});
             this.numMonsterAttack.Name = "numMonsterAttack";
             this.numMonsterAttack.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterAttack.TabIndex = 24;
+            this.numMonsterAttack.TabIndex = 11;
             this.numMonsterAttack.Value = new decimal(new int[] {
             1,
             0,
@@ -13288,7 +7678,7 @@
             0});
             this.numMonsterDefense.Name = "numMonsterDefense";
             this.numMonsterDefense.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterDefense.TabIndex = 23;
+            this.numMonsterDefense.TabIndex = 15;
             this.numMonsterDefense.Value = new decimal(new int[] {
             1,
             0,
@@ -13306,7 +7696,7 @@
             0});
             this.numMonsterMagEva.Name = "numMonsterMagEva";
             this.numMonsterMagEva.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterMagEva.TabIndex = 22;
+            this.numMonsterMagEva.TabIndex = 14;
             this.numMonsterMagEva.Value = new decimal(new int[] {
             1,
             0,
@@ -13324,7 +7714,7 @@
             0});
             this.numMonsterEvasion.Name = "numMonsterEvasion";
             this.numMonsterEvasion.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterEvasion.TabIndex = 21;
+            this.numMonsterEvasion.TabIndex = 13;
             this.numMonsterEvasion.Value = new decimal(new int[] {
             1,
             0,
@@ -13342,7 +7732,7 @@
             0});
             this.numMonsterVitality.Name = "numMonsterVitality";
             this.numMonsterVitality.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterVitality.TabIndex = 20;
+            this.numMonsterVitality.TabIndex = 12;
             this.numMonsterVitality.Value = new decimal(new int[] {
             1,
             0,
@@ -13360,7 +7750,7 @@
             0});
             this.numMonsterMagic.Name = "numMonsterMagic";
             this.numMonsterMagic.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterMagic.TabIndex = 19;
+            this.numMonsterMagic.TabIndex = 10;
             this.numMonsterMagic.Value = new decimal(new int[] {
             1,
             0,
@@ -13378,7 +7768,7 @@
             0});
             this.numMonsterAccuracy.Name = "numMonsterAccuracy";
             this.numMonsterAccuracy.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterAccuracy.TabIndex = 18;
+            this.numMonsterAccuracy.TabIndex = 17;
             this.numMonsterAccuracy.Value = new decimal(new int[] {
             1,
             0,
@@ -13396,7 +7786,7 @@
             0});
             this.numMonsterAgility.Name = "numMonsterAgility";
             this.numMonsterAgility.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterAgility.TabIndex = 17;
+            this.numMonsterAgility.TabIndex = 18;
             this.numMonsterAgility.Value = new decimal(new int[] {
             1,
             0,
@@ -13406,7 +7796,7 @@
             // numMonsterMagDef
             // 
             this.numMonsterMagDef.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMonsterMagDef.Location = new System.Drawing.Point(84, 349);
+            this.numMonsterMagDef.Location = new System.Drawing.Point(79, 349);
             this.numMonsterMagDef.Maximum = new decimal(new int[] {
             256,
             0,
@@ -13432,7 +7822,7 @@
             0});
             this.numMonsterStrength.Name = "numMonsterStrength";
             this.numMonsterStrength.Size = new System.Drawing.Size(50, 27);
-            this.numMonsterStrength.TabIndex = 15;
+            this.numMonsterStrength.TabIndex = 9;
             this.numMonsterStrength.Value = new decimal(new int[] {
             1,
             0,
@@ -13523,7 +7913,7 @@
             // 
             this.lblMonsterMP.AutoSize = true;
             this.lblMonsterMP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonsterMP.Location = new System.Drawing.Point(188, 109);
+            this.lblMonsterMP.Location = new System.Drawing.Point(187, 108);
             this.lblMonsterMP.Name = "lblMonsterMP";
             this.lblMonsterMP.Size = new System.Drawing.Size(30, 19);
             this.lblMonsterMP.TabIndex = 6;
@@ -13533,7 +7923,7 @@
             // 
             this.lblMonsterHP.AutoSize = true;
             this.lblMonsterHP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonsterHP.Location = new System.Drawing.Point(189, 76);
+            this.lblMonsterHP.Location = new System.Drawing.Point(188, 75);
             this.lblMonsterHP.Name = "lblMonsterHP";
             this.lblMonsterHP.Size = new System.Drawing.Size(29, 19);
             this.lblMonsterHP.TabIndex = 4;
@@ -13542,7 +7932,7 @@
             // numMonsterLevel
             // 
             this.numMonsterLevel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numMonsterLevel.Location = new System.Drawing.Point(265, 40);
+            this.numMonsterLevel.Location = new System.Drawing.Point(264, 39);
             this.numMonsterLevel.Maximum = new decimal(new int[] {
             256,
             0,
@@ -13550,7 +7940,7 @@
             0});
             this.numMonsterLevel.Name = "numMonsterLevel";
             this.numMonsterLevel.Size = new System.Drawing.Size(51, 27);
-            this.numMonsterLevel.TabIndex = 2;
+            this.numMonsterLevel.TabIndex = 3;
             this.numMonsterLevel.Value = new decimal(new int[] {
             1,
             0,
@@ -13561,7 +7951,7 @@
             // 
             this.lblMonsterLevel.AutoSize = true;
             this.lblMonsterLevel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonsterLevel.Location = new System.Drawing.Point(214, 42);
+            this.lblMonsterLevel.Location = new System.Drawing.Point(213, 41);
             this.lblMonsterLevel.Name = "lblMonsterLevel";
             this.lblMonsterLevel.Size = new System.Drawing.Size(45, 19);
             this.lblMonsterLevel.TabIndex = 1;
@@ -13569,448 +7959,157 @@
             // 
             // cmbMonsters
             // 
-            this.cmbMonsters.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbMonsters.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.cmbMonsters.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbMonsters.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMonsters.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMonsters.FormattingEnabled = true;
-            this.cmbMonsters.Items.AddRange(new object[] {
-            "Guard",
-            "Soldier",
-            "Templar",
-            "Ninja",
-            "Samurai",
-            "Borghese",
-            "Mag Roader",
-            "Yojimbo",
-            "Cloud",
-            "Misty",
-            "Al Jabr",
-            "Zaghrem",
-            "Apocrypha",
-            "BlackForce",
-            "Whisper",
-            "Oversoul",
-            "BoneHorror",
-            "Commander",
-            "Mu",
-            "Wererat",
-            "Mugbear",
-            "Belmodar",
-            "Muud Suud",
-            "Leaf Bunny",
-            "Stray Cat",
-            "SilverLobo",
-            "Doberman",
-            "Megalodoth",
-            "Boss",
-            "Briareus",
-            "Suriander",
-            "Chimera",
-            "Behemoth",
-            "Fafnir",
-            "Lopros",
-            "FossilDrgn",
-            "HolyDragon",
-            "Fiend Drgn",
-            "Brachiodos",
-            "Tyranosaur",
-            "Black Wind",
-            "Aepyornis",
-            "Vulture",
-            "Vasegiatta",
-            "Zokka",
-            "Trapper",
-            "Hornet",
-            "Hopper",
-            "Delta Bug",
-            "Killer Bug",
-            "Trillium",
-            "Rafflesia",
-            "Tumbleweed",
-            "Vamp Thorn",
-            "Cartagra",
-            "Siegfried",
-            "Nautiloid",
-            "Exocite",
-            "Anguiform",
-            "Reach Frog",
-            "Lizard",
-            "LitworChkn",
-            "Slugworm",
-            "Hell Rider",
-            "Typhon1",
-            "Onion",
-            "M-tekArmor",
-            "Sky Armor",
-            "Satellite",
-            "ArmedWeapn",
-            "Spritzer",
-            "Flan",
-            "Outcast",
-            "Humpty",
-            "Koja",
-            "Cruller",
-            "Cactuar",
-            "Bandit",
-            "Vice",
-            "Bomb",
-            "StillLife",
-            "Lunatys",
-            "VeilDancer",
-            "Hill Gigas",
-            "Tonberry",
-            "Magic Urn",
-            "Mover",
-            "FigaroLzrd",
-            "Devoahan",
-            "Aspilance",
-            "Ghost",
-            "Crawler",
-            "Sand Ray",
-            "Alacran",
-            "Actinian",
-            "Sand Horse",
-            "Darkside",
-            "Malboro",
-            "Demiurok",
-            "Foper",
-            "Leader",
-            "Sgt.Major",
-            "General",
-            "Invisible",
-            "Kamui",
-            "Warlock",
-            "Cherry",
-            "Joker",
-            "MotorDrive",
-            "Satan",
-            "Provoker",
-            "Powerdemon",
-            "Mahadeva",
-            "Vector Dog",
-            "Peep Bear",
-            "Stunner",
-            "Sorath",
-            "Destroyer",
-            "Spearbunny",
-            "Coeurl Cat",
-            "Blood Fang",
-            "HuntingDog",
-            "Gorgias",
-            "Don",
-            "Murussu",
-            "Wartpuck",
-            "Gorgimera",
-            "K.Behemoth",
-            "Vectorisos",
-            "Wyvern",
-            "DrgnZombie",
-            "Dragon",
-            "Old Dragon",
-            "Weredragon",
-            "Cirpius",
-            "Sprinter",
-            "Lenergia",
-            "Marchosias",
-            "Gloom Wind",
-            "Dropper",
-            "BrainSugar",
-            "Grasswyrm",
-            "Luridan",
-            "Twinscythe",
-            "Paraladia",
-            "Exoray",
-            "Crusher",
-            "Ouroboros",
-            "Acrophies",
-            "Schmidt",
-            "Devourer",
-            "Cancer",
-            "Gigantoad",
-            "Basilisk",
-            "MedusaChkn",
-            "Land Worm",
-            "Test Rider",
-            "PlutoArmor",
-            "Onion Dash",
-            "HeavyArmor",
-            "Chaser",
-            "Gamma",
-            "Poplium",
-            "Sleep Lion",
-            "Misfit",
-            "Creature",
-            "Enuo",
-            "Deep Eye",
-            "Unseelie",
-            "NeckHunter",
-            "Grenade",
-            "CharmyRide",
-            "Pandora",
-            "BladeDancr",
-            "Gigantos",
-            "Mag Roader",
-            "Lycaon",
-            "Parasite",
-            "Land Ray",
-            "Antares",
-            "Anemone",
-            "Moonform",
-            "Specter",
-            "Gt.Malboro",
-            "Bonnacon",
-            "Oceanus",
-            "LivingDead",
-            "Death Ward",
-            "Face",
-            "Outsider",
-            "Coco",
-            "Zeveak",
-            "Nitewalker",
-            "EvilKnight",
-            "Bodyguard",
-            "DesertHare",
-            "Wizard",
-            "Devil Fist",
-            "Illuyankas",
-            "Sergeant",
-            "Jasconius",
-            "Knotty",
-            "Luna Wolf",
-            "Belzecue",
-            "Caladrius",
-            "Tzakmaqiel",
-            "Lukhavi",
-            "Eukaryote",
-            "LandGrilon",
-            "Goetia",
-            "Mantis",
-            "Bogey",
-            "Purusa",
-            "Black Drgn",
-            "Adamankary",
-            "Dante",
-            "PlatnmDrgn",
-            "Duel Armor",
-            "Psycho",
-            "Mousse",
-            "Corpse",
-            "Punisher",
-            "Balloon",
-            "Gobledygok",
-            "GrBehemoth",
-            "Scorpion",
-            "Chaos Drgn",
-            "Spitfire",
-            "Vectimera",
-            "Lich",
-            "Rukh",
-            "Mag Roader",
-            "Bug",
-            "Seaflower",
-            "Armor Base",
-            "Venobennu",
-            "Galypdes",
-            "Junk",
-            "Mandragora",
-            "Valeor",
-            "Amduscias",
-            "Necromancr",
-            "Caasimolar",
-            "Mag Roader",
-            "Wild Rat",
-            "Gold Bear",
-            "InnoSent",
-            "Clymenus",
-            "Garm",
-            "Daedalus",
-            "Baalzephon",
-            "Ahriman",
-            "Death Mech",
-            "IronHitman",
-            "Io",
-            "Tonberries",
-            "Ymir(Shell)",
-            "Presenter(Shell)",
-            "Mega Armor",
-            "Vargas",
-            "Dig Armor",
-            "Prometheus",
-            "DemonTrain",
-            "Dadaluma",
-            "Shiva",
-            "Ifrit",
-            "Number 024",
-            "Number 128",
-            "Inferno",
-            "Crane1",
-            "Crane2",
-            "Yeti1",
-            "Yeti2",
-            "Guardian1",
-            "Guardian2",
-            "Air Force",
-            "Esper",
-            "Valigarmanda",
-            "FlameEater",
-            "U.Weapon",
-            "Nelapa",
-            "K.Behemoth",
-            "Kefka",
-            "Tentacle1",
-            "Dullahan",
-            "Death Gaze",
-            "Chadarnook",
-            "Curlax",
-            "Laragorn",
-            "Moebius",
-            "Alexsoul",
-            "Hidon",
-            "Sam. Soul",
-            "Lv30 Magic",
-            "Erebus",
-            "Sephirah",
-            "Sophia",
-            "Zurvan",
-            "Kefka",
-            "Lv40 Magic",
-            "Orthros1",
-            "Orthros2",
-            "Orthros3",
-            "Typhon2",
-            "Lv20 Magic",
-            "Siegfried",
-            "Lv10 Magic",
-            "Lv50 Magic",
-            "Ymir(Head)",
-            "Presenter(Head)",
-            "Giant",
-            "KaiserDrgn",
-            "M.Tonberry",
-            "Lv60 Magic",
-            "Merchant",
-            "Naked",
-            "Tentacle2",
-            "Tentacle3",
-            "Tentacle4",
-            "RightBlade",
-            "Left Blade",
-            "Rahu",
-            "Ketu",
-            "Lv70 Magic",
-            "Valigarmanda",
-            "Laser Gun",
-            "Bit",
-            "MissileBay",
-            "Chadarnook",
-            "Ice Dragon",
-            "Kefka",
-            "Storm Drgn",
-            "Earth Drgn",
-            "Ipooh",
-            "Captain",
-            "Imperial",
-            "YellowDrgn",
-            "Skull Drgn",
-            "BlueDragon",
-            "Red Dragon",
-            "Opinicus",
-            "Rhizopas",
-            "Apparition",
-            "Short Arm",
-            "Long Arm",
-            "Face",
-            "Tiger",
-            "Machine",
-            "Magic",
-            "Power",
-            "Lady",
-            "Rest",
-            "Erebus1",
-            "Erebus2",
-            "Erebus3",
-            "Lv80 Magic",
-            "Lv90 Magic",
-            "ProtoArmor",
-            "MagiMaster",
-            "Soul Saber",
-            "Orthros",
-            "Naude",
-            "Humbaba1",
-            "Humbaba2",
-            "Humbaba3",
-            "Humbaba4",
-            "(Nothing)1",
-            "(Nothing)2",
-            "(Nothing)3",
-            "Zone Eater",
-            "(Nothing)4",
-            "(Nothing)5",
-            "(Nothing)6",
-            "Cadet",
-            "Officer",
-            "(Nothing)7",
-            "(Nothing)8",
-            "Imperial",
-            "(Nothing)9",
-            "(Nothing)10",
-            "(Nothing)11",
-            "U.Buster",
-            "(Nothing)12",
-            "(Nothing)13"});
             this.cmbMonsters.Location = new System.Drawing.Point(6, 6);
             this.cmbMonsters.Name = "cmbMonsters";
             this.cmbMonsters.Size = new System.Drawing.Size(138, 27);
             this.cmbMonsters.TabIndex = 0;
             this.cmbMonsters.SelectedIndexChanged += new System.EventHandler(this.cmbMonsters_SelectedIndexChanged);
             // 
-            // grpSpecialAttacks
+            // tabScripts
             // 
-            this.grpSpecialAttacks.Controls.Add(this.lblNoDodge);
-            this.grpSpecialAttacks.Controls.Add(this.lblNoPhys);
-            this.grpSpecialAttacks.Controls.Add(this.chkNoDodge);
-            this.grpSpecialAttacks.Controls.Add(this.chkNoPhys);
-            this.grpSpecialAttacks.Controls.Add(this.cmbSpecialAttack);
-            this.grpSpecialAttacks.Controls.Add(this.lblExtraEffect);
-            this.grpSpecialAttacks.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpSpecialAttacks.Location = new System.Drawing.Point(152, 224);
-            this.grpSpecialAttacks.Name = "grpSpecialAttacks";
-            this.grpSpecialAttacks.Size = new System.Drawing.Size(395, 285);
-            this.grpSpecialAttacks.TabIndex = 139;
-            this.grpSpecialAttacks.TabStop = false;
-            this.grpSpecialAttacks.Text = "Special Attacks";
+            this.tabScripts.Location = new System.Drawing.Point(4, 23);
+            this.tabScripts.Name = "tabScripts";
+            this.tabScripts.Size = new System.Drawing.Size(1113, 573);
+            this.tabScripts.TabIndex = 6;
+            this.tabScripts.Text = "Enemy Scripts";
+            this.tabScripts.UseVisualStyleBackColor = true;
             // 
-            // lblExtraEffect
+            // tabCommands
             // 
-            this.lblExtraEffect.AutoSize = true;
-            this.lblExtraEffect.Location = new System.Drawing.Point(300, 19);
-            this.lblExtraEffect.Name = "lblExtraEffect";
-            this.lblExtraEffect.Size = new System.Drawing.Size(89, 19);
-            this.lblExtraEffect.TabIndex = 0;
-            this.lblExtraEffect.Text = "Extra Effect";
+            this.tabCommands.Location = new System.Drawing.Point(4, 23);
+            this.tabCommands.Name = "tabCommands";
+            this.tabCommands.Size = new System.Drawing.Size(1113, 573);
+            this.tabCommands.TabIndex = 5;
+            this.tabCommands.Text = "Commands";
+            this.tabCommands.UseVisualStyleBackColor = true;
             // 
-            // cmbSpecialAttack
+            // tabSpells
             // 
-            this.cmbSpecialAttack.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cmbSpecialAttack.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbSpecialAttack.FormattingEnabled = true;
-            this.cmbSpecialAttack.Items.AddRange(new object[] {
-            "Darkness",
-            "Zombie",
-            "Poison",
-            "Magitek",
-            "Clear",
-            "Imp",
-            "Petrify",
-            "Death",
-            "Doomed",
-            "Critical",
-            "Image",
-            "Silence",
-            "Berserk",
-            "Confusion",
-            "Sap",
-            "Sleep",
+            this.tabSpells.Controls.Add(this.btnRenameSpell);
+            this.tabSpells.Controls.Add(this.numSpellDelay);
+            this.tabSpells.Controls.Add(this.lblSpellDelay);
+            this.tabSpells.Controls.Add(this.lblSpellStatus4);
+            this.tabSpells.Controls.Add(this.chkLstSpellStatus4);
+            this.tabSpells.Controls.Add(this.lblSpellStatus3);
+            this.tabSpells.Controls.Add(this.chkLstSpellStatus3);
+            this.tabSpells.Controls.Add(this.lblSpellStatus2);
+            this.tabSpells.Controls.Add(this.chkLstSpellStatus2);
+            this.tabSpells.Controls.Add(this.lblStatus);
+            this.tabSpells.Controls.Add(this.chkLstSpellStatus1);
+            this.tabSpells.Controls.Add(this.lblSpellMisc);
+            this.tabSpells.Controls.Add(this.chkLstSpellMisc);
+            this.tabSpells.Controls.Add(this.lblSpellSpecial3);
+            this.tabSpells.Controls.Add(this.chkLstSpellSpecial3);
+            this.tabSpells.Controls.Add(this.lblFractionNote);
+            this.tabSpells.Controls.Add(this.lblSpellSpecial2);
+            this.tabSpells.Controls.Add(this.chkLstSpellSpecial2);
+            this.tabSpells.Controls.Add(this.lblSpellSpecial1);
+            this.tabSpells.Controls.Add(this.chkLstSpellSpecial1);
+            this.tabSpells.Controls.Add(this.lblSpellElement);
+            this.tabSpells.Controls.Add(this.chkLstSpellElement);
+            this.tabSpells.Controls.Add(this.numSuccessRate);
+            this.tabSpells.Controls.Add(this.lblSuccessRate);
+            this.tabSpells.Controls.Add(this.numSpellPower);
+            this.tabSpells.Controls.Add(this.lblSpellPower);
+            this.tabSpells.Controls.Add(this.numMPCost);
+            this.tabSpells.Controls.Add(this.lblMPCost);
+            this.tabSpells.Controls.Add(this.lblSpellTargetting);
+            this.tabSpells.Controls.Add(this.chkLstSpellTargetting);
+            this.tabSpells.Controls.Add(this.btnSpellsCancel);
+            this.tabSpells.Controls.Add(this.btnSpellsOkay);
+            this.tabSpells.Controls.Add(this.numSpellIndex);
+            this.tabSpells.Controls.Add(this.cmbSpells);
+            this.tabSpells.Location = new System.Drawing.Point(4, 23);
+            this.tabSpells.Name = "tabSpells";
+            this.tabSpells.Size = new System.Drawing.Size(1113, 573);
+            this.tabSpells.TabIndex = 3;
+            this.tabSpells.Text = "Spells";
+            this.tabSpells.UseVisualStyleBackColor = true;
+            // 
+            // btnRenameSpell
+            // 
+            this.btnRenameSpell.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRenameSpell.Location = new System.Drawing.Point(229, 6);
+            this.btnRenameSpell.Name = "btnRenameSpell";
+            this.btnRenameSpell.Size = new System.Drawing.Size(91, 27);
+            this.btnRenameSpell.TabIndex = 173;
+            this.btnRenameSpell.Text = "Rename";
+            this.btnRenameSpell.UseVisualStyleBackColor = true;
+            this.btnRenameSpell.Click += new System.EventHandler(this.btnRenameSpell_Click);
+            // 
+            // numSpellDelay
+            // 
+            this.numSpellDelay.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSpellDelay.Location = new System.Drawing.Point(6, 138);
+            this.numSpellDelay.Maximum = new decimal(new int[] {
+            383,
+            0,
+            0,
+            0});
+            this.numSpellDelay.Name = "numSpellDelay";
+            this.numSpellDelay.Size = new System.Drawing.Size(48, 27);
+            this.numSpellDelay.TabIndex = 172;
+            // 
+            // lblSpellDelay
+            // 
+            this.lblSpellDelay.AutoSize = true;
+            this.lblSpellDelay.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellDelay.Location = new System.Drawing.Point(60, 140);
+            this.lblSpellDelay.Name = "lblSpellDelay";
+            this.lblSpellDelay.Size = new System.Drawing.Size(48, 19);
+            this.lblSpellDelay.TabIndex = 171;
+            this.lblSpellDelay.Text = "Delay";
+            // 
+            // lblSpellStatus4
+            // 
+            this.lblSpellStatus4.AutoSize = true;
+            this.lblSpellStatus4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellStatus4.Location = new System.Drawing.Point(705, 181);
+            this.lblSpellStatus4.Name = "lblSpellStatus4";
+            this.lblSpellStatus4.Size = new System.Drawing.Size(52, 19);
+            this.lblSpellStatus4.TabIndex = 169;
+            this.lblSpellStatus4.Text = "Status";
+            // 
+            // chkLstSpellStatus4
+            // 
+            this.chkLstSpellStatus4.CheckOnClick = true;
+            this.chkLstSpellStatus4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellStatus4.FormattingEnabled = true;
+            this.chkLstSpellStatus4.Items.AddRange(new object[] {
+            "Rage",
+            "Freeze",
+            "Reraise",
+            "Trance",
+            "Chanting",
+            "Disappear",
+            "Dog Block",
+            "Float"});
+            this.chkLstSpellStatus4.Location = new System.Drawing.Point(681, 203);
+            this.chkLstSpellStatus4.Name = "chkLstSpellStatus4";
+            this.chkLstSpellStatus4.Size = new System.Drawing.Size(101, 140);
+            this.chkLstSpellStatus4.TabIndex = 168;
+            // 
+            // lblSpellStatus3
+            // 
+            this.lblSpellStatus3.AutoSize = true;
+            this.lblSpellStatus3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellStatus3.Location = new System.Drawing.Point(598, 181);
+            this.lblSpellStatus3.Name = "lblSpellStatus3";
+            this.lblSpellStatus3.Size = new System.Drawing.Size(52, 19);
+            this.lblSpellStatus3.TabIndex = 167;
+            this.lblSpellStatus3.Text = "Status";
+            // 
+            // chkLstSpellStatus3
+            // 
+            this.chkLstSpellStatus3.CheckOnClick = true;
+            this.chkLstSpellStatus3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellStatus3.FormattingEnabled = true;
+            this.chkLstSpellStatus3.Items.AddRange(new object[] {
             "Dance",
             "Regen",
             "Slow",
@@ -14018,95 +8117,386 @@
             "Stop",
             "Shell",
             "Protect",
-            "Rage",
-            "Freeze",
-            "Reraise",
-            "Morph",
-            "Chanting",
-            "Disappear",
-            "Dog Block",
-            "Float",
-            "Attack Level 1",
-            "Attack Level 2",
-            "Attack Level 3",
-            "Attack Level 4",
-            "Attack Level 5",
-            "Attack Level 6",
-            "Attack Level 7",
-            "Attack Level 8",
-            "Attack Level 9",
-            "Attack Level 10",
-            "Attack Level 11",
-            "Attack Level 12",
-            "Attack Level 13",
-            "Attack Level 14",
-            "Attack Level 15",
-            "Attack Level 16",
-            "Drain",
-            "Osmose",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown",
-            "Unknown"});
-            this.cmbSpecialAttack.Location = new System.Drawing.Point(238, 47);
-            this.cmbSpecialAttack.Name = "cmbSpecialAttack";
-            this.cmbSpecialAttack.Size = new System.Drawing.Size(151, 27);
-            this.cmbSpecialAttack.TabIndex = 1;
+            "Reflect"});
+            this.chkLstSpellStatus3.Location = new System.Drawing.Point(577, 203);
+            this.chkLstSpellStatus3.Name = "chkLstSpellStatus3";
+            this.chkLstSpellStatus3.Size = new System.Drawing.Size(95, 140);
+            this.chkLstSpellStatus3.TabIndex = 166;
             // 
-            // chkNoDodge
+            // lblSpellStatus2
             // 
-            this.chkNoDodge.AutoSize = true;
-            this.chkNoDodge.Location = new System.Drawing.Point(374, 102);
-            this.chkNoDodge.Name = "chkNoDodge";
-            this.chkNoDodge.Size = new System.Drawing.Size(15, 14);
-            this.chkNoDodge.TabIndex = 117;
-            this.chkNoDodge.UseVisualStyleBackColor = true;
+            this.lblSpellStatus2.AutoSize = true;
+            this.lblSpellStatus2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellStatus2.Location = new System.Drawing.Point(494, 181);
+            this.lblSpellStatus2.Name = "lblSpellStatus2";
+            this.lblSpellStatus2.Size = new System.Drawing.Size(52, 19);
+            this.lblSpellStatus2.TabIndex = 165;
+            this.lblSpellStatus2.Text = "Status";
             // 
-            // chkNoPhys
+            // chkLstSpellStatus2
             // 
-            this.chkNoPhys.AutoSize = true;
-            this.chkNoPhys.Location = new System.Drawing.Point(374, 85);
-            this.chkNoPhys.Name = "chkNoPhys";
-            this.chkNoPhys.Size = new System.Drawing.Size(15, 14);
-            this.chkNoPhys.TabIndex = 118;
-            this.chkNoPhys.UseVisualStyleBackColor = true;
+            this.chkLstSpellStatus2.CheckOnClick = true;
+            this.chkLstSpellStatus2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellStatus2.FormattingEnabled = true;
+            this.chkLstSpellStatus2.Items.AddRange(new object[] {
+            "Doomed",
+            "Critical",
+            "Blink",
+            "Silence",
+            "Berserk",
+            "Confuse",
+            "Sap",
+            "Sleep"});
+            this.chkLstSpellStatus2.Location = new System.Drawing.Point(470, 203);
+            this.chkLstSpellStatus2.Name = "chkLstSpellStatus2";
+            this.chkLstSpellStatus2.Size = new System.Drawing.Size(101, 140);
+            this.chkLstSpellStatus2.TabIndex = 164;
             // 
-            // lblNoDodge
+            // lblStatus
             // 
-            this.lblNoDodge.AutoSize = true;
-            this.lblNoDodge.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoDodge.Location = new System.Drawing.Point(227, 99);
-            this.lblNoDodge.Name = "lblNoDodge";
-            this.lblNoDodge.Size = new System.Drawing.Size(141, 19);
-            this.lblNoDodge.TabIndex = 117;
-            this.lblNoDodge.Text = "Cannot be Dodged";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(387, 181);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(52, 19);
+            this.lblStatus.TabIndex = 163;
+            this.lblStatus.Text = "Status";
             // 
-            // lblNoPhys
+            // chkLstSpellStatus1
             // 
-            this.lblNoPhys.AutoSize = true;
-            this.lblNoPhys.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoPhys.Location = new System.Drawing.Point(234, 80);
-            this.lblNoPhys.Name = "lblNoPhys";
-            this.lblNoPhys.Size = new System.Drawing.Size(134, 19);
-            this.lblNoPhys.TabIndex = 118;
-            this.lblNoPhys.Text = "No Physical Harm";
+            this.chkLstSpellStatus1.CheckOnClick = true;
+            this.chkLstSpellStatus1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellStatus1.FormattingEnabled = true;
+            this.chkLstSpellStatus1.Items.AddRange(new object[] {
+            "Darkness",
+            "Zombie",
+            "Poison",
+            "Magitek",
+            "Clear",
+            "Imp",
+            "Petrify",
+            "Death"});
+            this.chkLstSpellStatus1.Location = new System.Drawing.Point(366, 203);
+            this.chkLstSpellStatus1.Name = "chkLstSpellStatus1";
+            this.chkLstSpellStatus1.Size = new System.Drawing.Size(95, 140);
+            this.chkLstSpellStatus1.TabIndex = 162;
+            // 
+            // lblSpellMisc
+            // 
+            this.lblSpellMisc.AutoSize = true;
+            this.lblSpellMisc.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellMisc.Location = new System.Drawing.Point(224, 181);
+            this.lblSpellMisc.Name = "lblSpellMisc";
+            this.lblSpellMisc.Size = new System.Drawing.Size(80, 19);
+            this.lblSpellMisc.TabIndex = 161;
+            this.lblSpellMisc.Text = "Miscallany";
+            // 
+            // chkLstSpellMisc
+            // 
+            this.chkLstSpellMisc.CheckOnClick = true;
+            this.chkLstSpellMisc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellMisc.FormattingEnabled = true;
+            this.chkLstSpellMisc.Items.AddRange(new object[] {
+            "Usable on the field",
+            "Not Reflectable",
+            "Learn if cast on",
+            "Enable Runic",
+            "Warp/Quick??",
+            "Retarget if target dead",
+            "Caster dies",
+            "Affects MP"});
+            this.chkLstSpellMisc.Location = new System.Drawing.Point(175, 203);
+            this.chkLstSpellMisc.Name = "chkLstSpellMisc";
+            this.chkLstSpellMisc.Size = new System.Drawing.Size(185, 140);
+            this.chkLstSpellMisc.TabIndex = 160;
+            // 
+            // lblSpellSpecial3
+            // 
+            this.lblSpellSpecial3.AutoSize = true;
+            this.lblSpellSpecial3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellSpecial3.Location = new System.Drawing.Point(423, 362);
+            this.lblSpellSpecial3.Name = "lblSpellSpecial3";
+            this.lblSpellSpecial3.Size = new System.Drawing.Size(72, 19);
+            this.lblSpellSpecial3.TabIndex = 159;
+            this.lblSpellSpecial3.Text = "Special 3";
+            // 
+            // chkLstSpellSpecial3
+            // 
+            this.chkLstSpellSpecial3.CheckOnClick = true;
+            this.chkLstSpellSpecial3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellSpecial3.FormattingEnabled = true;
+            this.chkLstSpellSpecial3.Items.AddRange(new object[] {
+            "Miss if protected from ailments",
+            "Text if spell lands",
+            "Replace Spell Power with Vitality",
+            "???",
+            "???",
+            "???",
+            "???",
+            "Ignore 50% Target Defense"});
+            this.chkLstSpellSpecial3.Location = new System.Drawing.Point(366, 384);
+            this.chkLstSpellSpecial3.Name = "chkLstSpellSpecial3";
+            this.chkLstSpellSpecial3.Size = new System.Drawing.Size(205, 140);
+            this.chkLstSpellSpecial3.TabIndex = 158;
+            // 
+            // lblFractionNote
+            // 
+            this.lblFractionNote.AutoSize = true;
+            this.lblFractionNote.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFractionNote.Location = new System.Drawing.Point(172, 527);
+            this.lblFractionNote.Name = "lblFractionNote";
+            this.lblFractionNote.Size = new System.Drawing.Size(102, 14);
+            this.lblFractionNote.TabIndex = 157;
+            this.lblFractionNote.Text = "*255 = Maximum";
+            // 
+            // lblSpellSpecial2
+            // 
+            this.lblSpellSpecial2.AutoSize = true;
+            this.lblSpellSpecial2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellSpecial2.Location = new System.Drawing.Point(232, 362);
+            this.lblSpellSpecial2.Name = "lblSpellSpecial2";
+            this.lblSpellSpecial2.Size = new System.Drawing.Size(72, 19);
+            this.lblSpellSpecial2.TabIndex = 156;
+            this.lblSpellSpecial2.Text = "Special 2";
+            // 
+            // chkLstSpellSpecial2
+            // 
+            this.chkLstSpellSpecial2.CheckOnClick = true;
+            this.chkLstSpellSpecial2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellSpecial2.FormattingEnabled = true;
+            this.chkLstSpellSpecial2.Items.AddRange(new object[] {
+            "Restore HP/MP",
+            "Absorb HP/MP",
+            "Remove Status",
+            "Toggle Status",
+            "Vitality check for success",
+            "Cannot Evade",
+            "Caster\'s Level * Success Rate",
+            "*Fractional (Power/256)"});
+            this.chkLstSpellSpecial2.Location = new System.Drawing.Point(175, 384);
+            this.chkLstSpellSpecial2.Name = "chkLstSpellSpecial2";
+            this.chkLstSpellSpecial2.Size = new System.Drawing.Size(185, 140);
+            this.chkLstSpellSpecial2.TabIndex = 155;
+            // 
+            // lblSpellSpecial1
+            // 
+            this.lblSpellSpecial1.AutoSize = true;
+            this.lblSpellSpecial1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellSpecial1.Location = new System.Drawing.Point(45, 362);
+            this.lblSpellSpecial1.Name = "lblSpellSpecial1";
+            this.lblSpellSpecial1.Size = new System.Drawing.Size(72, 19);
+            this.lblSpellSpecial1.TabIndex = 154;
+            this.lblSpellSpecial1.Text = "Special 1";
+            // 
+            // chkLstSpellSpecial1
+            // 
+            this.chkLstSpellSpecial1.CheckOnClick = true;
+            this.chkLstSpellSpecial1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellSpecial1.FormattingEnabled = true;
+            this.chkLstSpellSpecial1.Items.AddRange(new object[] {
+            "Physical Damage",
+            "Miss if Death protected",
+            "Target only dead allies",
+            "Invert damage",
+            "Randomize Target",
+            "Ignore Target\'s Defense",
+            "No Split Damage",
+            "Abort on allies; costs MP"});
+            this.chkLstSpellSpecial1.Location = new System.Drawing.Point(6, 384);
+            this.chkLstSpellSpecial1.Name = "chkLstSpellSpecial1";
+            this.chkLstSpellSpecial1.Size = new System.Drawing.Size(163, 140);
+            this.chkLstSpellSpecial1.TabIndex = 153;
+            // 
+            // lblSpellElement
+            // 
+            this.lblSpellElement.AutoSize = true;
+            this.lblSpellElement.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellElement.Location = new System.Drawing.Point(581, 362);
+            this.lblSpellElement.Name = "lblSpellElement";
+            this.lblSpellElement.Size = new System.Drawing.Size(66, 19);
+            this.lblSpellElement.TabIndex = 152;
+            this.lblSpellElement.Text = "Element";
+            // 
+            // chkLstSpellElement
+            // 
+            this.chkLstSpellElement.CheckOnClick = true;
+            this.chkLstSpellElement.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellElement.FormattingEnabled = true;
+            this.chkLstSpellElement.Items.AddRange(new object[] {
+            "Fire",
+            "Ice",
+            "Thunder",
+            "Poison",
+            "Wind",
+            "Holy",
+            "Earth",
+            "Water"});
+            this.chkLstSpellElement.Location = new System.Drawing.Point(577, 384);
+            this.chkLstSpellElement.Name = "chkLstSpellElement";
+            this.chkLstSpellElement.Size = new System.Drawing.Size(95, 140);
+            this.chkLstSpellElement.TabIndex = 151;
+            // 
+            // numSuccessRate
+            // 
+            this.numSuccessRate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSuccessRate.Location = new System.Drawing.Point(6, 105);
+            this.numSuccessRate.Maximum = new decimal(new int[] {
+            383,
+            0,
+            0,
+            0});
+            this.numSuccessRate.Name = "numSuccessRate";
+            this.numSuccessRate.Size = new System.Drawing.Size(48, 27);
+            this.numSuccessRate.TabIndex = 150;
+            // 
+            // lblSuccessRate
+            // 
+            this.lblSuccessRate.AutoSize = true;
+            this.lblSuccessRate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSuccessRate.Location = new System.Drawing.Point(60, 107);
+            this.lblSuccessRate.Name = "lblSuccessRate";
+            this.lblSuccessRate.Size = new System.Drawing.Size(99, 19);
+            this.lblSuccessRate.TabIndex = 149;
+            this.lblSuccessRate.Text = "Success Rate";
+            // 
+            // numSpellPower
+            // 
+            this.numSpellPower.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSpellPower.Location = new System.Drawing.Point(6, 72);
+            this.numSpellPower.Maximum = new decimal(new int[] {
+            383,
+            0,
+            0,
+            0});
+            this.numSpellPower.Name = "numSpellPower";
+            this.numSpellPower.Size = new System.Drawing.Size(48, 27);
+            this.numSpellPower.TabIndex = 148;
+            // 
+            // lblSpellPower
+            // 
+            this.lblSpellPower.AutoSize = true;
+            this.lblSpellPower.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellPower.Location = new System.Drawing.Point(60, 74);
+            this.lblSpellPower.Name = "lblSpellPower";
+            this.lblSpellPower.Size = new System.Drawing.Size(92, 19);
+            this.lblSpellPower.TabIndex = 147;
+            this.lblSpellPower.Text = "Spell Power";
+            // 
+            // numMPCost
+            // 
+            this.numMPCost.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numMPCost.Location = new System.Drawing.Point(6, 39);
+            this.numMPCost.Maximum = new decimal(new int[] {
+            383,
+            0,
+            0,
+            0});
+            this.numMPCost.Name = "numMPCost";
+            this.numMPCost.Size = new System.Drawing.Size(48, 27);
+            this.numMPCost.TabIndex = 146;
+            // 
+            // lblMPCost
+            // 
+            this.lblMPCost.AutoSize = true;
+            this.lblMPCost.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMPCost.Location = new System.Drawing.Point(60, 41);
+            this.lblMPCost.Name = "lblMPCost";
+            this.lblMPCost.Size = new System.Drawing.Size(66, 19);
+            this.lblMPCost.TabIndex = 145;
+            this.lblMPCost.Text = "MP Cost";
+            // 
+            // lblSpellTargetting
+            // 
+            this.lblSpellTargetting.AutoSize = true;
+            this.lblSpellTargetting.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpellTargetting.Location = new System.Drawing.Point(45, 181);
+            this.lblSpellTargetting.Name = "lblSpellTargetting";
+            this.lblSpellTargetting.Size = new System.Drawing.Size(82, 19);
+            this.lblSpellTargetting.TabIndex = 144;
+            this.lblSpellTargetting.Text = "Targetting";
+            // 
+            // chkLstSpellTargetting
+            // 
+            this.chkLstSpellTargetting.CheckOnClick = true;
+            this.chkLstSpellTargetting.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkLstSpellTargetting.FormattingEnabled = true;
+            this.chkLstSpellTargetting.Items.AddRange(new object[] {
+            "Can move cursor",
+            "One Side Only",
+            "Auto-select Both Parties",
+            "Auto-select One Party",
+            "Auto-confirm",
+            "Toggle Single/Multitarget",
+            "Cursor starts on enemy",
+            "Randomize selection"});
+            this.chkLstSpellTargetting.Location = new System.Drawing.Point(6, 203);
+            this.chkLstSpellTargetting.Name = "chkLstSpellTargetting";
+            this.chkLstSpellTargetting.Size = new System.Drawing.Size(164, 140);
+            this.chkLstSpellTargetting.TabIndex = 143;
+            // 
+            // btnSpellsCancel
+            // 
+            this.btnSpellsCancel.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpellsCancel.Location = new System.Drawing.Point(1032, 544);
+            this.btnSpellsCancel.Name = "btnSpellsCancel";
+            this.btnSpellsCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnSpellsCancel.TabIndex = 142;
+            this.btnSpellsCancel.Text = "Cancel";
+            this.btnSpellsCancel.UseVisualStyleBackColor = false;
+            this.btnSpellsCancel.Click += new System.EventHandler(this.btnSpellsCancel_Click);
+            // 
+            // btnSpellsOkay
+            // 
+            this.btnSpellsOkay.Location = new System.Drawing.Point(951, 544);
+            this.btnSpellsOkay.Name = "btnSpellsOkay";
+            this.btnSpellsOkay.Size = new System.Drawing.Size(75, 23);
+            this.btnSpellsOkay.TabIndex = 141;
+            this.btnSpellsOkay.Text = "Okay";
+            this.btnSpellsOkay.UseVisualStyleBackColor = true;
+            this.btnSpellsOkay.Click += new System.EventHandler(this.btnSpellsOkay_Click);
+            // 
+            // numSpellIndex
+            // 
+            this.numSpellIndex.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numSpellIndex.Location = new System.Drawing.Point(175, 7);
+            this.numSpellIndex.Maximum = new decimal(new int[] {
+            383,
+            0,
+            0,
+            0});
+            this.numSpellIndex.Name = "numSpellIndex";
+            this.numSpellIndex.Size = new System.Drawing.Size(48, 27);
+            this.numSpellIndex.TabIndex = 140;
+            this.numSpellIndex.ValueChanged += new System.EventHandler(this.numSpellIndex_ValueChanged);
+            // 
+            // cmbSpells
+            // 
+            this.cmbSpells.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmbSpells.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbSpells.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSpells.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSpells.FormattingEnabled = true;
+            this.cmbSpells.Location = new System.Drawing.Point(6, 6);
+            this.cmbSpells.MaxLength = 20;
+            this.cmbSpells.Name = "cmbSpells";
+            this.cmbSpells.Size = new System.Drawing.Size(163, 27);
+            this.cmbSpells.TabIndex = 139;
+            this.cmbSpells.SelectedIndexChanged += new System.EventHandler(this.cmbSpells_SelectedIndexChanged);
+            // 
+            // tabItems
+            // 
+            this.tabItems.Location = new System.Drawing.Point(4, 23);
+            this.tabItems.Name = "tabItems";
+            this.tabItems.Size = new System.Drawing.Size(1113, 573);
+            this.tabItems.TabIndex = 4;
+            this.tabItems.Text = "Items";
+            this.tabItems.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1073, 617);
+            this.ClientSize = new System.Drawing.Size(1145, 639);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -14139,6 +8529,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.numLevel)).EndInit();
             this.tabEspers.ResumeLayout(false);
             this.tabEspers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillPoints1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic8)).EndInit();
@@ -14151,6 +8566,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmbEsperMagic1)).EndInit();
             this.tabEnemies.ResumeLayout(false);
             this.tabEnemies.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSkillExp)).EndInit();
+            this.grpControl.ResumeLayout(false);
+            this.grpSpecialAttacks.ResumeLayout(false);
+            this.grpSpecialAttacks.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterIndex)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -14174,8 +8593,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterMagDef)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterStrength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMonsterLevel)).EndInit();
-            this.grpSpecialAttacks.ResumeLayout(false);
-            this.grpSpecialAttacks.PerformLayout();
+            this.tabSpells.ResumeLayout(false);
+            this.tabSpells.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpellDelay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSuccessRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpellPower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMPCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSpellIndex)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -14408,112 +8832,6 @@
         private System.Windows.Forms.ComboBox cmbEsperMagic1;
         private System.Windows.Forms.Button btnEspersCancel;
         private System.Windows.Forms.Button btnEspersOkay;
-        private System.Windows.Forms.Label lblEsperVit1;
-        private System.Windows.Forms.Label lblEsperAgi1;
-        private System.Windows.Forms.Label lblEsperStr1;
-        private System.Windows.Forms.TextBox txtEsperStr1;
-        private System.Windows.Forms.Label lblEsperMag1;
-        private System.Windows.Forms.TextBox txtEsperMag20;
-        private System.Windows.Forms.TextBox txtEsperMag19;
-        private System.Windows.Forms.TextBox txtEsperMag18;
-        private System.Windows.Forms.TextBox txtEsperMag17;
-        private System.Windows.Forms.TextBox txtEsperMag16;
-        private System.Windows.Forms.TextBox txtEsperMag15;
-        private System.Windows.Forms.TextBox txtEsperMag14;
-        private System.Windows.Forms.TextBox txtEsperMag13;
-        private System.Windows.Forms.TextBox txtEsperMag12;
-        private System.Windows.Forms.TextBox txtEsperMag11;
-        private System.Windows.Forms.TextBox txtEsperMag10;
-        private System.Windows.Forms.TextBox txtEsperMag9;
-        private System.Windows.Forms.TextBox txtEsperMag8;
-        private System.Windows.Forms.TextBox txtEsperMag7;
-        private System.Windows.Forms.TextBox txtEsperMag6;
-        private System.Windows.Forms.TextBox txtEsperMag5;
-        private System.Windows.Forms.TextBox txtEsperMag4;
-        private System.Windows.Forms.TextBox txtEsperMag3;
-        private System.Windows.Forms.TextBox txtEsperMag2;
-        private System.Windows.Forms.TextBox txtEsperMag1;
-        private System.Windows.Forms.TextBox txtEsperVit20;
-        private System.Windows.Forms.TextBox txtEsperVit19;
-        private System.Windows.Forms.TextBox txtEsperVit18;
-        private System.Windows.Forms.TextBox txtEsperVit17;
-        private System.Windows.Forms.TextBox txtEsperVit16;
-        private System.Windows.Forms.TextBox txtEsperVit15;
-        private System.Windows.Forms.TextBox txtEsperVit14;
-        private System.Windows.Forms.TextBox txtEsperVit13;
-        private System.Windows.Forms.TextBox txtEsperVit12;
-        private System.Windows.Forms.TextBox txtEsperVit11;
-        private System.Windows.Forms.TextBox txtEsperVit10;
-        private System.Windows.Forms.TextBox txtEsperVit9;
-        private System.Windows.Forms.TextBox txtEsperVit8;
-        private System.Windows.Forms.TextBox txtEsperVit7;
-        private System.Windows.Forms.TextBox txtEsperVit6;
-        private System.Windows.Forms.TextBox txtEsperVit5;
-        private System.Windows.Forms.TextBox txtEsperVit4;
-        private System.Windows.Forms.TextBox txtEsperVit3;
-        private System.Windows.Forms.TextBox txtEsperVit2;
-        private System.Windows.Forms.TextBox txtEsperVit1;
-        private System.Windows.Forms.TextBox txtEsperAgi20;
-        private System.Windows.Forms.TextBox txtEsperAgi19;
-        private System.Windows.Forms.TextBox txtEsperAgi18;
-        private System.Windows.Forms.TextBox txtEsperAgi17;
-        private System.Windows.Forms.TextBox txtEsperAgi16;
-        private System.Windows.Forms.TextBox txtEsperAgi15;
-        private System.Windows.Forms.TextBox txtEsperAgi14;
-        private System.Windows.Forms.TextBox txtEsperAgi13;
-        private System.Windows.Forms.TextBox txtEsperAgi12;
-        private System.Windows.Forms.TextBox txtEsperAgi11;
-        private System.Windows.Forms.TextBox txtEsperAgi10;
-        private System.Windows.Forms.TextBox txtEsperAgi9;
-        private System.Windows.Forms.TextBox txtEsperAgi8;
-        private System.Windows.Forms.TextBox txtEsperAgi7;
-        private System.Windows.Forms.TextBox txtEsperAgi6;
-        private System.Windows.Forms.TextBox txtEsperAgi5;
-        private System.Windows.Forms.TextBox txtEsperAgi4;
-        private System.Windows.Forms.TextBox txtEsperAgi3;
-        private System.Windows.Forms.TextBox txtEsperAgi2;
-        private System.Windows.Forms.TextBox txtEsperAgi1;
-        private System.Windows.Forms.TextBox txtEsperStr20;
-        private System.Windows.Forms.TextBox txtEsperStr19;
-        private System.Windows.Forms.TextBox txtEsperStr18;
-        private System.Windows.Forms.TextBox txtEsperStr17;
-        private System.Windows.Forms.TextBox txtEsperStr16;
-        private System.Windows.Forms.TextBox txtEsperStr15;
-        private System.Windows.Forms.TextBox txtEsperStr14;
-        private System.Windows.Forms.TextBox txtEsperStr13;
-        private System.Windows.Forms.TextBox txtEsperStr12;
-        private System.Windows.Forms.TextBox txtEsperStr11;
-        private System.Windows.Forms.TextBox txtEsperStr10;
-        private System.Windows.Forms.TextBox txtEsperStr9;
-        private System.Windows.Forms.TextBox txtEsperStr8;
-        private System.Windows.Forms.TextBox txtEsperStr7;
-        private System.Windows.Forms.TextBox txtEsperStr6;
-        private System.Windows.Forms.TextBox txtEsperStr5;
-        private System.Windows.Forms.TextBox txtEsperStr4;
-        private System.Windows.Forms.TextBox txtEsperStr3;
-        private System.Windows.Forms.TextBox txtEsperStr2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lblEsperLevel20;
-        private System.Windows.Forms.Label lblEsperLevel19;
-        private System.Windows.Forms.Label lblEsperLevel18;
-        private System.Windows.Forms.Label lblEsperLevel17;
-        private System.Windows.Forms.Label lblEsperLevel16;
-        private System.Windows.Forms.Label lblEsperLevel15;
-        private System.Windows.Forms.Label lblEsperLevel14;
-        private System.Windows.Forms.Label lblEsperLevel13;
-        private System.Windows.Forms.Label lblEsperLevel12;
-        private System.Windows.Forms.Label lblEsperLevel11;
-        private System.Windows.Forms.Label lblEsperLevel10;
-        private System.Windows.Forms.Label lblEsperLevel9;
-        private System.Windows.Forms.Label lblEsperLevel8;
-        private System.Windows.Forms.Label lblEsperLevel7;
-        private System.Windows.Forms.Label lblEsperLevel6;
-        private System.Windows.Forms.Label lblEsperLevel5;
-        private System.Windows.Forms.Label lblEsperLevel4;
-        private System.Windows.Forms.Label lblEsperLevel3;
-        private System.Windows.Forms.Label lblEsperLevel2;
-        private System.Windows.Forms.Label lblEsperLevel1;
-        private System.Windows.Forms.Label lblEsperLevel;
         private System.Windows.Forms.ComboBox cmbMonsters;
         private System.Windows.Forms.NumericUpDown numMonsterLevel;
         private System.Windows.Forms.Label lblMonsterLevel;
@@ -14700,7 +9018,7 @@
         private System.Windows.Forms.CheckBox chkNoRun;
         private System.Windows.Forms.Label lblNoScan;
         private System.Windows.Forms.CheckBox chkBlockSuplex;
-        private System.Windows.Forms.CheckBox chkUnknown3;
+        private System.Windows.Forms.CheckBox chkIgnoreITD;
         private System.Windows.Forms.CheckBox chkAttackFirst;
         private System.Windows.Forms.Label lblNoRun;
         private System.Windows.Forms.CheckBox chkHumanoid;
@@ -14712,11 +9030,11 @@
         private System.Windows.Forms.CheckBox chkPierceReflect;
         private System.Windows.Forms.Label lblUndead;
         private System.Windows.Forms.Label lblCritImp;
-        private System.Windows.Forms.Label lblUnknown3;
+        private System.Windows.Forms.Label lblPierceReflect;
         private System.Windows.Forms.Label lblHumanoid;
         private System.Windows.Forms.Label lblUnknown2;
         private System.Windows.Forms.Label lblNoName;
-        private System.Windows.Forms.Label lblPierceReflect;
+        private System.Windows.Forms.Label lblIgnoreITD;
         private System.Windows.Forms.Label lblMPDeath;
         private System.Windows.Forms.Label lblNormalAttack;
         private System.Windows.Forms.ComboBox cmbNormalAttack;
@@ -14728,6 +9046,106 @@
         private System.Windows.Forms.Label lblNoPhys;
         private System.Windows.Forms.CheckBox chkNoDodge;
         private System.Windows.Forms.CheckBox chkNoPhys;
+        private System.Windows.Forms.Label lblStealsCommon;
+        private System.Windows.Forms.ComboBox cmbStealsCommon;
+        private System.Windows.Forms.Label lblStealsRare;
+        private System.Windows.Forms.ComboBox cmbStealsRare;
+        private System.Windows.Forms.Label lblStolenItems;
+        private System.Windows.Forms.Label lblDropsCommon;
+        private System.Windows.Forms.ComboBox cmbDropsCommon;
+        private System.Windows.Forms.Label lblDropsRare;
+        private System.Windows.Forms.ComboBox cmbDropsRare;
+        private System.Windows.Forms.Label lblDrops;
+        private System.Windows.Forms.ComboBox cmbSketch2;
+        private System.Windows.Forms.ComboBox cmbSketch1;
+        private System.Windows.Forms.Label lblSketch;
+        private System.Windows.Forms.ComboBox cmbRage2;
+        private System.Windows.Forms.ComboBox cmbRage1;
+        private System.Windows.Forms.Label lblRage;
+        private System.Windows.Forms.GroupBox grpControl;
+        private System.Windows.Forms.ComboBox cmbControl4;
+        private System.Windows.Forms.ComboBox cmbControl2;
+        private System.Windows.Forms.ComboBox cmbControl3;
+        private System.Windows.Forms.ComboBox cmbControl1;
+        private System.Windows.Forms.TabPage tabSpells;
+        private System.Windows.Forms.TabPage tabItems;
+        private System.Windows.Forms.NumericUpDown numSpellIndex;
+        private System.Windows.Forms.ComboBox cmbSpells;
+        private System.Windows.Forms.Button btnSpellsCancel;
+        private System.Windows.Forms.Button btnSpellsOkay;
+        private System.Windows.Forms.Label lblSpellTargetting;
+        private System.Windows.Forms.CheckedListBox chkLstSpellTargetting;
+        private System.Windows.Forms.Label lblSpellElement;
+        private System.Windows.Forms.CheckedListBox chkLstSpellElement;
+        private System.Windows.Forms.NumericUpDown numSuccessRate;
+        private System.Windows.Forms.Label lblSuccessRate;
+        private System.Windows.Forms.NumericUpDown numSpellPower;
+        private System.Windows.Forms.Label lblSpellPower;
+        private System.Windows.Forms.NumericUpDown numMPCost;
+        private System.Windows.Forms.Label lblMPCost;
+        private System.Windows.Forms.Label lblSpellSpecial3;
+        private System.Windows.Forms.CheckedListBox chkLstSpellSpecial3;
+        private System.Windows.Forms.Label lblFractionNote;
+        private System.Windows.Forms.Label lblSpellSpecial2;
+        private System.Windows.Forms.CheckedListBox chkLstSpellSpecial2;
+        private System.Windows.Forms.Label lblSpellSpecial1;
+        private System.Windows.Forms.CheckedListBox chkLstSpellSpecial1;
+        private System.Windows.Forms.Label lblSpellStatus2;
+        private System.Windows.Forms.CheckedListBox chkLstSpellStatus2;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.CheckedListBox chkLstSpellStatus1;
+        private System.Windows.Forms.Label lblSpellMisc;
+        private System.Windows.Forms.CheckedListBox chkLstSpellMisc;
+        private System.Windows.Forms.Label lblSpellStatus4;
+        private System.Windows.Forms.CheckedListBox chkLstSpellStatus4;
+        private System.Windows.Forms.Label lblSpellStatus3;
+        private System.Windows.Forms.CheckedListBox chkLstSpellStatus3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckedListBox chkLstEsperChars;
+        private System.Windows.Forms.Button btnEspersNone;
+        private System.Windows.Forms.Button btnEspersAll;
+        private System.Windows.Forms.TabPage tabScripts;
+        private System.Windows.Forms.TabPage tabCommands;
+        private System.Windows.Forms.NumericUpDown numSpellDelay;
+        private System.Windows.Forms.Label lblSpellDelay;
+        private System.Windows.Forms.Button btnRenameSpell;
+        private System.Windows.Forms.Label lblSkillExp;
+        private System.Windows.Forms.NumericUpDown numSkillExp;
+        private System.Windows.Forms.CheckedListBox chkLstEsperStats;
+        private System.Windows.Forms.Label lblAvailableStats;
+        private System.Windows.Forms.NumericUpDown numSkillPoints5;
+        private System.Windows.Forms.NumericUpDown numSkillPoints4;
+        private System.Windows.Forms.NumericUpDown numSkillPoints3;
+        private System.Windows.Forms.NumericUpDown numSkillPoints2;
+        private System.Windows.Forms.NumericUpDown numSkillPoints1;
+        private System.Windows.Forms.Label lblSkillNeeded;
+        private System.Windows.Forms.Label lblSkillPoints5;
+        private System.Windows.Forms.NumericUpDown numSkillPoints25;
+        private System.Windows.Forms.NumericUpDown numSkillPoints24;
+        private System.Windows.Forms.NumericUpDown numSkillPoints23;
+        private System.Windows.Forms.NumericUpDown numSkillPoints22;
+        private System.Windows.Forms.NumericUpDown numSkillPoints21;
+        private System.Windows.Forms.Label lblSkillPoints4;
+        private System.Windows.Forms.NumericUpDown numSkillPoints20;
+        private System.Windows.Forms.NumericUpDown numSkillPoints19;
+        private System.Windows.Forms.NumericUpDown numSkillPoints18;
+        private System.Windows.Forms.NumericUpDown numSkillPoints17;
+        private System.Windows.Forms.NumericUpDown numSkillPoints16;
+        private System.Windows.Forms.Label lblSkillPoints3;
+        private System.Windows.Forms.NumericUpDown numSkillPoints15;
+        private System.Windows.Forms.NumericUpDown numSkillPoints14;
+        private System.Windows.Forms.NumericUpDown numSkillPoints13;
+        private System.Windows.Forms.NumericUpDown numSkillPoints12;
+        private System.Windows.Forms.NumericUpDown numSkillPoints11;
+        private System.Windows.Forms.Label lblSkillPoints2;
+        private System.Windows.Forms.NumericUpDown numSkillPoints10;
+        private System.Windows.Forms.NumericUpDown numSkillPoints9;
+        private System.Windows.Forms.NumericUpDown numSkillPoints8;
+        private System.Windows.Forms.NumericUpDown numSkillPoints7;
+        private System.Windows.Forms.NumericUpDown numSkillPoints6;
+        private System.Windows.Forms.Label lblSkillPoints1;
+        private System.Windows.Forms.Label lblCommonSketch;
+        private System.Windows.Forms.Label lblRareSketch;
     }
 }
 

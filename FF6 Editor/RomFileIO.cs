@@ -23,6 +23,7 @@ namespace FF6_Editor
             DataFile = new FileStream(Name, FileMode.Open, FileAccess.ReadWrite);
             ROM = new MemoryStream();
             DataFile.CopyTo(ROM);
+            DataFile.Close();
 
             br = new BinaryReader(ROM);
             bw = new BinaryWriter(ROM);
