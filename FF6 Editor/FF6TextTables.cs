@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FF6_Editor
+namespace FF1_DOS_editor
 {
     public class FF6TextTables
     {

@@ -11,17 +11,15 @@ using System.IO;
 using System.Reflection;
 using System.Web;
 
-namespace FF6_Editor
+namespace FF1_DOS_editor
 {
     public partial class Form1 : Form
     {
         RomFileIO Rom = new RomFileIO();
         EnemySpecs Specs = new EnemySpecs();
         Spells Spells = new Spells();
-        Espers Espers = new Espers();
-        FF6TextTables TextTable = new FF6TextTables();
-        SpellList SpellList = new SpellList();
-        EnemyList EnemyList = new EnemyList();
+        //FF6TextTables TextTable = new FF6TextTables();
+        //SpellList SpellList = new SpellList();
 
         public string FName;
         public int statSum = 0;
@@ -34,6 +32,8 @@ namespace FF6_Editor
         public int EsperCharIndex;
         public int EsperBonusMult;
         public int MonsterIndexCheck;
+        public int MonsterScriptBase;
+        public int MonsterScriptMult;
         public int MonsterDiffCheck;
         public int MonsterHPByteCheck;
         public int MonsterSecondaryIndexCheck;
@@ -42,6 +42,12 @@ namespace FF6_Editor
         public int MonsterRageSketchIndex;
         public int SpellIndex;
         public int SpellDelayIndex;
+        public int MonsterQueueIndex;
+
+        string[] jobList = File.ReadAllLines("jobs.txt");
+        string[] consumableList = File.ReadAllLines("consumables.txt");
+        string[] weaponList = File.ReadAllLines("weapons.txt");
+        string[] armorList = File.ReadAllLines("armor.txt");
 
         public Form1()
         {
@@ -60,12 +66,14 @@ namespace FF6_Editor
 
         private void LoadROMToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();                                      //Setting the dialog up
-            ofd.Filter = "Super Famicom ROM|*.sfc";                                         //File type filter
-            ofd.Title = "Load ROM";                                                         //Title for dialog
-            ofd.CheckFileExists = true;
-            ofd.CheckPathExists = true;
-            ofd.Multiselect = false;
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Filter = "Gameboy Advance ROM|*.gba",                                         //File type filter
+                Title = "Load ROM",                                                         //Title for dialog
+                CheckFileExists = true,
+                CheckPathExists = true,
+                Multiselect = false
+            };                                      //Setting the dialog up
             if (ofd.ShowDialog() != DialogResult.OK)
             {
                 MessageBox.Show("Could not open " + ofd.FileName);
@@ -78,18 +86,40 @@ namespace FF6_Editor
                 saveAsToolStripMenuItem.Enabled = true;
                 saveROMToolStripMenuItem1.Enabled = true;
             }
-            DisplaySpellNames();
-            DisplayEnemyNames();
-            cmbActors.SelectedIndex = 0;
-            cmbEspers.SelectedIndex = 0;
+            cmbMonsters.Items.AddRange(Specs.MonsterList);
+
+            cmbMonsterSpell1.Items.Clear();
+            cmbMonsterSpell1.Items.AddRange(Specs.SpellList);
+            cmbMonsterSpell2.Items.Clear();
+            cmbMonsterSpell2.Items.AddRange(Specs.SpellList);
+            cmbMonsterSpell3.Items.Clear();
+            cmbMonsterSpell3.Items.AddRange(Specs.SpellList);
+            cmbMonsterSpell4.Items.Clear();
+            cmbMonsterSpell4.Items.AddRange(Specs.SpellList);
+            cmbMonsterSpell5.Items.Clear();
+            cmbMonsterSpell5.Items.AddRange(Specs.SpellList);
+            cmbMonsterSpell6.Items.Clear();
+            cmbMonsterSpell6.Items.AddRange(Specs.SpellList);
+            cmbMonsterSpell7.Items.Clear();
+            cmbMonsterSpell7.Items.AddRange(Specs.SpellList);
+            cmbMonsterSpell8.Items.Clear();
+            cmbMonsterSpell8.Items.AddRange(Specs.SpellList);
+
+            cmbMonsterAbility1.Items.Clear();
+            cmbMonsterAbility1.Items.AddRange(Specs.AbilityList);
+            cmbMonsterAbility2.Items.Clear();
+            cmbMonsterAbility2.Items.AddRange(Specs.AbilityList);
+            cmbMonsterAbility3.Items.Clear();
+            cmbMonsterAbility3.Items.AddRange(Specs.AbilityList);
+            cmbMonsterAbility4.Items.Clear();
+            cmbMonsterAbility4.Items.AddRange(Specs.AbilityList);
+            //DisplaySpellNames();
+            //DisplayEnemyNames();
             cmbMonsters.SelectedIndex = 0;
-            cmbDifficulty.SelectedIndex = 0;
             //cmbSpells.SelectedIndex = 0;
-            UpdateActorsElements();
-            UpdateEsperElements();
             UpdateMonsterStats();
-            UpdateSpells();
-            
+            //UpdateSpells();
+
         }
 
 
@@ -97,9 +127,11 @@ namespace FF6_Editor
         {
             {
                 //Open SaveFileDialog for file saving.
-                SaveFileDialog sfd = new SaveFileDialog();
-                sfd.Filter = "SNES ROM file|*.sfc";
-                sfd.Title = "Save ROM";
+                SaveFileDialog sfd = new SaveFileDialog
+                {
+                    Filter = "Gameboy Advance ROM|*.gba",
+                    Title = "Save ROM"
+                };
                 if (sfd.ShowDialog() != DialogResult.OK)
                 {
                     MessageBox.Show("Could not save " + sfd.FileName);
@@ -117,793 +149,147 @@ namespace FF6_Editor
             }
         }
 
-        private void saveROMToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void SaveROMToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Rom.SaveAs(FName);
-        }
-
-        private void UpdateActorsElements()
-        {
-            if (!Rom.IsOpen())
-                return;
-
-            // Update level labels
-
-            LevelCheck = (int)numLevel.Value;
-            for (int i = 0; i <= 9; i++)
-            {
-                string controlName = "lblLevel" + i.ToString();
-                Label textControl = (Label)this.Controls.Find(controlName, true).FirstOrDefault();
-                int level = LevelCheck + i;
-                textControl.Text = level.ToString();
-            }
-
-            // Update the stats here
-            ActorCheckStats = cmbActors.SelectedIndex * 100;
-
-            txtStrLv0.Text = Rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats).ToString();
-            txtStrLv1.Text = Rom.Read8().ToString();
-            txtStrLv2.Text = Rom.Read8().ToString();
-            txtStrLv3.Text = Rom.Read8().ToString();
-            txtStrLv4.Text = Rom.Read8().ToString();
-            txtStrLv5.Text = Rom.Read8().ToString();
-            txtStrLv6.Text = Rom.Read8().ToString();
-            txtStrLv7.Text = Rom.Read8().ToString();
-            txtStrLv8.Text = Rom.Read8().ToString();
-            txtStrLv9.Text = Rom.Read8().ToString();
-            txtAgiLv0.Text = Rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (100 * 15)).ToString();
-            txtAgiLv1.Text = Rom.Read8().ToString();
-            txtAgiLv2.Text = Rom.Read8().ToString();
-            txtAgiLv3.Text = Rom.Read8().ToString();
-            txtAgiLv4.Text = Rom.Read8().ToString();
-            txtAgiLv5.Text = Rom.Read8().ToString();
-            txtAgiLv6.Text = Rom.Read8().ToString();
-            txtAgiLv7.Text = Rom.Read8().ToString();
-            txtAgiLv8.Text = Rom.Read8().ToString();
-            txtAgiLv9.Text = Rom.Read8().ToString();
-            txtStaLv0.Text = Rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (200 * 15)).ToString();
-            txtStaLv1.Text = Rom.Read8().ToString();
-            txtStaLv2.Text = Rom.Read8().ToString();
-            txtStaLv3.Text = Rom.Read8().ToString();
-            txtStaLv4.Text = Rom.Read8().ToString();
-            txtStaLv5.Text = Rom.Read8().ToString();
-            txtStaLv6.Text = Rom.Read8().ToString();
-            txtStaLv7.Text = Rom.Read8().ToString();
-            txtStaLv8.Text = Rom.Read8().ToString();
-            txtStaLv9.Text = Rom.Read8().ToString();
-            txtMagLv0.Text = Rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (300 * 15)).ToString();
-            txtMagLv1.Text = Rom.Read8().ToString();
-            txtMagLv2.Text = Rom.Read8().ToString();
-            txtMagLv3.Text = Rom.Read8().ToString();
-            txtMagLv4.Text = Rom.Read8().ToString();
-            txtMagLv5.Text = Rom.Read8().ToString();
-            txtMagLv6.Text = Rom.Read8().ToString();
-            txtMagLv7.Text = Rom.Read8().ToString();
-            txtMagLv8.Text = Rom.Read8().ToString();
-            txtMagLv9.Text = Rom.Read8().ToString();
-            txtHPLv0.Text = Rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (400 * 15)).ToString();
-            txtHPLv1.Text = Rom.Read8().ToString();
-            txtHPLv2.Text = Rom.Read8().ToString();
-            txtHPLv3.Text = Rom.Read8().ToString();
-            txtHPLv4.Text = Rom.Read8().ToString();
-            txtHPLv5.Text = Rom.Read8().ToString();
-            txtHPLv6.Text = Rom.Read8().ToString();
-            txtHPLv7.Text = Rom.Read8().ToString();
-            txtHPLv8.Text = Rom.Read8().ToString();
-            txtHPLv9.Text = Rom.Read8().ToString();
-            txtMPLv0.Text = Rom.Read8(RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (500 * 15)).ToString();
-            txtMPLv1.Text = Rom.Read8().ToString();
-            txtMPLv2.Text = Rom.Read8().ToString();
-            txtMPLv3.Text = Rom.Read8().ToString();
-            txtMPLv4.Text = Rom.Read8().ToString();
-            txtMPLv5.Text = Rom.Read8().ToString();
-            txtMPLv6.Text = Rom.Read8().ToString();
-            txtMPLv7.Text = Rom.Read8().ToString();
-            txtMPLv8.Text = Rom.Read8().ToString();
-            txtMPLv9.Text = Rom.Read8().ToString();
-
-            //Show added stat values here, in increments of ten.
-            txtStrLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 11).ToString();
-            txtStrLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 21).ToString();
-            txtStrLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 31).ToString();
-            txtStrLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 41).ToString();
-            txtStrLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 51).ToString();
-            txtStrLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 61).ToString();
-            txtStrLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 71).ToString();
-            txtStrLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 81).ToString();
-            txtStrLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 91).ToString();
-            txtStrLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats, 100).ToString();
-            txtAgiLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 11).ToString();
-            txtAgiLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 21).ToString();
-            txtAgiLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 31).ToString();
-            txtAgiLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 41).ToString();
-            txtAgiLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 51).ToString();
-            txtAgiLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 61).ToString();
-            txtAgiLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 71).ToString();
-            txtAgiLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 81).ToString();
-            txtAgiLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 91).ToString();
-            txtAgiLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (100 * 15), 100).ToString();
-            txtStaLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 11).ToString();
-            txtStaLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 21).ToString();
-            txtStaLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 31).ToString();
-            txtStaLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 41).ToString();
-            txtStaLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 51).ToString();
-            txtStaLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 61).ToString();
-            txtStaLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 71).ToString();
-            txtStaLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 81).ToString();
-            txtStaLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 91).ToString();
-            txtStaLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (200 * 15), 100).ToString();
-            txtMagLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 11).ToString();
-            txtMagLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 21).ToString();
-            txtMagLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 31).ToString();
-            txtMagLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 41).ToString();
-            txtMagLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 51).ToString();
-            txtMagLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 61).ToString();
-            txtMagLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 71).ToString();
-            txtMagLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 81).ToString();
-            txtMagLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 91).ToString();
-            txtMagLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (300 * 15), 100).ToString();
-            txtHPLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 11).ToString();
-            txtHPLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 21).ToString();
-            txtHPLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 31).ToString();
-            txtHPLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 41).ToString();
-            txtHPLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 51).ToString();
-            txtHPLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 61).ToString();
-            txtHPLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 71).ToString();
-            txtHPLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 81).ToString();
-            txtHPLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 91).ToString();
-            txtHPLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (400 * 15), 100).ToString();
-            txtMPLv0_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 11).ToString();
-            txtMPLv1_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 21).ToString();
-            txtMPLv2_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 31).ToString();
-            txtMPLv3_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 41).ToString();
-            txtMPLv4_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 51).ToString();
-            txtMPLv5_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 61).ToString();
-            txtMPLv6_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 71).ToString();
-            txtMPLv7_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 81).ToString();
-            txtMPLv8_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 91).ToString();
-            txtMPLv9_Add.Text = SumOfStatValues(RomData.CHAR_DATA + ActorCheckStats + (500 * 15), 100).ToString();
-
-
-            //Display Natural Magic
-            ActorCheckNaturalMagic = cmbActors.SelectedIndex * 32;
-            cmbNatMag1.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic);
-            cmbNatMag2.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 2);
-            cmbNatMag3.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 4);
-            cmbNatMag4.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 6);
-            cmbNatMag5.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 8);
-            cmbNatMag6.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 10);
-            cmbNatMag7.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 12);
-            cmbNatMag8.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 14);
-            cmbNatMag9.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 16);
-            cmbNatMag10.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 18);
-            cmbNatMag11.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 20);
-            cmbNatMag12.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 22);
-            cmbNatMag13.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 24);
-            cmbNatMag14.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 26);
-            cmbNatMag15.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 28);
-            cmbNatMag16.SelectedIndex = Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 30);
-
-            //Display Natural Magic Levels
-            numNatMag1.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 1));
-            numNatMag2.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 3));
-            numNatMag3.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 5));
-            numNatMag4.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 7));
-            numNatMag5.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 9));
-            numNatMag6.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 11));
-            numNatMag7.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 13));
-            numNatMag8.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 15));
-            numNatMag9.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 17));
-            numNatMag10.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 19));
-            numNatMag11.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 21));
-            numNatMag12.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 23));
-            numNatMag13.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 25));
-            numNatMag14.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 27));
-            numNatMag15.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 29));
-            numNatMag16.Value = CheckNatMagicLevelRange(Rom.Read8(RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic + 31));
-        }
-
-        private void SaveActorsElements()
-        {
-            //Save Stats to MemoryStream
-            //DOES NOT SAVE TO FILE
-            Rom.Write8(byte.Parse(txtStrLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats);
-            Rom.Write8(byte.Parse(txtStrLv1.Text));
-            Rom.Write8(byte.Parse(txtStrLv2.Text));
-            Rom.Write8(byte.Parse(txtStrLv3.Text));
-            Rom.Write8(byte.Parse(txtStrLv4.Text));
-            Rom.Write8(byte.Parse(txtStrLv5.Text));
-            Rom.Write8(byte.Parse(txtStrLv6.Text));
-            Rom.Write8(byte.Parse(txtStrLv7.Text));
-            Rom.Write8(byte.Parse(txtStrLv8.Text));
-            Rom.Write8(byte.Parse(txtStrLv9.Text));
-            Rom.Write8(byte.Parse(txtAgiLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (100 * 15));
-            Rom.Write8(byte.Parse(txtAgiLv1.Text));
-            Rom.Write8(byte.Parse(txtAgiLv2.Text));
-            Rom.Write8(byte.Parse(txtAgiLv3.Text));
-            Rom.Write8(byte.Parse(txtAgiLv4.Text));
-            Rom.Write8(byte.Parse(txtAgiLv5.Text));
-            Rom.Write8(byte.Parse(txtAgiLv6.Text));
-            Rom.Write8(byte.Parse(txtAgiLv7.Text));
-            Rom.Write8(byte.Parse(txtAgiLv8.Text));
-            Rom.Write8(byte.Parse(txtAgiLv9.Text));
-            Rom.Write8(byte.Parse(txtStaLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (200 * 15));
-            Rom.Write8(byte.Parse(txtStaLv1.Text));
-            Rom.Write8(byte.Parse(txtStaLv2.Text));
-            Rom.Write8(byte.Parse(txtStaLv3.Text));
-            Rom.Write8(byte.Parse(txtStaLv4.Text));
-            Rom.Write8(byte.Parse(txtStaLv5.Text));
-            Rom.Write8(byte.Parse(txtStaLv6.Text));
-            Rom.Write8(byte.Parse(txtStaLv7.Text));
-            Rom.Write8(byte.Parse(txtStaLv8.Text));
-            Rom.Write8(byte.Parse(txtStaLv9.Text));
-            Rom.Write8(byte.Parse(txtMagLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (300 * 15));
-            Rom.Write8(byte.Parse(txtMagLv1.Text));
-            Rom.Write8(byte.Parse(txtMagLv2.Text));
-            Rom.Write8(byte.Parse(txtMagLv3.Text));
-            Rom.Write8(byte.Parse(txtMagLv4.Text));
-            Rom.Write8(byte.Parse(txtMagLv5.Text));
-            Rom.Write8(byte.Parse(txtMagLv6.Text));
-            Rom.Write8(byte.Parse(txtMagLv7.Text));
-            Rom.Write8(byte.Parse(txtMagLv8.Text));
-            Rom.Write8(byte.Parse(txtMagLv9.Text));
-            Rom.Write8(byte.Parse(txtHPLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (400 * 15));
-            Rom.Write8(byte.Parse(txtHPLv1.Text));
-            Rom.Write8(byte.Parse(txtHPLv2.Text));
-            Rom.Write8(byte.Parse(txtHPLv3.Text));
-            Rom.Write8(byte.Parse(txtHPLv4.Text));
-            Rom.Write8(byte.Parse(txtHPLv5.Text));
-            Rom.Write8(byte.Parse(txtHPLv6.Text));
-            Rom.Write8(byte.Parse(txtHPLv7.Text));
-            Rom.Write8(byte.Parse(txtHPLv8.Text));
-            Rom.Write8(byte.Parse(txtHPLv9.Text));
-            Rom.Write8(byte.Parse(txtMPLv0.Text),RomData.CHAR_DATA + LevelCheck + ActorCheckStats + (500 * 15));
-            Rom.Write8(byte.Parse(txtMPLv1.Text));
-            Rom.Write8(byte.Parse(txtMPLv2.Text));
-            Rom.Write8(byte.Parse(txtMPLv3.Text));
-            Rom.Write8(byte.Parse(txtMPLv4.Text));
-            Rom.Write8(byte.Parse(txtMPLv5.Text));
-            Rom.Write8(byte.Parse(txtMPLv6.Text));
-            Rom.Write8(byte.Parse(txtMPLv7.Text));
-            Rom.Write8(byte.Parse(txtMPLv8.Text));
-            Rom.Write8(byte.Parse(txtMPLv9.Text));
-
-            //Save Natural Magic to Memory Stream
-            if (cmbActors.SelectedIndex < 11)
-            {
-                Rom.Write8(Convert.ToByte(cmbNatMag1.SelectedIndex), RomData.NATURAL_MAGIC_DATA + ActorCheckNaturalMagic);
-                Rom.Write8(Convert.ToByte(numNatMag1.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag2.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag2.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag3.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag3.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag4.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag4.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag5.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag5.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag6.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag6.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag7.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag7.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag8.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag8.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag9.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag9.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag10.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag10.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag11.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag11.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag12.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag12.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag13.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag13.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag14.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag14.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag15.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag15.Text));
-                Rom.Write8(Convert.ToByte(cmbNatMag16.SelectedIndex));
-                Rom.Write8(Convert.ToByte(numNatMag16.Text));
-            }
-            
-            UpdateActorsElements();
-        }
-
-        private void UpdateEsperElements()
-        {
-            // Read magic list for each esper.
-            EsperCheckMagic = cmbEspers.SelectedIndex * 20;
-            EsperLevelCheck = cmbEspers.SelectedIndex * 80;
-            EsperCharIndex = cmbEspers.SelectedIndex * 2;
-            EsperBonusMult = cmbEspers.SelectedIndex * 25;
-
-            Espers.ReadCharEquip(Rom, RomData.ESPER_CHAR_EQUIP, EsperCharIndex);
-            Espers.ReadEsperStatRestrictions(Rom, RomData.ESPER_BONUS_LIMITERS, cmbEspers.SelectedIndex);
-
-            cmbEsperMagic1.SelectedIndex = Rom.Read8(RomData.ESPER_MAGIC_DATA + EsperCheckMagic);
-            nmbEsperMagic1.Value = Rom.Read8();
-            cmbEsperMagic2.SelectedIndex = Rom.Read8();
-            nmbEsperMagic2.Value = Rom.Read8();
-            cmbEsperMagic3.SelectedIndex = Rom.Read8();
-            nmbEsperMagic3.Value = Rom.Read8();
-            cmbEsperMagic4.SelectedIndex = Rom.Read8();
-            nmbEsperMagic4.Value = Rom.Read8();
-            cmbEsperMagic5.SelectedIndex = Rom.Read8();
-            nmbEsperMagic5.Value = Rom.Read8();
-            cmbEsperMagic6.SelectedIndex = Rom.Read8();
-            nmbEsperMagic6.Value = Rom.Read8();
-            cmbEsperMagic7.SelectedIndex = Rom.Read8();
-            nmbEsperMagic7.Value = Rom.Read8();
-            cmbEsperMagic8.SelectedIndex = Rom.Read8();
-            nmbEsperMagic8.Value = Rom.Read8();
-            cmbEsperMagic9.SelectedIndex = Rom.Read8();
-            nmbEsperMagic9.Value = Rom.Read8();
-            cmbEsperMagic10.SelectedIndex = Rom.Read8();
-            nmbEsperMagic10.Value = Rom.Read8();
-
-            // Read Esper Level Bonuses.
-            numSkillPoints1.Value = Rom.Read8(RomData.ESPER_BONUS_DATA + EsperBonusMult);
-            numSkillPoints2.Value = Rom.Read8();
-            numSkillPoints3.Value = Rom.Read8();
-            numSkillPoints4.Value = Rom.Read8();
-            numSkillPoints5.Value = Rom.Read8();
-            numSkillPoints6.Value = Rom.Read8();
-            numSkillPoints7.Value = Rom.Read8();
-            numSkillPoints8.Value = Rom.Read8();
-            numSkillPoints9.Value = Rom.Read8();
-            numSkillPoints10.Value = Rom.Read8();
-            numSkillPoints11.Value = Rom.Read8();
-            numSkillPoints12.Value = Rom.Read8();
-            numSkillPoints13.Value = Rom.Read8();
-            numSkillPoints14.Value = Rom.Read8();
-            numSkillPoints15.Value = Rom.Read8();
-            numSkillPoints16.Value = Rom.Read8();
-            numSkillPoints17.Value = Rom.Read8();
-            numSkillPoints18.Value = Rom.Read8();
-            numSkillPoints19.Value = Rom.Read8();
-            numSkillPoints20.Value = Rom.Read8();
-            numSkillPoints21.Value = Rom.Read8();
-            numSkillPoints22.Value = Rom.Read8();
-            numSkillPoints23.Value = Rom.Read8();
-            numSkillPoints24.Value = Rom.Read8();
-            numSkillPoints25.Value = Rom.Read8();
-
-            if (Espers.CharEquip.HasFlag(CharEquip.Terra) == true) chkLstEsperChars.SetItemChecked(0, true); else chkLstEsperChars.SetItemChecked(0, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Locke) == true) chkLstEsperChars.SetItemChecked(1, true); else chkLstEsperChars.SetItemChecked(1, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Cyan) == true) chkLstEsperChars.SetItemChecked(2, true); else chkLstEsperChars.SetItemChecked(2, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Shadow) == true) chkLstEsperChars.SetItemChecked(3, true); else chkLstEsperChars.SetItemChecked(3, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Edgar) == true) chkLstEsperChars.SetItemChecked(4, true); else chkLstEsperChars.SetItemChecked(4, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Sabin) == true) chkLstEsperChars.SetItemChecked(5, true); else chkLstEsperChars.SetItemChecked(5, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Celes) == true) chkLstEsperChars.SetItemChecked(6, true); else chkLstEsperChars.SetItemChecked(6, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Strago) == true) chkLstEsperChars.SetItemChecked(7, true); else chkLstEsperChars.SetItemChecked(7, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Relm) == true) chkLstEsperChars.SetItemChecked(8, true); else chkLstEsperChars.SetItemChecked(8, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Setzer) == true) chkLstEsperChars.SetItemChecked(9, true); else chkLstEsperChars.SetItemChecked(9, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Mog) == true) chkLstEsperChars.SetItemChecked(10, true); else chkLstEsperChars.SetItemChecked(10, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Gau) == true) chkLstEsperChars.SetItemChecked(11, true); else chkLstEsperChars.SetItemChecked(11, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Gogo) == true) chkLstEsperChars.SetItemChecked(12, true); else chkLstEsperChars.SetItemChecked(12, false);
-            if (Espers.CharEquip.HasFlag(CharEquip.Umaro) == true) chkLstEsperChars.SetItemChecked(13, true); else chkLstEsperChars.SetItemChecked(13, false);
-
-            if (Espers.EsperStats.HasFlag(EsperStats.Strength) == true) chkLstEsperStats.SetItemChecked(0, true); else chkLstEsperStats.SetItemChecked(0, false);
-            if (Espers.EsperStats.HasFlag(EsperStats.Agility) == true) chkLstEsperStats.SetItemChecked(1, true); else chkLstEsperStats.SetItemChecked(1, false);
-            if (Espers.EsperStats.HasFlag(EsperStats.Vitality) == true) chkLstEsperStats.SetItemChecked(2, true); else chkLstEsperStats.SetItemChecked(2, false);
-            if (Espers.EsperStats.HasFlag(EsperStats.Magic) == true) chkLstEsperStats.SetItemChecked(3, true); else chkLstEsperStats.SetItemChecked(3, false);
-        }
-
-        private void SaveEsperElements()
-        {
-            //Write the esper magic struct to the MemoryStream.
-            EsperCheckMagic = cmbEspers.SelectedIndex * 20;
-            EsperBonusMult = cmbEspers.SelectedIndex * 25;
-            Rom.Write8(Convert.ToByte(cmbEsperMagic1.SelectedIndex), RomData.ESPER_MAGIC_DATA + EsperCheckMagic);
-            Rom.Write8(Convert.ToByte(nmbEsperMagic1.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic2.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic2.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic3.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic3.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic4.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic4.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic5.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic5.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic6.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic6.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic7.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic7.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic8.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic8.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic9.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic9.Value));
-            Rom.Write8(Convert.ToByte(cmbEsperMagic10.SelectedIndex));
-            Rom.Write8(Convert.ToByte(nmbEsperMagic10.Value));
-
-            //Write the esper bonus struct to the MemoryStream.
-            Rom.Write8((byte)numSkillPoints1.Value, RomData.ESPER_BONUS_DATA + EsperBonusMult);
-            Rom.Write8((byte)numSkillPoints2.Value);
-            Rom.Write8((byte)numSkillPoints3.Value);
-            Rom.Write8((byte)numSkillPoints4.Value);
-            Rom.Write8((byte)numSkillPoints5.Value);
-            Rom.Write8((byte)numSkillPoints6.Value);
-            Rom.Write8((byte)numSkillPoints7.Value);
-            Rom.Write8((byte)numSkillPoints8.Value);
-            Rom.Write8((byte)numSkillPoints9.Value);
-            Rom.Write8((byte)numSkillPoints10.Value);
-            Rom.Write8((byte)numSkillPoints11.Value);
-            Rom.Write8((byte)numSkillPoints12.Value);
-            Rom.Write8((byte)numSkillPoints13.Value);
-            Rom.Write8((byte)numSkillPoints14.Value);
-            Rom.Write8((byte)numSkillPoints15.Value);
-            Rom.Write8((byte)numSkillPoints16.Value);
-            Rom.Write8((byte)numSkillPoints17.Value);
-            Rom.Write8((byte)numSkillPoints18.Value);
-            Rom.Write8((byte)numSkillPoints19.Value);
-            Rom.Write8((byte)numSkillPoints20.Value);
-            Rom.Write8((byte)numSkillPoints21.Value);
-            Rom.Write8((byte)numSkillPoints22.Value);
-            Rom.Write8((byte)numSkillPoints23.Value);
-            Rom.Write8((byte)numSkillPoints24.Value);
-            Rom.Write8((byte)numSkillPoints25.Value);
-
-
-            EsperCharIndex = cmbEspers.SelectedIndex * 2;
-            if (chkLstEsperChars.GetItemChecked(0)) Espers.CharEquip |= CharEquip.Terra; else Espers.CharEquip &= ~CharEquip.Terra;
-            if (chkLstEsperChars.GetItemChecked(1)) Espers.CharEquip |= CharEquip.Locke; else Espers.CharEquip &= ~CharEquip.Locke;
-            if (chkLstEsperChars.GetItemChecked(2)) Espers.CharEquip |= CharEquip.Cyan; else Espers.CharEquip &= ~CharEquip.Cyan;
-            if (chkLstEsperChars.GetItemChecked(3)) Espers.CharEquip |= CharEquip.Shadow; else Espers.CharEquip &= ~CharEquip.Shadow;
-            if (chkLstEsperChars.GetItemChecked(4)) Espers.CharEquip |= CharEquip.Edgar; else Espers.CharEquip &= ~CharEquip.Edgar;
-            if (chkLstEsperChars.GetItemChecked(5)) Espers.CharEquip |= CharEquip.Sabin; else Espers.CharEquip &= ~CharEquip.Sabin;
-            if (chkLstEsperChars.GetItemChecked(6)) Espers.CharEquip |= CharEquip.Celes; else Espers.CharEquip &= ~CharEquip.Celes;
-            if (chkLstEsperChars.GetItemChecked(7)) Espers.CharEquip |= CharEquip.Strago; else Espers.CharEquip &= ~CharEquip.Strago;
-            if (chkLstEsperChars.GetItemChecked(8)) Espers.CharEquip |= CharEquip.Relm; else Espers.CharEquip &= ~CharEquip.Relm;
-            if (chkLstEsperChars.GetItemChecked(9)) Espers.CharEquip |= CharEquip.Setzer; else Espers.CharEquip &= ~CharEquip.Setzer;
-            if (chkLstEsperChars.GetItemChecked(10)) Espers.CharEquip |= CharEquip.Mog; else Espers.CharEquip &= ~CharEquip.Mog;
-            if (chkLstEsperChars.GetItemChecked(11)) Espers.CharEquip |= CharEquip.Gau; else Espers.CharEquip &= ~CharEquip.Gau;
-            if (chkLstEsperChars.GetItemChecked(12)) Espers.CharEquip |= CharEquip.Gogo; else Espers.CharEquip &= ~CharEquip.Gogo;
-            if (chkLstEsperChars.GetItemChecked(13)) Espers.CharEquip |= CharEquip.Umaro; else Espers.CharEquip &= ~CharEquip.Umaro;
-            Espers.WriteCharEquip(Rom, RomData.ESPER_CHAR_EQUIP, EsperCharIndex);
-
-            if (chkLstEsperStats.GetItemChecked(0)) Espers.EsperStats |= EsperStats.Strength; else Espers.EsperStats &= ~EsperStats.Strength;
-            if (chkLstEsperStats.GetItemChecked(1)) Espers.EsperStats |= EsperStats.Agility; else Espers.EsperStats &= ~EsperStats.Agility;
-            if (chkLstEsperStats.GetItemChecked(2)) Espers.EsperStats |= EsperStats.Vitality; else Espers.EsperStats &= ~EsperStats.Vitality;
-            if (chkLstEsperStats.GetItemChecked(3)) Espers.EsperStats |= EsperStats.Magic; else Espers.EsperStats &= ~EsperStats.Magic;
-            Espers.WriteEsperStatsRestrictions(Rom, RomData.ESPER_BONUS_LIMITERS, cmbEspers.SelectedIndex);
         }
 
         private void UpdateMonsterStats()
         {
             MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
-            MonsterDiffCheck = cmbDifficulty.SelectedIndex * 0x4000;
-            MonsterSecondaryIndexCheck = cmbMonsters.SelectedIndex * 3;
-            MonsterSecondaryDiffCheck = cmbDifficulty.SelectedIndex * 0x0600;
-            MonsterStealDropIndexCheck = cmbMonsters.SelectedIndex * 4;
-            MonsterRageSketchIndex = cmbMonsters.SelectedIndex * 2;
-
+            MonsterQueueIndex = cmbMonsters.SelectedIndex * 16;
+            
             //Begin populating stat values
-            Specs.ReadMonsterNormal(Rom, RomData.MONSTER_STATS_NORMAL_DATA, MonsterIndexCheck, MonsterDiffCheck);
-            Specs.ReadMonsterSecondary(Rom, RomData.MONSTER_STATS_NORMAL_SECONDARY_DATA, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
-            Specs.ReadMonsterHP(Rom, RomData.MONSTER_HP_NORMAL, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
-            Specs.ReadMonsterDropsSteals(Rom, RomData.MONSTER_STEAL_DROP_TABLE, MonsterStealDropIndexCheck);
-            Specs.ReadRage(Rom, RomData.MONSTER_RAGE, MonsterRageSketchIndex);
-            Specs.ReadSketch(Rom, RomData.MONSTER_SKETCH, MonsterRageSketchIndex);
-            Specs.ReadControl(Rom, RomData.MONSTER_CONTROL, MonsterStealDropIndexCheck);
+            Specs.ReadMonsterNormal(Rom, RomData.MONSTER_DATA_OFFSET, MonsterIndexCheck, RomData.MONSTER_ATTACKS_DEFINITIONS_OFFSET, MonsterQueueIndex);
 
-            numMonsterAgility.Value = Specs.Agility;
-            numMonsterAttack.Value = Specs.Attack;
-            numMonsterAccuracy.Value = Specs.Accuracy;
+            //Monster stats
+            numMonsterHP.Value = Specs.MaxHP;
+            numMonsterEXP.Value = Specs.EXP;
+            numMonsterGil.Value = Specs.Gil;
+            numMonsterMorale.Value = Specs.Morale;
             numMonsterEvasion.Value = Specs.Evasion;
-            numMonsterMagEva.Value = Specs.MagEva;
+            numMonsterNumHits.Value = Specs.NumHits;
+            numMonsterAccuracy.Value = Specs.Accuracy;
             numMonsterDefense.Value = Specs.Defense;
             numMonsterMagDef.Value = Specs.MagDef;
-            numMonsterMagic.Value = Specs.Magic;
-            numMonsterHP.Value = Specs.HP;
-            numMonsterMP.Value = Specs.MP;
-            numMonsterEXP.Value = Specs.XP;
-            numMonsterGil.Value = Specs.Gil;
-            numMonsterLevel.Value = Specs.Level;
-            numSkillExp.Value = Specs.SkillExp;
-            numMonsterStrength.Value = Specs.Strength;
-            numMonsterVitality.Value = Specs.Vitality;
+            numMonsterAttack.Value = Specs.Attack;
+            numMonsterAgility.Value = Specs.Agility;
+            numMonsterIntellect.Value = Specs.Intellect;
+            numMonsterCritRate.Value = Specs.CritRate;
+            cmbMonsterItemType.SelectedIndex = Specs.DropType;
+            cmbMonsterItemDrop.SelectedIndex = Specs.ItemDropped;
+            numDropChance.Value = Specs.DropChance;
+
+            //Spell and ability queues
+            numMonsterMagicQueue.Value = Specs.MagicProc;
+            cmbMonsterSpell1.SelectedIndex = Specs.Spell1;
+            cmbMonsterSpell2.SelectedIndex = Specs.Spell2;
+            cmbMonsterSpell3.SelectedIndex = Specs.Spell3;
+            cmbMonsterSpell4.SelectedIndex = Specs.Spell4;
+            cmbMonsterSpell5.SelectedIndex = Specs.Spell5;
+            cmbMonsterSpell6.SelectedIndex = Specs.Spell6;
+            cmbMonsterSpell7.SelectedIndex = Specs.Spell7;
+            cmbMonsterSpell8.SelectedIndex = Specs.Spell8;
+
+            numMonsterAbilityQueue.Value = Specs.AbilityProc;
+            cmbMonsterAbility1.SelectedIndex = Specs.Ability1;
+            cmbMonsterAbility2.SelectedIndex = Specs.Ability2;
+            cmbMonsterAbility3.SelectedIndex = Specs.Ability3;
+            cmbMonsterAbility4.SelectedIndex = Specs.Ability4;
+
+
+
+            //Monster properties
+            //Attack elmeents
+            chkMonsterAtkParalysis.Checked = Specs.AttackElement.HasFlag(Element.Paralysis);
+            chkMonsterAtkStone.Checked = Specs.AttackElement.HasFlag(Element.Stone);
+            chkMonsterAtkTime.Checked = Specs.AttackElement.HasFlag(Element.Time);
+            chkMonsterAtkDeath.Checked = Specs.AttackElement.HasFlag(Element.Death);
+            chkMonsterAtkFire.Checked = Specs.AttackElement.HasFlag(Element.Fire);
+            chkMonsterAtkIce.Checked = Specs.AttackElement.HasFlag(Element.Ice);
+            chkMonsterAtkLightning.Checked = Specs.AttackElement.HasFlag(Element.Lightning);
+            chkMonsterAtkQuake.Checked = Specs.AttackElement.HasFlag(Element.Quake);
+            chkMonsterAtkPoison.Checked = Specs.AttackElement.HasFlag(Element.Poison);
+            chkMonsterAtkDarkness.Checked = Specs.AttackElement.HasFlag(Element.Darkness);
+            chkMonsterAtkSleep.Checked = Specs.AttackElement.HasFlag(Element.Sleep);
+            chkMonsterAtkSilence.Checked = Specs.AttackElement.HasFlag(Element.Silence);
+            chkMonsterAtkConfusion.Checked = Specs.AttackElement.HasFlag(Element.Confuse);
+            chkMonsterAtkMind.Checked = Specs.AttackElement.HasFlag(Element.Mind);
+
+            //Resist
+            chkMonsterResistParalysis.Checked = Specs.Resist.HasFlag(Element.Paralysis);
+            chkMonsterResistStone.Checked = Specs.Resist.HasFlag(Element.Stone);
+            chkMonsterResistTime.Checked = Specs.Resist.HasFlag(Element.Time);
+            chkMonsterResistDeath.Checked = Specs.Resist.HasFlag(Element.Death);
+            chkMonsterResistFire.Checked = Specs.Resist.HasFlag(Element.Fire);
+            chkMonsterResistIce.Checked = Specs.Resist.HasFlag(Element.Ice);
+            chkMonsterResistLightning.Checked = Specs.Resist.HasFlag(Element.Lightning);
+            chkMonsterResistQuake.Checked = Specs.Resist.HasFlag(Element.Quake);
+            chkMonsterResistPoison.Checked = Specs.Resist.HasFlag(Element.Poison);
+            chkMonsterResistDarkness.Checked = Specs.Resist.HasFlag(Element.Darkness);
+            chkMonsterResistSleep.Checked = Specs.Resist.HasFlag(Element.Sleep);
+            chkMonsterResistSilence.Checked = Specs.Resist.HasFlag(Element.Silence);
+            chkMonsterResistConfusion.Checked = Specs.Resist.HasFlag(Element.Confuse);
+            chkMonsterResistMind.Checked = Specs.Resist.HasFlag(Element.Mind);
+
+            //Weak
+            chkMonsterWeakParalysis.Checked = Specs.Weak.HasFlag(Element.Paralysis);
+            chkMonsterWeakStone.Checked = Specs.Weak.HasFlag(Element.Stone);
+            chkMonsterWeakTime.Checked = Specs.Weak.HasFlag(Element.Time);
+            chkMonsterWeakDeath.Checked = Specs.Weak.HasFlag(Element.Death);
+            chkMonsterWeakFire.Checked = Specs.Weak.HasFlag(Element.Fire);
+            chkMonsterWeakIce.Checked = Specs.Weak.HasFlag(Element.Ice);
+            chkMonsterWeakLightning.Checked = Specs.Weak.HasFlag(Element.Lightning);
+            chkMonsterWeakQuake.Checked = Specs.Weak.HasFlag(Element.Quake);
+            chkMonsterWeakPoison.Checked = Specs.Weak.HasFlag(Element.Poison);
+            chkMonsterWeakDarkness.Checked = Specs.Weak.HasFlag(Element.Darkness);
+            chkMonsterWeakSleep.Checked = Specs.Weak.HasFlag(Element.Sleep);
+            chkMonsterWeakSilence.Checked = Specs.Weak.HasFlag(Element.Silence);
+            chkMonsterWeakConfusion.Checked = Specs.Weak.HasFlag(Element.Confuse);
+            chkMonsterWeakMind.Checked = Specs.Weak.HasFlag(Element.Mind);
+
+            //Attack Status
+            chkMonsterAtkStDeath.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Death);
+            chkMonsterAtkStStone.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Stone);
+            chkMonsterAtkStPoison.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Poison);
+            chkMonsterAtkStBlind.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Blind);
+            chkMonsterAtkStStun.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Stun);
+            chkMonsterAtkStSleep.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Sleep);
+            chkMonsterAtkStSilence.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Silence);
+            chkMonsterAtkStConfusion.Checked = Specs.AttackStatus.HasFlag(StatusEffect.Confusion);
+
+            //Monster Family
+            chkMonsterFamMagical.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Magical);
+            chkMonsterFamDragon.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Dragon);
+            chkMonsterFamGiant.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Giant);
+            chkMonsterFamUndead.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Undead);
+            chkMonsterFamWerebeast.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Werebeast);
+            chkMonsterFamAquan.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Aquan);
+            chkMonsterFamSpellcaster.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Spellcaster);
+            chkMonsterFamRegenerative.Checked = Specs.MonsterFamily.HasFlag(MonsterFamily.Regenerative);
+
             //Begin populating the first two special bytes
-            chkMPDeath.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.MPDeath);
-            chkIgnoreITD.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.IgnoreITD);
-            chkNoName.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.NameHide);
-            chkPierceReflect.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.PierceReflect);
-            chkHumanoid.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.Humanoid);
-            chkUnknown2.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.UnknownA);
-            chkCritImp.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.ImpSucks);
-            chkUndead.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.Undead);
-            chkHarderToRun.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.FlightRisky);
-            chkAttackFirst.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.Preemptive);
-            chkBlockSuplex.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.NoSuplex);
-            chkNoRun.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.FlightBanned);
-            chkNoScan.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.NoScan);
-            chkNoSketch.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.NoSketch);
-            chkSpecialEvent.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.Event);
-            chkNoControl.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.NoControl);
-            //Begin parsing status blocking bytes
-            chkBlockDarkness.Checked = Specs.BlockStatus.HasFlag(Status.Darkness);
-            chkBlockZombie.Checked = Specs.BlockStatus.HasFlag(Status.Zombie);
-            chkBlockPoison.Checked = Specs.BlockStatus.HasFlag(Status.Poison);
-            chkBlockMagitek.Checked = Specs.BlockStatus.HasFlag(Status.Magitek);
-            chkBlockClear.Checked = Specs.BlockStatus.HasFlag(Status.Clear);
-            chkBlockImp.Checked = Specs.BlockStatus.HasFlag(Status.Imp);
-            chkBlockPetrify.Checked = Specs.BlockStatus.HasFlag(Status.Petrify);
-            chkBlockDeath.Checked = Specs.BlockStatus.HasFlag(Status.Death);
-            chkBlockDoomed.Checked = Specs.BlockStatus.HasFlag(Status.Doomed);
-            chkBlockCritical.Checked = Specs.BlockStatus.HasFlag(Status.Critical);
-            chkBlockBlink.Checked = Specs.BlockStatus.HasFlag(Status.Blink);
-            chkBlockSilence.Checked = Specs.BlockStatus.HasFlag(Status.Silence);
-            chkBlockBerserk.Checked = Specs.BlockStatus.HasFlag(Status.Berserk);
-            chkBlockConfuse.Checked = Specs.BlockStatus.HasFlag(Status.Confuse);
-            chkBlockSap.Checked = Specs.BlockStatus.HasFlag(Status.Sap);
-            chkBlockSleep.Checked = Specs.BlockStatus.HasFlag(Status.Sleep);
-            chkBlockDance.Checked = Specs.BlockStatus.HasFlag(Status.Dance);
-            chkBlockRegen.Checked = Specs.BlockStatus.HasFlag(Status.Regen);
-            chkBlockSlow.Checked = Specs.BlockStatus.HasFlag(Status.Slow);
-            chkBlockHaste.Checked = Specs.BlockStatus.HasFlag(Status.Haste);
-            chkBlockStop.Checked = Specs.BlockStatus.HasFlag(Status.Stop);
-            chkBlockShell.Checked = Specs.BlockStatus.HasFlag(Status.Shell);
-            chkBlockProtect.Checked = Specs.BlockStatus.HasFlag(Status.Protect);
-            chkBlockReflect.Checked = Specs.BlockStatus.HasFlag(Status.Reflect);
-            //Begin parsing elemental properties, sans Half
-            chkFireAbs.Checked = Specs.Absorb.HasFlag(Element.Fire);
-            chkIceAbs.Checked = Specs.Absorb.HasFlag(Element.Ice);
-            chkThunderAbs.Checked = Specs.Absorb.HasFlag(Element.Thunder);
-            chkPoisonAbs.Checked = Specs.Absorb.HasFlag(Element.Poison);
-            chkWindAbs.Checked = Specs.Absorb.HasFlag(Element.Wind);
-            chkHolyAbs.Checked = Specs.Absorb.HasFlag(Element.Holy);
-            chkEarthAbs.Checked = Specs.Absorb.HasFlag(Element.Earth);
-            chkWaterAbs.Checked = Specs.Absorb.HasFlag(Element.Water);
-            chkFireNull.Checked = Specs.Nullify.HasFlag(Element.Fire);
-            chkIceNull.Checked = Specs.Nullify.HasFlag(Element.Ice);
-            chkThunderNull.Checked = Specs.Nullify.HasFlag(Element.Thunder);
-            chkPoisonNull.Checked = Specs.Nullify.HasFlag(Element.Poison);
-            chkWindNull.Checked = Specs.Nullify.HasFlag(Element.Wind);
-            chkHolyNull.Checked = Specs.Nullify.HasFlag(Element.Holy);
-            chkEarthNull.Checked = Specs.Nullify.HasFlag(Element.Earth);
-            chkWaterNull.Checked = Specs.Nullify.HasFlag(Element.Water);
-            chkFireWeak.Checked = Specs.Weakness.HasFlag(Element.Fire);
-            chkIceWeak.Checked = Specs.Weakness.HasFlag(Element.Ice);
-            chkThunderWeak.Checked = Specs.Weakness.HasFlag(Element.Thunder);
-            chkPoisonWeak.Checked = Specs.Weakness.HasFlag(Element.Poison);
-            chkWindWeak.Checked = Specs.Weakness.HasFlag(Element.Wind);
-            chkHolyWeak.Checked = Specs.Weakness.HasFlag(Element.Holy);
-            chkEarthWeak.Checked = Specs.Weakness.HasFlag(Element.Earth);
-            chkWaterWeak.Checked = Specs.Weakness.HasFlag(Element.Water);
-            //Attack animation
-            cmbNormalAttack.SelectedIndex = Specs.AttackAnimation;
-            //Begin parsing StartStatus values
-            chkStartDarkness.Checked = Specs.StartStatus.HasFlag(Status.Darkness);
-            chkStartZombie.Checked = Specs.StartStatus.HasFlag(Status.Zombie);
-            chkStartPoison.Checked = Specs.StartStatus.HasFlag(Status.Poison);
-            chkStartMagitek.Checked = Specs.StartStatus.HasFlag(Status.Magitek);
-            chkStartClear.Checked = Specs.StartStatus.HasFlag(Status.Clear);
-            chkStartImp.Checked = Specs.StartStatus.HasFlag(Status.Imp);
-            chkStartPetrify.Checked = Specs.StartStatus.HasFlag(Status.Petrify);
-            chkStartDeath.Checked = Specs.StartStatus.HasFlag(Status.Death);
-            chkStartDoomed.Checked = Specs.StartStatus.HasFlag(Status.Doomed);
-            chkStartCritical.Checked = Specs.StartStatus.HasFlag(Status.Critical);
-            chkStartBlink.Checked = Specs.StartStatus.HasFlag(Status.Blink);
-            chkStartSilence.Checked = Specs.StartStatus.HasFlag(Status.Silence);
-            chkStartBerserk.Checked = Specs.StartStatus.HasFlag(Status.Berserk);
-            chkStartConfuse.Checked = Specs.StartStatus.HasFlag(Status.Confuse);
-            chkStartSap.Checked = Specs.StartStatus.HasFlag(Status.Sap);
-            chkStartSleep.Checked = Specs.StartStatus.HasFlag(Status.Sleep);
-            chkStartFloat.Checked = Specs.StartStatus.HasFlag(Status.Dance);
-            chkStartRegen.Checked = Specs.StartStatus.HasFlag(Status.Regen);
-            chkStartSlow.Checked = Specs.StartStatus.HasFlag(Status.Slow);
-            chkStartHaste.Checked = Specs.StartStatus.HasFlag(Status.Haste);
-            chkStartStop.Checked = Specs.StartStatus.HasFlag(Status.Stop);
-            chkStartShell.Checked = Specs.StartStatus.HasFlag(Status.Shell);
-            chkStartProtect.Checked = Specs.StartStatus.HasFlag(Status.Protect);
-            chkStartReflect.Checked = Specs.StartStatus.HasFlag(Status.Reflect);
-            //Begin parsing final special flags byte
-            chkCover.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.Cover);
-            chkRunic.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.Runic);
-            chkReraise.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.Reraise);
-            chkUnknown4.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.UnknownA);
-            chkUnknown5.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.UnknownB);
-            chkUnknown6.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.UnknownC);
-            chkUnknown7.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.UnknownD);
-            chkRemovableFloat.Checked = Specs.FlagsB.HasFlag(MonsterFlagsB.Float);
-            //TODO: Special Attack
-            cmbSpecialAttack.SelectedIndex = (Specs.SpecialAttack & 0x3F);
-            chkNoPhys.Checked = Specs.SpecialAttackFlags.HasFlag(SpecialAttackAttributesFlags.NoDamage);
-            chkNoDodge.Checked = Specs.SpecialAttackFlags.HasFlag(SpecialAttackAttributesFlags.NoDodge);
-            //Elemental resistances
-            chkFireHalf.Checked = Specs.Half.HasFlag(Element.Fire);
-            chkIceHalf.Checked = Specs.Half.HasFlag(Element.Ice);
-            chkThunderHalf.Checked = Specs.Half.HasFlag(Element.Thunder);
-            chkPoisonHalf.Checked = Specs.Half.HasFlag(Element.Poison);
-            chkWindHalf.Checked = Specs.Half.HasFlag(Element.Wind);
-            chkHolyHalf.Checked = Specs.Half.HasFlag(Element.Holy);
-            chkEarthHalf.Checked = Specs.Half.HasFlag(Element.Earth);
-            chkWaterHalf.Checked = Specs.Half.HasFlag(Element.Water);
-            //Steals
-            cmbStealsRare.SelectedIndex = Specs.RareSteal;
-            cmbStealsCommon.SelectedIndex = Specs.CommonSteal;
-            //Drops
-            cmbDropsRare.SelectedIndex = Specs.RareDrop;
-            cmbDropsCommon.SelectedIndex = Specs.CommonDrop;
-            //Rages
-            cmbRage1.SelectedIndex = Specs.Rage1;
-            cmbRage2.SelectedIndex = Specs.Rage2;
-            //Sketches
-            cmbSketch1.SelectedIndex = Specs.Sketch1;
-            cmbSketch2.SelectedIndex = Specs.Sketch2;
-            //Control
-            cmbControl1.SelectedIndex = Specs.Control1;
-            cmbControl2.SelectedIndex = Specs.Control2;
-            cmbControl3.SelectedIndex = Specs.Control3;
-            cmbControl4.SelectedIndex = Specs.Control4;
+            //chkMPDeath.Checked = Specs.FlagsA.HasFlag(MonsterFlagsA.MPDeath);
+
         }
 
         private void SaveMonsterStats()
         {
             MonsterIndexCheck = cmbMonsters.SelectedIndex * 32;
-            MonsterDiffCheck = cmbDifficulty.SelectedIndex * 0x4000;
-            MonsterSecondaryIndexCheck = cmbMonsters.SelectedIndex * 3;
-            MonsterSecondaryDiffCheck = cmbDifficulty.SelectedIndex * 0x0600;
-            MonsterStealDropIndexCheck = cmbMonsters.SelectedIndex * 4;
-            MonsterRageSketchIndex = cmbMonsters.SelectedIndex * 2;
 
-            Specs.Agility = (byte)numMonsterAgility.Value;
-            Specs.Attack = (byte)numMonsterAttack.Value;
-            Specs.Accuracy = (byte)numMonsterAccuracy.Value;
-            Specs.Evasion = (byte)numMonsterEvasion.Value;
-            Specs.MagEva = (byte)numMonsterMagEva.Value;
-            Specs.Defense = (byte)numMonsterDefense.Value;
-            Specs.MagDef = (byte)numMonsterMagDef.Value;
-            Specs.Magic = (byte)numMonsterMagic.Value;
-            Specs.HP = (uint)numMonsterHP.Value;
-            Specs.MP = (ushort)numMonsterMP.Value;
-            Specs.XP = (ushort)numMonsterEXP.Value;
-            Specs.Gil = (ushort)numMonsterGil.Value;
-            Specs.Level = (byte)numMonsterLevel.Value;
-            Specs.SkillExp = (byte)numSkillExp.Value;
-            Specs.Strength = (byte)numMonsterStrength.Value;
-            Specs.Vitality = (byte)numMonsterVitality.Value;
+            //Specs.Agility = (byte)numMonsterAgility.Value;
+
             //Write first two special bytes
-            if (chkMPDeath.Checked == true) Specs.FlagsA |= MonsterFlagsA.MPDeath; else Specs.FlagsA &= ~MonsterFlagsA.MPDeath;
-            if (chkIgnoreITD.Checked == true) Specs.FlagsA |= MonsterFlagsA.IgnoreITD; else Specs.FlagsA &= ~MonsterFlagsA.IgnoreITD;
-            if (chkNoName.Checked == true) Specs.FlagsA |= MonsterFlagsA.NameHide; else Specs.FlagsA &= ~MonsterFlagsA.NameHide;
-            if (chkPierceReflect.Checked == true) Specs.FlagsA |= MonsterFlagsA.PierceReflect; else Specs.FlagsA &= ~MonsterFlagsA.PierceReflect;
-            if (chkHumanoid.Checked == true) Specs.FlagsA |= MonsterFlagsA.Humanoid; else Specs.FlagsA &= ~MonsterFlagsA.Humanoid;
-            if (chkUnknown2.Checked == true) Specs.FlagsA |= MonsterFlagsA.UnknownA; else Specs.FlagsA &= ~MonsterFlagsA.UnknownA;
-            if (chkCritImp.Checked == true) Specs.FlagsA |= MonsterFlagsA.ImpSucks; else Specs.FlagsA &= ~MonsterFlagsA.ImpSucks;
-            if (chkUndead.Checked == true) Specs.FlagsA |= MonsterFlagsA.Undead; else Specs.FlagsA &= ~MonsterFlagsA.Undead;
-            if (chkHarderToRun.Checked == true) Specs.FlagsA |= MonsterFlagsA.FlightRisky; else Specs.FlagsA &= ~MonsterFlagsA.FlightRisky;
-            if (chkAttackFirst.Checked == true) Specs.FlagsA |= MonsterFlagsA.Preemptive; else Specs.FlagsA &= ~MonsterFlagsA.Preemptive;
-            if (chkBlockSuplex.Checked == true) Specs.FlagsA |= MonsterFlagsA.NoSuplex; else Specs.FlagsA &= ~MonsterFlagsA.NoSuplex;
-            if (chkNoRun.Checked == true) Specs.FlagsA |= MonsterFlagsA.FlightBanned; else Specs.FlagsA &= ~MonsterFlagsA.FlightBanned;
-            if (chkNoScan.Checked == true) Specs.FlagsA |= MonsterFlagsA.NoScan; else Specs.FlagsA &= ~MonsterFlagsA.NoScan;
-            if (chkNoSketch.Checked == true) Specs.FlagsA |= MonsterFlagsA.NoSketch; else Specs.FlagsA &= ~MonsterFlagsA.NoSketch;
-            if (chkSpecialEvent.Checked == true) Specs.FlagsA |= MonsterFlagsA.Event; else Specs.FlagsA &= ~MonsterFlagsA.Event;
-            if (chkNoControl.Checked == true) Specs.FlagsA |= MonsterFlagsA.NoControl; else Specs.FlagsA &= ~MonsterFlagsA.NoControl;
-            //Write blocked status bytes
-            if (chkBlockDarkness.Checked == true) Specs.BlockStatus |= Status.Darkness; else Specs.BlockStatus &= ~Status.Darkness;
-            if (chkBlockZombie.Checked == true) Specs.BlockStatus |= Status.Zombie; else Specs.BlockStatus &= ~Status.Zombie;
-            if (chkBlockPoison.Checked == true) Specs.BlockStatus |= Status.Poison; else Specs.BlockStatus &= ~Status.Poison;
-            if (chkBlockMagitek.Checked == true) Specs.BlockStatus |= Status.Magitek; else Specs.BlockStatus &= ~Status.Magitek;
-            if (chkBlockClear.Checked == true) Specs.BlockStatus |= Status.Clear; else Specs.BlockStatus &= ~Status.Clear;
-            if (chkBlockImp.Checked == true) Specs.BlockStatus |= Status.Imp; else Specs.BlockStatus &= ~Status.Imp;
-            if (chkBlockPetrify.Checked == true) Specs.BlockStatus |= Status.Petrify; else Specs.BlockStatus &= ~Status.Petrify;
-            if (chkBlockDeath.Checked == true) Specs.BlockStatus |= Status.Death; else Specs.BlockStatus &= ~Status.Death;
-            if (chkBlockDoomed.Checked == true) Specs.BlockStatus |= Status.Doomed; else Specs.BlockStatus &= ~Status.Doomed;
-            if (chkBlockCritical.Checked == true) Specs.BlockStatus |= Status.Critical; else Specs.BlockStatus &= ~Status.Critical;
-            if (chkBlockBlink.Checked == true) Specs.BlockStatus |= Status.Blink; else Specs.BlockStatus &= ~Status.Blink;
-            if (chkBlockSilence.Checked == true) Specs.BlockStatus |= Status.Silence; else Specs.BlockStatus &= ~Status.Silence;
-            if (chkBlockBerserk.Checked == true) Specs.BlockStatus |= Status.Berserk; else Specs.BlockStatus &= ~Status.Berserk;
-            if (chkBlockConfuse.Checked == true) Specs.BlockStatus |= Status.Confuse; else Specs.BlockStatus &= ~Status.Confuse;
-            if (chkBlockSap.Checked == true) Specs.BlockStatus |= Status.Sap; else Specs.BlockStatus &= ~Status.Sap;
-            if (chkBlockSleep.Checked == true) Specs.BlockStatus |= Status.Sleep; else Specs.BlockStatus &= ~Status.Sleep;
-            if (chkBlockDance.Checked == true) Specs.BlockStatus |= Status.Dance; else Specs.BlockStatus &= ~Status.Dance;
-            if (chkBlockRegen.Checked == true) Specs.BlockStatus |= Status.Regen; else Specs.BlockStatus &= ~Status.Regen;
-            if (chkBlockSlow.Checked == true) Specs.BlockStatus |= Status.Slow; else Specs.BlockStatus &= ~Status.Slow;
-            if (chkBlockHaste.Checked == true) Specs.BlockStatus |= Status.Haste; else Specs.BlockStatus &= ~Status.Haste;
-            if (chkBlockStop.Checked == true) Specs.BlockStatus |= Status.Stop; else Specs.BlockStatus &= ~Status.Stop;
-            if (chkBlockShell.Checked == true) Specs.BlockStatus |= Status.Shell; else Specs.BlockStatus &= ~Status.Shell;
-            if (chkBlockProtect.Checked == true) Specs.BlockStatus |= Status.Protect; else Specs.BlockStatus &= ~Status.Protect;
-            if (chkBlockReflect.Checked == true) Specs.BlockStatus |= Status.Reflect; else Specs.BlockStatus &= ~Status.Reflect;
-            //Elemental properties -- Absorb, Nullify, Weak; Half is in a different struct
-            if (chkFireAbs.Checked == true) Specs.Absorb |= Element.Fire; else Specs.Absorb &= ~Element.Fire;
-            if (chkIceAbs.Checked == true) Specs.Absorb |= Element.Ice; else Specs.Absorb &= ~Element.Ice;
-            if (chkThunderAbs.Checked == true) Specs.Absorb |= Element.Thunder; else Specs.Absorb &= ~Element.Thunder;
-            if (chkPoisonAbs.Checked == true) Specs.Absorb |= Element.Poison; else Specs.Absorb &= ~Element.Poison;
-            if (chkWindAbs.Checked == true) Specs.Absorb |= Element.Wind; else Specs.Absorb &= ~Element.Wind;
-            if (chkHolyAbs.Checked == true) Specs.Absorb |= Element.Holy; else Specs.Absorb &= ~Element.Holy;
-            if (chkEarthAbs.Checked == true) Specs.Absorb |= Element.Earth; else Specs.Absorb &= ~Element.Earth;
-            if (chkWaterAbs.Checked == true) Specs.Absorb |= Element.Water; else Specs.Absorb &= ~Element.Water;
+            //if (chkMPDeath.Checked == true) Specs.FlagsA |= MonsterFlagsA.MPDeath; else Specs.FlagsA &= ~MonsterFlagsA.MPDeath;
+
             //Nullify
-            if (chkFireNull.Checked == true) Specs.Nullify |= Element.Fire; else Specs.Nullify &= ~Element.Fire;
-            if (chkIceNull.Checked == true) Specs.Nullify |= Element.Ice; else Specs.Nullify &= ~Element.Ice;
-            if (chkThunderNull.Checked == true) Specs.Nullify |= Element.Thunder; else Specs.Nullify &= ~Element.Thunder;
-            if (chkPoisonNull.Checked == true) Specs.Nullify |= Element.Poison; else Specs.Nullify &= ~Element.Poison;
-            if (chkWindNull.Checked == true) Specs.Nullify |= Element.Wind; else Specs.Nullify &= ~Element.Wind;
-            if (chkHolyNull.Checked == true) Specs.Nullify |= Element.Holy; else Specs.Nullify &= ~Element.Holy;
-            if (chkEarthNull.Checked == true) Specs.Nullify |= Element.Earth; else Specs.Nullify &= ~Element.Earth;
-            if (chkWaterNull.Checked == true) Specs.Nullify |= Element.Water; else Specs.Nullify &= ~Element.Water;
-            //Weakness
-            if (chkFireWeak.Checked == true) Specs.Weakness |= Element.Fire; else Specs.Weakness &= ~Element.Fire;
-            if (chkIceWeak.Checked == true) Specs.Weakness |= Element.Ice; else Specs.Weakness &= ~Element.Ice;
-            if (chkThunderWeak.Checked == true) Specs.Weakness |= Element.Thunder; else Specs.Weakness &= ~Element.Thunder;
-            if (chkPoisonWeak.Checked == true) Specs.Weakness |= Element.Poison; else Specs.Weakness &= ~Element.Poison;
-            if (chkWindWeak.Checked == true) Specs.Weakness |= Element.Wind; else Specs.Weakness &= ~Element.Wind;
-            if (chkHolyWeak.Checked == true) Specs.Weakness |= Element.Holy; else Specs.Weakness &= ~Element.Holy;
-            if (chkEarthWeak.Checked == true) Specs.Weakness |= Element.Earth; else Specs.Weakness &= ~Element.Earth;
-            if (chkWaterWeak.Checked == true) Specs.Weakness |= Element.Water; else Specs.Weakness &= ~Element.Water;
-            //Attack Animation
-            Specs.AttackAnimation = (byte)cmbNormalAttack.SelectedIndex;
-            //Start battle status
-            if (chkStartDarkness.Checked == true) Specs.StartStatus |= Status.Darkness; else Specs.StartStatus &= ~Status.Darkness;
-            if (chkStartZombie.Checked == true) Specs.StartStatus |= Status.Zombie; else Specs.StartStatus &= ~Status.Zombie;
-            if (chkStartPoison.Checked == true) Specs.StartStatus |= Status.Poison; else Specs.StartStatus &= ~Status.Poison;
-            if (chkStartMagitek.Checked == true) Specs.StartStatus |= Status.Magitek; else Specs.StartStatus &= ~Status.Magitek;
-            if (chkStartClear.Checked == true) Specs.StartStatus |= Status.Clear; else Specs.StartStatus &= ~Status.Clear;
-            if (chkStartImp.Checked == true) Specs.StartStatus |= Status.Imp; else Specs.StartStatus &= ~Status.Imp;
-            if (chkStartPetrify.Checked == true) Specs.StartStatus |= Status.Petrify; else Specs.StartStatus &= ~Status.Petrify;
-            if (chkStartDeath.Checked == true) Specs.StartStatus |= Status.Death; else Specs.StartStatus &= ~Status.Death;
-            if (chkStartDoomed.Checked == true) Specs.StartStatus |= Status.Doomed; else Specs.StartStatus &= ~Status.Doomed;
-            if (chkStartCritical.Checked == true) Specs.StartStatus |= Status.Critical; else Specs.StartStatus &= ~Status.Critical;
-            if (chkStartBlink.Checked == true) Specs.StartStatus |= Status.Blink; else Specs.StartStatus &= ~Status.Blink;
-            if (chkStartSilence.Checked == true) Specs.StartStatus |= Status.Silence; else Specs.StartStatus &= ~Status.Silence;
-            if (chkStartBerserk.Checked == true) Specs.StartStatus |= Status.Berserk; else Specs.StartStatus &= ~Status.Berserk;
-            if (chkStartConfuse.Checked == true) Specs.StartStatus |= Status.Confuse; else Specs.StartStatus &= ~Status.Confuse;
-            if (chkStartSap.Checked == true) Specs.StartStatus |= Status.Sap; else Specs.StartStatus &= ~Status.Sap;
-            if (chkStartSleep.Checked == true) Specs.StartStatus |= Status.Sleep; else Specs.StartStatus &= ~Status.Sleep;
-            if (chkStartFloat.Checked == true) Specs.StartStatus |= Status.Dance; else Specs.StartStatus &= ~Status.Dance;
-            if (chkStartRegen.Checked == true) Specs.StartStatus |= Status.Regen; else Specs.StartStatus &= ~Status.Regen;
-            if (chkStartSlow.Checked == true) Specs.StartStatus |= Status.Slow; else Specs.StartStatus &= ~Status.Slow;
-            if (chkStartHaste.Checked == true) Specs.StartStatus |= Status.Haste; else Specs.StartStatus &= ~Status.Haste;
-            if (chkStartStop.Checked == true) Specs.StartStatus |= Status.Stop; else Specs.StartStatus &= ~Status.Stop;
-            if (chkStartShell.Checked == true) Specs.StartStatus |= Status.Shell; else Specs.StartStatus &= ~Status.Shell;
-            if (chkStartProtect.Checked == true) Specs.StartStatus |= Status.Protect; else Specs.StartStatus &= ~Status.Protect;
-            if (chkStartReflect.Checked == true) Specs.StartStatus |= Status.Reflect; else Specs.StartStatus &= ~Status.Reflect;
-            //Final special flags byte
-            if (chkCover.Checked == true) Specs.FlagsB |= MonsterFlagsB.Cover; else Specs.FlagsB &= ~MonsterFlagsB.Cover;
-            if (chkRunic.Checked == true) Specs.FlagsB |= MonsterFlagsB.Runic; else Specs.FlagsB &= ~MonsterFlagsB.Runic;
-            if (chkReraise.Checked == true) Specs.FlagsB |= MonsterFlagsB.Reraise; else Specs.FlagsB &= ~MonsterFlagsB.Reraise;
-            if (chkUnknown4.Checked == true) Specs.FlagsB |= MonsterFlagsB.UnknownA; else Specs.FlagsB &= ~MonsterFlagsB.UnknownA;
-            if (chkUnknown5.Checked == true) Specs.FlagsB |= MonsterFlagsB.UnknownB; else Specs.FlagsB &= ~MonsterFlagsB.UnknownB;
-            if (chkUnknown6.Checked == true) Specs.FlagsB |= MonsterFlagsB.UnknownC; else Specs.FlagsB &= ~MonsterFlagsB.UnknownC;
-            if (chkUnknown7.Checked == true) Specs.FlagsB |= MonsterFlagsB.UnknownD; else Specs.FlagsB &= ~MonsterFlagsB.UnknownD;
-            if (chkRemovableFloat.Checked == true) Specs.FlagsB |= MonsterFlagsB.Cover; else Specs.FlagsB &= ~MonsterFlagsB.Float;
-            //Special attack
-            Specs.SpecialAttack = (byte)cmbSpecialAttack.SelectedIndex;
-            if (chkNoPhys.Checked == true) Specs.SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDamage; else Specs.SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDamage;
-            if (chkNoDodge.Checked == true) Specs.SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDodge; else Specs.SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDodge;
-            Specs.SpecialAttack |= (byte)Specs.SpecialAttackFlags;
-            //Elemental REsistences
-            if (chkFireHalf.Checked == true) Specs.Half |= Element.Fire; else Specs.Half &= ~Element.Fire;
-            if (chkIceHalf.Checked == true) Specs.Half |= Element.Ice; else Specs.Half &= ~Element.Ice;
-            if (chkThunderHalf.Checked == true) Specs.Half |= Element.Thunder; else Specs.Half &= ~Element.Thunder;
-            if (chkPoisonHalf.Checked == true) Specs.Half |= Element.Poison; else Specs.Half &= ~Element.Poison;
-            if (chkWindHalf.Checked == true) Specs.Half |= Element.Wind; else Specs.Half &= ~Element.Wind;
-            if (chkHolyHalf.Checked == true) Specs.Half |= Element.Holy; else Specs.Half &= ~Element.Holy;
-            if (chkEarthHalf.Checked == true) Specs.Half |= Element.Earth; else Specs.Half &= ~Element.Earth;
-            if (chkWaterHalf.Checked == true) Specs.Half |= Element.Water; else Specs.Half &= ~Element.Water;
-            Specs.RareSteal = (byte)cmbStealsRare.SelectedIndex;
-            Specs.CommonSteal = (byte)cmbStealsCommon.SelectedIndex;
-            Specs.RareDrop = (byte)cmbDropsRare.SelectedIndex;
-            Specs.CommonDrop = (byte)cmbDropsCommon.SelectedIndex;
-            Specs.Rage1 = (byte)cmbRage1.SelectedIndex;
-            Specs.Rage2 = (byte)cmbRage2.SelectedIndex;
-            Specs.Sketch1 = (byte)cmbSketch1.SelectedIndex;
-            Specs.Sketch2 = (byte)cmbSketch2.SelectedIndex;
-            Specs.Control1 = (byte)cmbControl1.SelectedIndex;
-            Specs.Control2 = (byte)cmbControl2.SelectedIndex;
-            Specs.Control3 = (byte)cmbControl3.SelectedIndex;
-            Specs.Control4 = (byte)cmbControl4.SelectedIndex;
+            //if (chkFireNull.Checked == true) Specs.Nullify |= Element.Fire; else Specs.Nullify &= ~Element.Fire;
 
             //Actual write code
-            Specs.WriteMonsterNormal(Rom, RomData.MONSTER_STATS_NORMAL_DATA, MonsterIndexCheck, MonsterDiffCheck);
-            Specs.WriteMonsterSecondary(Rom, RomData.MONSTER_STATS_NORMAL_SECONDARY_DATA, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
-            Specs.WriteMonsterHP(Rom, RomData.MONSTER_HP_NORMAL, MonsterSecondaryIndexCheck, MonsterSecondaryDiffCheck);
-            Specs.WriteMonsterStealsDrops(Rom, RomData.MONSTER_STEAL_DROP_TABLE, MonsterStealDropIndexCheck);
-            Specs.WriteRage(Rom, RomData.MONSTER_RAGE, MonsterRageSketchIndex);
-            Specs.WriteSketch(Rom, RomData.MONSTER_SKETCH, MonsterRageSketchIndex);
-            Specs.WriteControl(Rom, RomData.MONSTER_CONTROL, MonsterStealDropIndexCheck);
-            
+            Specs.WriteMonsterNormal(Rom, RomData.MONSTER_DATA_OFFSET, MonsterIndexCheck);
         }
 
-        private void UpdateSpells()
+        /* private void UpdateSpells()
         {
             SpellIndex = cmbSpells.SelectedIndex * 14;
             Spells.ReadSpellData(Rom, RomData.SPELL_DATA, SpellIndex, SpellDelayIndex);
@@ -958,62 +344,10 @@ namespace FF6_Editor
             numMPCost.Value = Spells.MPCost;
             //Spell Power
             numSpellPower.Value = Spells.Power;
-            //Special 3
-            if (Spells.Special3.HasFlag(SpellSpecial3.MissProtStatus) == true) chkLstSpellSpecial3.SetItemChecked(0, true); else chkLstSpellSpecial3.SetItemChecked(0, false);
-            if (Spells.Special3.HasFlag(SpellSpecial3.TextIfHits) == true) chkLstSpellSpecial3.SetItemChecked(1, true); else chkLstSpellSpecial3.SetItemChecked(1, false);
-            if (Spells.Special3.HasFlag(SpellSpecial3.ReplaceWithVitality) == true) chkLstSpellSpecial3.SetItemChecked(2, true); else chkLstSpellSpecial3.SetItemChecked(2, false);
-            if (Spells.Special3.HasFlag(SpellSpecial3.UnknownA) == true) chkLstSpellSpecial3.SetItemChecked(3, true); else chkLstSpellSpecial3.SetItemChecked(3, false);
-            if (Spells.Special3.HasFlag(SpellSpecial3.UnknownB) == true) chkLstSpellSpecial3.SetItemChecked(4, true); else chkLstSpellSpecial3.SetItemChecked(4, false);
-            if (Spells.Special3.HasFlag(SpellSpecial3.UnknownC) == true) chkLstSpellSpecial3.SetItemChecked(5, true); else chkLstSpellSpecial3.SetItemChecked(5, false);
-            if (Spells.Special3.HasFlag(SpellSpecial3.UnknownD) == true) chkLstSpellSpecial3.SetItemChecked(6, true); else chkLstSpellSpecial3.SetItemChecked(6, false);
-            if (Spells.Special3.HasFlag(SpellSpecial3.HalfITD) == true) chkLstSpellSpecial3.SetItemChecked(7, true); else chkLstSpellSpecial3.SetItemChecked(7, false);
-            //Success Rate
-            numSuccessRate.Value = Spells.Success;
-            //Special Effect
-            
-            //Status toggles
-            //1
-            if (Spells.Status.HasFlag(SpellStatus.Darkness) == true) chkLstSpellStatus1.SetItemChecked(0, true); else chkLstSpellStatus1.SetItemChecked(0, false);
-            if (Spells.Status.HasFlag(SpellStatus.Zombie) == true) chkLstSpellStatus1.SetItemChecked(1, true); else chkLstSpellStatus1.SetItemChecked(1, false);
-            if (Spells.Status.HasFlag(SpellStatus.Poison) == true) chkLstSpellStatus1.SetItemChecked(2, true); else chkLstSpellStatus1.SetItemChecked(2, false);
-            if (Spells.Status.HasFlag(SpellStatus.Magitek) == true) chkLstSpellStatus1.SetItemChecked(3, true); else chkLstSpellStatus1.SetItemChecked(3, false);
-            if (Spells.Status.HasFlag(SpellStatus.Clear) == true) chkLstSpellStatus1.SetItemChecked(4, true); else chkLstSpellStatus1.SetItemChecked(4, false);
-            if (Spells.Status.HasFlag(SpellStatus.Imp) == true) chkLstSpellStatus1.SetItemChecked(5, true); else chkLstSpellStatus1.SetItemChecked(5, false);
-            if (Spells.Status.HasFlag(SpellStatus.Petrify) == true) chkLstSpellStatus1.SetItemChecked(6, true); else chkLstSpellStatus1.SetItemChecked(6, false);
-            if (Spells.Status.HasFlag(SpellStatus.Death) == true) chkLstSpellStatus1.SetItemChecked(7, true); else chkLstSpellStatus1.SetItemChecked(7, false);
-            //2
-            if (Spells.Status.HasFlag(SpellStatus.Doomed) == true) chkLstSpellStatus2.SetItemChecked(0, true); else chkLstSpellStatus2.SetItemChecked(0, false);
-            if (Spells.Status.HasFlag(SpellStatus.Critical) == true) chkLstSpellStatus2.SetItemChecked(1, true); else chkLstSpellStatus2.SetItemChecked(1, false);
-            if (Spells.Status.HasFlag(SpellStatus.Blink) == true) chkLstSpellStatus2.SetItemChecked(2, true); else chkLstSpellStatus2.SetItemChecked(2, false);
-            if (Spells.Status.HasFlag(SpellStatus.Silence) == true) chkLstSpellStatus2.SetItemChecked(3, true); else chkLstSpellStatus2.SetItemChecked(3, false);
-            if (Spells.Status.HasFlag(SpellStatus.Berserk) == true) chkLstSpellStatus2.SetItemChecked(4, true); else chkLstSpellStatus2.SetItemChecked(4, false);
-            if (Spells.Status.HasFlag(SpellStatus.Confuse) == true) chkLstSpellStatus2.SetItemChecked(5, true); else chkLstSpellStatus2.SetItemChecked(5, false);
-            if (Spells.Status.HasFlag(SpellStatus.Sap) == true) chkLstSpellStatus2.SetItemChecked(6, true); else chkLstSpellStatus2.SetItemChecked(6, false);
-            if (Spells.Status.HasFlag(SpellStatus.Sleep) == true) chkLstSpellStatus2.SetItemChecked(7, true); else chkLstSpellStatus2.SetItemChecked(7, false);
-            //3
-            if (Spells.Status.HasFlag(SpellStatus.Dance) == true) chkLstSpellStatus3.SetItemChecked(0, true); else chkLstSpellStatus3.SetItemChecked(0, false);
-            if (Spells.Status.HasFlag(SpellStatus.Regen) == true) chkLstSpellStatus3.SetItemChecked(1, true); else chkLstSpellStatus3.SetItemChecked(1, false);
-            if (Spells.Status.HasFlag(SpellStatus.Slow) == true) chkLstSpellStatus3.SetItemChecked(2, true); else chkLstSpellStatus3.SetItemChecked(2, false);
-            if (Spells.Status.HasFlag(SpellStatus.Haste) == true) chkLstSpellStatus3.SetItemChecked(3, true); else chkLstSpellStatus3.SetItemChecked(3, false);
-            if (Spells.Status.HasFlag(SpellStatus.Stop) == true) chkLstSpellStatus3.SetItemChecked(4, true); else chkLstSpellStatus3.SetItemChecked(4, false);
-            if (Spells.Status.HasFlag(SpellStatus.Shell) == true) chkLstSpellStatus3.SetItemChecked(5, true); else chkLstSpellStatus3.SetItemChecked(5, false);
-            if (Spells.Status.HasFlag(SpellStatus.Protect) == true) chkLstSpellStatus3.SetItemChecked(6, true); else chkLstSpellStatus3.SetItemChecked(6, false);
-            if (Spells.Status.HasFlag(SpellStatus.Reflect) == true) chkLstSpellStatus3.SetItemChecked(7, true); else chkLstSpellStatus3.SetItemChecked(7, false);
-            //4
-            if (Spells.Status.HasFlag(SpellStatus.Rage) == true) chkLstSpellStatus4.SetItemChecked(0, true); else chkLstSpellStatus4.SetItemChecked(0, false);
-            if (Spells.Status.HasFlag(SpellStatus.Freeze) == true) chkLstSpellStatus4.SetItemChecked(1, true); else chkLstSpellStatus4.SetItemChecked(1, false);
-            if (Spells.Status.HasFlag(SpellStatus.Reraise) == true) chkLstSpellStatus4.SetItemChecked(2, true); else chkLstSpellStatus4.SetItemChecked(2, false);
-            if (Spells.Status.HasFlag(SpellStatus.Trance) == true) chkLstSpellStatus4.SetItemChecked(3, true); else chkLstSpellStatus4.SetItemChecked(3, false);
-            if (Spells.Status.HasFlag(SpellStatus.Chanting) == true) chkLstSpellStatus4.SetItemChecked(4, true); else chkLstSpellStatus4.SetItemChecked(4, false);
-            if (Spells.Status.HasFlag(SpellStatus.Disappear) == true) chkLstSpellStatus4.SetItemChecked(5, true); else chkLstSpellStatus4.SetItemChecked(5, false);
-            if (Spells.Status.HasFlag(SpellStatus.DogBlock) == true) chkLstSpellStatus4.SetItemChecked(6, true); else chkLstSpellStatus4.SetItemChecked(6, false);
-            if (Spells.Status.HasFlag(SpellStatus.Float) == true) chkLstSpellStatus4.SetItemChecked(7, true); else chkLstSpellStatus4.SetItemChecked(7, false);
+         
+        } */
 
-            numSpellDelay.Value = Spells.SpellDelay;
-            
-        }
-
-        private void SaveSpells()
+        /* private void SaveSpells()
         {
             SpellIndex = cmbSpells.SelectedIndex * 14;
             //Targetting
@@ -1043,24 +377,6 @@ namespace FF6_Editor
             if (chkLstSpellSpecial1.GetItemChecked(5)) Spells.Special1 |= SpellSpecial1.IgnoreDefense; else Spells.Special1 &= ~SpellSpecial1.IgnoreDefense;
             if (chkLstSpellSpecial1.GetItemChecked(6)) Spells.Special1 |= SpellSpecial1.NoSplit; else Spells.Special1 &= ~SpellSpecial1.NoSplit;
             if (chkLstSpellSpecial1.GetItemChecked(7)) Spells.Special1 |= SpellSpecial1.AbortAllies; else Spells.Special1 &= ~SpellSpecial1.AbortAllies;
-            //Misc
-            if (chkLstSpellMisc.GetItemChecked(0)) Spells.Misc |= SpellMisc.FieldUse; else Spells.Misc &= ~SpellMisc.FieldUse;
-            if (chkLstSpellMisc.GetItemChecked(1)) Spells.Misc |= SpellMisc.NoReflect; else Spells.Misc &= ~SpellMisc.NoReflect;
-            if (chkLstSpellMisc.GetItemChecked(2)) Spells.Misc |= SpellMisc.LearnIfTarget; else Spells.Misc &= ~SpellMisc.LearnIfTarget;
-            if (chkLstSpellMisc.GetItemChecked(3)) Spells.Misc |= SpellMisc.EnableRunic; else Spells.Misc &= ~SpellMisc.EnableRunic;
-            if (chkLstSpellMisc.GetItemChecked(4)) Spells.Misc |= SpellMisc.Unknown; else Spells.Misc &= ~SpellMisc.Unknown;
-            if (chkLstSpellMisc.GetItemChecked(5)) Spells.Misc |= SpellMisc.RetargetIfDead; else Spells.Misc &= ~SpellMisc.RetargetIfDead;
-            if (chkLstSpellMisc.GetItemChecked(6)) Spells.Misc |= SpellMisc.CasterDies; else Spells.Misc &= ~SpellMisc.CasterDies;
-            if (chkLstSpellMisc.GetItemChecked(7)) Spells.Misc |= SpellMisc.AffectMP; else Spells.Misc &= ~SpellMisc.AffectMP;
-            //Special 2
-            if (chkLstSpellSpecial2.GetItemChecked(0)) Spells.Special2 |= SpellSpecial2.Restore; else Spells.Special2 &= ~SpellSpecial2.Restore;
-            if (chkLstSpellSpecial2.GetItemChecked(1)) Spells.Special2 |= SpellSpecial2.Absorb; else Spells.Special2 &= ~SpellSpecial2.Absorb;
-            if (chkLstSpellSpecial2.GetItemChecked(2)) Spells.Special2 |= SpellSpecial2.RemoveStatus; else Spells.Special2 &= ~SpellSpecial2.RemoveStatus;
-            if (chkLstSpellSpecial2.GetItemChecked(3)) Spells.Special2 |= SpellSpecial2.ToggleStatus; else Spells.Special2 &= ~SpellSpecial2.ToggleStatus;
-            if (chkLstSpellSpecial2.GetItemChecked(4)) Spells.Special2 |= SpellSpecial2.StaminaDefense; else Spells.Special2 &= ~SpellSpecial2.StaminaDefense;
-            if (chkLstSpellSpecial2.GetItemChecked(5)) Spells.Special2 |= SpellSpecial2.NoEvade; else Spells.Special2 &= ~SpellSpecial2.NoEvade;
-            if (chkLstSpellSpecial2.GetItemChecked(6)) Spells.Special2 |= SpellSpecial2.SuccessMult; else Spells.Special2 &= ~SpellSpecial2.SuccessMult;
-            if (chkLstSpellSpecial2.GetItemChecked(7)) Spells.Special2 |= SpellSpecial2.Fractional; else Spells.Special2 &= ~SpellSpecial2.Fractional;
             //MP Cost
             Spells.MPCost = (byte)numMPCost.Value;
             //Spell Power
@@ -1115,7 +431,7 @@ namespace FF6_Editor
             if (chkLstSpellStatus4.GetItemChecked(6)) Spells.Status |= SpellStatus.DogBlock; else Spells.Status &= ~SpellStatus.DogBlock;
             if (chkLstSpellStatus4.GetItemChecked(7)) Spells.Status |= SpellStatus.Float; else Spells.Status &= ~SpellStatus.Float;
             Spells.WriteSpellData(Rom, RomData.SPELL_DATA, SpellIndex);
-        }
+        } */
 
         private int SumOfStatValues(int FileOffset, int CalcValue)
         {
@@ -1125,30 +441,6 @@ namespace FF6_Editor
                 statSum += Rom.Read8(FileOffset + i);
             }
             return statSum;
-        }
-
-        private int CheckNaturalMagicRange(int SpellValue)
-        {
-            if (SpellValue <= 53)
-            {
-                return SpellValue;
-            }
-            else
-            {
-                return 255;
-            }
-        }
-
-        private int CheckNatMagicLevelRange(int LevelValue)
-        {
-            if (LevelValue > 0 && LevelValue <= 99)
-            {
-                return LevelValue;
-            }
-            else
-            {
-                return 255;
-            }
         }
 
         private bool CheckRomIntegrity()
@@ -1170,179 +462,46 @@ namespace FF6_Editor
             Application.Exit();
         }
 
-        private void NumLevel_ValueChanged_1(object sender, EventArgs e)
-        {
-            UpdateActorsElements();
-        }
-
-        private void CmbActors_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbActors.SelectedIndex > 11)
-            {
-                numNatMag1.Visible = false;
-                cmbNatMag1.Visible = false;
-                numNatMag2.Visible = false;
-                cmbNatMag2.Visible = false;
-                numNatMag3.Visible = false;
-                cmbNatMag3.Visible = false;
-                numNatMag4.Visible = false;
-                cmbNatMag4.Visible = false;
-                numNatMag5.Visible = false;
-                cmbNatMag5.Visible = false;
-                numNatMag6.Visible = false;
-                cmbNatMag6.Visible = false;
-                numNatMag7.Visible = false;
-                cmbNatMag7.Visible = false;
-                numNatMag8.Visible = false;
-                cmbNatMag8.Visible = false;
-                numNatMag9.Visible = false;
-                cmbNatMag9.Visible = false;
-                numNatMag10.Visible = false;
-                cmbNatMag10.Visible = false;
-                numNatMag11.Visible = false;
-                cmbNatMag11.Visible = false;
-                numNatMag12.Visible = false;
-                cmbNatMag12.Visible = false;
-                numNatMag13.Visible = false;
-                cmbNatMag13.Visible = false;
-                numNatMag14.Visible = false;
-                cmbNatMag14.Visible = false;
-                numNatMag15.Visible = false;
-                cmbNatMag15.Visible = false;
-                numNatMag16.Visible = false;
-                cmbNatMag16.Visible = false;
-                lblNaturalMagic.Visible = false;
-            }
-            else
-            {
-                numNatMag1.Visible = true;
-                cmbNatMag1.Visible = true;
-                numNatMag2.Visible = true;
-                cmbNatMag2.Visible = true;
-                numNatMag3.Visible = true;
-                cmbNatMag3.Visible = true;
-                numNatMag4.Visible = true;
-                cmbNatMag4.Visible = true;
-                numNatMag5.Visible = true;
-                cmbNatMag5.Visible = true;
-                numNatMag6.Visible = true;
-                cmbNatMag6.Visible = true;
-                numNatMag7.Visible = true;
-                cmbNatMag7.Visible = true;
-                numNatMag8.Visible = true;
-                cmbNatMag8.Visible = true;
-                numNatMag9.Visible = true;
-                cmbNatMag9.Visible = true;
-                numNatMag10.Visible = true;
-                cmbNatMag10.Visible = true;
-                numNatMag11.Visible = true;
-                cmbNatMag11.Visible = true;
-                numNatMag12.Visible = true;
-                cmbNatMag12.Visible = true;
-                numNatMag13.Visible = true;
-                cmbNatMag13.Visible = true;
-                numNatMag14.Visible = true;
-                cmbNatMag14.Visible = true;
-                numNatMag15.Visible = true;
-                cmbNatMag15.Visible = true;
-                numNatMag16.Visible = true;
-                cmbNatMag16.Visible = true;
-                lblNaturalMagic.Visible = true;
-            }
-            UpdateActorsElements();
-        }
-
-        private void btnActorsOkay_Click(object sender, EventArgs e)
-        {
-            //Saves values to the MemoryStream
-            SaveActorsElements();
-        }
-
-        private void btnActorsCancel_Click(object sender, EventArgs e)
-        {
-            //Resets elements
-            UpdateActorsElements();
-        }
-
-        private void numNatMag1_ValueChanged(object sender, EventArgs e)
-        {
-            if (numNatMag1.Value < 1 | numNatMag1.Value > 99)
-            {
-                numNatMag1.Value = 255;
-            }
-        }
-
-        private void cmbNatMag1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbNatMag1.SelectedIndex > 53)
-            {
-                cmbNatMag1.SelectedIndex = 255;
-            }
-        }
-
-        private void cmbEspers_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            UpdateEsperElements();
-        }
-
-        private void btnEspersOkay_Click(object sender, EventArgs e)
-        {
-            SaveEsperElements();
-        }
-
-        private void btnEspersCancel_Click(object sender, EventArgs e)
-        {
-            UpdateEsperElements();
-        }
-
-        private void cmbMonsters_SelectedIndexChanged(object sender, EventArgs e)
+        private void CmbMonsters_SelectedIndexChanged(object sender, EventArgs e)
         {
             numMonsterIndex.Value = cmbMonsters.SelectedIndex;
-            if (cmbMonsters.SelectedIndex > 255)
-            {
-                lblRage.Visible = false; cmbRage1.Visible = false; cmbRage2.Visible = false;
-            }
-            else
-            {
-                lblRage.Visible = true; cmbRage1.Visible = true; cmbRage2.Visible = true;
-            }
             UpdateMonsterStats();
         }
 
-        private void cmbDifficulty_SelectedIndexChanged(object sender, EventArgs e)
+        private void CmbDifficulty_SelectedIndexChanged(object sender, EventArgs e)
         {
             UpdateMonsterStats();
         }
 
-        private void numMonsterIndex_ValueChanged(object sender, EventArgs e)
+        private void NumMonsterIndex_ValueChanged(object sender, EventArgs e)
         {
-            if (numMonsterIndex.Value <= 383)
+            if (numMonsterIndex.Value <= 195)
             {
                 int i;
                 i = (int)numMonsterIndex.Value;
                 cmbMonsters.SelectedIndex = i;
             }
-            else numMonsterIndex.Value = 383;
+            else numMonsterIndex.Value = 195;
             UpdateMonsterStats();
         }
 
-        private void btnMonstersOkay_Click(object sender, EventArgs e)
+        private void BtnMonstersOkay_Click(object sender, EventArgs e)
         {
             SaveMonsterStats();
         }
 
-        private void btnMonstersCancel_Click(object sender, EventArgs e)
+        private void BtnMonstersCancel_Click(object sender, EventArgs e)
         {
             UpdateMonsterStats();
         }
 
-        private void cmbSpells_SelectedIndexChanged(object sender, EventArgs e)
+        private void CmbSpells_SelectedIndexChanged(object sender, EventArgs e)
         {
-            numSpellIndex.Value = cmbSpells.SelectedIndex;
-            UpdateSpells();
+            //numSpellIndex.Value = cmbSpells.SelectedIndex;
+            //UpdateSpells();
         }
 
-        private void numSpellIndex_ValueChanged(object sender, EventArgs e)
+        private void NumSpellIndex_ValueChanged(object sender, EventArgs e)
         {
             if (numSpellIndex.Value <= 255)
             {
@@ -1351,119 +510,99 @@ namespace FF6_Editor
                 cmbSpells.SelectedIndex = i;
             }
             else numSpellIndex.Value = 255;
-            UpdateSpells();
+            //UpdateSpells();
 
         }
 
-        private void btnSpellsOkay_Click(object sender, EventArgs e)
+        private void BtnSpellsOkay_Click(object sender, EventArgs e)
         {
-            SaveSpells();
+            //SaveSpells();
         }
 
-        private void btnSpellsCancel_Click(object sender, EventArgs e)
+        private void BtnSpellsCancel_Click(object sender, EventArgs e)
         {
-            UpdateSpells();
+            //UpdateSpells();
         }
 
-        private void btnEspersAll_Click(object sender, EventArgs e)
-        {
-            chkLstEsperChars.SetItemChecked(0, true);
-            chkLstEsperChars.SetItemChecked(1, true);
-            chkLstEsperChars.SetItemChecked(2, true);
-            chkLstEsperChars.SetItemChecked(3, true);
-            chkLstEsperChars.SetItemChecked(4, true);
-            chkLstEsperChars.SetItemChecked(5, true);
-            chkLstEsperChars.SetItemChecked(6, true);
-            chkLstEsperChars.SetItemChecked(7, true);
-            chkLstEsperChars.SetItemChecked(8, true);
-            chkLstEsperChars.SetItemChecked(9, true);
-            chkLstEsperChars.SetItemChecked(10, true);
-            chkLstEsperChars.SetItemChecked(11, true);
-            chkLstEsperChars.SetItemChecked(12, true);
-            chkLstEsperChars.SetItemChecked(13, true);
-        }
 
-        private void btnEspersNone_Click(object sender, EventArgs e)
+        private void cmbMonsterItemType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            chkLstEsperChars.SetItemChecked(0, false);
-            chkLstEsperChars.SetItemChecked(1, false);
-            chkLstEsperChars.SetItemChecked(2, false);
-            chkLstEsperChars.SetItemChecked(3, false);
-            chkLstEsperChars.SetItemChecked(4, false);
-            chkLstEsperChars.SetItemChecked(5, false);
-            chkLstEsperChars.SetItemChecked(6, false);
-            chkLstEsperChars.SetItemChecked(7, false);
-            chkLstEsperChars.SetItemChecked(8, false);
-            chkLstEsperChars.SetItemChecked(9, false);
-            chkLstEsperChars.SetItemChecked(10, false);
-            chkLstEsperChars.SetItemChecked(11, false);
-            chkLstEsperChars.SetItemChecked(12, false);
-            chkLstEsperChars.SetItemChecked(13, false);
-        }
-
-        private void DisplaySpellNames()
-        {
-            string[] SpellColl = SpellList.ReadSpellNames(Rom).ToArray();
-            cmbSpells.Items.AddRange(SpellColl);
-            cmbSpells.SelectedIndex = 0;
-            cmbControl1.Items.AddRange(SpellColl);
-            cmbControl2.Items.AddRange(SpellColl);
-            cmbControl3.Items.AddRange(SpellColl);
-            cmbControl4.Items.AddRange(SpellColl);
-            cmbSketch1.Items.AddRange(SpellColl);
-            cmbSketch2.Items.AddRange(SpellColl);
-            cmbRage1.Items.AddRange(SpellColl);
-            cmbRage2.Items.AddRange(SpellColl);
-            cmbNatMag1.Items.AddRange(SpellColl);
-            cmbNatMag2.Items.AddRange(SpellColl);
-            cmbNatMag3.Items.AddRange(SpellColl);
-            cmbNatMag4.Items.AddRange(SpellColl);
-            cmbNatMag5.Items.AddRange(SpellColl);
-            cmbNatMag6.Items.AddRange(SpellColl);
-            cmbNatMag7.Items.AddRange(SpellColl);
-            cmbNatMag8.Items.AddRange(SpellColl);
-            cmbNatMag9.Items.AddRange(SpellColl);
-            cmbNatMag10.Items.AddRange(SpellColl);
-            cmbNatMag11.Items.AddRange(SpellColl);
-            cmbNatMag12.Items.AddRange(SpellColl);
-            cmbNatMag13.Items.AddRange(SpellColl);
-            cmbNatMag14.Items.AddRange(SpellColl);
-            cmbNatMag15.Items.AddRange(SpellColl);
-            cmbNatMag16.Items.AddRange(SpellColl);
-            cmbEsperMagic1.Items.AddRange(SpellColl);
-            cmbEsperMagic2.Items.AddRange(SpellColl);
-            cmbEsperMagic3.Items.AddRange(SpellColl);
-            cmbEsperMagic4.Items.AddRange(SpellColl);
-            cmbEsperMagic5.Items.AddRange(SpellColl);
-            cmbEsperMagic6.Items.AddRange(SpellColl);
-            cmbEsperMagic7.Items.AddRange(SpellColl);
-            cmbEsperMagic8.Items.AddRange(SpellColl);
-            cmbEsperMagic9.Items.AddRange(SpellColl);
-            cmbEsperMagic10.Items.AddRange(SpellColl);
-            //SpellList.ReadSpellNames(Rom).ForEach(el => cmbSpells.Items.AddRange(SpellList.ReadSpellNames(Rom).ToArray()));
-        }
-
-        private void DisplayEnemyNames()
-        {
-            string[] EnemyColl = EnemyList.ReadEnemyNames(Rom).ToArray();
-            cmbMonsters.Items.AddRange(EnemyColl);
-            cmbMonsters.SelectedIndex = 0;
-        }
-
-        private void btnRenameSpell_Click(object sender, EventArgs e)
-        {
-
-        }
-        /*private void btnMoveHP_Click(object sender, EventArgs e)
-        {
-            // for (int i = 0; i < 384; i++) { short hp = ROM.Read16(offset + 0x20 * i); ROM.Write16(offset2 + 0x20 * i); }
-            for (int i = 0; i < 384; i++)
+            switch (cmbMonsterItemType.SelectedIndex)
             {
-                ushort hp = rom.Read16(RomData.MONSTER_STATS_NORMAL_DATA + 0x08 + (i*0x20));
-                rom.Write16(hp, RomData.MONSTER_HP_NORMAL + i*3);
-                rom.Write8(0);
+                case 1:
+                    cmbMonsterItemDrop.Visible = true;
+                    cmbMonsterItemDrop.Items.Clear();
+                    cmbMonsterItemDrop.Items.AddRange(new object[]
+                    {
+                        "Nothing","Potion","Hi-Potion","X-Potion","Ether","Turbo Ether","Dry Ether","Elixir","Megalixir","Phoenix Down","Remedy","Antidote","Gold Needle","Eye Drops",
+                        "Echo Grass","Emergency Exit","Sleeping Bag","Tent","Cottage","Spider's Silk","White Fang","Red Fang","Blue Fang","Light Curtain","Red Curtain","White Curtain",
+                        "Blue Curtain","Lunar Curtain","Hermes's Shoes","Vampire Fang","Cockatrice Claw","Giant's Tonic","Faerie Tonic","Strength Tonic","Protect Drink","Speed Drink",
+                        "Golden Apple","Silver Apple","Soma Drop","Power Plus","Stamina Plus","Mind Plus","Speed Plus","Luck Plus" });
+                    cmbMonsterItemDrop.SelectedIndex = Specs.ItemDropped;
+                    break;
+                case 2:
+                    cmbMonsterItemDrop.Visible = true;
+                    cmbMonsterItemDrop.Items.Clear();
+                    cmbMonsterItemDrop.Items.AddRange(new object[]
+                    {
+                        "Nothing","Nunchaku","Knife","Staff","Rapier","Hammer","Broadsword","Battle Axe","Scimitar","Iron Nunchaku","Dagger","Crosier","Saber","Longsword","Great Axe",
+                        "Falchion","Mythril Knife","Mythril Sword","Mythril Hammer","Mythril Axe","Flame Sword","Ice Brand","Wyrmkiller","Great Sword","Sun Sword","Coral Sword","Werebuster",
+                        "Rune Blade","Power Staff","Light Axe","Healing Staff","Mage's Staff","Defender","Wizard's Staff","Vorpal Sword","Cat Claws","Thor's Hammer","Razer","Sasuke's Katana",
+                        "Excalibur","Masamune","Ultima Weapon","Ragnarok","Murasame","Lightbringer","Rune Staff","Judgement Staff","Dark Claymore","Duel Rapier","Braveheart","Deathbringer",
+                        "Enhancer","Gigant Axe","Viking Axe","Rune Axe","Ogrekiller","Kikuichimonji","Ashura","Kotetsu","War Hammer","Assassin Dagger","Orichalcum","Mage Masher","Gladius",
+                        "Sage's Staff"});
+                    cmbMonsterItemDrop.SelectedIndex = Specs.ItemDropped;
+                    break;
+                case 3:
+                    cmbMonsterItemDrop.Visible = true;
+                    cmbMonsterItemDrop.Items.Clear();
+                    cmbMonsterItemDrop.Items.AddRange(new object[]
+                    {
+                        "Nothing","Robe","Leather Armor","Chain Mail","Iron Armor","Knight's Armor","Mythril Mail","Flame Mail","Ice Armor","Diamond Armor","Dragon Mail","Copper Armlet",
+                        "Silver Armlet","Ruby Armlet","Diamond Armlet","White Robe","Black Robe","Crystal Mail","Thief Armlet","Black Garb","Kenpogi","Power Vest","Red Jacket",
+                        "Sage's Surplice","Light Robe","Gaia Gear","Bard's Tunic","Genji Armor","Leather Shield","Iron Shield","Mythril Shield","Flame Shield","Ice Shield","Diamond Shield",
+                        "Aegis Shield","Buckler","Protect Cloak","Genji Shield","Crystal Shield","Hero's Shield","Zephyr Cape","Elven Cloak","Leather Cap","Helm","Great Helm","Mythril Helm",
+                        "Diamond Helm","Healing Helm","Ribbon","Genji Helm","Crystal Helm","Black Cowl","Twist Headband","Tiger Mask","Feathered Cap","Red Cap","Wizard's Hat","Sage's Mitre",
+                        "Leather Gloves","Bronze Gloves","Steel Gloves","Mythril Gloves","Gauntlets","Giant's Gloves","Diamond Gloves","Protect Ring","Crystal Gloves","Thief's Gloves",
+                        "Crystal Ring","Angel Ring","Genji Gloves"});
+                    cmbMonsterItemDrop.SelectedIndex = Specs.ItemDropped;
+                    break;
+                default:
+                    cmbMonsterItemDrop.Visible = false;
+                    cmbMonsterItemDrop.Items.Clear();
+                    cmbMonsterItemDrop.Items.AddRange(new object[]
+                    {
+                        "Nothing"
+                    });
+                    cmbMonsterItemDrop.SelectedIndex = 0;
+                    break;
             }
-        }*/
+        }
 
+        private void numJobIndex_ValueChanged(object sender, EventArgs e)
+        {
+            if (numJobsIndex.Value <= 11)
+            {
+                int i;
+                i = (int)numJobsIndex.Value;
+                cmbJobs.SelectedIndex = i;
+            }
+            else numJobsIndex.Value = 11;
+            //UpdateJobs();
+        }
+
+        private void cmbJobs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            numJobsIndex.Value = cmbJobs.SelectedIndex;
+            //UpdateJobs();
+        }
+
+        //private void displayspellnames()
+        //{
+        //    string[] spellcoll = spelllist.readspellnames(rom).toarray();
+        //    cmbspells.items.addrange(spellcoll);
+        //    cmbspells.selectedindex = 0;
+        //    spelllist.readspellnames(rom).foreach (el => cmbspells.items.addrange(spelllist.readspellnames(rom).toarray())) ;
+        //}
     }
 }

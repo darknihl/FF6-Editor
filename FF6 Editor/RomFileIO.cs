@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace FF6_Editor
+namespace FF1_DOS_editor
 {
     public class RomFileIO
     {

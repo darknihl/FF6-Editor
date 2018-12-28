@@ -1,0 +1,12 @@
+Warrior/Knight,
+Thief/Ninja,
+Monk/Master,
+Red Mage/Red Wizard,
+White Mage/White Wizard,
+Black Mage/Black Wizard,
+Knight,
+Ninja,
+Master,
+Red Wizard,
+White Wizard,
+Black Wizard

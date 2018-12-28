@@ -1,151 +1,100 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
-namespace FF6_Editor
+namespace FF1_DOS_editor
 {
     [Flags]
-    public enum MonsterFlagsA : ushort
+    public enum StatusEffect : byte
     {
-        MPDeath = 0x1, // Dies on 0 MP
-        IgnoreITD= 0x2, // Ignores Ignore Target Defense
-        NameHide = 0x4, // Hides enemy's name
-        PierceReflect = 0x8, // Ignores reflect status
-        Humanoid = 0x10, // Human enemy
-        UnknownA = 0x20, // Unknown value
-        ImpSucks = 0x40, // Critical hit when Imped
-        Undead = 0x80, // What it says on the tin
-        FlightRisky = 0x100, // Harder to run from
-        Preemptive = 0x200, // Attacks first
-        NoSuplex = 0x400, // Cannot be Suplexed
-        FlightBanned = 0x800, // Can't run
-        NoScan = 0x1000, // Cannot be Scanned
-        NoSketch = 0x2000, // Cannot be Sketched
-        Event = 0x4000, // Special Event
-        NoControl = 0x8000 // Cannot be Controlled
+        Death = 0x1,
+        Stone = 0x2,
+        Poison = 0x4,
+        Blind = 0x8,
+        Stun = 0x10,
+        Sleep = 0x20,
+        Silence = 0x40,
+        Confusion = 0x80
     }
 
     [Flags]
-    public enum Status : uint
+    public enum MonsterFamily : byte
     {
-        Darkness = 0x1,                    // Block Darkness
-	    Zombie = 0x2,                      // Block Zombie
-	    Poison = 0x4,                      // Block Poison
-	    Magitek = 0x8,                     // Block Magitek
-	    Clear = 0x10,                      // Block Clear
-	    Imp = 0x20,                        // Block Imp
-	    Petrify = 0x40,                    // Block Petrify
-	    Death = 0x80,                      // Block Death
-        Doomed = 0x100,                    // Block Doomed
-	    Critical = 0x200,                  // Block Near Fatal
-	    Blink = 0x400,                     // Block Image
-	    Silence = 0x800,                   // Block Silence
-	    Berserk = 0x1000,                  // Block Berserk
-	    Confuse = 0x2000,                // Block Confusion
-	    Sap = 0x4000,                      // Block Sap
-	    Sleep = 0x8000,                    // Block Sleep
-        Dance = 0x10000,                   // Block Dance / Start with Float
-	    Regen = 0x20000,                   // Block Regen
-	    Slow = 0x40000,                    // Block Slow
-	    Haste = 0x80000,                   // Block Haste
-	    Stop = 0x100000,                   // Block Stop
-	    Shell = 0x200000,                  // Block Shell
-	    Protect = 0x400000,                // Block Protect
-	    Reflect = 0x800000                 // Block Reflect
+        Magical = 0x1,
+        Dragon = 0x2,
+        Giant = 0x4,
+        Undead = 0x8,
+        Werebeast = 0x10,
+        Aquan = 0x20,
+        Spellcaster = 0x40,
+        Regenerative = 0x80
     }
 
     [Flags]
-    public enum Element : byte
+    public enum Element : ushort
     {
-        Fire = 0x1,
-        Ice = 0x2,
-        Thunder = 0x4,
-        Poison = 0x8,
-        Wind = 0x10,
-        Holy = 0x20,
-        Earth = 0x40,
-        Water = 0x80
-    }
-
-    [Flags]
-    public enum MonsterFlagsB : byte
-    {
-        Cover = 0x1,                // True Knight effect
-        Runic = 0x2,                // Runic
-        Reraise = 0x4,              // Reraise
-        UnknownA = 0x8,             // Unknown value
-        UnknownB = 0x10,            // Unknown value
-        UnknownC = 0x20,            // Unknown value
-        UnknownD = 0x40,            // Unknown value
-        Float = 0x80                // Removable Float
-    }
-
-    [Flags]
-    public enum SpecialAttackAttributesFlags : byte
-    {
-        NoDamage = 0x40,
-        NoDodge = 0x80
+        Paralysis = 0x1,
+        Stone = 0x2,
+        Time = 0x4,
+        Death = 0x8,
+        Fire = 0x10,
+        Ice = 0x20,
+        Lightning = 0x40,
+        Quake = 0x80,
+        Poison = 0x100,
+        Darkness = 0x200,
+        Sleep = 0x400,
+        Silence = 0x800,
+        Confuse = 0x1000,
+        Mind = 0x2000
     }
 
     public class EnemySpecs
     {
+        //Defines
         RomFileIO Rom = new RomFileIO();
-        public byte Agility;
-        public byte Attack;
-        public byte Accuracy;
-        public byte Evasion;
-        public byte MagEva;
-        public byte Defense;
-        public byte MagDef;
-        public byte Magic;
-        public uint HP;
-        public ushort MP;
-        public ushort XP;
+        public ushort EXP;
         public ushort Gil;
-        public byte Level;
-        public byte SkillExp;
-        public byte MetaMiss;
-        public MonsterFlagsA FlagsA;
-        public Status BlockStatus;
-        public Element Absorb;
-        public Element Nullify;
-        public Element Weakness;
-        public byte AttackAnimation;
-        public Status StartStatus;
-        public MonsterFlagsB FlagsB;
-        public int SpecialAttack;
-        public int SpecialAttackEffects;
-        public SpecialAttackAttributesFlags SpecialAttackFlags;
-        public byte Strength;
-        public Element Half;
-        public byte Vitality;
-        public byte RareSteal;
-        public byte CommonSteal;
-        public byte RareDrop;
-        public byte CommonDrop;
-        public byte Rage1;
-        public byte Rage2;
-        public byte Sketch1;
-        public byte Sketch2;
-        public byte Control1;
-        public byte Control2;
-        public byte Control3;
-        public byte Control4;
+        public ushort MaxHP;
+        public byte Morale;
+        //Empty byte, originally for AI
+        public byte Evasion;
+        public byte Defense;
+        public byte NumHits;
+        public byte Accuracy;
+        public byte Attack;
+        public byte Agility;
+        public byte Intellect;
+        public byte CritRate;
+        public Element AttackElement;
+        public StatusEffect AttackStatus;
+        public MonsterFamily MonsterFamily;
+        public byte MagDef;
+        //Empty byte, likely padding
+        public Element Weak;
+        public Element Resist;
+        public byte DropType;
+        public byte ItemDropped;
+        public byte DropChance;
+        public byte MagicProc;
+        public byte AbilityProc;
+        public byte Spell1;
+        public byte Spell2;
+        public byte Spell3;
+        public byte Spell4;
+        public byte Spell5;
+        public byte Spell6;
+        public byte Spell7;
+        public byte Spell8;
+        public byte Ability1;
+        public byte Ability2;
+        public byte Ability3;
+        public byte Ability4;
+        public string[] SpellList = File.ReadAllLines("spells.txt");
+        public string[] AbilityList = File.ReadAllLines("abilities.txt");
+        public string[] MonsterList = File.ReadAllLines("monsters.txt");
 
-        /*byte[] BinaryHP()
-        {
-            byte[] ret = new byte[3];
-
-            ret[0] = Convert.ToByte(HP & 0xFF);
-            ret[1] = Convert.ToByte((HP & 0xFF00) >> 8);
-            ret[2] = Convert.ToByte((HP & 0xFF0000) >> 16);
-
-            return ret;
-        }*/
-
-        public void ReadMonsterNormal(RomFileIO Rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
+        //Methods
+        public void ReadMonsterNormal(RomFileIO Rom, int BaseOffset, int MonsterIndex, int BaseScript, int MonsterQueue)
         {
             if (!Rom.IsOpen())
             {
@@ -153,34 +102,53 @@ namespace FF6_Editor
             }
             else
             {
-                Agility = Rom.Read8(BaseOffset + MonsterIndex + MonsterDifficulty);
-                Attack = Rom.Read8();
-                Accuracy = Rom.Read8();
-                Evasion = Rom.Read8();
-                MagEva = Rom.Read8();
-                Defense = Rom.Read8();
-                MagDef = Rom.Read8();
-                Magic = Rom.Read8();
-                Rom.Read16(); // old HP int
-                MP = Rom.Read16();
-                XP = Rom.Read16();
-                Gil = Rom.Read16();
-                Level = Rom.Read8();
-                SkillExp = Rom.Read8(); // Metamorph byte
-                FlagsA = (MonsterFlagsA)Rom.Read16();
-                BlockStatus = (Status)Rom.Read24();
-                Absorb = (Element)Rom.Read8();
-                Nullify = (Element)Rom.Read8();
-                Weakness = (Element)Rom.Read8();
-                AttackAnimation = Rom.Read8();
-                StartStatus = (Status)Rom.Read24();
-                FlagsB = (MonsterFlagsB)Rom.Read8();
-                SpecialAttack = Rom.Read8();
-                SpecialAttackFlags = (SpecialAttackAttributesFlags)SpecialAttack;
+                EXP = Rom.Read16(BaseOffset + MonsterIndex); // 00-01
+                Gil = Rom.Read16(); // 02-03
+                MaxHP = Rom.Read16(); // 04-05
+                Morale = Rom.Read8(); // 06
+                Rom.Read8(); // skip a byte 07
+                Evasion = Rom.Read8(); // 08
+                Defense = Rom.Read8(); // 09
+                NumHits = Rom.Read8(); // 0A
+                Accuracy = Rom.Read8(); // 0B
+                Attack = Rom.Read8(); // 0C
+                Agility = Rom.Read8(); // 0D
+                Intellect = Rom.Read8(); // 0E
+                CritRate = Rom.Read8(); // 0F
+                AttackElement = (Element)Rom.Read16(); // 10-11
+                AttackStatus = (StatusEffect)Rom.Read8(); // 12
+                MonsterFamily = (MonsterFamily)Rom.Read8(); // 13
+                MagDef = Rom.Read8(); // 14
+                Rom.Read8(); // skip a byte 15
+                Weak = (Element)Rom.Read16(); // 16-17
+                Resist = (Element)Rom.Read16(); // 18-19
+                DropType = Rom.Read8(); // 1A
+                ItemDropped = Rom.Read8(); // 1B
+                DropChance = Rom.Read8(); // 1C
+                // 1D, 1E, 1F
+
+                MagicProc = Rom.Read8(BaseScript + MonsterQueue); // Magic proc value
+                AbilityProc = Rom.Read8(); // Ability proc value
+                Spell1 = Rom.Read8(); // spells 1-8 in the spell queue
+                Spell2 = Rom.Read8();
+                Spell3 = Rom.Read8();
+                Spell4 = Rom.Read8();
+                Spell5 = Rom.Read8();
+                Spell6 = Rom.Read8();
+                Spell7 = Rom.Read8();
+                Spell8 = Rom.Read8();
+                Rom.Read8(); // extra terminator if you have the whole queue filled
+                Ability1 = Rom.Read8();
+                Ability2 = Rom.Read8();
+                Ability3 = Rom.Read8();
+                Ability4 = Rom.Read8();
+                //Another terminator; no point reading
+
            }
         }
 
-        public void ReadMonsterSecondary(RomFileIO Rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
+
+        public void WriteMonsterNormal(RomFileIO Rom, int BaseOffset, int MonsterIndex)
         {
             if (!Rom.IsOpen())
             {
@@ -188,196 +156,8 @@ namespace FF6_Editor
             }
             else
             {
-                Strength = Rom.Read8(BaseOffset + MonsterIndex + MonsterDifficulty);
-                Half = (Element)Rom.Read8();
-                Vitality = Rom.Read8();
-            }
-        }
+                Rom.Write16(EXP, BaseOffset + MonsterIndex);
 
-        public void ReadMonsterHP(RomFileIO Rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                HP = Rom.Read24(BaseOffset + MonsterIndex + MonsterDifficulty);
-            }
-        }
-
-        public void ReadMonsterDropsSteals(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                RareSteal = Rom.Read8(BaseOffset + MonsterIndex);
-                CommonSteal = Rom.Read8();
-                RareDrop = Rom.Read8();
-                CommonDrop = Rom.Read8();
-            }
-        }
-
-        public void ReadRage(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rage1 = Rom.Read8(BaseOffset + MonsterIndex);
-                Rage2 = Rom.Read8();
-            }
-        }
-
-        public void ReadSketch(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Sketch1 = Rom.Read8(BaseOffset + MonsterIndex);
-                Sketch2 = Rom.Read8();
-            }
-        }
-
-        public void ReadControl(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Control1 = Rom.Read8(BaseOffset + MonsterIndex);
-                Control2 = Rom.Read8();
-                Control3 = Rom.Read8();
-                Control4 = Rom.Read8();
-            }
-        }
-
-        public void WriteMonsterNormal(RomFileIO Rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rom.Write8(Agility, BaseOffset + MonsterIndex + MonsterDifficulty);
-                Rom.Write8(Attack);
-                Rom.Write8(Accuracy);
-                Rom.Write8(Evasion);
-                Rom.Write8(MagEva);
-                Rom.Write8(Defense);
-                Rom.Write8(MagDef);
-                Rom.Write8(Magic);
-                Rom.Read16();
-                Rom.Write16(MP);
-                Rom.Write16(XP);
-                Rom.Write16(Gil);
-                Rom.Write8(Level);
-                Rom.Write8(SkillExp);
-                Rom.Write16((ushort)FlagsA);
-                Rom.Write24((uint)BlockStatus);
-                Rom.Write8((byte)Absorb);
-                Rom.Write8((byte)Nullify);
-                Rom.Write8((byte)Weakness);
-                Rom.Write8(AttackAnimation);
-                Rom.Write24((uint)StartStatus);
-                Rom.Write8((byte)FlagsB);
-                Rom.Write8((byte)SpecialAttack);
-            }
-        }
-
-        public void WriteMonsterSecondary(RomFileIO Rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rom.Write8(Strength, BaseOffset + MonsterIndex + MonsterDifficulty);
-                Rom.Write8((byte)Half);
-                Rom.Write8(Vitality);
-            }
-        }
-
-        public void WriteMonsterHP(RomFileIO Rom, int BaseOffset, int MonsterIndex, int MonsterDifficulty)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rom.Write24(HP, BaseOffset + MonsterIndex + MonsterDifficulty);
-            }
-        }
-
-        public void WriteMonsterStealsDrops(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rom.Write8(RareSteal, BaseOffset + MonsterIndex);
-                Rom.Write8(CommonSteal);
-                Rom.Write8(RareDrop);
-                Rom.Write8(CommonDrop);
-            }
-        }
-
-
-        public void WriteRage(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rom.Write8(Rage1, BaseOffset + MonsterIndex);
-                Rom.Write8(Rage2);
-            }
-        }
-
-
-        public void WriteSketch(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rom.Write8(Sketch1, BaseOffset + MonsterIndex);
-                Rom.Write8(Sketch2);
-            }
-        }
-
-
-        public void WriteControl(RomFileIO Rom, int BaseOffset, int MonsterIndex)
-        {
-            if (!Rom.IsOpen())
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                Rom.Write8(Control1, BaseOffset + MonsterIndex);
-                Rom.Write8(Control2);
-                Rom.Write8(Control3);
-                Rom.Write8(Control4);
             }
         }
     }

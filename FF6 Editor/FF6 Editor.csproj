@@ -7,8 +7,8 @@
     <ProjectGuid>{E6BD5586-2B28-4B32-9D69-68F21F34FEF1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FF6_Editor</RootNamespace>
-    <AssemblyName>FF6 Editor</AssemblyName>
+    <RootNamespace>FF1_Editor</RootNamespace>
+    <AssemblyName>FF1 Editor</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,9 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnemyNames.cs" />
-    <Compile Include="EnemyScripts.cs" />
-    <Compile Include="Espers.cs" />
+    <Compile Include="CharSpecs.cs" />
+    <Compile Include="Items.cs" />
     <Compile Include="EnemySpecs.cs" />
     <Compile Include="FF6TextTables.cs" />
     <Compile Include="RomData.cs" />
@@ -81,6 +80,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ff6_snes_menu_a.tbl">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

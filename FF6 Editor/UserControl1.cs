@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FF6_Editor
+namespace FF1_DOS_editor
 {
     public partial class UserControl1 : UserControl
     {

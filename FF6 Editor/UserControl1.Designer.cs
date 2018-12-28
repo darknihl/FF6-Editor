@@ -1,4 +1,4 @@
-﻿namespace FF6_Editor
+﻿namespace FF1_DOS_editor
 {
     partial class UserControl1
     {

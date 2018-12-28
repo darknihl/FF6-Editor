@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FF6_Editor
+namespace FF1_DOS_editor
 {
     static class Program
     {
