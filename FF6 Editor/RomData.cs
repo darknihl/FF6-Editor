@@ -42,7 +42,7 @@ namespace FF6_Editor
         public const int SPELL_ESPER_NAMES = 0x3A0000; // 9 characters, 54 spells; 12 characters, 27 espers
         public const int OTHER_SPELL_NAMES = 0x3A0B90;
         public const int ENEMY_NAMES = 0x0F8C00; // 384 entries, ten characters each
-        
+        public const int ITEM_DATA = 0x185000; // 256 entries, 30 bytes each; 7680 or 0x1E00 bytes total
         
         //public const int ESPER_LEVELS = 0x33FD70; // 27 entries, 20 bytes per esper = 540 bytes
         //public const int SKILL_EXPERIENCE_TNL = 0x0FFFBE; // skill experience values, 2 bytes per level for 20 levels

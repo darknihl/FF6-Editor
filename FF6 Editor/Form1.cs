@@ -593,6 +593,7 @@ namespace FF6_Editor
             numMonsterMagDef.Value = Specs.MagDef;
             numMonsterMagic.Value = Specs.Magic;
             numMonsterHP.Value = Specs.HP;
+            numMonsterLP.Value = Specs.LP;
             numMonsterMP.Value = Specs.MP;
             numMonsterEXP.Value = Specs.XP;
             numMonsterGil.Value = Specs.Gil;
@@ -667,6 +668,14 @@ namespace FF6_Editor
             chkHolyWeak.Checked = Specs.Weakness.HasFlag(Element.Holy);
             chkEarthWeak.Checked = Specs.Weakness.HasFlag(Element.Earth);
             chkWaterWeak.Checked = Specs.Weakness.HasFlag(Element.Water);
+            chkFireAtk.Checked = Specs.ElemAtk.HasFlag(Element.Fire);
+            chkIceAtk.Checked = Specs.ElemAtk.HasFlag(Element.Ice);
+            chkThunderAtk.Checked = Specs.ElemAtk.HasFlag(Element.Thunder);
+            chkPoisonAtk.Checked = Specs.ElemAtk.HasFlag(Element.Poison);
+            chkWindAtk.Checked = Specs.ElemAtk.HasFlag(Element.Wind);
+            chkHolyAtk.Checked = Specs.ElemAtk.HasFlag(Element.Holy);
+            chkEarthAtk.Checked = Specs.ElemAtk.HasFlag(Element.Earth);
+            chkWaterAtk.Checked = Specs.ElemAtk.HasFlag(Element.Water);
             //Attack animation
             cmbNormalAttack.SelectedIndex = Specs.AttackAnimation;
             //Begin parsing StartStatus values
@@ -752,7 +761,8 @@ namespace FF6_Editor
             Specs.Defense = (byte)numMonsterDefense.Value;
             Specs.MagDef = (byte)numMonsterMagDef.Value;
             Specs.Magic = (byte)numMonsterMagic.Value;
-            Specs.HP = (uint)numMonsterHP.Value;
+            Specs.HP = (ushort)numMonsterHP.Value;
+            Specs.LP = (byte)numMonsterLP.Value;
             Specs.MP = (ushort)numMonsterMP.Value;
             Specs.XP = (ushort)numMonsterEXP.Value;
             Specs.Gil = (ushort)numMonsterGil.Value;
@@ -829,6 +839,15 @@ namespace FF6_Editor
             if (chkHolyWeak.Checked == true) Specs.Weakness |= Element.Holy; else Specs.Weakness &= ~Element.Holy;
             if (chkEarthWeak.Checked == true) Specs.Weakness |= Element.Earth; else Specs.Weakness &= ~Element.Earth;
             if (chkWaterWeak.Checked == true) Specs.Weakness |= Element.Water; else Specs.Weakness &= ~Element.Water;
+            //Attack
+            if (chkFireAtk.Checked == true) Specs.ElemAtk |= Element.Fire; else Specs.ElemAtk &= ~Element.Fire;
+            if (chkIceAtk.Checked == true) Specs.ElemAtk |= Element.Ice; else Specs.ElemAtk &= ~Element.Ice;
+            if (chkThunderAtk.Checked == true) Specs.ElemAtk |= Element.Thunder; else Specs.ElemAtk &= ~Element.Thunder;
+            if (chkPoisonAtk.Checked == true) Specs.ElemAtk |= Element.Poison; else Specs.ElemAtk &= ~Element.Poison;
+            if (chkWindAtk.Checked == true) Specs.ElemAtk |= Element.Wind; else Specs.ElemAtk &= ~Element.Wind;
+            if (chkHolyAtk.Checked == true) Specs.ElemAtk |= Element.Holy; else Specs.ElemAtk &= ~Element.Holy;
+            if (chkEarthAtk.Checked == true) Specs.ElemAtk |= Element.Earth; else Specs.ElemAtk &= ~Element.Earth;
+            if (chkWaterAtk.Checked == true) Specs.ElemAtk |= Element.Water; else Specs.ElemAtk &= ~Element.Water;
             //Attack Animation
             Specs.AttackAnimation = (byte)cmbNormalAttack.SelectedIndex;
             //Start battle status
@@ -866,10 +885,11 @@ namespace FF6_Editor
             if (chkUnknown7.Checked == true) Specs.FlagsB |= MonsterFlagsB.UnknownD; else Specs.FlagsB &= ~MonsterFlagsB.UnknownD;
             if (chkRemovableFloat.Checked == true) Specs.FlagsB |= MonsterFlagsB.Cover; else Specs.FlagsB &= ~MonsterFlagsB.Float;
             //Special attack
-            Specs.SpecialAttack = (byte)cmbSpecialAttack.SelectedIndex;
-            if (chkNoPhys.Checked == true) Specs.SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDamage; else Specs.SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDamage;
-            if (chkNoDodge.Checked == true) Specs.SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDodge; else Specs.SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDodge;
-            Specs.SpecialAttack |= (byte)Specs.SpecialAttackFlags;
+            SpecialAttackAttributesFlags SpecialAttackFlags = 0;
+            Specs.SpecialAttack = (byte)cmbSpecialAttack.SelectedIndex;            
+            if (chkNoPhys.Checked == true) SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDamage; else SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDamage;
+            if (chkNoDodge.Checked == true) SpecialAttackFlags |= SpecialAttackAttributesFlags.NoDodge; else SpecialAttackFlags &= ~SpecialAttackAttributesFlags.NoDodge;
+            Specs.SpecialAttack |= (byte)SpecialAttackFlags;
             //Elemental REsistences
             if (chkFireHalf.Checked == true) Specs.Half |= Element.Fire; else Specs.Half &= ~Element.Fire;
             if (chkIceHalf.Checked == true) Specs.Half |= Element.Ice; else Specs.Half &= ~Element.Ice;
@@ -1449,11 +1469,7 @@ namespace FF6_Editor
             cmbMonsters.Items.AddRange(EnemyColl);
             cmbMonsters.SelectedIndex = 0;
         }
-
-        private void btnRenameSpell_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         /*private void btnMoveHP_Click(object sender, EventArgs e)
         {
             // for (int i = 0; i < 384; i++) { short hp = ROM.Read16(offset + 0x20 * i); ROM.Write16(offset2 + 0x20 * i); }

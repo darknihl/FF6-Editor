@@ -100,7 +100,8 @@ namespace FF6_Editor
         public byte Defense;
         public byte MagDef;
         public byte Magic;
-        public uint HP;
+        public ushort HP;
+        public byte LP;
         public ushort MP;
         public ushort XP;
         public ushort Gil;
@@ -112,6 +113,7 @@ namespace FF6_Editor
         public Element Absorb;
         public Element Nullify;
         public Element Weakness;
+        public Element ElemAtk;
         public byte AttackAnimation;
         public Status StartStatus;
         public MonsterFlagsB FlagsB;
@@ -161,7 +163,9 @@ namespace FF6_Editor
                 Defense = Rom.Read8();
                 MagDef = Rom.Read8();
                 Magic = Rom.Read8();
-                Rom.Read16(); // old HP int
+                //Rom.Read16(); // old HP int
+                ElemAtk = (Element)Rom.Read8();
+                Rom.Read8(); // old HP int upper byte
                 MP = Rom.Read16();
                 XP = Rom.Read16();
                 Gil = Rom.Read16();
@@ -202,7 +206,8 @@ namespace FF6_Editor
             }
             else
             {
-                HP = Rom.Read24(BaseOffset + MonsterIndex + MonsterDifficulty);
+                HP = Rom.Read16(BaseOffset + MonsterIndex + MonsterDifficulty);
+                LP = Rom.Read8();
             }
         }
 
@@ -278,7 +283,8 @@ namespace FF6_Editor
                 Rom.Write8(Defense);
                 Rom.Write8(MagDef);
                 Rom.Write8(Magic);
-                Rom.Read16();
+                Rom.Write8((byte)ElemAtk);
+                Rom.Read8();
                 Rom.Write16(MP);
                 Rom.Write16(XP);
                 Rom.Write16(Gil);
@@ -318,7 +324,8 @@ namespace FF6_Editor
             }
             else
             {
-                Rom.Write24(HP, BaseOffset + MonsterIndex + MonsterDifficulty);
+                Rom.Write16(HP, BaseOffset + MonsterIndex + MonsterDifficulty);
+                Rom.Write8(LP);
             }
         }
 

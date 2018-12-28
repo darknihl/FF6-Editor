@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Items.cs" />
     <Compile Include="EnemyNames.cs" />
     <Compile Include="EnemyScripts.cs" />
     <Compile Include="Espers.cs" />
