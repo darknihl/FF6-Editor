@@ -159,7 +159,7 @@ namespace FF6_Editor
             }
         }
 
-        public void WriteSpellData(RomFileIO Rom, int BaseOffset, int SpellIndex)
+        public void WriteSpellData(RomFileIO Rom, int BaseOffset, int SpellIndex, int SpellDelayIndex)
         {
             if (!Rom.IsOpen())
             {
@@ -178,6 +178,7 @@ namespace FF6_Editor
                 Rom.Write8(Success);
                 Rom.Write8(Effect);
                 Rom.Write32((uint)Status);
+                Rom.Write8(SpellDelay, RomData.SPELL_DELAY + SpellDelayIndex);
             }
         }
 

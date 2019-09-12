@@ -61,7 +61,7 @@ namespace FF6_Editor
         private void LoadROMToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();                                      //Setting the dialog up
-            ofd.Filter = "Super Famicom ROM|*.sfc";                                         //File type filter
+            ofd.Filter = "Super Famicom ROM|*.sfc;*.smc";                                         //File type filter
             ofd.Title = "Load ROM";                                                         //Title for dialog
             ofd.CheckFileExists = true;
             ofd.CheckPathExists = true;
@@ -926,8 +926,9 @@ namespace FF6_Editor
         private void UpdateSpells()
         {
             SpellIndex = cmbSpells.SelectedIndex * 14;
-            Spells.ReadSpellData(Rom, RomData.SPELL_DATA, SpellIndex, SpellDelayIndex);
             SpellDelayIndex = cmbSpells.SelectedIndex * 1;
+            Spells.ReadSpellData(Rom, RomData.SPELL_DATA, SpellIndex, SpellDelayIndex);
+            
 
             //Targetting byte
             if (Spells.Targetting.HasFlag(SpellTargetting.MoveCursor) == true) chkLstSpellTargetting.SetItemChecked(0, true); else chkLstSpellTargetting.SetItemChecked(0, false);
@@ -1036,6 +1037,7 @@ namespace FF6_Editor
         private void SaveSpells()
         {
             SpellIndex = cmbSpells.SelectedIndex * 14;
+            SpellDelayIndex = cmbSpells.SelectedIndex * 1;
             //Targetting
             if (chkLstSpellTargetting.GetItemChecked(0)) Spells.Targetting |= SpellTargetting.MoveCursor; else Spells.Targetting &= ~SpellTargetting.MoveCursor;
             if (chkLstSpellTargetting.GetItemChecked(1)) Spells.Targetting |= SpellTargetting.OneSide; else Spells.Targetting &= ~SpellTargetting.OneSide;
@@ -1134,7 +1136,8 @@ namespace FF6_Editor
             if (chkLstSpellStatus4.GetItemChecked(5)) Spells.Status |= SpellStatus.Disappear; else Spells.Status &= ~SpellStatus.Disappear;
             if (chkLstSpellStatus4.GetItemChecked(6)) Spells.Status |= SpellStatus.DogBlock; else Spells.Status &= ~SpellStatus.DogBlock;
             if (chkLstSpellStatus4.GetItemChecked(7)) Spells.Status |= SpellStatus.Float; else Spells.Status &= ~SpellStatus.Float;
-            Spells.WriteSpellData(Rom, RomData.SPELL_DATA, SpellIndex);
+            Spells.SpellDelay = (byte)numSpellDelay.Value;
+            Spells.WriteSpellData(Rom, RomData.SPELL_DATA, SpellIndex, SpellDelayIndex);
         }
 
         private int SumOfStatValues(int FileOffset, int CalcValue)
@@ -1469,7 +1472,25 @@ namespace FF6_Editor
             cmbMonsters.Items.AddRange(EnemyColl);
             cmbMonsters.SelectedIndex = 0;
         }
-        
+
+        private void btnZeroStats_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            Rom.Write8(0, RomData.CHAR_DATA);
+            while (i < 15 * 100 * 6)
+            {
+                Rom.Write8(0);
+                i++;
+            }
+            UpdateActorsElements();
+        }
+
+        private void btnAI_Click(object sender, EventArgs e)
+        {
+            var newForm = new Form2();
+            newForm.Show();
+        }
+
         /*private void btnMoveHP_Click(object sender, EventArgs e)
         {
             // for (int i = 0; i < 384; i++) { short hp = ROM.Read16(offset + 0x20 * i); ROM.Write16(offset2 + 0x20 * i); }

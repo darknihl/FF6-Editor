@@ -8,5 +8,6 @@ namespace FF6_Editor
 {
     class EnemyScripts
     {
+
     }
 }
